@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;no title&gt; &#8212; deetly documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Interaction
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/dashboard/brush_bar.html">
+   Bar chart brushed
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_covid.html">
+   Map from JSONStat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
+   Map from geoJSON (covid data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_ssb_nav.html">
+   GeoJSON Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/topojson/map_from_topojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/dash/dash.html">
+   Dash example
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/excel/nav_in_numbers.html">
+   Plotly NAV key figures example
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/kepler/pandas_dataframe.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/kepler/pandas_dataframe.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/kepler/pandas_dataframe.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install keplergl --upgrade
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already up-to-date: keplergl in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (0.2.1)
+Requirement already satisfied, skipping upgrade: Shapely&gt;=1.6.4.post2 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from keplergl) (1.7.0)
+Requirement already satisfied, skipping upgrade: geopandas&gt;=0.5.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from keplergl) (0.7.0)
+Requirement already satisfied, skipping upgrade: pandas&gt;=0.23.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from keplergl) (1.0.3)
+Requirement already satisfied, skipping upgrade: ipywidgets&lt;8,&gt;=7.0.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from keplergl) (7.5.1)
+Requirement already satisfied, skipping upgrade: traittypes&gt;=0.2.1 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from keplergl) (0.2.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: fiona in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from geopandas&gt;=0.5.0-&gt;keplergl) (1.8.13.post1)
+Requirement already satisfied, skipping upgrade: pyproj&gt;=2.2.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from geopandas&gt;=0.5.0-&gt;keplergl) (2.6.0)
+Requirement already satisfied, skipping upgrade: numpy&gt;=1.13.3 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from pandas&gt;=0.23.0-&gt;keplergl) (1.18.2)
+Requirement already satisfied, skipping upgrade: pytz&gt;=2017.2 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from pandas&gt;=0.23.0-&gt;keplergl) (2019.3)
+Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.6.1 in /Users/B149899/.local/lib/python3.8/site-packages (from pandas&gt;=0.23.0-&gt;keplergl) (2.8.1)
+Requirement already satisfied, skipping upgrade: nbformat&gt;=4.2.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (5.0.4)
+Requirement already satisfied, skipping upgrade: widgetsnbextension~=3.5.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (3.5.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: ipykernel&gt;=4.5.1 in /Users/B149899/.local/lib/python3.8/site-packages (from ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (5.2.0)
+Requirement already satisfied, skipping upgrade: ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot; in /Users/B149899/.local/lib/python3.8/site-packages (from ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (7.13.0)
+Requirement already satisfied, skipping upgrade: traitlets&gt;=4.3.1 in /Users/B149899/.local/lib/python3.8/site-packages (from ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (4.3.3)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: click&lt;8,&gt;=4.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (7.1.1)
+Requirement already satisfied, skipping upgrade: cligj&gt;=0.5 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (0.5.0)
+Requirement already satisfied, skipping upgrade: munch in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (2.5.0)
+Requirement already satisfied, skipping upgrade: click-plugins&gt;=1.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (1.1.1)
+Requirement already satisfied, skipping upgrade: six&gt;=1.7 in /Users/B149899/.local/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (1.14.0)
+Requirement already satisfied, skipping upgrade: attrs&gt;=17 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from fiona-&gt;geopandas&gt;=0.5.0-&gt;keplergl) (19.3.0)
+Requirement already satisfied, skipping upgrade: ipython-genutils in /Users/B149899/.local/lib/python3.8/site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.2.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: jsonschema!=2.5.0,&gt;=2.4 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (3.1.1)
+Requirement already satisfied, skipping upgrade: jupyter-core in /Users/B149899/.local/lib/python3.8/site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (4.6.3)
+Requirement already satisfied, skipping upgrade: notebook&gt;=4.4.1 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (6.0.3)
+Requirement already satisfied, skipping upgrade: tornado&gt;=4.2 in /Users/B149899/.local/lib/python3.8/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (6.0.4)
+Requirement already satisfied, skipping upgrade: appnope; platform_system == &quot;Darwin&quot; in /Users/B149899/.local/lib/python3.8/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.1.0)
+Requirement already satisfied, skipping upgrade: jupyter-client in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (6.1.7)
+Requirement already satisfied, skipping upgrade: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (3.0.4)
+Requirement already satisfied, skipping upgrade: setuptools&gt;=18.5 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (41.2.0)
+Requirement already satisfied, skipping upgrade: pickleshare in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.7.5)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: backcall in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.1.0)
+Requirement already satisfied, skipping upgrade: jedi&gt;=0.10 in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.16.0)
+Requirement already satisfied, skipping upgrade: decorator in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (4.4.2)
+Requirement already satisfied, skipping upgrade: pygments in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (2.6.1)
+Requirement already satisfied, skipping upgrade: pexpect; sys_platform != &quot;win32&quot; in /Users/B149899/.local/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (4.8.0)
+Requirement already satisfied, skipping upgrade: pyrsistent&gt;=0.14.0 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.16.0)
+Requirement already satisfied, skipping upgrade: importlib-metadata in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (1.7.0)
+Requirement already satisfied, skipping upgrade: prometheus-client in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.7.1)
+Requirement already satisfied, skipping upgrade: Send2Trash in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (1.5.0)
+Requirement already satisfied, skipping upgrade: jinja2 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (2.11.2)
+Requirement already satisfied, skipping upgrade: nbconvert in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (5.6.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: terminado&gt;=0.8.1 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.8.3)
+Requirement already satisfied, skipping upgrade: pyzmq&gt;=17 in /Users/B149899/.local/lib/python3.8/site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (19.0.0)
+Requirement already satisfied, skipping upgrade: wcwidth in /Users/B149899/.local/lib/python3.8/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.1.9)
+Requirement already satisfied, skipping upgrade: parso&gt;=0.5.2 in /Users/B149899/.local/lib/python3.8/site-packages (from jedi&gt;=0.10-&gt;ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.6.2)
+Requirement already satisfied, skipping upgrade: ptyprocess&gt;=0.5 in /Users/B149899/.local/lib/python3.8/site-packages (from pexpect; sys_platform != &quot;win32&quot;-&gt;ipython&gt;=4.0.0; python_version &gt;= &quot;3.3&quot;-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.6.0)
+Requirement already satisfied, skipping upgrade: zipp&gt;=0.5 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from importlib-metadata-&gt;jsonschema!=2.5.0,&gt;=2.4-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (3.1.0)
+Requirement already satisfied, skipping upgrade: MarkupSafe&gt;=0.23 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from jinja2-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (1.1.1)
+Requirement already satisfied, skipping upgrade: defusedxml in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.6.0)
+Requirement already satisfied, skipping upgrade: pandocfilters&gt;=1.4.1 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (1.4.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied, skipping upgrade: testpath in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.4.4)
+Requirement already satisfied, skipping upgrade: mistune&lt;2,&gt;=0.8.1 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.8.4)
+Requirement already satisfied, skipping upgrade: bleach in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (3.1.4)
+Requirement already satisfied, skipping upgrade: entrypoints&gt;=0.2.2 in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.3)
+Requirement already satisfied, skipping upgrade: webencodings in /Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages (from bleach-&gt;nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.5.0-&gt;ipywidgets&lt;8,&gt;=7.0.0-&gt;keplergl) (0.5.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Yellow">WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.</span>
+<span class=" -Color -Color-Yellow">You should consider upgrading via the &#39;/Users/B149899/.pyenv/versions/3.8.2/bin/python3.8 -m pip install --upgrade pip&#39; command.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">{</span><span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Buenos Aires&#39;</span><span class="p">,</span> <span class="s1">&#39;Brasilia&#39;</span><span class="p">,</span> <span class="s1">&#39;Santiago&#39;</span><span class="p">,</span> <span class="s1">&#39;Bogota&#39;</span><span class="p">,</span> <span class="s1">&#39;Caracas&#39;</span><span class="p">],</span>
+     <span class="s1">&#39;Country&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">,</span> <span class="s1">&#39;Chile&#39;</span><span class="p">,</span> <span class="s1">&#39;Colombia&#39;</span><span class="p">,</span> <span class="s1">&#39;Venezuela&#39;</span><span class="p">],</span>
+     <span class="s1">&#39;Latitude&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">34.58</span><span class="p">,</span> <span class="o">-</span><span class="mf">15.78</span><span class="p">,</span> <span class="o">-</span><span class="mf">33.45</span><span class="p">,</span> <span class="mf">4.60</span><span class="p">,</span> <span class="mf">10.48</span><span class="p">],</span>
+     <span class="s1">&#39;Longitude&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">58.66</span><span class="p">,</span> <span class="o">-</span><span class="mf">47.91</span><span class="p">,</span> <span class="o">-</span><span class="mf">70.66</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.08</span><span class="p">,</span> <span class="o">-</span><span class="mf">66.86</span><span class="p">],</span>
+     <span class="s1">&#39;Time&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2019-09-01 08:00&#39;</span><span class="p">,</span><span class="s1">&#39;2019-09-01 09:00&#39;</span><span class="p">,</span><span class="s1">&#39;2019-09-01 10:00&#39;</span><span class="p">,</span><span class="s1">&#39;2019-09-01 11:00&#39;</span><span class="p">,</span> <span class="s1">&#39;2019-09-01 12:00&#39;</span><span class="p">]</span>
+    <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">keplergl</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">keplergl</span><span class="o">.</span><span class="n">KeplerGl</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;data_1&#39;</span><span class="p">:</span> <span class="n">df</span><span class="p">})</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>User Guide: https://github.com/keplergl/kepler.gl/blob/master/docs/keplergl-jupyter/user-guide.md
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "99f47998ac5d4250aabeb5cd3e867760"}
+</script></div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"9b953c949525432faa88d2712493e451": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.1.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.1.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.1.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "99f47998ac5d4250aabeb5cd3e867760": {"model_name": "KeplerGlModal", "model_module": "keplergl-jupyter", "model_module_version": "^0.1.0", "state": {"_dom_classes": [], "_model_module": "keplergl-jupyter", "_model_module_version": "^0.1.0", "_model_name": "KeplerGlModal", "_view_count": null, "_view_module": "keplergl-jupyter", "_view_module_version": "^0.1.0", "_view_name": "KeplerGlView", "config": {}, "data": {"data_1": {"index": [0, 1, 2, 3, 4], "columns": ["City", "Country", "Latitude", "Longitude", "Time"], "data": [["Buenos Aires", "Argentina", -34.58, -58.66, "2019-09-01 08:00"], ["Brasilia", "Brazil", -15.78, -47.91, "2019-09-01 09:00"], ["Santiago", "Chile", -33.45, -70.66, "2019-09-01 10:00"], ["Bogota", "Colombia", 4.6, -74.08, "2019-09-01 11:00"], ["Caracas", "Venezuela", 10.48, -66.86, "2019-09-01 12:00"]]}}, "height": 600, "layout": "IPY_MODEL_9b953c949525432faa88d2712493e451", "value": "Hello World!"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "dv"
+        },
+        kernelOptions: {
+            kernelName: "dv",
+            path: "./kepler"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'dv'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

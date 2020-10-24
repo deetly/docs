@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown view &#8212; deetly documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PDF view demo" href="../pdf/pdf_test.html" />
+    <link rel="prev" title="Pydeck example road accidents" href="../pydeck/pydeck_road_accidents.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
+   Map from geoJSON (covid data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
+   Altair example NAV dagpenger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps 3D
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html">
+   Pydeck example NAV permitteringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#naeringer">
+   Næringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html">
+   Map types
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/markdown/markdown-test.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/markdown/markdown-test.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/markdown/markdown-test.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-datapackage">
+   Create datapackage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-data-create-views">
+   Get data &amp; create views
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#links">
+   Links
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish">
+   Publish
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="markdown-view">
+<h1>Markdown view<a class="headerlink" href="#markdown-view" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="create-datapackage">
+<h2>Create datapackage<a class="headerlink" href="#create-datapackage" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Markdown view demo</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Markdown view demo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Markdown view demo&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;deetly&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;examples&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;markdown, example&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing recommended props(s): [&#39;contactPoint&#39;, &#39;distribution&#39;, &#39;keyword&#39;, &#39;publisher&#39;, &#39;spatial&#39;, &#39;temporal&#39;]
+Invalid type: [&#39;String:title&#39;, &#39;String:name&#39;, &#39;String:description&#39;, &#39;String:author&#39;, &#39;String or list of strings:theme&#39;, &#39;String:license&#39;, &#39;String:keywords&#39;, &#39;ISO date or datetime:issued&#39;, &#39;ISO date or datetime:modified&#39;]
+Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39;, &#39;keywords&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="get-data-create-views">
+<h2>Get data &amp; create views<a class="headerlink" href="#get-data-create-views" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">An H1 Header</span>
+<span class="s2">============</span>
+
+<span class="s2">An H2 Header</span>
+<span class="s2">------------</span>
+
+<span class="s2"># An H1 Header</span>
+<span class="s2">## An H2 Header</span>
+<span class="s2">### An H3 Header</span>
+<span class="s2">#### An H4 Header</span>
+<span class="s2">##### An H5 Header</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Headers&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&gt; Of all the things I&#39;ve lost </span>
+<span class="s2">&gt; I miss my mind the most. - Mark Twain</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Blockquotes&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">- Item 1</span>
+<span class="s2">  - Sub-item 1</span>
+<span class="s2">  - Sub-item 2</span>
+<span class="s2">- Item 2</span>
+<span class="s2">  - Sub-item 1</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Lists&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Check out this code:</span>
+
+<span class="s2">    def fibonacci(number):</span>
+<span class="s2">        if number &lt;= 1:</span>
+<span class="s2">            return number</span>
+<span class="s2">        else:</span>
+<span class="s2">            return fibonacci(number - 1) + fibonacci(number - 2)</span>
+
+<span class="s2">And use the function like this:</span>
+
+<span class="s2">    fib_number = fibonacci(8)</span>
+<span class="s2">    print &#39;The 8th Fibonacci number is:&#39;, fib_number</span>
+
+<span class="s2">Wow, that was amazing...</span>
+
+<span class="s2">```python</span>
+<span class="s2">name = &#39;Scott&#39;</span>
+<span class="s2">print &#39;Hi my name is &#39; + name</span>
+<span class="s2">```</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Codeblock&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="links">
+<h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Here is a link til [Google][GO].</span>
+
+<span class="s2">[GO]: https://google.com &quot;Google Link Title&quot;</span>
+
+
+<span class="s2">Another link to google.</span>
+
+<span class="s2">[Google](https://google.com &quot;Google Link Title&quot;)</span>
+<span class="s2">&quot;&quot;&quot;</span>        
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Links&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+
+<span class="s2">First Header | Second Header</span>
+<span class="s2">------------ | -------------</span>
+<span class="s2">Content from cell 1 | Content from cell 2</span>
+<span class="s2">Content in the first column | Content in the second column</span>
+
+
+<span class="s2">Right aligned columns</span>
+
+<span class="s2">First Header | Second Header</span>
+<span class="s2">------------: | -------------:</span>
+<span class="s2">Content from cell 1 | Content from cell 2</span>
+<span class="s2">Content in the first column | Content in the second column</span>
+
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Tables&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+
+<span class="s2">![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)</span>
+
+<span class="s2">![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png &quot;The Octocat&quot;)</span>
+
+<span class="s2">Images also have a footnote style syntax</span>
+
+<span class="s2">![Octocat][id]</span>
+
+<span class="s2">With a reference later in the document defining the URL location</span>
+
+<span class="s2">[id]: https://github.githubassets.com/images/icons/emoji/octocat.png &quot;The Octocat&quot;</span>
+
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Images&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="publish">
+<h2>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="n">d09182feda94</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/deetly/datapackage.py</span> in <span class="ni">publish</span><span class="nt">(self, space, token)</span>
+<span class="g g-Whitespace">    </span><span class="mi">550</span> 
+<span class="g g-Whitespace">    </span><span class="mi">551</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">552</span>             <span class="n">space</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;DEETLY_SPACE&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">553</span> 
+<span class="g g-Whitespace">    </span><span class="mi">554</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
+<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">683</span> 
+
+<span class="ne">KeyError</span>: &#39;DEETLY_SPACE&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./markdown"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../pydeck/pydeck_road_accidents.html" title="previous page">Pydeck example road accidents</a>
+    <a class='right-next' id="next-link" href="../pdf/pdf_test.html" title="next page">PDF view demo</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

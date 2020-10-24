@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 1082, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 535, in async_execute
+    await self.async_execute_cell(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 827, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 735, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# read from json-stat
+dataset = pyjstat.Dataset.read(URL)
+
+# write to dataframe
+df = dataset.write('dataframe')
+print(df)
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAttributeError[0m                            Traceback (most recent call last)
+[0;32m<ipython-input-3-b43114d77ab8>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# read from json-stat[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mdataset[0m [0;34m=[0m [0mpyjstat[0m[0;34m.[0m[0mDataset[0m[0;34m.[0m[0mread[0m[0;34m([0m[0mURL[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0;34m[0m[0m
+[1;32m      4[0m [0;31m# write to dataframe[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mdf[0m [0;34m=[0m [0mdataset[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0;34m'dataframe'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mAttributeError[0m: module 'pyjstat' has no attribute 'Dataset'
+AttributeError: module 'pyjstat' has no attribute 'Dataset'
+

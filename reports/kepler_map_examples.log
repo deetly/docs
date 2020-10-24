@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 1082, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 535, in async_execute
+    await self.async_execute_cell(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 827, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 735, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+client = dv.Client()
+client.publish(dp)
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-18-ff5e2c89975a>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mclient[0m [0;34m=[0m [0mdv[0m[0;34m.[0m[0mClient[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mclient[0m[0;34m.[0m[0mpublish[0m[0;34m([0m[0mdp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/anaconda3/envs/dv/lib/python3.7/site-packages/dataverk/dataverk.py[0m in [0;36m__init__[0;34m(self, resource_path, env_file, auth_token)[0m
+[1;32m     15[0m     [0;32mdef[0m [0m__init__[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mresource_path[0m[0;34m:[0m [0mstr[0m[0;34m=[0m[0;34m"."[0m[0;34m,[0m [0menv_file[0m[0;34m:[0m [0mstr[0m[0;34m=[0m[0;34m'.env'[0m[0;34m,[0m [0mauth_token[0m[0;34m:[0m [0mstr[0m[0;34m=[0m[0;32mNone[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     16[0m         [0menv_store[0m [0;34m=[0m [0mEnvStore[0m[0;34m.[0m[0msafe_create[0m[0;34m([0m[0menv_file[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 17[0;31m         [0mself[0m[0;34m.[0m[0m_context[0m [0;34m=[0m [0mDataverkContext[0m[0;34m([0m[0menv_store[0m[0;34m,[0m [0mresource_path[0m[0;34m,[0m [0mauth_token[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     18[0m [0;34m[0m[0m
+[1;32m     19[0m     [0;34m@[0m[0mproperty[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/anaconda3/envs/dv/lib/python3.7/site-packages/dataverk/dataverk_context.py[0m in [0;36m__init__[0;34m(self, env_store, resource_path, auth_token)[0m
+[1;32m     12[0m         [0mself[0m[0;34m.[0m[0m_http_headers[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0m_set_http_headers[0m[0;34m([0m[0mauth_token[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     13[0m         [0mself[0m[0;34m.[0m[0m_env_store[0m [0;34m=[0m [0menv_store[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 14[0;31m         [0mself[0m[0;34m.[0m[0m_settings_store[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0m_load_settings[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     15[0m         [0mself[0m[0;34m.[0m[0m_load_and_apply_secrets[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     16[0m [0;34m[0m[0m
+
+[0;32m~/anaconda3/envs/dv/lib/python3.7/site-packages/dataverk/dataverk_context.py[0m in [0;36m_load_settings[0;34m(self)[0m
+[1;32m     20[0m [0;34m[0m[0m
+[1;32m     21[0m     [0;32mdef[0m [0m_load_settings[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 22[0;31m         [0;32mreturn[0m [0mjson[0m[0;34m.[0m[0mloads[0m[0;34m([0m[0mfile_functions[0m[0;34m.[0m[0mget_package_resource[0m[0;34m([0m[0;34m"settings.json"[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0m_resource_path[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0m_http_headers[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     23[0m [0;34m[0m[0m
+[1;32m     24[0m     [0;32mdef[0m [0m_load_and_apply_secrets[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/anaconda3/envs/dv/lib/python3.7/site-packages/dataverk/utils/file_functions.py[0m in [0;36mget_package_resource[0;34m(resource_name, base_path, http_headers)[0m
+[1;32m     29[0m                 [0;32mreturn[0m [0mbucket_conn[0m[0;34m.[0m[0mread[0m[0;34m([0m[0;34mf"{parsed_url.path[1:]}/{resource_name}"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     30[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 31[0;31m                 [0;32mreturn[0m [0mread_file[0m[0;34m([0m[0mPath[0m[0;34m([0m[0mbase_path[0m[0;34m)[0m[0;34m.[0m[0mjoinpath[0m[0;34m([0m[0mresource_name[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     32[0m [0;34m[0m[0m
+[1;32m     33[0m [0;34m[0m[0m
+
+[0;32m~/anaconda3/envs/dv/lib/python3.7/site-packages/dataverk/utils/file_functions.py[0m in [0;36mread_file[0;34m(path)[0m
+[1;32m     45[0m [0;34m[0m[0m
+[1;32m     46[0m [0;32mdef[0m [0mread_file[0m[0;34m([0m[0mpath[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 47[0;31m     [0;32mwith[0m [0mopen[0m[0;34m([0m[0mpath[0m[0;34m,[0m [0mmode[0m[0;34m=[0m[0;34m"r"[0m[0;34m,[0m [0mencoding[0m[0;34m=[0m[0;34m"utf-8"[0m[0;34m)[0m [0;32mas[0m [0mf[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     48[0m         [0;32mreturn[0m [0mf[0m[0;34m.[0m[0mread[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     49[0m [0;34m[0m[0m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'settings.json'
+FileNotFoundError: [Errno 2] No such file or directory: 'settings.json'
+

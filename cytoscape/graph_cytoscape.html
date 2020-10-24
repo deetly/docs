@@ -1,0 +1,1150 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cytoscape example &#8212; deetly documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Altair
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_covid.html">
+   Map from JSONStat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
+   Map from geoJSON (covid data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_ssb_nav.html">
+   GeoJSON Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/dash/dash.html">
+   Dash example
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/dashboard/dashboard_volcanoes.html">
+   Dashboard
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/dashboard/brush_bar.html">
+   Bar chart brushed
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/excel/nav_in_numbers.html">
+   Plotly NAV key figures example
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/topojson/map_from_topojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/cytoscape/graph_cytoscape.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/cytoscape/graph_cytoscape.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/cytoscape/graph_cytoscape.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cytoscape-example">
+<h1>Cytoscape example<a class="headerlink" href="#cytoscape-example" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>An example of graph visualization with Cytoscape.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">from</span> <span class="nn">cyjupyter</span> <span class="kn">import</span> <span class="n">Cytoscape</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># Example graph with cytoscape</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Example graph with cytoscape&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;Paul Bencze&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;example&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;example, graph, cytoscape&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing mandatory props(s): [&#39;title&#39;]
+Missing recommended props(s): [&#39;contactPoint&#39;, &#39;distribution&#39;, &#39;publisher&#39;, &#39;spatial&#39;, &#39;temporal&#39;]
+Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39;]
+Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:author&#39;, &#39;String or list of strings:theme&#39;, &#39;String:license&#39;, &#39;String or list of strings:keyword&#39;, &#39;ISO date or datetime:issued&#39;, &#39;ISO date or datetime:modified&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edges</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mathbeveridge/asoiaf/master/data/asoiaf-all-edges.csv&quot;</span><span class="p">)</span>
+<span class="n">df_nodes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mathbeveridge/asoiaf/master/data/asoiaf-all-nodes.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_nodes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Addam-Marbrand</td>
+      <td>Addam Marbrand</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edges</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Source</th>
+      <th>Target</th>
+      <th>Type</th>
+      <th>id</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Addam-Marbrand</td>
+      <td>Brynden-Tully</td>
+      <td>Undirected</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">graphviz</span> <span class="kn">import</span> <span class="n">Digraph</span>
+<span class="n">dot</span> <span class="o">=</span> <span class="n">Digraph</span><span class="p">(</span><span class="n">comment</span><span class="o">=</span><span class="s1">&#39;VIP graph&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">df_nodes</span><span class="p">:</span>
+    <span class="n">dot</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_edges</span><span class="p">)):</span>
+    <span class="n">edge</span> <span class="o">=</span> <span class="n">df_edges</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">dot</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="n">edge</span><span class="p">[</span><span class="s1">&#39;Source&#39;</span><span class="p">],</span> <span class="n">edge</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dot</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">getNode</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;data&#39;</span><span class="p">:{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]}}</span>
+    <span class="c1">#return {&#39;data&#39;:{&#39;id&#39;:row[&#39;Id&#39;],&#39;label&#39;:row[&#39;Label&#39;]}}</span>
+    
+<span class="n">df_nodes</span><span class="p">[</span><span class="s1">&#39;node&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_nodes</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">getNode</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="n">df_nodes</span><span class="p">[</span><span class="s1">&#39;node&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;data&#39;: {&#39;id&#39;: &#39;Addam-Marbrand&#39;}}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edges</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Source</th>
+      <th>Target</th>
+      <th>Type</th>
+      <th>id</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Addam-Marbrand</td>
+      <td>Brynden-Tully</td>
+      <td>Undirected</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">getEdge</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;data&#39;</span><span class="p">:{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Source&#39;</span><span class="p">],</span><span class="s1">&#39;target&#39;</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]}}</span>
+    <span class="c1">#return {&#39;data&#39;:{&#39;id&#39;:row[&#39;id&#39;],&#39;source&#39;:row[&#39;Source&#39;],&#39;target&#39;:row[&#39;Target&#39;],&#39;type&#39;:row[&#39;Type&#39;],&#39;weight&#39;:row[&#39;weight&#39;]}}</span>
+    
+<span class="n">df_edges</span><span class="p">[</span><span class="s1">&#39;edge&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_edges</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">getEdge</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">edges</span> <span class="o">=</span> <span class="n">df_edges</span><span class="p">[</span><span class="s1">&#39;edge&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;elements&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;nodes&#39;</span><span class="p">:</span> <span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">],</span>
+        <span class="s1">&#39;edges&#39;</span><span class="p">:</span> <span class="n">edges</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">network</span><span class="p">[</span><span class="s1">&#39;elements&#39;</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;data&#39;: {&#39;id&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;}}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">Cytoscape</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">network</span><span class="p">,</span> <span class="n">layout_name</span><span class="o">=</span><span class="s1">&#39;cose&#39;</span><span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7d0d2cf47ec346938d63c3e7a556faf5", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">from</span> <span class="nn">networkx.readwrite</span> <span class="kn">import</span> <span class="n">cytoscape_data</span>
+<span class="kn">from</span> <span class="nn">networkx.algorithms</span> <span class="kn">import</span> <span class="n">betweenness_centrality</span><span class="p">,</span> <span class="n">edge_betweenness_centrality</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">network1</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">scale_free_graph</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">cyjs1</span> <span class="o">=</span> <span class="n">cytoscape_data</span><span class="p">(</span><span class="n">network1</span><span class="p">)</span>
+<span class="n">Cytoscape</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">cyjs1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0795dfb5f58f45c0a42af3812329afeb", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">waxman_graph</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+
+<span class="c1"># Calculate betweenness centrarity of the graph (for both nodes and edges)</span>
+<span class="n">bc</span> <span class="o">=</span> <span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">ebc</span> <span class="o">=</span> <span class="n">edge_betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">set_node_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">bc</span><span class="p">,</span> <span class="s1">&#39;betweenness&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">set_edge_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">ebc</span><span class="p">,</span> <span class="s1">&#39;betweenness&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pick min and max for each data</span>
+<span class="n">bc_min</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">bc</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="n">bc_max</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">bc</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="n">ebc_min</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">ebc</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="n">ebc_max</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">ebc</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<span class="c1"># Create visual mappings</span>
+
+<span class="c1"># For nodes</span>
+<span class="n">mapper</span> <span class="o">=</span> <span class="s1">&#39;mapData(betweenness,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_min</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_max</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, 5, 50)&#39;</span>
+<span class="n">op_mapper</span> <span class="o">=</span> <span class="s1">&#39;mapData(betweenness,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_min</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_max</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, 0.3, 1)&#39;</span>
+<span class="n">color_mapper</span> <span class="o">=</span> <span class="s1">&#39;mapData(betweenness,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_min</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bc_max</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, #EFEFEF, #00897B)&#39;</span>
+
+<span class="c1"># For edges</span>
+<span class="n">edge_mapper</span> <span class="o">=</span> <span class="s1">&#39;mapData(betweenness,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ebc_min</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ebc_max</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, 1, 10)&#39;</span>
+<span class="n">edge_op_mapper</span> <span class="o">=</span> <span class="s1">&#39;mapData(betweenness,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ebc_min</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ebc_max</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, 0.3, 1)&#39;</span>
+
+<span class="c1"># Build a style</span>
+<span class="n">custom_visual_style</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s1">&#39;selector&#39;</span><span class="p">:</span> <span class="s1">&#39;node&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;background-color&#39;</span><span class="p">:</span> <span class="n">color_mapper</span><span class="p">,</span>
+            <span class="s1">&#39;width&#39;</span><span class="p">:</span> <span class="n">mapper</span><span class="p">,</span>
+            <span class="s1">&#39;height&#39;</span><span class="p">:</span> <span class="n">mapper</span><span class="p">,</span>
+            <span class="s1">&#39;background-opacity&#39;</span><span class="p">:</span> <span class="n">op_mapper</span><span class="p">,</span>
+            <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s2">&quot;data(id)&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s1">&#39;selector&#39;</span><span class="p">:</span> <span class="s1">&#39;edge&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;width&#39;</span><span class="p">:</span> <span class="n">edge_mapper</span><span class="p">,</span>
+            <span class="s1">&#39;opacity&#39;</span><span class="p">:</span> <span class="n">edge_op_mapper</span><span class="p">,</span>
+            <span class="s1">&#39;line-color&#39;</span><span class="p">:</span> <span class="s1">&#39;#333333&#39;</span>        
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Convert to Cytoscape.js JSON</span>
+<span class="n">cyjs2</span> <span class="o">=</span> <span class="n">cytoscape_data</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1"># Visualize it</span>
+<span class="n">Cytoscape</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">cyjs2</span><span class="p">,</span>  <span class="n">layout_name</span><span class="o">=</span><span class="s1">&#39;circle&#39;</span><span class="p">,</span> <span class="n">visual_style</span><span class="o">=</span><span class="n">custom_visual_style</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s1">&#39;#EEEEEE&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d4efcfac87034f819c50dd8353fecf4b", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/plotly/dash-cytoscape/master/demos/data/sample_network.txt&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">cy_edges</span><span class="p">,</span> <span class="n">cy_nodes</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edges</span><span class="p">:</span>
+    <span class="n">source</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">edge</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">cy_nodes</span><span class="p">)</span> <span class="o">%</span> <span class="mi">5</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">source</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>  <span class="c1"># Add the source node</span>
+        <span class="n">nodes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+        <span class="n">cy_nodes</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">source</span><span class="p">},</span> <span class="s2">&quot;classes&quot;</span><span class="p">:</span> <span class="n">color</span><span class="p">})</span>
+
+    <span class="k">if</span> <span class="n">target</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>  <span class="c1"># Add the target node</span>
+        <span class="n">nodes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+        <span class="n">cy_nodes</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">target</span><span class="p">},</span> <span class="s2">&quot;classes&quot;</span><span class="p">:</span> <span class="n">color</span><span class="p">})</span>
+
+    <span class="n">cy_edges</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>  <span class="c1"># Add the Edge Node</span>
+        <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="n">source</span><span class="p">,</span> <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="n">target</span><span class="p">},</span>
+        <span class="s1">&#39;classes&#39;</span><span class="p">:</span> <span class="n">color</span>
+    <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;elements&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;nodes&#39;</span><span class="p">:</span> <span class="n">cy_nodes</span><span class="p">,</span>
+        <span class="s1">&#39;edges&#39;</span><span class="p">:</span> <span class="n">cy_edges</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">Cytoscape</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">network</span><span class="p">)</span>
+<span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6e678af6bd3d47269ada26351f195526", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">get_view_spec</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;version_major&#39;: 2,
+ &#39;version_minor&#39;: 0,
+ &#39;model_id&#39;: &#39;7d0d2cf47ec346938d63c3e7a556faf5&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;_dom_classes&#39;: (),
+ &#39;_model_module&#39;: &#39;cytoscape-jupyter-widget&#39;,
+ &#39;_model_module_version&#39;: &#39;^0.1.0&#39;,
+ &#39;_model_name&#39;: &#39;CytoscapeModel&#39;,
+ &#39;_view_count&#39;: None,
+ &#39;_view_module&#39;: &#39;cytoscape-jupyter-widget&#39;,
+ &#39;_view_module_version&#39;: &#39;^0.1.0&#39;,
+ &#39;_view_name&#39;: &#39;CytoscapeView&#39;,
+ &#39;background&#39;: &#39;#FFFFFF&#39;,
+ &#39;data&#39;: {&#39;elements&#39;: {&#39;nodes&#39;: [{&#39;data&#39;: {&#39;id&#39;: &#39;Addam-Marbrand&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aegon-I-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aegon-V-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aemon-Targaryen-(Dragonknight)&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aenys-Frey&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aeron-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aerys-I-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aerys-II-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aggar&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aggo&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alayaya&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Albett&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alebelly&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alerie-Hightower&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alester-Florent&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alla-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Allar-Deem&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Allard-Seaworth&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alleras&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alliser-Thorne&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alyn&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alys-Arryn&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alys-Karstark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Alysane-Mormont&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Amabel&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Amerei-Frey&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Amory-Lorch&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Anders-Yronwood&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Andrew-Estermont&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Andrey-Dalt&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Anguy&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Anya-Waynwood&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Archibald-Yronwood&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Ardrian-Celtigar&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Areo-Hotah&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arianne-Martell&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Armen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arnolf-Karstark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aron-Santagar&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arron&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arson&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arstan&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arthor-Karstark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arthur-Dayne&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arwyn-Oakheart&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arya-Stark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Arys-Oakheart&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Asha-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Ashara-Dayne&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Aurane-Waters&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Axell-Florent&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Azor-Ahai&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bael-the-Bard&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Baelor-Blacktyde&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Baelor-I-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Ballabar&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Balman-Byrch&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Balon-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Balon-Swann&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bannen&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Barbrey-Dustin&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Barristan-Selmy&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Barsena&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bartimus&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bedwyck&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Belaquo&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bellegere-Otherys&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Belwas&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Ben-Bones&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Ben-Plumm&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Benedar-Belmore&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Benerro&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Benethon-Scales&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Benfred-Tallhart&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Benjen-Stark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Beric-Dondarrion&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Beth-Cassel&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Big-Boil&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Biter&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Black-Balaq&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Blane&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bloodbeard&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Blue-Bard&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bonifer-Hasty&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Boros-Blount&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bowen-Marsh&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bran-Stark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brandon-Norrey&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brandon-Stark&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brea&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brella&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brenett&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brienne-of-Tarth&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bronn&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brus-Buckler&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Brusco&#39;}},
+    {&#39;data&#39;: {&#39;id&#39;: &#39;Bryce-Caron&#39;}}],
+   &#39;edges&#39;: [{&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Brynden-Tully&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Cersei-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Gyles-Rosby&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Jaime-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Jalabhar-Xho&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Joffrey-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Kevan-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Lyle-Crakehall&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Oberyn-Martell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Tywin-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Addam-Marbrand&#39;, &#39;target&#39;: &#39;Varys&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;,
+      &#39;target&#39;: &#39;Catelyn-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;,
+      &#39;target&#39;: &#39;Robb-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;,
+      &#39;target&#39;: &#39;Stevron-Frey&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Frey-(son-of-Stevron)&#39;,
+      &#39;target&#39;: &#39;Walder-Frey&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Daenerys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Eddard-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Harren-Hoare&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Nan&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Rhaenys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Torrhen-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-I-Targaryen&#39;, &#39;target&#39;: &#39;Visenya-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Daenerys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Elia-Martell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Franklyn-Flowers&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Haldon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Harry-Strickland&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Jon-Connington&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Lemore&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Rhaegar-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Rhaenys-Targaryen-(daughter-of-Rhaegar)&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Rolly-Duckfield&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Tywin-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Viserys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Yandry&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-Targaryen-(son-of-Rhaegar)&#39;,
+      &#39;target&#39;: &#39;Ysilla&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aegon-V-Targaryen&#39;,
+      &#39;target&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Dragonknight)&#39;,
+      &#39;target&#39;: &#39;Jaime-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Alleras&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Alliser-Thorne&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Bowen-Marsh&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Chett&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Clydas&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Cotter-Pyke&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Daeron-II-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Dareon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Denys-Mallister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Donal-Noye&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Eddison-Tollett&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Gilly&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Grenn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Hobb&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Janos-Slynt&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Jeor-Mormont&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Jon-Snow&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Maekar-I-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Mance-Rayder&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Owen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;, &#39;target&#39;: &#39;Pypar&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Robert-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Samwell-Tarly&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aemon-Targaryen-(Maester-Aemon)&#39;,
+      &#39;target&#39;: &#39;Wynton-Stout&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aenys-Frey&#39;, &#39;target&#39;: &#39;Arya-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aenys-Frey&#39;, &#39;target&#39;: &#39;Hosteen-Frey&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aenys-Frey&#39;, &#39;target&#39;: &#39;Theon-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aenys-Frey&#39;, &#39;target&#39;: &#39;Wyman-Manderly&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Asha-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Baelor-Blacktyde&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Balon-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Dagmer&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Dunstan-Drumm&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Emmond&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Euron-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Gormond-Goodbrother&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Gorold-Goodbrother&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Greydon-Goodbrother&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Meldred-Merlyn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Murenmure&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Rus&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Theon-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aeron-Greyjoy&#39;, &#39;target&#39;: &#39;Victarion-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-I-Targaryen&#39;, &#39;target&#39;: &#39;Robert-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Arthur-Dayne&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Barristan-Selmy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Brandon-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Brienne-of-Tarth&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Cersei-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Denys-Darklyn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Eddard-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Elbert-Arryn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Gerold-Hightower&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Jaime-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Joffrey-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Jon-Arryn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Owen-Merryweather&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Rhaegar-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Robert-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Rossart&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Tywin-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aerys-II-Targaryen&#39;, &#39;target&#39;: &#39;Viserys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggar&#39;, &#39;target&#39;: &#39;Gariss&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggar&#39;, &#39;target&#39;: &#39;Gelmarr&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggar&#39;, &#39;target&#39;: &#39;Gynir&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggar&#39;, &#39;target&#39;: &#39;Ramsay-Snow&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Barristan-Selmy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Belwas&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Daario-Naharis&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Daenerys-Targaryen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Drogo&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Grey-Worm&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Jhogo&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Jorah-Mormont&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Quaro&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Aggo&#39;, &#39;target&#39;: &#39;Rakharo&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alayaya&#39;, &#39;target&#39;: &#39;Bronn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alayaya&#39;, &#39;target&#39;: &#39;Cersei-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alayaya&#39;, &#39;target&#39;: &#39;Dancy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alayaya&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Albett&#39;, &#39;target&#39;: &#39;Halder&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Albett&#39;, &#39;target&#39;: &#39;Jon-Snow&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Albett&#39;, &#39;target&#39;: &#39;Rast&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alebelly&#39;, &#39;target&#39;: &#39;Bran-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alebelly&#39;, &#39;target&#39;: &#39;Hayhead&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alebelly&#39;, &#39;target&#39;: &#39;Jojen-Reed&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alebelly&#39;, &#39;target&#39;: &#39;Mikken&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alerie-Hightower&#39;, &#39;target&#39;: &#39;Mace-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alerie-Hightower&#39;, &#39;target&#39;: &#39;Margaery-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Axell-Florent&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Cortnay-Penrose&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Davos-Seaworth&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Lamprey&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Renly-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Selyse-Florent&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alester-Florent&#39;, &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alla-Tyrell&#39;, &#39;target&#39;: &#39;Elinor-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alla-Tyrell&#39;, &#39;target&#39;: &#39;Margaery-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alla-Tyrell&#39;, &#39;target&#39;: &#39;Megga-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alla-Tyrell&#39;, &#39;target&#39;: &#39;Osney-Kettleblack&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alla-Tyrell&#39;, &#39;target&#39;: &#39;Sansa-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Allar-Deem&#39;, &#39;target&#39;: &#39;Janos-Slynt&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Allar-Deem&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Allard-Seaworth&#39;, &#39;target&#39;: &#39;Davos-Seaworth&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Allard-Seaworth&#39;, &#39;target&#39;: &#39;Marya-Seaworth&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Allard-Seaworth&#39;, &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Armen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Leo-Tyrell&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Marwyn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Mollander&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Pate-(novice)&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Roone&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alleras&#39;, &#39;target&#39;: &#39;Samwell-Tarly&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Bowen-Marsh&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Grenn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Halder&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Janos-Slynt&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Jeor-Mormont&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Joffrey-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Jon-Snow&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Mance-Rayder&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Pypar&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Qhorin-Halfhand&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Rast&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Samwell-Tarly&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alliser-Thorne&#39;, &#39;target&#39;: &#39;Tyrion-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alyn&#39;, &#39;target&#39;: &#39;Eddard-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alyn&#39;, &#39;target&#39;: &#39;Harwin&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alyn&#39;, &#39;target&#39;: &#39;Jory-Cassel&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alyn&#39;, &#39;target&#39;: &#39;Robert-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alyn&#39;, &#39;target&#39;: &#39;Tomard&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alys-Arryn&#39;, &#39;target&#39;: &#39;Elys-Waynwood&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alys-Arryn&#39;, &#39;target&#39;: &#39;Jon-Arryn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alys-Karstark&#39;, &#39;target&#39;: &#39;Jon-Snow&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alys-Karstark&#39;, &#39;target&#39;: &#39;Melisandre&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alys-Karstark&#39;, &#39;target&#39;: &#39;Sigorn&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alysane-Mormont&#39;, &#39;target&#39;: &#39;Asha-Greyjoy&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alysane-Mormont&#39;, &#39;target&#39;: &#39;Justin-Massey&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Alysane-Mormont&#39;, &#39;target&#39;: &#39;Stannis-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amabel&#39;, &#39;target&#39;: &#39;Arya-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amabel&#39;, &#39;target&#39;: &#39;Harra&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amerei-Frey&#39;, &#39;target&#39;: &#39;Jaime-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amerei-Frey&#39;, &#39;target&#39;: &#39;Lancel-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amerei-Frey&#39;, &#39;target&#39;: &#39;Lyle-Crakehall&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Arya-Stark&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Cersei-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Chiswyck&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Dunsen&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Gendry&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Gregor-Clegane&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Hot-Pie&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Ilyn-Payne&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Jaime-Lannister&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Joffrey-Baratheon&#39;}},
+    {&#39;data&#39;: {&#39;source&#39;: &#39;Amory-Lorch&#39;, &#39;target&#39;: &#39;Meryn-Trant&#39;}}]}},
+ &#39;format&#39;: &#39;cyjs&#39;,
+ &#39;layout&#39;: &#39;IPY_MODEL_f75e15f846134a2c849bb46e63ab2b5f&#39;,
+ &#39;layout_name&#39;: &#39;cose&#39;,
+ &#39;visual_style&#39;: None}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Publish</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Public datapackage: https://storage.googleapis.com/deetly/examples/0be9a787c00f0569d669fb2492424fbc/datapackage.json 
+
+Published at: https://public.deetly.com/examples/0be9a787c00f0569d669fb2492424fbc 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./cytoscape"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

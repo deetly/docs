@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordcloud with Vega &#8212; deetly documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Process mining with pm4py" href="../process-mining/process_mining_pm4py.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
+   Map from geoJSON (covid data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
+   Altair example NAV dagpenger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps 3D
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html">
+   Pydeck example NAV permitteringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#naeringer">
+   Næringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html">
+   Map types
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/wordcloud/vega_wordcloud.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/wordcloud/vega_wordcloud.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/wordcloud/vega_wordcloud.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="wordcloud-with-vega">
+<h1>Wordcloud with Vega<a class="headerlink" href="#wordcloud-with-vega" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Example Wordcloud with vega</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Wordcloud with vega&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;deetly&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;examples&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;altair, vega&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing mandatory props(s): [&#39;title&#39;]
+Missing recommended props(s): [&#39;contactPoint&#39;, &#39;distribution&#39;, &#39;keyword&#39;, &#39;publisher&#39;, &#39;spatial&#39;, &#39;temporal&#39;]
+Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39;, &#39;keywords&#39;]
+Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:author&#39;, &#39;String or list of strings:theme&#39;, &#39;String:license&#39;, &#39;String:keywords&#39;, &#39;ISO date or datetime:issued&#39;, &#39;ISO date or datetime:modified&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Det legemeldte sykefraværet var 4,9 prosent i 2. kvartal 2019. Sammenlignet med samme kvartal i fjor innebærer dette en økning på 2,2 prosent. Økningen var størst hos kvinner hvor sykefraværet gikk fra 6,2 prosent til 6,4 prosent. For menn var sykefraværet stabilt på 3,6 prosent</span>
+<span class="s2">Endringene i sykefraværet fra 2. kvartal 2018 til 2. kvartal 2019 for kvinner viser størst økning blant de aller yngste aldersgruppene under 25 år og blant de aller eldste. For menn økte sykefraværet mest for de yngste under 19 år. For menn mellom 50-59 år gikk sykefraværet noe ned.</span>
+<span class="s2">Blant fylkene er det Sogn og Fjordane som har den største økningen i sykefraværet med 9,6 prosent. Deretter fulgte Finnmark med 8,1 prosent oppgang og Nordland med 6,5 prosent. To fylker hadde nedgang i sykefraværet. I Vestfold gikk sykefraværet ned med 3,1 prosent og i Troms med 1,8 prosent. </span>
+<span class="s2">Oslo har fremdeles det laveste legemeldte sykefraværet med 4,0 prosent. Finnmark og Nordland har det høyeste sykefraværet med 5,9 prosent</span>
+<span class="s2">Statistikk fra Arbeids- og velferdsdirektoratet omfatter bare legemeldt fravær</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stopwords_no</span> <span class="o">=</span> <span class="s2">&quot;(i|var|fra|på)&quot;</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spec</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;https://vega.github.io/schema/vega/v5.json&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A word cloud visualization depicting Vega research paper abstracts.&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span>
+  <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+  <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+
+  <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;table&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">text</span><span class="p">],</span>
+      <span class="s2">&quot;transform&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;countpattern&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;case&quot;</span><span class="p">:</span> <span class="s2">&quot;upper&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;[</span><span class="se">\\</span><span class="s2">w&#39;]{3,}&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;stopwords&quot;</span><span class="p">:</span> <span class="n">stopwords_no</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;formula&quot;</span><span class="p">,</span> <span class="s2">&quot;as&quot;</span><span class="p">:</span> <span class="s2">&quot;angle&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;expr&quot;</span><span class="p">:</span> <span class="s2">&quot;[-45, 0, 45][~~(random() * 3)]&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;formula&quot;</span><span class="p">,</span> <span class="s2">&quot;as&quot;</span><span class="p">:</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;expr&quot;</span><span class="p">:</span> <span class="s2">&quot;if(datum.text==&#39;SYKEFRAV&#39;, 600, 300)&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+
+  <span class="s2">&quot;scales&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ordinal&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;domain&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;table&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">},</span>
+      <span class="s2">&quot;range&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;#d5a928&quot;</span><span class="p">,</span> <span class="s2">&quot;#652c90&quot;</span><span class="p">,</span> <span class="s2">&quot;#939597&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+
+  <span class="s2">&quot;marks&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;table&quot;</span><span class="p">},</span>
+      <span class="s2">&quot;encode&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;enter&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;align&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;center&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;baseline&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;alphabetic&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;scale&quot;</span><span class="p">:</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">}</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;update&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;fillOpacity&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;hover&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;fillOpacity&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;transform&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;wordcloud&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">800</span><span class="p">,</span> <span class="mi">400</span><span class="p">],</span>
+          <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;rotate&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;datum.angle&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;font&quot;</span><span class="p">:</span> <span class="s2">&quot;Helvetica Neue, Arial&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;fontSize&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;datum.count&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;fontWeight&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;datum.weight&quot;</span><span class="p">},</span>
+          <span class="s2">&quot;fontSizeRange&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">56</span><span class="p">],</span>
+          <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Om legemeldt sykefravær</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">dp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;vega&quot;</span><span class="p">,</span><span class="n">spec</span><span class="p">,</span><span class="s2">&quot;Wordcloud&quot;</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">a150e0ed5d18</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">item</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/deetly/datapackage.py</span> in <span class="ni">publish</span><span class="nt">(self, space, token)</span>
+<span class="g g-Whitespace">    </span><span class="mi">550</span> 
+<span class="g g-Whitespace">    </span><span class="mi">551</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">552</span>             <span class="n">space</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;DEETLY_SPACE&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">553</span> 
+<span class="g g-Whitespace">    </span><span class="mi">554</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
+<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">683</span> 
+
+<span class="ne">KeyError</span>: &#39;DEETLY_SPACE&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./wordcloud"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../process-mining/process_mining_pm4py.html" title="previous page">Process mining with pm4py</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

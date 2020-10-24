@@ -1,0 +1,1129 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphviz example &#8212; deetly documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cytoscape" href="../cytoscape/about.html" />
+    <link rel="prev" title="Graphviz" href="about.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
+   Map from geoJSON (covid data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
+   Altair example NAV dagpenger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Maps 3D
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html">
+   Pydeck example NAV permitteringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#naeringer">
+   Næringer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html">
+   Map types
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_example_norway.html#get-data-from-nav-no">
+   Get data from nav.no
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="about.html">
+   Graphviz
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/graphviz/basic.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/graphviz/basic.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/graphviz/basic.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish">
+   Publish
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="graphviz-example">
+<h1>Graphviz example<a class="headerlink" href="#graphviz-example" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>An example of graph visualization with Graphviz.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">from</span> <span class="nn">graphviz</span> <span class="kn">import</span> <span class="n">Digraph</span><span class="p">,</span> <span class="n">Graph</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># Example graph with graphviz</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Example graph with graphviz&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;deetly&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;example&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;example, graph, graphviz&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing mandatory props(s): [&#39;title&#39;]
+Missing recommended props(s): [&#39;contactPoint&#39;, &#39;distribution&#39;, &#39;publisher&#39;, &#39;spatial&#39;, &#39;temporal&#39;]
+Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39;]
+Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:author&#39;, &#39;String or list of strings:theme&#39;, &#39;String:license&#39;, &#39;String or list of strings:keyword&#39;, &#39;ISO date or datetime:issued&#39;, &#39;ISO date or datetime:modified&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">Digraph</span><span class="p">(</span><span class="s1">&#39;G&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;World&#39;</span><span class="p">)</span>
+<span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">164</span>         <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">startupinfo</span><span class="o">=</span><span class="n">get_startupinfo</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>                                 <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">800</span>                                 <span class="n">restore_signals</span><span class="p">,</span> <span class="n">start_new_session</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>         <span class="k">except</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">_execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1550</span>                             <span class="n">err_msg</span> <span class="o">+=</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="n">err_filename</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1551</span>                     <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">errno_num</span><span class="p">,</span> <span class="n">err_msg</span><span class="p">,</span> <span class="n">err_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1552</span>                 <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">err_msg</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dot&#39;: &#39;dot&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span>                 <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span>             <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span> 
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> 
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> 
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">         if e.errno == errno.ENOENT:</span>
+<span class="ne">--&gt; </span><span class="mi">167</span><span class="s2">             raise ExecutableNotFound(cmd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f80c56a9510&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">graphviz</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;Graphviz Hello World example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">()</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;intr&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;intr&#39;</span><span class="p">,</span> <span class="s1">&#39;runbl&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;runbl&#39;</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;kernel&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;zombie&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">,</span> <span class="s1">&#39;swap&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;swap&#39;</span><span class="p">,</span> <span class="s1">&#39;runswap&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;runswap&#39;</span><span class="p">,</span> <span class="s1">&#39;new&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;runswap&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+
+<span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">164</span>         <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">startupinfo</span><span class="o">=</span><span class="n">get_startupinfo</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>                                 <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">800</span>                                 <span class="n">restore_signals</span><span class="p">,</span> <span class="n">start_new_session</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>         <span class="k">except</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">_execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1550</span>                             <span class="n">err_msg</span> <span class="o">+=</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="n">err_filename</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1551</span>                     <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">errno_num</span><span class="p">,</span> <span class="n">err_msg</span><span class="p">,</span> <span class="n">err_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1552</span>                 <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">err_msg</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dot&#39;: &#39;dot&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span>                 <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span>             <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span> 
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> 
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> 
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">         if e.errno == errno.ENOENT:</span>
+<span class="ne">--&gt; </span><span class="mi">167</span><span class="s2">             raise ExecutableNotFound(cmd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7f80c5625390&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">graphviz</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;Graphviz process example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">Digraph</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">attr</span><span class="p">(</span><span class="n">rankdir</span><span class="o">=</span><span class="s1">&#39;LR&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;8,5&#39;</span><span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">attr</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="s1">&#39;doublecircle&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="s1">&#39;LR_0&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="s1">&#39;LR_3&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="s1">&#39;LR_4&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="s1">&#39;LR_8&#39;</span><span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">attr</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="s1">&#39;circle&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_0&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SS(B)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_0&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SS(S)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_1&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S($end)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_2&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_6&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SS(b)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_2&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SS(a)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_2&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_4&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(A)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_7&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(b)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(a)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_6&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_6&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(b)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_6&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(a)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_7&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_8&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(b)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_7&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(a)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_8&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_6&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(b)&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;LR_8&#39;</span><span class="p">,</span> <span class="s1">&#39;LR_5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;S(a)&#39;</span><span class="p">)</span>
+
+<span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">164</span>         <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">startupinfo</span><span class="o">=</span><span class="n">get_startupinfo</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>                                 <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">800</span>                                 <span class="n">restore_signals</span><span class="p">,</span> <span class="n">start_new_session</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>         <span class="k">except</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">_execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1550</span>                             <span class="n">err_msg</span> <span class="o">+=</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="n">err_filename</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1551</span>                     <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">errno_num</span><span class="p">,</span> <span class="n">err_msg</span><span class="p">,</span> <span class="n">err_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1552</span>                 <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">err_msg</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dot&#39;: &#39;dot&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span>                 <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span>             <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span> 
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> 
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> 
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">         if e.errno == errno.ENOENT:</span>
+<span class="ne">--&gt; </span><span class="mi">167</span><span class="s2">             raise ExecutableNotFound(cmd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f80c5631f90&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">graphviz</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;Graphviz finite state machine example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">Digraph</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">attr</span><span class="p">(</span><span class="n">compound</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">subgraph</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cluster0&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">c</span><span class="p">:</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">edges</span><span class="p">([</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="s1">&#39;ac&#39;</span><span class="p">,</span> <span class="s1">&#39;bd&#39;</span><span class="p">,</span> <span class="s1">&#39;cd&#39;</span><span class="p">])</span>
+
+<span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">subgraph</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cluster1&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">c</span><span class="p">:</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">edges</span><span class="p">([</span><span class="s1">&#39;eg&#39;</span><span class="p">,</span> <span class="s1">&#39;ef&#39;</span><span class="p">])</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="n">lhead</span><span class="o">=</span><span class="s1">&#39;cluster1&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">ltail</span><span class="o">=</span><span class="s1">&#39;cluster0&#39;</span><span class="p">,</span> <span class="n">lhead</span><span class="o">=</span><span class="s1">&#39;cluster1&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="n">ltail</span><span class="o">=</span><span class="s1">&#39;cluster0&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">)</span>
+
+<span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">164</span>         <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">startupinfo</span><span class="o">=</span><span class="n">get_startupinfo</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>                                 <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">800</span>                                 <span class="n">restore_signals</span><span class="p">,</span> <span class="n">start_new_session</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>         <span class="k">except</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">_execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1550</span>                             <span class="n">err_msg</span> <span class="o">+=</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="n">err_filename</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1551</span>                     <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">errno_num</span><span class="p">,</span> <span class="n">err_msg</span><span class="p">,</span> <span class="n">err_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1552</span>                 <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">err_msg</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dot&#39;: &#39;dot&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span>                 <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span>             <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span> 
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> 
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> 
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">         if e.errno == errno.ENOENT:</span>
+<span class="ne">--&gt; </span><span class="mi">167</span><span class="s2">             raise ExecutableNotFound(cmd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f80c56354d0&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">graphviz</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;Graphviz clustered example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edges</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mathbeveridge/asoiaf/master/data/asoiaf-all-edges.csv&quot;</span><span class="p">)</span>
+<span class="n">df_nodes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mathbeveridge/asoiaf/master/data/asoiaf-all-nodes.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_nodes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Addam-Marbrand</td>
+      <td>Addam Marbrand</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_edges</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Source</th>
+      <th>Target</th>
+      <th>Type</th>
+      <th>id</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Addam-Marbrand</td>
+      <td>Brynden-Tully</td>
+      <td>Undirected</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_top_nodes</span> <span class="o">=</span> <span class="n">df_nodes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">node_list</span> <span class="o">=</span> <span class="n">df_top_nodes</span><span class="p">[</span><span class="s2">&quot;Id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_top_edges</span> <span class="o">=</span> <span class="n">df_edges</span><span class="p">[</span><span class="n">df_edges</span><span class="p">[</span><span class="s1">&#39;Source&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">node_list</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">attr</span><span class="p">(</span><span class="n">rankdir</span><span class="o">=</span><span class="s1">&#39;LR&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;8,16&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_top_edges</span><span class="p">)):</span>
+    <span class="n">edge</span> <span class="o">=</span> <span class="n">df_top_edges</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="n">edge</span><span class="p">[</span><span class="s1">&#39;Source&#39;</span><span class="p">],</span> <span class="n">edge</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">164</span>         <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">startupinfo</span><span class="o">=</span><span class="n">get_startupinfo</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, encoding, errors, text)</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>                                 <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">800</span>                                 <span class="n">restore_signals</span><span class="p">,</span> <span class="n">start_new_session</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>         <span class="k">except</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/subprocess.py</span> in <span class="ni">_execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, start_new_session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1550</span>                             <span class="n">err_msg</span> <span class="o">+=</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="nb">repr</span><span class="p">(</span><span class="n">err_filename</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1551</span>                     <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">errno_num</span><span class="p">,</span> <span class="n">err_msg</span><span class="p">,</span> <span class="n">err_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1552</span>                 <span class="k">raise</span> <span class="n">child_exception_type</span><span class="p">(</span><span class="n">err_msg</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dot&#39;: &#39;dot&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">345</span>                 <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">346</span>             <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span> 
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> 
+<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> 
+<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span><span class="s2">         if e.errno == errno.ENOENT:</span>
+<span class="ne">--&gt; </span><span class="mi">167</span><span class="s2">             raise ExecutableNotFound(cmd)</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7f80c4f7ba50&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">graphviz</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;Game of Thrones&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="publish">
+<h2>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">19</span><span class="o">-</span><span class="n">d09182feda94</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/deetly/datapackage.py</span> in <span class="ni">publish</span><span class="nt">(self, space, token)</span>
+<span class="g g-Whitespace">    </span><span class="mi">550</span> 
+<span class="g g-Whitespace">    </span><span class="mi">551</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">552</span>             <span class="n">space</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;DEETLY_SPACE&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">553</span> 
+<span class="g g-Whitespace">    </span><span class="mi">554</span>         <span class="k">if</span> <span class="n">space</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
+<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">683</span> 
+
+<span class="ne">KeyError</span>: &#39;DEETLY_SPACE&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./graphviz"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="about.html" title="previous page">Graphviz</a>
+    <a class='right-next' id="next-link" href="../cytoscape/about.html" title="next page">Cytoscape</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

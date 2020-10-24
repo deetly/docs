@@ -1,51 +1,45 @@
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
-    record_timing=False,
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/client.py", line 1087, in execute
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 1082, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/util.py", line 74, in wrapped
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
     return just_run(coro(*args, **kwargs))
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/util.py", line 53, in just_run
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
     return loop.run_until_complete(coro)
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
     return future.result()
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/client.py", line 541, in async_execute
-    cell, index, execution_count=self.code_cells_executed + 1
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/client.py", line 832, in async_execute_cell
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 535, in async_execute
+    await self.async_execute_cell(
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 827, in async_execute_cell
     self._check_raise_for_error(cell, exec_reply)
-  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/nbclient/client.py", line 740, in _check_raise_for_error
+  File "/Users/B149899/.pyenv/versions/3.8.2/lib/python3.8/site-packages/nbclient/client.py", line 735, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import deetly
-import pandas as pd
-import altair as alt
-import dateutil.parser
-import requests
-import json
-from pyjstat import pyjstat
-
-from datetime import datetime
-import time
-
-import locale
-locale.setlocale(locale.LC_ALL, "no_NO.UTF-8")
+df = pd.read_excel(EXCEL_URL_SYKEFRAVAER,sheet_name='Fylke dag', header=8, encoding="latin-1")
+df.drop(columns=["Unnamed: 0","Unnamed: 15"], axis=1, inplace=True)
+df.rename(columns={"Unnamed: 1": "Time"}, inplace=True)
+df.drop([0, 0],inplace=True)
+df.head(1)
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mError[0m                                     Traceback (most recent call last)
-[0;32m<ipython-input-1-709b747a999d>[0m in [0;36m<module>[0;34m[0m
-[1;32m     11[0m [0;34m[0m[0m
-[1;32m     12[0m [0;32mimport[0m [0mlocale[0m[0;34m[0m[0;34m[0m[0m
-[0;32m---> 13[0;31m [0mlocale[0m[0;34m.[0m[0msetlocale[0m[0;34m([0m[0mlocale[0m[0;34m.[0m[0mLC_ALL[0m[0;34m,[0m [0;34m"no_NO.UTF-8"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;32m/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/locale.py[0m in [0;36msetlocale[0;34m(category, locale)[0m
-[1;32m    606[0m         [0;31m# convert to string[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    607[0m         [0mlocale[0m [0;34m=[0m [0mnormalize[0m[0;34m([0m[0m_build_localename[0m[0;34m([0m[0mlocale[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 608[0;31m     [0;32mreturn[0m [0m_setlocale[0m[0;34m([0m[0mcategory[0m[0;34m,[0m [0mlocale[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    609[0m [0;34m[0m[0m
-[1;32m    610[0m [0;32mdef[0m [0mresetlocale[0m[0;34m([0m[0mcategory[0m[0;34m=[0m[0mLC_ALL[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-12-3bd2e59a8ae2>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mdf[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_excel[0m[0;34m([0m[0mEXCEL_URL_SYKEFRAVAER[0m[0;34m,[0m[0msheet_name[0m[0;34m=[0m[0;34m'Fylke dag'[0m[0;34m,[0m [0mheader[0m[0;34m=[0m[0;36m8[0m[0;34m,[0m [0mencoding[0m[0;34m=[0m[0;34m"latin-1"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mdf[0m[0;34m.[0m[0mdrop[0m[0;34m([0m[0mcolumns[0m[0;34m=[0m[0;34m[[0m[0;34m"Unnamed: 0"[0m[0;34m,[0m[0;34m"Unnamed: 15"[0m[0;34m][0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m,[0m [0minplace[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0mdf[0m[0;34m.[0m[0mrename[0m[0;34m([0m[0mcolumns[0m[0;34m=[0m[0;34m{[0m[0;34m"Unnamed: 1"[0m[0;34m:[0m [0;34m"Time"[0m[0;34m}[0m[0;34m,[0m [0minplace[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0mdf[0m[0;34m.[0m[0mdrop[0m[0;34m([0m[0;34m[[0m[0;36m0[0m[0;34m,[0m [0;36m0[0m[0;34m][0m[0;34m,[0m[0minplace[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mdf[0m[0;34m.[0m[0mhead[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mError[0m: unsupported locale setting
-Error: unsupported locale setting
+[0;32m~/.pyenv/versions/3.8.2/lib/python3.8/site-packages/pandas/util/_decorators.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
+[1;32m    294[0m                 )
+[1;32m    295[0m                 [0mwarnings[0m[0;34m.[0m[0mwarn[0m[0;34m([0m[0mmsg[0m[0;34m,[0m [0mFutureWarning[0m[0;34m,[0m [0mstacklevel[0m[0;34m=[0m[0mstacklevel[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 296[0;31m             [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    297[0m [0;34m[0m[0m
+[1;32m    298[0m         [0;32mreturn[0m [0mwrapper[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mTypeError[0m: read_excel() got an unexpected keyword argument 'encoding'
+TypeError: read_excel() got an unexpected keyword argument 'encoding'
 

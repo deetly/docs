@@ -1,15 +1,17 @@
 Introduction
 ============================
 
-deetly makes it easy to create and share data stories directly from jupyter notebooks
+Deetly is dedicated to making creating and sharing data stories simple
 
-deetly lets you use popular data visualization librararies like Plotly, Vega, DeckGl, Cytoscape or Graphviz in combination with Markdown, tables, images and PDFs 
+Deetly lets you create data stories in notebooks using data visualization librararies like Plotly, Vega, DeckGl, Cytoscape or Graphviz in combination with Markdown, tables, images and PDFs 
 
-## Installation
+### Installation
 
 pip install deetly
 
 
-## Storytelling
+### Inspiration
 
-Ira Glass on storytelling: https://www.youtube.com/watch?v=f6ezU57J8YI
+[The Pudding](https://pudding.cool). A digital publication that explains ideas debated in culture with visual essays
+
+Ira Glass on storytelling: [Youtube](https://www.youtube.com/watch?v=f6ezU57J8YI)

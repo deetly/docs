@@ -477,28 +477,6 @@
 <span class="kn">import</span> <span class="nn">dateutil.parser</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
-
-<span class="kn">import</span> <span class="nn">locale</span>
-<span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s2">&quot;no_NO.UTF-8&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">Error</span><span class="g g-Whitespace">                                     </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">71</span><span class="n">af66525e6e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> 
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">import</span> <span class="nn">locale</span>
-<span class="ne">---&gt; </span><span class="mi">13</span> <span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s2">&quot;no_NO.UTF-8&quot;</span><span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/locale.py</span> in <span class="ni">setlocale</span><span class="nt">(category, locale)</span>
-<span class="g g-Whitespace">    </span><span class="mi">606</span>         <span class="c1"># convert to string</span>
-<span class="g g-Whitespace">    </span><span class="mi">607</span>         <span class="n">locale</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">_build_localename</span><span class="p">(</span><span class="n">locale</span><span class="p">))</span>
-<span class="ne">--&gt; </span><span class="mi">608</span>     <span class="k">return</span> <span class="n">_setlocale</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">locale</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">609</span> 
-<span class="g g-Whitespace">    </span><span class="mi">610</span> <span class="k">def</span> <span class="nf">resetlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_ALL</span><span class="p">):</span>
-
-<span class="ne">Error</span>: unsupported locale setting
 </pre></div>
 </div>
 </div>
@@ -506,6 +484,23 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">dbf28a9c68b6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
+<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">683</span> 
+
+<span class="ne">KeyError</span>: &#39;MAPBOX_TOKEN&#39;
 </pre></div>
 </div>
 </div>
@@ -592,7 +587,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_p</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">EXCEL_URL</span><span class="p">,</span><span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;Kommune. Permitterte&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;latin-1&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_p</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">EXCEL_URL</span><span class="p">,</span><span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;Kommune. Permitterte&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">df_p</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">,</span><span class="s2">&quot;Unnamed: 2&quot;</span><span class="p">,</span><span class="s2">&quot;Unnamed: 7&quot;</span><span class="p">,</span><span class="s2">&quot;Unnamed: 8&quot;</span><span class="p">,</span><span class="s2">&quot;Unnamed: 9&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_p</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Unnamed: 1&quot;</span><span class="p">:</span> <span class="s2">&quot;Kommune&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_p</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -777,7 +772,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
                           <span class="c1">#tooltip=tooltip, </span>
                           <span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span>
                  <span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;fig.html&#39;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;fig.html&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -941,7 +936,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span> <span class="n">tooltip</span><span class="o">=</span><span class="n">tooltip</span><span class="p">,</span> <span class="n">initial_view_state</span><span class="o">=</span><span class="n">view_state</span><span class="p">,</span> <span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;fig.html&#39;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;fig_scatter.html&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -950,11 +945,11 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <iframe
     width="700"
     height="500"
-    src="./fig.html"
+    src="./fig_scatter.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
-</div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/Users/B149899/Projects/deetly/docs/content/pydeck/fig.html&#39;
+</div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;/Users/B149899/Projects/deetly/docs/content/pydeck/fig_scatter.html&#39;
 </pre></div>
 </div>
 </div>
@@ -1028,7 +1023,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
     <span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span>
 <span class="p">)</span>
 
-<span class="n">fig_col</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_col.html&quot;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig_col</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_col.html&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1087,7 +1082,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
     <span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span>
 <span class="p">)</span>
 
-<span class="n">fig_grid</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig_grid</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1160,7 +1155,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
     <span class="n">auto_highlight</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span> <span class="n">initial_view_state</span><span class="o">=</span><span class="n">view</span><span class="p">,</span><span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1234,7 +1229,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
     <span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span>
 <span class="p">)</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig.html&quot;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig.html&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1309,7 +1304,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span> <span class="n">initial_view_state</span><span class="o">=</span><span class="n">view</span><span class="p">,</span><span class="n">mapbox_key</span><span class="o">=</span><span class="n">MAPBOX_TOKEN</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;fig_grid.html&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1460,9 +1455,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/12e6fabacd0f55e21f231105eecafdca 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
+Public datapackage: https://storage.googleapis.com/deetly/examples/12e6fabacd0f55e21f231105eecafdca/datapackage.json 
 
-Metadata: https://storage.googleapis.com/deetly/examples/12e6fabacd0f55e21f231105eecafdca/datapackage.json 
+Published at: https://public.deetly.com/examples/12e6fabacd0f55e21f231105eecafdca 
 </pre></div>
 </div>
 </div>

@@ -483,29 +483,6 @@
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
-
-
-<span class="kn">import</span> <span class="nn">locale</span>
-<span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s2">&quot;no_NO.UTF-8&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">Error</span><span class="g g-Whitespace">                                     </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">4</span><span class="n">eaf02c701ac</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> 
-<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">import</span> <span class="nn">locale</span>
-<span class="ne">---&gt; </span><span class="mi">15</span> <span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s2">&quot;no_NO.UTF-8&quot;</span><span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/locale.py</span> in <span class="ni">setlocale</span><span class="nt">(category, locale)</span>
-<span class="g g-Whitespace">    </span><span class="mi">606</span>         <span class="c1"># convert to string</span>
-<span class="g g-Whitespace">    </span><span class="mi">607</span>         <span class="n">locale</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">_build_localename</span><span class="p">(</span><span class="n">locale</span><span class="p">))</span>
-<span class="ne">--&gt; </span><span class="mi">608</span>     <span class="k">return</span> <span class="n">_setlocale</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">locale</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">609</span> 
-<span class="g g-Whitespace">    </span><span class="mi">610</span> <span class="k">def</span> <span class="nf">resetlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_ALL</span><span class="p">):</span>
-
-<span class="ne">Error</span>: unsupported locale setting
 </pre></div>
 </div>
 </div>
@@ -513,6 +490,23 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">dbf28a9c68b6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
+<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">683</span> 
+
+<span class="ne">KeyError</span>: &#39;MAPBOX_TOKEN&#39;
 </pre></div>
 </div>
 </div>

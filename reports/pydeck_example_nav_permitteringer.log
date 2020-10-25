@@ -17,37 +17,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import deetly
-import pandas as pd
-from getpass import getpass
-import geopandas as gpd
-import pydeck
-import altair as alt
-import dateutil.parser
-import requests
-import json
-import os
-from IPython.display import IFrame
-
-
-import locale
-locale.setlocale(locale.LC_ALL, "no_NO.UTF-8")
+MAPBOX_TOKEN = os.environ['MAPBOX_TOKEN'] 
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mError[0m                                     Traceback (most recent call last)
-[0;32m<ipython-input-1-4eaf02c701ac>[0m in [0;36m<module>[0;34m[0m
-[1;32m     13[0m [0;34m[0m[0m
-[1;32m     14[0m [0;32mimport[0m [0mlocale[0m[0;34m[0m[0;34m[0m[0m
-[0;32m---> 15[0;31m [0mlocale[0m[0;34m.[0m[0msetlocale[0m[0;34m([0m[0mlocale[0m[0;34m.[0m[0mLC_ALL[0m[0;34m,[0m [0;34m"no_NO.UTF-8"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;31mKeyError[0m                                  Traceback (most recent call last)
+[0;32m<ipython-input-2-dbf28a9c68b6>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mMAPBOX_TOKEN[0m [0;34m=[0m [0mos[0m[0;34m.[0m[0menviron[0m[0;34m[[0m[0;34m'MAPBOX_TOKEN'[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
 [0m
-[0;32m/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/locale.py[0m in [0;36msetlocale[0;34m(category, locale)[0m
-[1;32m    606[0m         [0;31m# convert to string[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    607[0m         [0mlocale[0m [0;34m=[0m [0mnormalize[0m[0;34m([0m[0m_build_localename[0m[0;34m([0m[0mlocale[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 608[0;31m     [0;32mreturn[0m [0m_setlocale[0m[0;34m([0m[0mcategory[0m[0;34m,[0m [0mlocale[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    609[0m [0;34m[0m[0m
-[1;32m    610[0m [0;32mdef[0m [0mresetlocale[0m[0;34m([0m[0mcategory[0m[0;34m=[0m[0mLC_ALL[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py[0m in [0;36m__getitem__[0;34m(self, key)[0m
+[1;32m    679[0m         [0;32mexcept[0m [0mKeyError[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    680[0m             [0;31m# raise KeyError with the original key value[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 681[0;31m             [0;32mraise[0m [0mKeyError[0m[0;34m([0m[0mkey[0m[0;34m)[0m [0;32mfrom[0m [0;32mNone[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    682[0m         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mdecodevalue[0m[0;34m([0m[0mvalue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    683[0m [0;34m[0m[0m
 
-[0;31mError[0m: unsupported locale setting
-Error: unsupported locale setting
+[0;31mKeyError[0m: 'MAPBOX_TOKEN'
+KeyError: 'MAPBOX_TOKEN'
 

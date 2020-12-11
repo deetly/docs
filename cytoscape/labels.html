@@ -25,8 +25,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -46,7 +46,7 @@
     <script src="../_static/copybutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -82,22 +82,19 @@
   <h1 class="site-logo" id="site-title">deetly documentation</h1>
   
 </a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
-
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Introduction
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Get started
  </span>
@@ -109,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Bar charts
  </span>
@@ -121,7 +118,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Dashboards
  </span>
@@ -133,7 +130,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Maps
  </span>
@@ -170,7 +167,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Maps 3D
  </span>
@@ -212,7 +209,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Markdown
  </span>
@@ -224,7 +221,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   PDF
  </span>
@@ -236,22 +233,31 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Graphs
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../graphviz/about.html">
    Graphviz
   </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../graphviz/basic.html">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="about.html">
    Cytoscape
   </a>
-  <ul class="current">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="networkx.html">
      Labels
@@ -278,9 +284,11 @@
     </a>
    </li>
   </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Forcegraph
  </span>
@@ -292,7 +300,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Plotly
  </span>
@@ -314,7 +322,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Process mining
  </span>
@@ -326,7 +334,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption collapsible-parent">
  <span class="caption-text">
   Wordcloud
  </span>
@@ -339,9 +347,7 @@
  </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
 
 </div>
 
@@ -366,11 +372,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        <div class="dropdown-buttons-trigger">
+        
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -382,8 +388,8 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
+
         <!-- Source interaction buttons -->
 
 
@@ -624,7 +630,7 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "981588b4ff564c0b8ddd0df2fd726a0c"}
+{"version_major": 2, "version_minor": 0, "model_id": "004c93264e4b421397595ad21917c9a2"}
 </script></div>
 </div>
 <div class="cell docutils container">
@@ -657,7 +663,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/6422900900039b9967df3ce
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"c4fa36576e4746ebb429c7534c50dd33": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": [], "nodes": []}}, "7987560fff224b9dbd36d94ce577a00d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "981588b4ff564c0b8ddd0df2fd726a0c": {"model_name": "CytoscapeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_dom_classes": [], "_interaction_handlers": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "CytoscapeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "CytoscapeView", "auto_ungrabify": false, "auto_unselectify": true, "autolock": false, "box_selection_enabled": false, "cytoscape_layout": {"name": "grid"}, "cytoscape_style": [{"selector": "node[classes]", "style": {"font-family": "helvetica", "font-size": "20px"}}, {"selector": "node[classes]", "style": {"label": "data(label)"}}, {"selector": "node[id = \"1\"]", "style": {"color": "red", "text-valign": "top", "text-halign": "left"}}, {"selector": "node[id = \"2\"]", "style": {"color": "blue", "text-valign": "top", "text-halign": "center"}}, {"selector": "node[id = \"3\"]", "style": {"text-valign": "top", "text-halign": "right"}}, {"selector": "node[id = \"4\"]", "style": {"text-valign": "center", "text-halign": "left"}}, {"selector": "node[id = \"5\"]", "style": {"text-valign": "center", "text-halign": "center"}}, {"selector": "node[id = \"6\"]", "style": {"text-valign": "center", "text-halign": "right"}}, {"selector": "node[id = \"7\"]", "style": {"text-valign": "bottom", "text-halign": "left"}}, {"selector": "node[id = \"8\"]", "style": {"text-valign": "bottom", "text-halign": "center"}}, {"selector": "node[id = \"9\"]", "style": {"text-valign": "bottom", "text-halign": "right"}}, {"selector": "node[id = \"10\"]", "style": {"text-wrap": "wrap"}}, {"selector": "node[id = \"11\"]", "style": {"text-wrap": "wrap", "text-max-width": 80}}, {"selector": "node[id = \"12\"]", "style": {"edge-text-rotation": "autorotate"}}], "desktop_tap_threshold": 4, "graph": "IPY_MODEL_60f07dfbc1854a8bab105ab69f8049ca", "headless": false, "hide_edges_on_viewport": false, "layout": "IPY_MODEL_7987560fff224b9dbd36d94ce577a00d", "max_zoom": 1e+50, "min_zoom": 1e-50, "motion_blur": false, "motion_blur_opacity": 0.2, "panning_enabled": true, "pixel_ratio": "auto", "rendered_position": {"renderedPosition": {"x": 100, "y": 100}}, "selection_type": "single", "style_enabled": true, "texture_on_viewport": false, "tooltip_source": "tooltip", "touch_tap_threshold": 8, "user_panning_enabled": true, "user_zooming_enabled": true, "wheel_sensitivity": 1.0, "zoom": 2.0, "zooming_enabled": true}}, "60f07dfbc1854a8bab105ab69f8049ca": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {"1": {}, "2": {}, "3": {}, "4": {}, "5": {}, "6": {}, "7": {}, "8": {}, "9": {}, "10": {}, "11": {}, "12": {}}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": [], "nodes": ["IPY_MODEL_8450beb01b45416998053c34b63a4f27", "IPY_MODEL_a40e3c2e241d408d96c74ada91457228", "IPY_MODEL_e0c137f744eb4280b18652473bdd7006", "IPY_MODEL_5217097d7d0b47e6b8994124ea13e0c2", "IPY_MODEL_052d6d3a87c04f35b790789864a4a262", "IPY_MODEL_29769c0cc2004fdda59db16359acd30b", "IPY_MODEL_1e3a6d84290e43fbb6de64fcd5a4cf56", "IPY_MODEL_44b5554f54434384a322933d7c69a93c", "IPY_MODEL_fd8c8f3ff38a4048afefe1c751598667", "IPY_MODEL_69286ebbd5fd48029b72a0d22a55054b", "IPY_MODEL_889c3fda4cc44465845bd0d4e0587685", "IPY_MODEL_4e9d00417d2944cfbd5b71e41ed9570d"]}}, "8450beb01b45416998053c34b63a4f27": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "1", "label": "top left", "classes": "top-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "a40e3c2e241d408d96c74ada91457228": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "2", "label": "top center", "classes": "top-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "e0c137f744eb4280b18652473bdd7006": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "3", "label": "top right", "classes": "top-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "5217097d7d0b47e6b8994124ea13e0c2": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "4", "label": "center left", "classes": "center-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "052d6d3a87c04f35b790789864a4a262": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "5", "label": "center center", "classes": "center-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "29769c0cc2004fdda59db16359acd30b": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "6", "label": "center right", "classes": "center-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "1e3a6d84290e43fbb6de64fcd5a4cf56": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "7", "label": "bottom left", "classes": "bottom-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "44b5554f54434384a322933d7c69a93c": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "8", "label": "bottom center", "classes": "bottom-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "fd8c8f3ff38a4048afefe1c751598667": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "9", "label": "bottom right", "classes": "bottom-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "69286ebbd5fd48029b72a0d22a55054b": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "10", "label": "multiline manual\nfoo\nbar\nbaz", "classes": "multiline-manual"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "889c3fda4cc44465845bd0d4e0587685": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "11", "label": "multiline auto foo bar baz", "classes": "multiline-auto"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "4e9d00417d2944cfbd5b71e41ed9570d": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "12", "label": "outline", "classes": "outline"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}}, "version_major": 2, "version_minor": 0}
+{"state": {"3c69f6069c2e47f8acc8d0e7b5c59433": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": [], "nodes": []}}, "275a7a091ce34850b999d5b5dbd9e1ac": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "004c93264e4b421397595ad21917c9a2": {"model_name": "CytoscapeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_dom_classes": [], "_interaction_handlers": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "CytoscapeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "CytoscapeView", "auto_ungrabify": false, "auto_unselectify": true, "autolock": false, "box_selection_enabled": false, "cytoscape_layout": {"name": "grid"}, "cytoscape_style": [{"selector": "node[classes]", "style": {"font-family": "helvetica", "font-size": "20px"}}, {"selector": "node[classes]", "style": {"label": "data(label)"}}, {"selector": "node[id = \"1\"]", "style": {"color": "red", "text-valign": "top", "text-halign": "left"}}, {"selector": "node[id = \"2\"]", "style": {"color": "blue", "text-valign": "top", "text-halign": "center"}}, {"selector": "node[id = \"3\"]", "style": {"text-valign": "top", "text-halign": "right"}}, {"selector": "node[id = \"4\"]", "style": {"text-valign": "center", "text-halign": "left"}}, {"selector": "node[id = \"5\"]", "style": {"text-valign": "center", "text-halign": "center"}}, {"selector": "node[id = \"6\"]", "style": {"text-valign": "center", "text-halign": "right"}}, {"selector": "node[id = \"7\"]", "style": {"text-valign": "bottom", "text-halign": "left"}}, {"selector": "node[id = \"8\"]", "style": {"text-valign": "bottom", "text-halign": "center"}}, {"selector": "node[id = \"9\"]", "style": {"text-valign": "bottom", "text-halign": "right"}}, {"selector": "node[id = \"10\"]", "style": {"text-wrap": "wrap"}}, {"selector": "node[id = \"11\"]", "style": {"text-wrap": "wrap", "text-max-width": 80}}, {"selector": "node[id = \"12\"]", "style": {"edge-text-rotation": "autorotate"}}], "desktop_tap_threshold": 4, "graph": "IPY_MODEL_9de75e5572b047dfa3263807f07dcc83", "headless": false, "hide_edges_on_viewport": false, "layout": "IPY_MODEL_275a7a091ce34850b999d5b5dbd9e1ac", "max_zoom": 1e+50, "min_zoom": 1e-50, "motion_blur": false, "motion_blur_opacity": 0.2, "panning_enabled": true, "pixel_ratio": "auto", "rendered_position": {"renderedPosition": {"x": 100, "y": 100}}, "selection_type": "single", "style_enabled": true, "texture_on_viewport": false, "tooltip_source": "tooltip", "touch_tap_threshold": 8, "user_panning_enabled": true, "user_zooming_enabled": true, "wheel_sensitivity": 1.0, "zoom": 2.0, "zooming_enabled": true}}, "9de75e5572b047dfa3263807f07dcc83": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {"1": {}, "2": {}, "3": {}, "4": {}, "5": {}, "6": {}, "7": {}, "8": {}, "9": {}, "10": {}, "11": {}, "12": {}}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": [], "nodes": ["IPY_MODEL_5f31c68b1b304178bc5465df8588307b", "IPY_MODEL_d076fd098e064a4fa2954794071dbed1", "IPY_MODEL_c9ee888291524024a931be8732411067", "IPY_MODEL_0dadf0d6f27d4c75a5f45ac22210185e", "IPY_MODEL_5c5e9e66af9f41eb8af900a803ca8d96", "IPY_MODEL_6f9b8b1182ca4e14887b3493cfcca3df", "IPY_MODEL_877dd1f6a93e445dbbeb3500b1409905", "IPY_MODEL_3d62b6021a614c0e87a83394b0116140", "IPY_MODEL_5477c0c673b149cd8808faca45168a82", "IPY_MODEL_1c3894e6aba649dfa503973f9fa9648e", "IPY_MODEL_dc4a61ae454a4527bcd8a15188cbd583", "IPY_MODEL_0213c54e5a914e6689a66e1a64207057"]}}, "5f31c68b1b304178bc5465df8588307b": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "1", "label": "top left", "classes": "top-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "d076fd098e064a4fa2954794071dbed1": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "2", "label": "top center", "classes": "top-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "c9ee888291524024a931be8732411067": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "3", "label": "top right", "classes": "top-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "0dadf0d6f27d4c75a5f45ac22210185e": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "4", "label": "center left", "classes": "center-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "5c5e9e66af9f41eb8af900a803ca8d96": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "5", "label": "center center", "classes": "center-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "6f9b8b1182ca4e14887b3493cfcca3df": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "6", "label": "center right", "classes": "center-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "877dd1f6a93e445dbbeb3500b1409905": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "7", "label": "bottom left", "classes": "bottom-left"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "3d62b6021a614c0e87a83394b0116140": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "8", "label": "bottom center", "classes": "bottom-center"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "5477c0c673b149cd8808faca45168a82": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "9", "label": "bottom right", "classes": "bottom-right"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "1c3894e6aba649dfa503973f9fa9648e": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "10", "label": "multiline manual\nfoo\nbar\nbaz", "classes": "multiline-manual"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "dc4a61ae454a4527bcd8a15188cbd583": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "11", "label": "multiline auto foo bar baz", "classes": "multiline-auto"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "0213c54e5a914e6689a66e1a64207057": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "12", "label": "outline", "classes": "outline"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 

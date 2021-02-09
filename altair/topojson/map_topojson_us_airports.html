@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map from topoJSON (US airports) &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,13 +34,12 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -48,7 +47,7 @@
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -59,7 +58,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Map from topoJSON. US Unemployment" href="../../plotly/geojson/map_from_geojson_us_unemployment.html" />
-    <link rel="prev" title="Altair example NAV dagpenger" href="../geojson/map_geojson_nav_dagpenger.html" />
+    <link rel="prev" title="Map from geoJSON (SSB and NAV data)" href="../geojson/map_geojson_basic.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -117,6 +116,21 @@
    Bar and line charts. Covid-19 Humdata
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -141,16 +155,6 @@
    Map from geoJSON (SSB and NAV data)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../geojson/map_geojson_humdata.html">
-   Map from geoJSON (covid data)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../geojson/map_geojson_nav_dagpenger.html">
-   Altair example NAV dagpenger
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Map from topoJSON (US airports)
@@ -169,35 +173,10 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  Maps 3D
+  deck.gl maps
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pydeck/pydeck_example_nav_permitteringer.html">
-   Pydeck example NAV permitteringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pydeck/pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pydeck/pydeck_example_nav_permitteringer.html#naeringer">
-   Næringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pydeck/pydeck_example_norway.html">
-   Map types
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pydeck/pydeck_example_norway.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
@@ -261,11 +240,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../../cytoscape/networkx.html">
      Labels
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../cytoscape/hello-world.html">
-     Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -558,12 +532,12 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-a4d0ad20d22f4e7dbce2861b76a6ee07"></div>
+<div id="altair-viz-55290b9accb14a3ba438ab974b00c892"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a4d0ad20d22f4e7dbce2861b76a6ee07") {
-      outputDiv = document.getElementById("altair-viz-a4d0ad20d22f4e7dbce2861b76a6ee07");
+    if (outputDiv.id !== "altair-viz-55290b9accb14a3ba438ab974b00c892") {
+      outputDiv = document.getElementById("altair-viz-55290b9accb14a3ba438ab974b00c892");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -672,7 +646,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/0d0c0711e7cb8fa32a02b03
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../geojson/map_geojson_nav_dagpenger.html" title="previous page">Altair example NAV dagpenger</a>
+    <a class='left-prev' id="prev-link" href="../geojson/map_geojson_basic.html" title="previous page">Map from geoJSON (SSB and NAV data)</a>
     <a class='right-next' id="next-link" href="../../plotly/geojson/map_from_geojson_us_unemployment.html" title="next page">Map from topoJSON. US Unemployment</a>
 
     </div>
@@ -693,7 +667,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/0d0c0711e7cb8fa32a02b03
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

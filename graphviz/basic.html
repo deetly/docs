@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Graphviz example &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,13 +34,12 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -48,7 +47,7 @@
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -117,6 +116,21 @@
    Bar and line charts. Covid-19 Humdata
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -142,16 +156,6 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
-   Map from geoJSON (covid data)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
-   Altair example NAV dagpenger
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
    Map from topoJSON (US airports)
   </a>
@@ -169,35 +173,10 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  Maps 3D
+  deck.gl maps
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html">
-   Pydeck example NAV permitteringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../pydeck/pydeck_example_nav_permitteringer.html#naeringer">
-   Næringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../pydeck/pydeck_example_norway.html">
-   Map types
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../pydeck/pydeck_example_norway.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
@@ -261,11 +240,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      Labels
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../cytoscape/hello-world.html">
-     Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -531,25 +505,25 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> 
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span> 
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span> 
+<span class="g g-Whitespace">    </span><span class="mi">143</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">144</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> 
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">139</span> 
-<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> 
+<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">return</span> <span class="n">out</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
-<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">248</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span><span class="s2"> </span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
@@ -558,10 +532,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
 
-<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Kdot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7fb950678290&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f2e903be350&gt;
 </pre></div>
 </div>
 </div>
@@ -626,25 +600,25 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> 
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span> 
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span> 
+<span class="g g-Whitespace">    </span><span class="mi">143</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">144</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> 
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">139</span> 
-<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> 
+<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">return</span> <span class="n">out</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
-<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">248</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span><span class="s2"> </span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
@@ -653,10 +627,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
 
-<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Kdot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7fb950678210&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7f2e90339650&gt;
 </pre></div>
 </div>
 </div>
@@ -730,25 +704,25 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> 
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span> 
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span> 
+<span class="g g-Whitespace">    </span><span class="mi">143</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">144</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> 
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">139</span> 
-<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> 
+<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">return</span> <span class="n">out</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
-<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">248</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span><span class="s2"> </span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
@@ -757,10 +731,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
 
-<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Kdot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7fb9505e89d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f2e902ce190&gt;
 </pre></div>
 </div>
 </div>
@@ -824,25 +798,25 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> 
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span> 
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span> 
+<span class="g g-Whitespace">    </span><span class="mi">143</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">144</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> 
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">139</span> 
-<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> 
+<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">return</span> <span class="n">out</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
-<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">248</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span><span class="s2"> </span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
@@ -851,10 +825,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
 
-<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Kdot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7fb9505f5690&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Digraph at 0x7f2e902ceb90&gt;
 </pre></div>
 </div>
 </div>
@@ -1022,25 +996,25 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">347</span>         <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">_repr_svg_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span> 
-<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">113</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span> 
-<span class="g g-Whitespace">    </span><span class="mi">115</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span> 
+<span class="g g-Whitespace">    </span><span class="mi">143</span>     <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">144</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">145</span> 
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/files.py</span> in <span class="ni">pipe</span><span class="nt">(self, format, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">137</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">138</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">139</span> 
-<span class="g g-Whitespace">    </span><span class="mi">140</span>         <span class="k">return</span> <span class="n">out</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="n">out</span> <span class="o">=</span> <span class="n">backend</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>                            <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span> <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>                            <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">172</span> 
+<span class="g g-Whitespace">    </span><span class="mi">173</span>         <span class="k">return</span> <span class="n">out</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">pipe</span><span class="nt">(engine, format, data, renderer, formatter, quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">243</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
-<span class="ne">--&gt; </span><span class="mi">244</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">     return out</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">     cmd, _ = command(engine, format, None, renderer, formatter)</span>
+<span class="ne">--&gt; </span><span class="mi">248</span><span class="s2">     out, _ = run(cmd, input=data, capture_output=True, check=True, quiet=quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="s2">     return out</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span><span class="s2"> </span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/graphviz/backend.py</span> in <span class="ni">run</span><span class="nt">(cmd, input, capture_output, check, encoding, quiet, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">165</span><span class="s2">     except OSError as e:</span>
@@ -1049,10 +1023,10 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 <span class="g g-Whitespace">    </span><span class="mi">168</span><span class="s2">         else:</span>
 <span class="g g-Whitespace">    </span><span class="mi">169</span><span class="s2">             raise</span>
 
-<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
+<span class="ne">ExecutableNotFound</span>: failed to execute [&#39;dot&#39;, &#39;-Kdot&#39;, &#39;-Tsvg&#39;], make sure the Graphviz executables are on your systems&#39; PATH
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7fb95015f410&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.dot.Graph at 0x7f2e900463d0&gt;
 </pre></div>
 </div>
 </div>
@@ -1132,7 +1106,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/e3c843989f77d7661102716
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

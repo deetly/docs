@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pydeck example kommuner &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,13 +34,12 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -48,7 +47,7 @@
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -59,7 +58,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Pydeck example road accidents" href="pydeck_road_accidents.html" />
-    <link rel="prev" title="Map types" href="pydeck_example_norway.html" />
+    <link rel="prev" title="GeoJSON to Choropleth" href="../plotly/geojson/map_geojson_choropleth.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -117,6 +116,21 @@
    Bar and line charts. Covid-19 Humdata
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -142,16 +156,6 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
-   Map from geoJSON (covid data)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
-   Altair example NAV dagpenger
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
    Map from topoJSON (US airports)
   </a>
@@ -169,35 +173,10 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  Maps 3D
+  deck.gl maps
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html">
-   Pydeck example NAV permitteringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html#naeringer">
-   Næringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_norway.html">
-   Map types
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_norway.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Pydeck example kommuner
@@ -261,11 +240,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      Labels
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../cytoscape/hello-world.html">
-     Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -471,23 +445,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">dbf28a9c68b6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
-<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">683</span> 
-
-<span class="ne">KeyError</span>: &#39;MAPBOX_TOKEN&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -585,16 +542,6 @@ Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="700"
-    height="500"
-    src="./fig.html"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -630,16 +577,21 @@ Property not in DCAT schema: [&#39;name&#39;, &#39;author&#39;, &#39;license&#39
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
-Public datapackage: https://storage.googleapis.com/deetly/examples/edd8ecf083f9f66706617c586f7639e0/datapackage.json 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/edd8ecf083f9f66706617c586f7639e0 
 
-Published at: https://public.deetly.com/examples/edd8ecf083f9f66706617c586f7639e0 
+Metadata: https://storage.googleapis.com/deetly/examples/edd8ecf083f9f66706617c586f7639e0/datapackage.json 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"5a7e2ca42f6545ce928a04c2a388963f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f116d0a4f26a49efb9643d7c4acf1699": {"model_name": "JupyterTransportModel", "model_module": "@deck.gl/jupyter-widget", "model_module_version": "~8.2.*", "state": {"_dom_classes": [], "_model_module": "@deck.gl/jupyter-widget", "_model_module_version": "~8.2.*", "_model_name": "JupyterTransportModel", "_view_count": null, "_view_module": "@deck.gl/jupyter-widget", "_view_module_version": "~8.2.*", "_view_name": "JupyterTransportView", "custom_libraries": null, "data_buffer": null, "google_maps_key": null, "height": 500, "js_warning": false, "json_input": "", "layout": "IPY_MODEL_5a7e2ca42f6545ce928a04c2a388963f", "mapbox_key": "pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw", "selected_data": "[]", "tooltip": {"html": "<b>Kommune: </b>{properties.navn}</br>                Fylke: {properties.fylke_navn_2020}</br>                Areal: {properties.area_kommune}", "style": {"color": "black", "backgroundColor": "#efefef", "zIndex": 999}}, "width": "100%"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
 
     <script type="text/x-thebe-config">
     {
@@ -669,7 +621,7 @@ Published at: https://public.deetly.com/examples/edd8ecf083f9f66706617c586f7639e
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="pydeck_example_norway.html" title="previous page">Map types</a>
+    <a class='left-prev' id="prev-link" href="../plotly/geojson/map_geojson_choropleth.html" title="previous page">GeoJSON to Choropleth</a>
     <a class='right-next' id="next-link" href="pydeck_road_accidents.html" title="next page">Pydeck example road accidents</a>
 
     </div>
@@ -690,7 +642,7 @@ Published at: https://public.deetly.com/examples/edd8ecf083f9f66706617c586f7639e
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map types &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,13 +34,12 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -48,7 +47,7 @@
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -58,8 +57,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Pydeck example kommuner" href="pydeck_kommuner.html" />
-    <link rel="prev" title="Pydeck example NAV permitteringer" href="pydeck_example_nav_permitteringer.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -117,6 +114,21 @@
    Bar and line charts. Covid-19 Humdata
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -142,16 +154,6 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_humdata.html">
-   Map from geoJSON (covid data)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../altair/geojson/map_geojson_nav_dagpenger.html">
-   Altair example NAV dagpenger
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
    Map from topoJSON (US airports)
   </a>
@@ -169,35 +171,10 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  Maps 3D
+  deck.gl maps
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html">
-   Pydeck example NAV permitteringer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="pydeck_example_nav_permitteringer.html#naeringer">
-   Næringer
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Map types
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#get-data-from-nav-no">
-   Get data from nav.no
-  </a>
- </li>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="pydeck_kommuner.html">
    Pydeck example kommuner
@@ -261,11 +238,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      Labels
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../cytoscape/hello-world.html">
-     Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -519,23 +491,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">dbf28a9c68b6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/os.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">679</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">680</span>             <span class="c1"># raise KeyError with the original key value</span>
-<span class="ne">--&gt; </span><span class="mi">681</span>             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decodevalue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">683</span> 
-
-<span class="ne">KeyError</span>: &#39;MAPBOX_TOKEN&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -605,14 +560,90 @@ Invalid type: [&#39;String:name&#39;, &#39;String:description&#39;, &#39;String:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Dato&#39;,
- &#39;Uke&#39;,
- &#39;Fylke. Ordinære&#39;,
- &#39;Fylke. Permitterte&#39;,
- &#39;Kommune. Permitterte&#39;,
- &#39;Bydel. Permitterte&#39;,
- &#39;År&#39;,
- &#39;Om statistikken&#39;]
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">HTTPError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">e2ffe03fcc79</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">xl_sykefravaer</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="n">EXCEL_URL</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">xl_sykefravaer</span><span class="o">.</span><span class="n">sheet_names</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/pandas/io/excel/_base.py</span> in <span class="ni">__init__</span><span class="nt">(self, path_or_buffer, engine, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1061</span>             <span class="c1"># path_or_buffer is path-like, use stringified path</span>
+<span class="g g-Whitespace">   </span><span class="mi">1062</span>             <span class="n">ext</span> <span class="o">=</span> <span class="n">inspect_excel_format</span><span class="p">(</span>
+<span class="ne">-&gt; </span><span class="mi">1063</span>                 <span class="n">path</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_io</span><span class="p">),</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span>
+<span class="g g-Whitespace">   </span><span class="mi">1064</span>             <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1065</span> 
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/pandas/io/excel/_base.py</span> in <span class="ni">inspect_excel_format</span><span class="nt">(path, content, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">937</span> 
+<span class="g g-Whitespace">    </span><span class="mi">938</span>     <span class="k">with</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">939</span>         <span class="n">content_or_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span> <span class="n">is_text</span><span class="o">=</span><span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">940</span>     <span class="p">)</span> <span class="k">as</span> <span class="n">handle</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">941</span>         <span class="n">stream</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">561</span>         <span class="n">compression</span><span class="o">=</span><span class="n">compression</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">562</span>         <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">563</span>         <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">564</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">565</span> 
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">_get_filepath_or_buffer</span><span class="nt">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">286</span>                 <span class="s2">&quot;storage_options passed with file object or non-fsspec file path&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span>             <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">288</span>         <span class="n">req</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">289</span>         <span class="n">content_encoding</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Content-Encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span>         <span class="k">if</span> <span class="n">content_encoding</span> <span class="o">==</span> <span class="s2">&quot;gzip&quot;</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">urlopen</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">192</span>     <span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="g g-Whitespace">    </span><span class="mi">193</span> 
+<span class="ne">--&gt; </span><span class="mi">194</span>     <span class="k">return</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">195</span> 
+<span class="g g-Whitespace">    </span><span class="mi">196</span> 
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">220</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="n">opener</span> <span class="o">=</span> <span class="n">_opener</span>
+<span class="ne">--&gt; </span><span class="mi">222</span>     <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span> 
+<span class="g g-Whitespace">    </span><span class="mi">224</span> <span class="k">def</span> <span class="nf">install_opener</span><span class="p">(</span><span class="n">opener</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">529</span>         <span class="k">for</span> <span class="n">processor</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_response</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span> <span class="p">[]):</span>
+<span class="g g-Whitespace">    </span><span class="mi">530</span>             <span class="n">meth</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">processor</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">531</span>             <span class="n">response</span> <span class="o">=</span> <span class="n">meth</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">532</span> 
+<span class="g g-Whitespace">    </span><span class="mi">533</span>         <span class="k">return</span> <span class="n">response</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">http_response</span><span class="nt">(self, request, response)</span>
+<span class="g g-Whitespace">    </span><span class="mi">639</span>         <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="mi">200</span> <span class="o">&lt;=</span> <span class="n">code</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">640</span>             <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">641</span>                 <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">hdrs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">642</span> 
+<span class="g g-Whitespace">    </span><span class="mi">643</span>         <span class="k">return</span> <span class="n">response</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">error</span><span class="nt">(self, proto, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">567</span>         <span class="k">if</span> <span class="n">http_err</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">568</span>             <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="s1">&#39;http_error_default&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">orig_args</span>
+<span class="ne">--&gt; </span><span class="mi">569</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_chain</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">570</span> 
+<span class="g g-Whitespace">    </span><span class="mi">571</span> <span class="c1"># XXX probably also want an abstract factory that knows when it makes</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">501</span>         <span class="k">for</span> <span class="n">handler</span> <span class="ow">in</span> <span class="n">handlers</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">502</span>             <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">503</span>             <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">504</span>             <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">505</span>                 <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/urllib/request.py</span> in <span class="ni">http_error_default</span><span class="nt">(self, req, fp, code, msg, hdrs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">647</span> <span class="k">class</span> <span class="nc">HTTPDefaultErrorHandler</span><span class="p">(</span><span class="n">BaseHandler</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">648</span>     <span class="k">def</span> <span class="nf">http_error_default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">hdrs</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">649</span>         <span class="k">raise</span> <span class="n">HTTPError</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">full_url</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">hdrs</span><span class="p">,</span> <span class="n">fp</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">650</span> 
+<span class="g g-Whitespace">    </span><span class="mi">651</span> <span class="k">class</span> <span class="nc">HTTPRedirectHandler</span><span class="p">(</span><span class="n">BaseHandler</span><span class="p">):</span>
+
+<span class="ne">HTTPError</span>: HTTP Error 404: Not Found
 </pre></div>
 </div>
 </div>
@@ -1526,8 +1557,6 @@ Published at: https://public.deetly.com/examples/12e6fabacd0f55e21f231105eecafdc
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="pydeck_example_nav_permitteringer.html" title="previous page">Pydeck example NAV permitteringer</a>
-    <a class='right-next' id="next-link" href="pydeck_kommuner.html" title="next page">Pydeck example kommuner</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -1547,7 +1576,7 @@ Published at: https://public.deetly.com/examples/12e6fabacd0f55e21f231105eecafdc
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

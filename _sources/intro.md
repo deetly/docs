@@ -1,9 +1,7 @@
 Introduction
 ============================
 
-Deetly is dedicated to making creating and sharing data stories simple
-
-Deetly lets you create data stories in notebooks using data visualization librararies like Plotly, Vega, DeckGl, Cytoscape or Graphviz in combination with Markdown, tables, images and PDFs 
+Deetly lets you create and publish data stories and dashboard directly from a Python script or a notebook. You can using data visualization frameworks Plotly, Altair, Vega, DeckGl, Cytoscape or Graphviz in combination with markdown, tables, images, html and PDFs. 
 
 ## Installation
 

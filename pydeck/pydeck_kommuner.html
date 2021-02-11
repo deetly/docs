@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Pydeck example road accidents" href="pydeck_road_accidents.html" />
-    <link rel="prev" title="Scatterplot subway stations" href="pydeck_scatterplot_subway_stations.html" />
+    <link rel="prev" title="Heatmap cattle" href="pydeck_heatmap_cattle.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -206,6 +206,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pydeck_scatterplot_subway_stations.html">
    Scatterplot subway stations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_heatmap_cattle.html">
+   Heatmap cattle
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -686,7 +691,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/edd8ecf083f9f66706617c5
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"f3ffa5325b18412d837883292132fbd5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "00c462641a274b52b3138a346d2a44ba": {"model_name": "JupyterTransportModel", "model_module": "@deck.gl/jupyter-widget", "model_module_version": "~8.2.*", "state": {"_dom_classes": [], "_model_module": "@deck.gl/jupyter-widget", "_model_module_version": "~8.2.*", "_model_name": "JupyterTransportModel", "_view_count": null, "_view_module": "@deck.gl/jupyter-widget", "_view_module_version": "~8.2.*", "_view_name": "JupyterTransportView", "custom_libraries": null, "data_buffer": null, "google_maps_key": null, "height": 500, "js_warning": false, "json_input": "", "layout": "IPY_MODEL_f3ffa5325b18412d837883292132fbd5", "mapbox_key": "pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw", "selected_data": "[]", "tooltip": {"html": "<b>Kommune: </b>{properties.navn}</br>                Fylke: {properties.fylke_navn_2020}</br>                Areal: {properties.area_kommune}", "style": {"color": "black", "backgroundColor": "#efefef", "zIndex": 999}}, "width": "100%"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"cb805c4d1dbe4ba89c22e23da399485c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "430204b3af6c48e8bdeee24dda4d9e11": {"model_name": "JupyterTransportModel", "model_module": "@deck.gl/jupyter-widget", "model_module_version": "~8.2.*", "state": {"_dom_classes": [], "_model_module": "@deck.gl/jupyter-widget", "_model_module_version": "~8.2.*", "_model_name": "JupyterTransportModel", "_view_count": null, "_view_module": "@deck.gl/jupyter-widget", "_view_module_version": "~8.2.*", "_view_name": "JupyterTransportView", "custom_libraries": null, "data_buffer": null, "google_maps_key": null, "height": 500, "js_warning": false, "json_input": "", "layout": "IPY_MODEL_cb805c4d1dbe4ba89c22e23da399485c", "mapbox_key": "pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw", "selected_data": "[]", "tooltip": {"html": "<b>Kommune: </b>{properties.navn}</br>                Fylke: {properties.fylke_navn_2020}</br>                Areal: {properties.area_kommune}", "style": {"color": "black", "backgroundColor": "#efefef", "zIndex": 999}}, "width": "100%"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
@@ -718,7 +723,7 @@ Metadata: https://storage.googleapis.com/deetly/examples/edd8ecf083f9f66706617c5
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="pydeck_scatterplot_subway_stations.html" title="previous page">Scatterplot subway stations</a>
+    <a class='left-prev' id="prev-link" href="pydeck_heatmap_cattle.html" title="previous page">Heatmap cattle</a>
     <a class='right-next' id="next-link" href="pydeck_road_accidents.html" title="next page">Pydeck example road accidents</a>
 
     </div>

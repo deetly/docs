@@ -1,0 +1,3246 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar 3D &#8212; deetly documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Line chart" href="linechart.html" />
+    <link rel="prev" title="Bar chart" href="barchart.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Charts
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="barchart.html">
+   Bar chart
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Bar 3D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="linechart.html">
+   Line chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="boxplot.html">
+   Boxplot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="matrix.html">
+   Custom chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="effect_scatter.html">
+   Effect Scatter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funnel.html">
+   Funnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gauge.html">
+   Gauge
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="graph.html">
+   Graph
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="grid.html">
+   Grid chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="heatmap.html">
+   Heatmap
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calendar.html">
+   Calendar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sankey.html">
+   Sankey chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="geo_forbidden_city.html">
+   Register Url
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_flight.html">
+   Geoline sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_norway.html">
+   Geo Norway
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_world_population.html">
+   Geo world population
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Pydeck Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_scatterplot_subway_stations.html">
+   Scatterplot subway stations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Altair Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Plotly Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../graphviz/basic.html">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/networkx.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/text-on-nodes.html">
+     Text on nodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/labels.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/echarts/bar3D.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/echarts/bar3D.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/echarts/bar3D.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="bar-3d">
+<h1>Bar 3D<a class="headerlink" href="#bar-3d" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Sample bar 3D charts</p>
+</div></blockquote>
+<p>Source: pyecharts test</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Bar3D</span>
+<span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
+<span class="kn">from</span> <span class="nn">pyecharts.globals</span> <span class="kn">import</span> <span class="n">ChartType</span>
+<span class="kn">from</span> <span class="nn">pyecharts.faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;EChart Bar3D examples&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;deetly&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;3D bar&quot;</span><span class="p">,</span><span class="s2">&quot;barchart&quot;</span><span class="p">,</span><span class="s2">&quot;chart&quot;</span><span class="p">,</span><span class="s2">&quot;examples&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)]</span>
+<span class="n">g</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">Bar3D</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="p">[[</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data</span><span class="p">],</span>
+        <span class="n">xaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">clock</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">yaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">week_en</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">zaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">visualmap_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">VisualMapOpts</span><span class="p">(</span><span class="n">max_</span><span class="o">=</span><span class="mi">20</span><span class="p">))</span>
+<span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min', 'echarts-gl':'https://assets.pyecharts.org/assets/echarts-gl.min'
+        }
+    });
+</script>
+
+        <div id="82b31bb36e4d418b8f9322aa01e3dcb9" style="width:900px; height:500px;"></div>
+
+<script>
+        require(['echarts', 'echarts-gl'], function(echarts) {
+                var chart_82b31bb36e4d418b8f9322aa01e3dcb9 = echarts.init(
+                    document.getElementById('82b31bb36e4d418b8f9322aa01e3dcb9'), 'white', {renderer: 'canvas'});
+                var option_82b31bb36e4d418b8f9322aa01e3dcb9 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar3D",
+            "data": [
+                [
+                    0,
+                    0,
+                    9
+                ],
+                [
+                    1,
+                    0,
+                    11
+                ],
+                [
+                    2,
+                    0,
+                    2
+                ],
+                [
+                    3,
+                    0,
+                    6
+                ],
+                [
+                    4,
+                    0,
+                    4
+                ],
+                [
+                    5,
+                    0,
+                    3
+                ],
+                [
+                    6,
+                    0,
+                    10
+                ],
+                [
+                    7,
+                    0,
+                    7
+                ],
+                [
+                    8,
+                    0,
+                    5
+                ],
+                [
+                    9,
+                    0,
+                    5
+                ],
+                [
+                    10,
+                    0,
+                    10
+                ],
+                [
+                    11,
+                    0,
+                    9
+                ],
+                [
+                    12,
+                    0,
+                    8
+                ],
+                [
+                    13,
+                    0,
+                    3
+                ],
+                [
+                    14,
+                    0,
+                    6
+                ],
+                [
+                    15,
+                    0,
+                    11
+                ],
+                [
+                    16,
+                    0,
+                    4
+                ],
+                [
+                    17,
+                    0,
+                    1
+                ],
+                [
+                    18,
+                    0,
+                    11
+                ],
+                [
+                    19,
+                    0,
+                    8
+                ],
+                [
+                    20,
+                    0,
+                    7
+                ],
+                [
+                    21,
+                    0,
+                    3
+                ],
+                [
+                    22,
+                    0,
+                    1
+                ],
+                [
+                    23,
+                    0,
+                    4
+                ],
+                [
+                    0,
+                    1,
+                    7
+                ],
+                [
+                    1,
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    1,
+                    8
+                ],
+                [
+                    3,
+                    1,
+                    3
+                ],
+                [
+                    4,
+                    1,
+                    9
+                ],
+                [
+                    5,
+                    1,
+                    0
+                ],
+                [
+                    6,
+                    1,
+                    11
+                ],
+                [
+                    7,
+                    1,
+                    8
+                ],
+                [
+                    8,
+                    1,
+                    4
+                ],
+                [
+                    9,
+                    1,
+                    10
+                ],
+                [
+                    10,
+                    1,
+                    1
+                ],
+                [
+                    11,
+                    1,
+                    3
+                ],
+                [
+                    12,
+                    1,
+                    6
+                ],
+                [
+                    13,
+                    1,
+                    10
+                ],
+                [
+                    14,
+                    1,
+                    3
+                ],
+                [
+                    15,
+                    1,
+                    10
+                ],
+                [
+                    16,
+                    1,
+                    9
+                ],
+                [
+                    17,
+                    1,
+                    11
+                ],
+                [
+                    18,
+                    1,
+                    2
+                ],
+                [
+                    19,
+                    1,
+                    0
+                ],
+                [
+                    20,
+                    1,
+                    4
+                ],
+                [
+                    21,
+                    1,
+                    7
+                ],
+                [
+                    22,
+                    1,
+                    5
+                ],
+                [
+                    23,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    2,
+                    12
+                ],
+                [
+                    1,
+                    2,
+                    8
+                ],
+                [
+                    2,
+                    2,
+                    0
+                ],
+                [
+                    3,
+                    2,
+                    3
+                ],
+                [
+                    4,
+                    2,
+                    2
+                ],
+                [
+                    5,
+                    2,
+                    9
+                ],
+                [
+                    6,
+                    2,
+                    0
+                ],
+                [
+                    7,
+                    2,
+                    10
+                ],
+                [
+                    8,
+                    2,
+                    3
+                ],
+                [
+                    9,
+                    2,
+                    9
+                ],
+                [
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    11,
+                    2,
+                    4
+                ],
+                [
+                    12,
+                    2,
+                    6
+                ],
+                [
+                    13,
+                    2,
+                    2
+                ],
+                [
+                    14,
+                    2,
+                    5
+                ],
+                [
+                    15,
+                    2,
+                    6
+                ],
+                [
+                    16,
+                    2,
+                    7
+                ],
+                [
+                    17,
+                    2,
+                    11
+                ],
+                [
+                    18,
+                    2,
+                    7
+                ],
+                [
+                    19,
+                    2,
+                    9
+                ],
+                [
+                    20,
+                    2,
+                    6
+                ],
+                [
+                    21,
+                    2,
+                    5
+                ],
+                [
+                    22,
+                    2,
+                    9
+                ],
+                [
+                    23,
+                    2,
+                    7
+                ],
+                [
+                    0,
+                    3,
+                    1
+                ],
+                [
+                    1,
+                    3,
+                    8
+                ],
+                [
+                    2,
+                    3,
+                    11
+                ],
+                [
+                    3,
+                    3,
+                    11
+                ],
+                [
+                    4,
+                    3,
+                    0
+                ],
+                [
+                    5,
+                    3,
+                    11
+                ],
+                [
+                    6,
+                    3,
+                    9
+                ],
+                [
+                    7,
+                    3,
+                    9
+                ],
+                [
+                    8,
+                    3,
+                    0
+                ],
+                [
+                    9,
+                    3,
+                    12
+                ],
+                [
+                    10,
+                    3,
+                    5
+                ],
+                [
+                    11,
+                    3,
+                    5
+                ],
+                [
+                    12,
+                    3,
+                    5
+                ],
+                [
+                    13,
+                    3,
+                    1
+                ],
+                [
+                    14,
+                    3,
+                    11
+                ],
+                [
+                    15,
+                    3,
+                    1
+                ],
+                [
+                    16,
+                    3,
+                    12
+                ],
+                [
+                    17,
+                    3,
+                    10
+                ],
+                [
+                    18,
+                    3,
+                    7
+                ],
+                [
+                    19,
+                    3,
+                    1
+                ],
+                [
+                    20,
+                    3,
+                    6
+                ],
+                [
+                    21,
+                    3,
+                    2
+                ],
+                [
+                    22,
+                    3,
+                    5
+                ],
+                [
+                    23,
+                    3,
+                    5
+                ],
+                [
+                    0,
+                    4,
+                    9
+                ],
+                [
+                    1,
+                    4,
+                    2
+                ],
+                [
+                    2,
+                    4,
+                    10
+                ],
+                [
+                    3,
+                    4,
+                    11
+                ],
+                [
+                    4,
+                    4,
+                    12
+                ],
+                [
+                    5,
+                    4,
+                    12
+                ],
+                [
+                    6,
+                    4,
+                    6
+                ],
+                [
+                    7,
+                    4,
+                    12
+                ],
+                [
+                    8,
+                    4,
+                    0
+                ],
+                [
+                    9,
+                    4,
+                    7
+                ],
+                [
+                    10,
+                    4,
+                    1
+                ],
+                [
+                    11,
+                    4,
+                    5
+                ],
+                [
+                    12,
+                    4,
+                    10
+                ],
+                [
+                    13,
+                    4,
+                    7
+                ],
+                [
+                    14,
+                    4,
+                    12
+                ],
+                [
+                    15,
+                    4,
+                    6
+                ],
+                [
+                    16,
+                    4,
+                    0
+                ],
+                [
+                    17,
+                    4,
+                    0
+                ],
+                [
+                    18,
+                    4,
+                    6
+                ],
+                [
+                    19,
+                    4,
+                    8
+                ],
+                [
+                    20,
+                    4,
+                    10
+                ],
+                [
+                    21,
+                    4,
+                    0
+                ],
+                [
+                    22,
+                    4,
+                    4
+                ],
+                [
+                    23,
+                    4,
+                    12
+                ],
+                [
+                    0,
+                    5,
+                    11
+                ],
+                [
+                    1,
+                    5,
+                    2
+                ],
+                [
+                    2,
+                    5,
+                    10
+                ],
+                [
+                    3,
+                    5,
+                    2
+                ],
+                [
+                    4,
+                    5,
+                    1
+                ],
+                [
+                    5,
+                    5,
+                    4
+                ],
+                [
+                    6,
+                    5,
+                    9
+                ],
+                [
+                    7,
+                    5,
+                    10
+                ],
+                [
+                    8,
+                    5,
+                    12
+                ],
+                [
+                    9,
+                    5,
+                    9
+                ],
+                [
+                    10,
+                    5,
+                    6
+                ],
+                [
+                    11,
+                    5,
+                    8
+                ],
+                [
+                    12,
+                    5,
+                    4
+                ],
+                [
+                    13,
+                    5,
+                    1
+                ],
+                [
+                    14,
+                    5,
+                    12
+                ],
+                [
+                    15,
+                    5,
+                    12
+                ],
+                [
+                    16,
+                    5,
+                    4
+                ],
+                [
+                    17,
+                    5,
+                    5
+                ],
+                [
+                    18,
+                    5,
+                    12
+                ],
+                [
+                    19,
+                    5,
+                    0
+                ],
+                [
+                    20,
+                    5,
+                    9
+                ],
+                [
+                    21,
+                    5,
+                    6
+                ],
+                [
+                    22,
+                    5,
+                    1
+                ],
+                [
+                    23,
+                    5,
+                    5
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 20,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "xAxis3D": {
+        "data": [
+            "12a",
+            "1a",
+            "2a",
+            "3a",
+            "4a",
+            "5a",
+            "6a",
+            "7a",
+            "8a",
+            "9a",
+            "10a",
+            "11a",
+            "12p",
+            "1p",
+            "2p",
+            "3p",
+            "4p",
+            "5p",
+            "6p",
+            "7p",
+            "8p",
+            "9p",
+            "10p",
+            "11p"
+        ],
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "yAxis3D": {
+        "data": [
+            "Saturday",
+            "Friday",
+            "Thursday",
+            "Wednesday",
+            "Tuesday",
+            "Monday",
+            "Sunday"
+        ],
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "zAxis3D": {
+        "nameGap": 20,
+        "type": "value",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "grid3D": {
+        "boxWidth": 200,
+        "boxHeight": 100,
+        "boxDepth": 80,
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1
+        }
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+                chart_82b31bb36e4d418b8f9322aa01e3dcb9.setOption(option_82b31bb36e4d418b8f9322aa01e3dcb9);
+        });
+    </script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">echart</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s2">&quot;3D Bars sample&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data1</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)]</span>
+<span class="n">data2</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)]</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">Bar3D</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="p">[[</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data1</span><span class="p">],</span>
+        <span class="n">xaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">clock</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">yaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">week_en</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">zaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">add</span><span class="p">(</span>
+        <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="p">[[</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data2</span><span class="p">],</span>
+        <span class="n">xaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">clock</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">yaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">Faker</span><span class="o">.</span><span class="n">week_en</span><span class="p">,</span> <span class="n">type_</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
+        <span class="n">zaxis3d_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">Axis3DOpts</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">visualmap_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">VisualMapOpts</span><span class="p">(</span><span class="n">max_</span><span class="o">=</span><span class="mi">20</span><span class="p">))</span>
+    <span class="o">.</span><span class="n">set_series_opts</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">&quot;stack&quot;</span><span class="p">:</span> <span class="s2">&quot;stack&quot;</span><span class="p">})</span>
+<span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min', 'echarts-gl':'https://assets.pyecharts.org/assets/echarts-gl.min'
+        }
+    });
+</script>
+
+        <div id="dce37977f9d74db786e17795644b2e54" style="width:900px; height:500px;"></div>
+
+<script>
+        require(['echarts', 'echarts-gl'], function(echarts) {
+                var chart_dce37977f9d74db786e17795644b2e54 = echarts.init(
+                    document.getElementById('dce37977f9d74db786e17795644b2e54'), 'white', {renderer: 'canvas'});
+                var option_dce37977f9d74db786e17795644b2e54 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar3D",
+            "name": "1",
+            "data": [
+                [
+                    0,
+                    0,
+                    8
+                ],
+                [
+                    1,
+                    0,
+                    11
+                ],
+                [
+                    2,
+                    0,
+                    1
+                ],
+                [
+                    3,
+                    0,
+                    10
+                ],
+                [
+                    4,
+                    0,
+                    4
+                ],
+                [
+                    5,
+                    0,
+                    6
+                ],
+                [
+                    6,
+                    0,
+                    1
+                ],
+                [
+                    7,
+                    0,
+                    0
+                ],
+                [
+                    8,
+                    0,
+                    6
+                ],
+                [
+                    9,
+                    0,
+                    4
+                ],
+                [
+                    10,
+                    0,
+                    12
+                ],
+                [
+                    11,
+                    0,
+                    9
+                ],
+                [
+                    12,
+                    0,
+                    4
+                ],
+                [
+                    13,
+                    0,
+                    5
+                ],
+                [
+                    14,
+                    0,
+                    3
+                ],
+                [
+                    15,
+                    0,
+                    6
+                ],
+                [
+                    16,
+                    0,
+                    2
+                ],
+                [
+                    17,
+                    0,
+                    11
+                ],
+                [
+                    18,
+                    0,
+                    8
+                ],
+                [
+                    19,
+                    0,
+                    3
+                ],
+                [
+                    20,
+                    0,
+                    2
+                ],
+                [
+                    21,
+                    0,
+                    4
+                ],
+                [
+                    22,
+                    0,
+                    7
+                ],
+                [
+                    23,
+                    0,
+                    3
+                ],
+                [
+                    0,
+                    1,
+                    4
+                ],
+                [
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    1,
+                    4
+                ],
+                [
+                    3,
+                    1,
+                    9
+                ],
+                [
+                    4,
+                    1,
+                    10
+                ],
+                [
+                    5,
+                    1,
+                    1
+                ],
+                [
+                    6,
+                    1,
+                    0
+                ],
+                [
+                    7,
+                    1,
+                    0
+                ],
+                [
+                    8,
+                    1,
+                    9
+                ],
+                [
+                    9,
+                    1,
+                    12
+                ],
+                [
+                    10,
+                    1,
+                    1
+                ],
+                [
+                    11,
+                    1,
+                    6
+                ],
+                [
+                    12,
+                    1,
+                    2
+                ],
+                [
+                    13,
+                    1,
+                    11
+                ],
+                [
+                    14,
+                    1,
+                    6
+                ],
+                [
+                    15,
+                    1,
+                    5
+                ],
+                [
+                    16,
+                    1,
+                    5
+                ],
+                [
+                    17,
+                    1,
+                    10
+                ],
+                [
+                    18,
+                    1,
+                    6
+                ],
+                [
+                    19,
+                    1,
+                    7
+                ],
+                [
+                    20,
+                    1,
+                    0
+                ],
+                [
+                    21,
+                    1,
+                    4
+                ],
+                [
+                    22,
+                    1,
+                    10
+                ],
+                [
+                    23,
+                    1,
+                    9
+                ],
+                [
+                    0,
+                    2,
+                    4
+                ],
+                [
+                    1,
+                    2,
+                    12
+                ],
+                [
+                    2,
+                    2,
+                    10
+                ],
+                [
+                    3,
+                    2,
+                    1
+                ],
+                [
+                    4,
+                    2,
+                    9
+                ],
+                [
+                    5,
+                    2,
+                    5
+                ],
+                [
+                    6,
+                    2,
+                    0
+                ],
+                [
+                    7,
+                    2,
+                    4
+                ],
+                [
+                    8,
+                    2,
+                    0
+                ],
+                [
+                    9,
+                    2,
+                    0
+                ],
+                [
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    11,
+                    2,
+                    2
+                ],
+                [
+                    12,
+                    2,
+                    9
+                ],
+                [
+                    13,
+                    2,
+                    0
+                ],
+                [
+                    14,
+                    2,
+                    9
+                ],
+                [
+                    15,
+                    2,
+                    12
+                ],
+                [
+                    16,
+                    2,
+                    6
+                ],
+                [
+                    17,
+                    2,
+                    6
+                ],
+                [
+                    18,
+                    2,
+                    11
+                ],
+                [
+                    19,
+                    2,
+                    9
+                ],
+                [
+                    20,
+                    2,
+                    12
+                ],
+                [
+                    21,
+                    2,
+                    5
+                ],
+                [
+                    22,
+                    2,
+                    3
+                ],
+                [
+                    23,
+                    2,
+                    9
+                ],
+                [
+                    0,
+                    3,
+                    2
+                ],
+                [
+                    1,
+                    3,
+                    11
+                ],
+                [
+                    2,
+                    3,
+                    11
+                ],
+                [
+                    3,
+                    3,
+                    6
+                ],
+                [
+                    4,
+                    3,
+                    0
+                ],
+                [
+                    5,
+                    3,
+                    11
+                ],
+                [
+                    6,
+                    3,
+                    8
+                ],
+                [
+                    7,
+                    3,
+                    1
+                ],
+                [
+                    8,
+                    3,
+                    1
+                ],
+                [
+                    9,
+                    3,
+                    9
+                ],
+                [
+                    10,
+                    3,
+                    0
+                ],
+                [
+                    11,
+                    3,
+                    10
+                ],
+                [
+                    12,
+                    3,
+                    4
+                ],
+                [
+                    13,
+                    3,
+                    12
+                ],
+                [
+                    14,
+                    3,
+                    8
+                ],
+                [
+                    15,
+                    3,
+                    0
+                ],
+                [
+                    16,
+                    3,
+                    6
+                ],
+                [
+                    17,
+                    3,
+                    7
+                ],
+                [
+                    18,
+                    3,
+                    0
+                ],
+                [
+                    19,
+                    3,
+                    0
+                ],
+                [
+                    20,
+                    3,
+                    1
+                ],
+                [
+                    21,
+                    3,
+                    6
+                ],
+                [
+                    22,
+                    3,
+                    7
+                ],
+                [
+                    23,
+                    3,
+                    3
+                ],
+                [
+                    0,
+                    4,
+                    1
+                ],
+                [
+                    1,
+                    4,
+                    5
+                ],
+                [
+                    2,
+                    4,
+                    10
+                ],
+                [
+                    3,
+                    4,
+                    7
+                ],
+                [
+                    4,
+                    4,
+                    9
+                ],
+                [
+                    5,
+                    4,
+                    1
+                ],
+                [
+                    6,
+                    4,
+                    11
+                ],
+                [
+                    7,
+                    4,
+                    0
+                ],
+                [
+                    8,
+                    4,
+                    4
+                ],
+                [
+                    9,
+                    4,
+                    4
+                ],
+                [
+                    10,
+                    4,
+                    6
+                ],
+                [
+                    11,
+                    4,
+                    4
+                ],
+                [
+                    12,
+                    4,
+                    3
+                ],
+                [
+                    13,
+                    4,
+                    3
+                ],
+                [
+                    14,
+                    4,
+                    4
+                ],
+                [
+                    15,
+                    4,
+                    4
+                ],
+                [
+                    16,
+                    4,
+                    12
+                ],
+                [
+                    17,
+                    4,
+                    0
+                ],
+                [
+                    18,
+                    4,
+                    5
+                ],
+                [
+                    19,
+                    4,
+                    11
+                ],
+                [
+                    20,
+                    4,
+                    11
+                ],
+                [
+                    21,
+                    4,
+                    2
+                ],
+                [
+                    22,
+                    4,
+                    9
+                ],
+                [
+                    23,
+                    4,
+                    2
+                ],
+                [
+                    0,
+                    5,
+                    4
+                ],
+                [
+                    1,
+                    5,
+                    12
+                ],
+                [
+                    2,
+                    5,
+                    6
+                ],
+                [
+                    3,
+                    5,
+                    6
+                ],
+                [
+                    4,
+                    5,
+                    4
+                ],
+                [
+                    5,
+                    5,
+                    1
+                ],
+                [
+                    6,
+                    5,
+                    1
+                ],
+                [
+                    7,
+                    5,
+                    4
+                ],
+                [
+                    8,
+                    5,
+                    8
+                ],
+                [
+                    9,
+                    5,
+                    8
+                ],
+                [
+                    10,
+                    5,
+                    6
+                ],
+                [
+                    11,
+                    5,
+                    2
+                ],
+                [
+                    12,
+                    5,
+                    3
+                ],
+                [
+                    13,
+                    5,
+                    12
+                ],
+                [
+                    14,
+                    5,
+                    10
+                ],
+                [
+                    15,
+                    5,
+                    6
+                ],
+                [
+                    16,
+                    5,
+                    0
+                ],
+                [
+                    17,
+                    5,
+                    4
+                ],
+                [
+                    18,
+                    5,
+                    2
+                ],
+                [
+                    19,
+                    5,
+                    10
+                ],
+                [
+                    20,
+                    5,
+                    7
+                ],
+                [
+                    21,
+                    5,
+                    10
+                ],
+                [
+                    22,
+                    5,
+                    7
+                ],
+                [
+                    23,
+                    5,
+                    3
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "stack": "stack"
+        },
+        {
+            "type": "bar3D",
+            "name": "2",
+            "data": [
+                [
+                    0,
+                    0,
+                    13
+                ],
+                [
+                    1,
+                    0,
+                    17
+                ],
+                [
+                    2,
+                    0,
+                    16
+                ],
+                [
+                    3,
+                    0,
+                    16
+                ],
+                [
+                    4,
+                    0,
+                    15
+                ],
+                [
+                    5,
+                    0,
+                    13
+                ],
+                [
+                    6,
+                    0,
+                    19
+                ],
+                [
+                    7,
+                    0,
+                    15
+                ],
+                [
+                    8,
+                    0,
+                    14
+                ],
+                [
+                    9,
+                    0,
+                    17
+                ],
+                [
+                    10,
+                    0,
+                    20
+                ],
+                [
+                    11,
+                    0,
+                    20
+                ],
+                [
+                    12,
+                    0,
+                    14
+                ],
+                [
+                    13,
+                    0,
+                    13
+                ],
+                [
+                    14,
+                    0,
+                    15
+                ],
+                [
+                    15,
+                    0,
+                    20
+                ],
+                [
+                    16,
+                    0,
+                    15
+                ],
+                [
+                    17,
+                    0,
+                    16
+                ],
+                [
+                    18,
+                    0,
+                    18
+                ],
+                [
+                    19,
+                    0,
+                    13
+                ],
+                [
+                    20,
+                    0,
+                    13
+                ],
+                [
+                    21,
+                    0,
+                    15
+                ],
+                [
+                    22,
+                    0,
+                    13
+                ],
+                [
+                    23,
+                    0,
+                    19
+                ],
+                [
+                    0,
+                    1,
+                    15
+                ],
+                [
+                    1,
+                    1,
+                    14
+                ],
+                [
+                    2,
+                    1,
+                    19
+                ],
+                [
+                    3,
+                    1,
+                    13
+                ],
+                [
+                    4,
+                    1,
+                    19
+                ],
+                [
+                    5,
+                    1,
+                    15
+                ],
+                [
+                    6,
+                    1,
+                    13
+                ],
+                [
+                    7,
+                    1,
+                    16
+                ],
+                [
+                    8,
+                    1,
+                    17
+                ],
+                [
+                    9,
+                    1,
+                    19
+                ],
+                [
+                    10,
+                    1,
+                    20
+                ],
+                [
+                    11,
+                    1,
+                    13
+                ],
+                [
+                    12,
+                    1,
+                    18
+                ],
+                [
+                    13,
+                    1,
+                    17
+                ],
+                [
+                    14,
+                    1,
+                    17
+                ],
+                [
+                    15,
+                    1,
+                    17
+                ],
+                [
+                    16,
+                    1,
+                    20
+                ],
+                [
+                    17,
+                    1,
+                    16
+                ],
+                [
+                    18,
+                    1,
+                    13
+                ],
+                [
+                    19,
+                    1,
+                    18
+                ],
+                [
+                    20,
+                    1,
+                    20
+                ],
+                [
+                    21,
+                    1,
+                    13
+                ],
+                [
+                    22,
+                    1,
+                    16
+                ],
+                [
+                    23,
+                    1,
+                    14
+                ],
+                [
+                    0,
+                    2,
+                    18
+                ],
+                [
+                    1,
+                    2,
+                    20
+                ],
+                [
+                    2,
+                    2,
+                    13
+                ],
+                [
+                    3,
+                    2,
+                    15
+                ],
+                [
+                    4,
+                    2,
+                    20
+                ],
+                [
+                    5,
+                    2,
+                    16
+                ],
+                [
+                    6,
+                    2,
+                    13
+                ],
+                [
+                    7,
+                    2,
+                    15
+                ],
+                [
+                    8,
+                    2,
+                    20
+                ],
+                [
+                    9,
+                    2,
+                    14
+                ],
+                [
+                    10,
+                    2,
+                    15
+                ],
+                [
+                    11,
+                    2,
+                    19
+                ],
+                [
+                    12,
+                    2,
+                    19
+                ],
+                [
+                    13,
+                    2,
+                    17
+                ],
+                [
+                    14,
+                    2,
+                    17
+                ],
+                [
+                    15,
+                    2,
+                    17
+                ],
+                [
+                    16,
+                    2,
+                    19
+                ],
+                [
+                    17,
+                    2,
+                    19
+                ],
+                [
+                    18,
+                    2,
+                    17
+                ],
+                [
+                    19,
+                    2,
+                    13
+                ],
+                [
+                    20,
+                    2,
+                    13
+                ],
+                [
+                    21,
+                    2,
+                    18
+                ],
+                [
+                    22,
+                    2,
+                    19
+                ],
+                [
+                    23,
+                    2,
+                    14
+                ],
+                [
+                    0,
+                    3,
+                    15
+                ],
+                [
+                    1,
+                    3,
+                    15
+                ],
+                [
+                    2,
+                    3,
+                    18
+                ],
+                [
+                    3,
+                    3,
+                    14
+                ],
+                [
+                    4,
+                    3,
+                    19
+                ],
+                [
+                    5,
+                    3,
+                    20
+                ],
+                [
+                    6,
+                    3,
+                    18
+                ],
+                [
+                    7,
+                    3,
+                    16
+                ],
+                [
+                    8,
+                    3,
+                    18
+                ],
+                [
+                    9,
+                    3,
+                    15
+                ],
+                [
+                    10,
+                    3,
+                    14
+                ],
+                [
+                    11,
+                    3,
+                    20
+                ],
+                [
+                    12,
+                    3,
+                    14
+                ],
+                [
+                    13,
+                    3,
+                    18
+                ],
+                [
+                    14,
+                    3,
+                    15
+                ],
+                [
+                    15,
+                    3,
+                    13
+                ],
+                [
+                    16,
+                    3,
+                    18
+                ],
+                [
+                    17,
+                    3,
+                    14
+                ],
+                [
+                    18,
+                    3,
+                    15
+                ],
+                [
+                    19,
+                    3,
+                    18
+                ],
+                [
+                    20,
+                    3,
+                    13
+                ],
+                [
+                    21,
+                    3,
+                    17
+                ],
+                [
+                    22,
+                    3,
+                    14
+                ],
+                [
+                    23,
+                    3,
+                    16
+                ],
+                [
+                    0,
+                    4,
+                    14
+                ],
+                [
+                    1,
+                    4,
+                    15
+                ],
+                [
+                    2,
+                    4,
+                    13
+                ],
+                [
+                    3,
+                    4,
+                    15
+                ],
+                [
+                    4,
+                    4,
+                    19
+                ],
+                [
+                    5,
+                    4,
+                    15
+                ],
+                [
+                    6,
+                    4,
+                    16
+                ],
+                [
+                    7,
+                    4,
+                    17
+                ],
+                [
+                    8,
+                    4,
+                    13
+                ],
+                [
+                    9,
+                    4,
+                    19
+                ],
+                [
+                    10,
+                    4,
+                    14
+                ],
+                [
+                    11,
+                    4,
+                    20
+                ],
+                [
+                    12,
+                    4,
+                    15
+                ],
+                [
+                    13,
+                    4,
+                    17
+                ],
+                [
+                    14,
+                    4,
+                    13
+                ],
+                [
+                    15,
+                    4,
+                    13
+                ],
+                [
+                    16,
+                    4,
+                    16
+                ],
+                [
+                    17,
+                    4,
+                    16
+                ],
+                [
+                    18,
+                    4,
+                    16
+                ],
+                [
+                    19,
+                    4,
+                    13
+                ],
+                [
+                    20,
+                    4,
+                    17
+                ],
+                [
+                    21,
+                    4,
+                    19
+                ],
+                [
+                    22,
+                    4,
+                    19
+                ],
+                [
+                    23,
+                    4,
+                    19
+                ],
+                [
+                    0,
+                    5,
+                    20
+                ],
+                [
+                    1,
+                    5,
+                    14
+                ],
+                [
+                    2,
+                    5,
+                    13
+                ],
+                [
+                    3,
+                    5,
+                    13
+                ],
+                [
+                    4,
+                    5,
+                    13
+                ],
+                [
+                    5,
+                    5,
+                    14
+                ],
+                [
+                    6,
+                    5,
+                    19
+                ],
+                [
+                    7,
+                    5,
+                    13
+                ],
+                [
+                    8,
+                    5,
+                    13
+                ],
+                [
+                    9,
+                    5,
+                    16
+                ],
+                [
+                    10,
+                    5,
+                    19
+                ],
+                [
+                    11,
+                    5,
+                    20
+                ],
+                [
+                    12,
+                    5,
+                    16
+                ],
+                [
+                    13,
+                    5,
+                    15
+                ],
+                [
+                    14,
+                    5,
+                    19
+                ],
+                [
+                    15,
+                    5,
+                    17
+                ],
+                [
+                    16,
+                    5,
+                    18
+                ],
+                [
+                    17,
+                    5,
+                    14
+                ],
+                [
+                    18,
+                    5,
+                    20
+                ],
+                [
+                    19,
+                    5,
+                    17
+                ],
+                [
+                    20,
+                    5,
+                    18
+                ],
+                [
+                    21,
+                    5,
+                    15
+                ],
+                [
+                    22,
+                    5,
+                    19
+                ],
+                [
+                    23,
+                    5,
+                    19
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "stack": "stack"
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "1",
+                "2"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 20,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "xAxis3D": {
+        "data": [
+            "12a",
+            "1a",
+            "2a",
+            "3a",
+            "4a",
+            "5a",
+            "6a",
+            "7a",
+            "8a",
+            "9a",
+            "10a",
+            "11a",
+            "12p",
+            "1p",
+            "2p",
+            "3p",
+            "4p",
+            "5p",
+            "6p",
+            "7p",
+            "8p",
+            "9p",
+            "10p",
+            "11p"
+        ],
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "yAxis3D": {
+        "data": [
+            "Saturday",
+            "Friday",
+            "Thursday",
+            "Wednesday",
+            "Tuesday",
+            "Monday",
+            "Sunday"
+        ],
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "zAxis3D": {
+        "nameGap": 20,
+        "type": "value",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "grid3D": {
+        "boxWidth": 200,
+        "boxHeight": 100,
+        "boxDepth": 80,
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1
+        }
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+                chart_dce37977f9d74db786e17795644b2e54.setOption(option_dce37977f9d74db786e17795644b2e54);
+        });
+    </script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">echart</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s2">&quot;Stacked 3D bar sample&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#dp.publish()</span>
+<span class="c1">#Viewer not ready</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./echarts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="barchart.html" title="previous page">Bar chart</a>
+    <a class='right-next' id="next-link" href="linechart.html" title="next page">Line chart</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

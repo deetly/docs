@@ -1,0 +1,2250 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar &#8212; deetly documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sankey chart" href="sankey.html" />
+    <link rel="prev" title="Heatmap" href="heatmap.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">deetly documentation</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Charts
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="barchart.html">
+   Bar chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bar3D.html">
+   Bar 3D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="linechart.html">
+   Line chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="boxplot.html">
+   Boxplot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="matrix.html">
+   Custom chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="effect_scatter.html">
+   Effect Scatter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funnel.html">
+   Funnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gauge.html">
+   Gauge
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="graph.html">
+   Graph
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="grid.html">
+   Grid chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="heatmap.html">
+   Heatmap
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Calendar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sankey.html">
+   Sankey chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="geo_forbidden_city.html">
+   Register Url
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_flight.html">
+   Geoline sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_norway.html">
+   Geo Norway
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="map_world_population.html">
+   Geo world population
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Pydeck Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_scatterplot_subway_stations.html">
+   Scatterplot subway stations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Altair Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Plotly Maps
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../graphviz/basic.html">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/networkx.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/text-on-nodes.html">
+     Text on nodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/labels.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/echarts/calendar.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/site/master?urlpath=tree/echarts/calendar.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/site/blob/master/echarts/calendar.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="calendar">
+<h1>Calendar<a class="headerlink" href="#calendar" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Sample calendar chart</p>
+</div></blockquote>
+<p>Source: pyecharts test</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
+<span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Calendar</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;EChart Calendar examples&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;deetly&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;calendar&quot;</span><span class="p">,</span><span class="s2">&quot;chart&quot;</span><span class="p">,</span><span class="s2">&quot;examples&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">begin</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">begin</span> <span class="o">+</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">i</span><span class="p">)),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">25000</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">((</span><span class="n">end</span> <span class="o">-</span> <span class="n">begin</span><span class="p">)</span><span class="o">.</span><span class="n">days</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">Calendar</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">calendar_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">CalendarOpts</span><span class="p">(</span><span class="n">range_</span><span class="o">=</span><span class="s2">&quot;2019&quot;</span><span class="p">))</span>
+    <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span>
+        <span class="n">visualmap_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">VisualMapOpts</span><span class="p">(</span>
+            <span class="n">max_</span><span class="o">=</span><span class="mi">25000</span><span class="p">,</span>
+            <span class="n">min_</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+            <span class="n">orient</span><span class="o">=</span><span class="s2">&quot;horizontal&quot;</span><span class="p">,</span>
+            <span class="n">is_piecewise</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">pos_top</span><span class="o">=</span><span class="s2">&quot;230px&quot;</span><span class="p">,</span>
+            <span class="n">pos_left</span><span class="o">=</span><span class="s2">&quot;100px&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min'
+        }
+    });
+</script>
+
+        <div id="fd2d103befac4d0bb6ca007a7daa4b8b" style="width:900px; height:500px;"></div>
+
+<script>
+        require(['echarts'], function(echarts) {
+                var chart_fd2d103befac4d0bb6ca007a7daa4b8b = echarts.init(
+                    document.getElementById('fd2d103befac4d0bb6ca007a7daa4b8b'), 'white', {renderer: 'canvas'});
+                var option_fd2d103befac4d0bb6ca007a7daa4b8b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "heatmap",
+            "coordinateSystem": "calendar",
+            "data": [
+                [
+                    "2019-01-01",
+                    15687
+                ],
+                [
+                    "2019-01-02",
+                    19728
+                ],
+                [
+                    "2019-01-03",
+                    6827
+                ],
+                [
+                    "2019-01-04",
+                    18337
+                ],
+                [
+                    "2019-01-05",
+                    11135
+                ],
+                [
+                    "2019-01-06",
+                    6451
+                ],
+                [
+                    "2019-01-07",
+                    23893
+                ],
+                [
+                    "2019-01-08",
+                    18301
+                ],
+                [
+                    "2019-01-09",
+                    14530
+                ],
+                [
+                    "2019-01-10",
+                    18265
+                ],
+                [
+                    "2019-01-11",
+                    13799
+                ],
+                [
+                    "2019-01-12",
+                    1312
+                ],
+                [
+                    "2019-01-13",
+                    24232
+                ],
+                [
+                    "2019-01-14",
+                    15442
+                ],
+                [
+                    "2019-01-15",
+                    17875
+                ],
+                [
+                    "2019-01-16",
+                    23721
+                ],
+                [
+                    "2019-01-17",
+                    22592
+                ],
+                [
+                    "2019-01-18",
+                    10897
+                ],
+                [
+                    "2019-01-19",
+                    7666
+                ],
+                [
+                    "2019-01-20",
+                    5487
+                ],
+                [
+                    "2019-01-21",
+                    20187
+                ],
+                [
+                    "2019-01-22",
+                    24546
+                ],
+                [
+                    "2019-01-23",
+                    23577
+                ],
+                [
+                    "2019-01-24",
+                    5044
+                ],
+                [
+                    "2019-01-25",
+                    8543
+                ],
+                [
+                    "2019-01-26",
+                    14751
+                ],
+                [
+                    "2019-01-27",
+                    12334
+                ],
+                [
+                    "2019-01-28",
+                    1699
+                ],
+                [
+                    "2019-01-29",
+                    19517
+                ],
+                [
+                    "2019-01-30",
+                    1269
+                ],
+                [
+                    "2019-01-31",
+                    20433
+                ],
+                [
+                    "2019-02-01",
+                    5348
+                ],
+                [
+                    "2019-02-02",
+                    6006
+                ],
+                [
+                    "2019-02-03",
+                    6249
+                ],
+                [
+                    "2019-02-04",
+                    9260
+                ],
+                [
+                    "2019-02-05",
+                    3607
+                ],
+                [
+                    "2019-02-06",
+                    22260
+                ],
+                [
+                    "2019-02-07",
+                    1198
+                ],
+                [
+                    "2019-02-08",
+                    16489
+                ],
+                [
+                    "2019-02-09",
+                    23147
+                ],
+                [
+                    "2019-02-10",
+                    14250
+                ],
+                [
+                    "2019-02-11",
+                    7403
+                ],
+                [
+                    "2019-02-12",
+                    15935
+                ],
+                [
+                    "2019-02-13",
+                    11191
+                ],
+                [
+                    "2019-02-14",
+                    8216
+                ],
+                [
+                    "2019-02-15",
+                    4451
+                ],
+                [
+                    "2019-02-16",
+                    8441
+                ],
+                [
+                    "2019-02-17",
+                    23358
+                ],
+                [
+                    "2019-02-18",
+                    13800
+                ],
+                [
+                    "2019-02-19",
+                    19034
+                ],
+                [
+                    "2019-02-20",
+                    22148
+                ],
+                [
+                    "2019-02-21",
+                    15320
+                ],
+                [
+                    "2019-02-22",
+                    20726
+                ],
+                [
+                    "2019-02-23",
+                    17221
+                ],
+                [
+                    "2019-02-24",
+                    19982
+                ],
+                [
+                    "2019-02-25",
+                    16220
+                ],
+                [
+                    "2019-02-26",
+                    3181
+                ],
+                [
+                    "2019-02-27",
+                    2810
+                ],
+                [
+                    "2019-02-28",
+                    12612
+                ],
+                [
+                    "2019-03-01",
+                    2509
+                ],
+                [
+                    "2019-03-02",
+                    11854
+                ],
+                [
+                    "2019-03-03",
+                    10353
+                ],
+                [
+                    "2019-03-04",
+                    9243
+                ],
+                [
+                    "2019-03-05",
+                    11495
+                ],
+                [
+                    "2019-03-06",
+                    8852
+                ],
+                [
+                    "2019-03-07",
+                    15842
+                ],
+                [
+                    "2019-03-08",
+                    6158
+                ],
+                [
+                    "2019-03-09",
+                    5451
+                ],
+                [
+                    "2019-03-10",
+                    17720
+                ],
+                [
+                    "2019-03-11",
+                    15904
+                ],
+                [
+                    "2019-03-12",
+                    6127
+                ],
+                [
+                    "2019-03-13",
+                    1302
+                ],
+                [
+                    "2019-03-14",
+                    20725
+                ],
+                [
+                    "2019-03-15",
+                    19759
+                ],
+                [
+                    "2019-03-16",
+                    7292
+                ],
+                [
+                    "2019-03-17",
+                    2126
+                ],
+                [
+                    "2019-03-18",
+                    15266
+                ],
+                [
+                    "2019-03-19",
+                    7689
+                ],
+                [
+                    "2019-03-20",
+                    18788
+                ],
+                [
+                    "2019-03-21",
+                    20436
+                ],
+                [
+                    "2019-03-22",
+                    15753
+                ],
+                [
+                    "2019-03-23",
+                    15762
+                ],
+                [
+                    "2019-03-24",
+                    8774
+                ],
+                [
+                    "2019-03-25",
+                    24673
+                ],
+                [
+                    "2019-03-26",
+                    6603
+                ],
+                [
+                    "2019-03-27",
+                    1578
+                ],
+                [
+                    "2019-03-28",
+                    1995
+                ],
+                [
+                    "2019-03-29",
+                    15004
+                ],
+                [
+                    "2019-03-30",
+                    5478
+                ],
+                [
+                    "2019-03-31",
+                    8040
+                ],
+                [
+                    "2019-04-01",
+                    6977
+                ],
+                [
+                    "2019-04-02",
+                    15739
+                ],
+                [
+                    "2019-04-03",
+                    9522
+                ],
+                [
+                    "2019-04-04",
+                    10869
+                ],
+                [
+                    "2019-04-05",
+                    16763
+                ],
+                [
+                    "2019-04-06",
+                    24553
+                ],
+                [
+                    "2019-04-07",
+                    3831
+                ],
+                [
+                    "2019-04-08",
+                    14747
+                ],
+                [
+                    "2019-04-09",
+                    24784
+                ],
+                [
+                    "2019-04-10",
+                    4771
+                ],
+                [
+                    "2019-04-11",
+                    18460
+                ],
+                [
+                    "2019-04-12",
+                    8547
+                ],
+                [
+                    "2019-04-13",
+                    1413
+                ],
+                [
+                    "2019-04-14",
+                    12515
+                ],
+                [
+                    "2019-04-15",
+                    17136
+                ],
+                [
+                    "2019-04-16",
+                    7792
+                ],
+                [
+                    "2019-04-17",
+                    19475
+                ],
+                [
+                    "2019-04-18",
+                    15785
+                ],
+                [
+                    "2019-04-19",
+                    6136
+                ],
+                [
+                    "2019-04-20",
+                    23683
+                ],
+                [
+                    "2019-04-21",
+                    23868
+                ],
+                [
+                    "2019-04-22",
+                    7525
+                ],
+                [
+                    "2019-04-23",
+                    20859
+                ],
+                [
+                    "2019-04-24",
+                    9892
+                ],
+                [
+                    "2019-04-25",
+                    1345
+                ],
+                [
+                    "2019-04-26",
+                    3841
+                ],
+                [
+                    "2019-04-27",
+                    10901
+                ],
+                [
+                    "2019-04-28",
+                    5399
+                ],
+                [
+                    "2019-04-29",
+                    5800
+                ],
+                [
+                    "2019-04-30",
+                    1913
+                ],
+                [
+                    "2019-05-01",
+                    4928
+                ],
+                [
+                    "2019-05-02",
+                    10786
+                ],
+                [
+                    "2019-05-03",
+                    4152
+                ],
+                [
+                    "2019-05-04",
+                    7654
+                ],
+                [
+                    "2019-05-05",
+                    9234
+                ],
+                [
+                    "2019-05-06",
+                    20597
+                ],
+                [
+                    "2019-05-07",
+                    17783
+                ],
+                [
+                    "2019-05-08",
+                    6401
+                ],
+                [
+                    "2019-05-09",
+                    11195
+                ],
+                [
+                    "2019-05-10",
+                    17024
+                ],
+                [
+                    "2019-05-11",
+                    10301
+                ],
+                [
+                    "2019-05-12",
+                    11696
+                ],
+                [
+                    "2019-05-13",
+                    21691
+                ],
+                [
+                    "2019-05-14",
+                    22519
+                ],
+                [
+                    "2019-05-15",
+                    12383
+                ],
+                [
+                    "2019-05-16",
+                    2814
+                ],
+                [
+                    "2019-05-17",
+                    19971
+                ],
+                [
+                    "2019-05-18",
+                    16627
+                ],
+                [
+                    "2019-05-19",
+                    11209
+                ],
+                [
+                    "2019-05-20",
+                    21782
+                ],
+                [
+                    "2019-05-21",
+                    13887
+                ],
+                [
+                    "2019-05-22",
+                    16762
+                ],
+                [
+                    "2019-05-23",
+                    9810
+                ],
+                [
+                    "2019-05-24",
+                    14665
+                ],
+                [
+                    "2019-05-25",
+                    19379
+                ],
+                [
+                    "2019-05-26",
+                    4364
+                ],
+                [
+                    "2019-05-27",
+                    12638
+                ],
+                [
+                    "2019-05-28",
+                    16732
+                ],
+                [
+                    "2019-05-29",
+                    14625
+                ],
+                [
+                    "2019-05-30",
+                    16309
+                ],
+                [
+                    "2019-05-31",
+                    12296
+                ],
+                [
+                    "2019-06-01",
+                    10005
+                ],
+                [
+                    "2019-06-02",
+                    3654
+                ],
+                [
+                    "2019-06-03",
+                    23655
+                ],
+                [
+                    "2019-06-04",
+                    8458
+                ],
+                [
+                    "2019-06-05",
+                    7528
+                ],
+                [
+                    "2019-06-06",
+                    17838
+                ],
+                [
+                    "2019-06-07",
+                    16345
+                ],
+                [
+                    "2019-06-08",
+                    1408
+                ],
+                [
+                    "2019-06-09",
+                    15466
+                ],
+                [
+                    "2019-06-10",
+                    15412
+                ],
+                [
+                    "2019-06-11",
+                    21851
+                ],
+                [
+                    "2019-06-12",
+                    21078
+                ],
+                [
+                    "2019-06-13",
+                    1004
+                ],
+                [
+                    "2019-06-14",
+                    4290
+                ],
+                [
+                    "2019-06-15",
+                    12507
+                ],
+                [
+                    "2019-06-16",
+                    13135
+                ],
+                [
+                    "2019-06-17",
+                    20777
+                ],
+                [
+                    "2019-06-18",
+                    16280
+                ],
+                [
+                    "2019-06-19",
+                    8357
+                ],
+                [
+                    "2019-06-20",
+                    6133
+                ],
+                [
+                    "2019-06-21",
+                    4653
+                ],
+                [
+                    "2019-06-22",
+                    14713
+                ],
+                [
+                    "2019-06-23",
+                    4018
+                ],
+                [
+                    "2019-06-24",
+                    17623
+                ],
+                [
+                    "2019-06-25",
+                    16847
+                ],
+                [
+                    "2019-06-26",
+                    17243
+                ],
+                [
+                    "2019-06-27",
+                    11180
+                ],
+                [
+                    "2019-06-28",
+                    11549
+                ],
+                [
+                    "2019-06-29",
+                    7961
+                ],
+                [
+                    "2019-06-30",
+                    14085
+                ],
+                [
+                    "2019-07-01",
+                    9164
+                ],
+                [
+                    "2019-07-02",
+                    18025
+                ],
+                [
+                    "2019-07-03",
+                    24757
+                ],
+                [
+                    "2019-07-04",
+                    23257
+                ],
+                [
+                    "2019-07-05",
+                    1334
+                ],
+                [
+                    "2019-07-06",
+                    14111
+                ],
+                [
+                    "2019-07-07",
+                    14152
+                ],
+                [
+                    "2019-07-08",
+                    13035
+                ],
+                [
+                    "2019-07-09",
+                    11611
+                ],
+                [
+                    "2019-07-10",
+                    24004
+                ],
+                [
+                    "2019-07-11",
+                    19659
+                ],
+                [
+                    "2019-07-12",
+                    6614
+                ],
+                [
+                    "2019-07-13",
+                    7068
+                ],
+                [
+                    "2019-07-14",
+                    21961
+                ],
+                [
+                    "2019-07-15",
+                    21619
+                ],
+                [
+                    "2019-07-16",
+                    16148
+                ],
+                [
+                    "2019-07-17",
+                    18489
+                ],
+                [
+                    "2019-07-18",
+                    3581
+                ],
+                [
+                    "2019-07-19",
+                    23335
+                ],
+                [
+                    "2019-07-20",
+                    10370
+                ],
+                [
+                    "2019-07-21",
+                    21125
+                ],
+                [
+                    "2019-07-22",
+                    7076
+                ],
+                [
+                    "2019-07-23",
+                    17698
+                ],
+                [
+                    "2019-07-24",
+                    17936
+                ],
+                [
+                    "2019-07-25",
+                    6423
+                ],
+                [
+                    "2019-07-26",
+                    16154
+                ],
+                [
+                    "2019-07-27",
+                    11390
+                ],
+                [
+                    "2019-07-28",
+                    8921
+                ],
+                [
+                    "2019-07-29",
+                    3294
+                ],
+                [
+                    "2019-07-30",
+                    2329
+                ],
+                [
+                    "2019-07-31",
+                    14034
+                ],
+                [
+                    "2019-08-01",
+                    3298
+                ],
+                [
+                    "2019-08-02",
+                    2831
+                ],
+                [
+                    "2019-08-03",
+                    1047
+                ],
+                [
+                    "2019-08-04",
+                    24829
+                ],
+                [
+                    "2019-08-05",
+                    11897
+                ],
+                [
+                    "2019-08-06",
+                    19826
+                ],
+                [
+                    "2019-08-07",
+                    9813
+                ],
+                [
+                    "2019-08-08",
+                    19387
+                ],
+                [
+                    "2019-08-09",
+                    11658
+                ],
+                [
+                    "2019-08-10",
+                    1551
+                ],
+                [
+                    "2019-08-11",
+                    1502
+                ],
+                [
+                    "2019-08-12",
+                    7481
+                ],
+                [
+                    "2019-08-13",
+                    20190
+                ],
+                [
+                    "2019-08-14",
+                    9820
+                ],
+                [
+                    "2019-08-15",
+                    17590
+                ],
+                [
+                    "2019-08-16",
+                    6157
+                ],
+                [
+                    "2019-08-17",
+                    20193
+                ],
+                [
+                    "2019-08-18",
+                    23875
+                ],
+                [
+                    "2019-08-19",
+                    6774
+                ],
+                [
+                    "2019-08-20",
+                    9476
+                ],
+                [
+                    "2019-08-21",
+                    19998
+                ],
+                [
+                    "2019-08-22",
+                    7303
+                ],
+                [
+                    "2019-08-23",
+                    3921
+                ],
+                [
+                    "2019-08-24",
+                    13848
+                ],
+                [
+                    "2019-08-25",
+                    13829
+                ],
+                [
+                    "2019-08-26",
+                    17657
+                ],
+                [
+                    "2019-08-27",
+                    17099
+                ],
+                [
+                    "2019-08-28",
+                    17544
+                ],
+                [
+                    "2019-08-29",
+                    4620
+                ],
+                [
+                    "2019-08-30",
+                    3371
+                ],
+                [
+                    "2019-08-31",
+                    1474
+                ],
+                [
+                    "2019-09-01",
+                    24130
+                ],
+                [
+                    "2019-09-02",
+                    21439
+                ],
+                [
+                    "2019-09-03",
+                    23006
+                ],
+                [
+                    "2019-09-04",
+                    11925
+                ],
+                [
+                    "2019-09-05",
+                    14120
+                ],
+                [
+                    "2019-09-06",
+                    3211
+                ],
+                [
+                    "2019-09-07",
+                    14403
+                ],
+                [
+                    "2019-09-08",
+                    2565
+                ],
+                [
+                    "2019-09-09",
+                    7121
+                ],
+                [
+                    "2019-09-10",
+                    23983
+                ],
+                [
+                    "2019-09-11",
+                    20848
+                ],
+                [
+                    "2019-09-12",
+                    18652
+                ],
+                [
+                    "2019-09-13",
+                    24314
+                ],
+                [
+                    "2019-09-14",
+                    14710
+                ],
+                [
+                    "2019-09-15",
+                    3778
+                ],
+                [
+                    "2019-09-16",
+                    4361
+                ],
+                [
+                    "2019-09-17",
+                    20059
+                ],
+                [
+                    "2019-09-18",
+                    15337
+                ],
+                [
+                    "2019-09-19",
+                    24052
+                ],
+                [
+                    "2019-09-20",
+                    10837
+                ],
+                [
+                    "2019-09-21",
+                    12655
+                ],
+                [
+                    "2019-09-22",
+                    3208
+                ],
+                [
+                    "2019-09-23",
+                    13882
+                ],
+                [
+                    "2019-09-24",
+                    16219
+                ],
+                [
+                    "2019-09-25",
+                    16882
+                ],
+                [
+                    "2019-09-26",
+                    1500
+                ],
+                [
+                    "2019-09-27",
+                    19540
+                ],
+                [
+                    "2019-09-28",
+                    10041
+                ],
+                [
+                    "2019-09-29",
+                    20911
+                ],
+                [
+                    "2019-09-30",
+                    8779
+                ],
+                [
+                    "2019-10-01",
+                    19855
+                ],
+                [
+                    "2019-10-02",
+                    22272
+                ],
+                [
+                    "2019-10-03",
+                    15633
+                ],
+                [
+                    "2019-10-04",
+                    14567
+                ],
+                [
+                    "2019-10-05",
+                    8947
+                ],
+                [
+                    "2019-10-06",
+                    24350
+                ],
+                [
+                    "2019-10-07",
+                    19765
+                ],
+                [
+                    "2019-10-08",
+                    4255
+                ],
+                [
+                    "2019-10-09",
+                    15761
+                ],
+                [
+                    "2019-10-10",
+                    22882
+                ],
+                [
+                    "2019-10-11",
+                    11898
+                ],
+                [
+                    "2019-10-12",
+                    17118
+                ],
+                [
+                    "2019-10-13",
+                    9623
+                ],
+                [
+                    "2019-10-14",
+                    19908
+                ],
+                [
+                    "2019-10-15",
+                    3636
+                ],
+                [
+                    "2019-10-16",
+                    2982
+                ],
+                [
+                    "2019-10-17",
+                    18714
+                ],
+                [
+                    "2019-10-18",
+                    3241
+                ],
+                [
+                    "2019-10-19",
+                    11291
+                ],
+                [
+                    "2019-10-20",
+                    3216
+                ],
+                [
+                    "2019-10-21",
+                    18471
+                ],
+                [
+                    "2019-10-22",
+                    16760
+                ],
+                [
+                    "2019-10-23",
+                    19803
+                ],
+                [
+                    "2019-10-24",
+                    11140
+                ],
+                [
+                    "2019-10-25",
+                    7219
+                ],
+                [
+                    "2019-10-26",
+                    6191
+                ],
+                [
+                    "2019-10-27",
+                    4149
+                ],
+                [
+                    "2019-10-28",
+                    2922
+                ],
+                [
+                    "2019-10-29",
+                    3735
+                ],
+                [
+                    "2019-10-30",
+                    1005
+                ],
+                [
+                    "2019-10-31",
+                    21082
+                ],
+                [
+                    "2019-11-01",
+                    2400
+                ],
+                [
+                    "2019-11-02",
+                    10317
+                ],
+                [
+                    "2019-11-03",
+                    24998
+                ],
+                [
+                    "2019-11-04",
+                    20855
+                ],
+                [
+                    "2019-11-05",
+                    23095
+                ],
+                [
+                    "2019-11-06",
+                    23693
+                ],
+                [
+                    "2019-11-07",
+                    11850
+                ],
+                [
+                    "2019-11-08",
+                    19197
+                ],
+                [
+                    "2019-11-09",
+                    24635
+                ],
+                [
+                    "2019-11-10",
+                    9018
+                ],
+                [
+                    "2019-11-11",
+                    14845
+                ],
+                [
+                    "2019-11-12",
+                    10419
+                ],
+                [
+                    "2019-11-13",
+                    22656
+                ],
+                [
+                    "2019-11-14",
+                    5500
+                ],
+                [
+                    "2019-11-15",
+                    13712
+                ],
+                [
+                    "2019-11-16",
+                    3919
+                ],
+                [
+                    "2019-11-17",
+                    15862
+                ],
+                [
+                    "2019-11-18",
+                    23329
+                ],
+                [
+                    "2019-11-19",
+                    8330
+                ],
+                [
+                    "2019-11-20",
+                    15705
+                ],
+                [
+                    "2019-11-21",
+                    3852
+                ],
+                [
+                    "2019-11-22",
+                    9074
+                ],
+                [
+                    "2019-11-23",
+                    1762
+                ],
+                [
+                    "2019-11-24",
+                    1126
+                ],
+                [
+                    "2019-11-25",
+                    7382
+                ],
+                [
+                    "2019-11-26",
+                    1174
+                ],
+                [
+                    "2019-11-27",
+                    20466
+                ],
+                [
+                    "2019-11-28",
+                    2581
+                ],
+                [
+                    "2019-11-29",
+                    5245
+                ],
+                [
+                    "2019-11-30",
+                    10376
+                ],
+                [
+                    "2019-12-01",
+                    6379
+                ],
+                [
+                    "2019-12-02",
+                    6544
+                ],
+                [
+                    "2019-12-03",
+                    17393
+                ],
+                [
+                    "2019-12-04",
+                    21282
+                ],
+                [
+                    "2019-12-05",
+                    16638
+                ],
+                [
+                    "2019-12-06",
+                    19009
+                ],
+                [
+                    "2019-12-07",
+                    20744
+                ],
+                [
+                    "2019-12-08",
+                    16533
+                ],
+                [
+                    "2019-12-09",
+                    21396
+                ],
+                [
+                    "2019-12-10",
+                    17092
+                ],
+                [
+                    "2019-12-11",
+                    10586
+                ],
+                [
+                    "2019-12-12",
+                    7902
+                ],
+                [
+                    "2019-12-13",
+                    7907
+                ],
+                [
+                    "2019-12-14",
+                    23695
+                ],
+                [
+                    "2019-12-15",
+                    15576
+                ],
+                [
+                    "2019-12-16",
+                    10334
+                ],
+                [
+                    "2019-12-17",
+                    17307
+                ],
+                [
+                    "2019-12-18",
+                    22031
+                ],
+                [
+                    "2019-12-19",
+                    2880
+                ],
+                [
+                    "2019-12-20",
+                    10620
+                ],
+                [
+                    "2019-12-21",
+                    15429
+                ],
+                [
+                    "2019-12-22",
+                    10200
+                ],
+                [
+                    "2019-12-23",
+                    22491
+                ],
+                [
+                    "2019-12-24",
+                    2474
+                ],
+                [
+                    "2019-12-25",
+                    12193
+                ],
+                [
+                    "2019-12-26",
+                    18977
+                ],
+                [
+                    "2019-12-27",
+                    22607
+                ],
+                [
+                    "2019-12-28",
+                    5082
+                ],
+                [
+                    "2019-12-29",
+                    17638
+                ],
+                [
+                    "2019-12-30",
+                    18238
+                ],
+                [
+                    "2019-12-31",
+                    17448
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "calendar": {
+        "width": "auto",
+        "orient": "horizontal",
+        "range": "2019",
+        "cellSize": 20
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 500,
+        "max": 25000,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "horizontal",
+        "left": "100px",
+        "top": "230px",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    }
+};
+                chart_fd2d103befac4d0bb6ca007a7daa4b8b.setOption(option_fd2d103befac4d0bb6ca007a7daa4b8b);
+        });
+    </script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">echart</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s2">&quot;Calendar&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/03721c48926cdbe19d241a4f62f27253 
+
+Metadata: https://storage.googleapis.com/deetly/examples/03721c48926cdbe19d241a4f62f27253/datapackage.json 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./echarts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="heatmap.html" title="previous page">Heatmap</a>
+    <a class='right-next' id="next-link" href="sankey.html" title="next page">Sankey chart</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By deetly<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

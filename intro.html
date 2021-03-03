@@ -504,13 +504,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#usage-example">
-   Usage Example
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inspiration">
-   Inspiration
+  <a class="reference internal nav-link" href="#example">
+   Example
   </a>
   <ul class="nav section-nav flex-column">
   </ul>
@@ -529,34 +524,29 @@
                 
   <div class="section" id="deetly">
 <h1>Deetly<a class="headerlink" href="#deetly" title="Permalink to this headline">¶</a></h1>
-<p>Library for creating datastories directly from a notebook. You can combine data visualizations with rich text, tables, images, html and PDFs to create your datastories.</p>
-<p>Deetly is still young. If you have ideas for improvements or discover a bug please post an issue og create a pull request.</p>
+<p>Library for creating datastories directly from notebooks or scripts. You can combine data visualizations with formatted text, tables, images, html and PDFs to create your datastory.</p>
+<p>Deetly is still young. If you have ideas for improvements or discover a bug please post an <a class="reference external" href="https://github.com/deetly/docs/issues">issue</a> og create a <a class="reference external" href="https://github.com/deetly/docs/pulls">pull request</a></p>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>pip install deetly</p>
 </div>
-<div class="section" id="usage-example">
-<h2>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h2>
-<p>The following code creates a datastory with with one text element</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import deetly
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>The following code creates a datastory with one text element</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deetly</span>
 
-# Create the story
-dp = deetly.story({&quot;name&quot;:&quot;Hello world&quot;})
+<span class="c1"># Create the story</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">({</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Hello world&quot;</span><span class="p">})</span>
 
-# Add a text section. The text section contains nothing but its  name
-dp.text(&quot;Hello World&quot;)
+<span class="c1"># Add a text section. The text section contains nothing but its name</span>
+<span class="n">dp</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
 
-# Publish the story
-dp.publish()
+<span class="c1"># Publish the story</span>
+<span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>The published story can be seen <a class="reference external" href="https://public.deetly.com/examples/aae98ae8214549d11861eb9fd7234ba5">here</a></p>
 <p>You can find more complete examples in the menu on the left.</p>
-</div>
-<div class="section" id="inspiration">
-<h2>Inspiration<a class="headerlink" href="#inspiration" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://pudding.cool">The Pudding</a>. A digital publication that explains ideas debated in culture with visual essays</p>
-<p>Ira Glass on storytelling: <a class="reference external" href="https://www.youtube.com/watch?v=f6ezU57J8YI">Youtube</a></p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

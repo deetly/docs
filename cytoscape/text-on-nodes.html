@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -43,11 +43,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -55,10 +52,11 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Labels" href="labels.html" />
-    <link rel="prev" title="Labels" href="networkx.html" />
+    <link rel="prev" title="NetworkX to Cytoscape example" href="networkx.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -89,7 +87,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Introduction
+   Deetly
   </a>
  </li>
 </ul>
@@ -99,6 +97,11 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/hello_world.html">
+   Hello World
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/altair_and_plotly.html">
    Basic example
@@ -370,7 +373,7 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="networkx.html">
-     Labels
+     NetworkX to Cytoscape example
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -441,21 +444,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -473,16 +476,16 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -506,11 +509,12 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -533,21 +537,25 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
-<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2"># Example cytoscape texts on nodes</span>
-<span class="s2">&quot;&quot;&quot;</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datastory</span>
 <span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Example cytoscape texts on nodes&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
-    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;deetly&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;example&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
     <span class="s2">&quot;keyword&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;example, graph, cytoscape&quot;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">628</span><span class="n">a66e1048d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="p">}</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> 
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+
+<span class="ne">AttributeError</span>: module &#39;deetly&#39; has no attribute &#39;story&#39;
 </pre></div>
 </div>
 </div>
@@ -612,7 +620,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "5a5d0851a07143f8b195f6c6c44e446d"}
+{"model_id": "b18a944d21854b4f9488c714bd356425", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <div class="cell docutils container">
@@ -621,32 +629,25 @@
         <span class="s1">&#39;stylesheet&#39;</span><span class="p">:</span> <span class="n">stylesheet</span><span class="p">,</span>
         <span class="s1">&#39;layout&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cose&#39;</span><span class="p">}</span>
 <span class="p">}</span>
-<span class="n">dp</span><span class="o">.</span><span class="n">cytoscape</span><span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="s2">&quot;Text on nodes&quot;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">cytoscape</span><span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="s2">&quot;Text on nodes&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/56a89ec8c250617c5240b590b8e88595 
-
-Metadata: https://storage.googleapis.com/deetly/examples/56a89ec8c250617c5240b590b8e88595/datapackage.json 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story Example cytoscape texts on nodes to the examples space...
+Published at: https://public.deetly.com/examples/42a5c012a584ece19898ff3668a74c82 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"f3aade7339a9457c87fa9789f3699ec4": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": [], "nodes": []}}, "de34d4610c354214927276f4515fb72d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5a5d0851a07143f8b195f6c6c44e446d": {"model_name": "CytoscapeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_dom_classes": [], "_interaction_handlers": {}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "CytoscapeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "CytoscapeView", "auto_ungrabify": false, "auto_unselectify": true, "autolock": false, "box_selection_enabled": false, "cytoscape_layout": {"name": "cola"}, "cytoscape_style": [{"selector": "node", "css": {"content": "data(name)", "text-valign": "center", "color": "white", "text-outline-width": 2, "text-outline-color": "green", "background-color": "green"}}, {"selector": ":selected", "css": {"background-color": "black", "line-color": "black", "target-arrow-color": "black", "source-arrow-color": "black", "text-outline-color": "black"}}], "desktop_tap_threshold": 4, "graph": "IPY_MODEL_dc1a528560b74551835ca8bdde1a7244", "headless": false, "hide_edges_on_viewport": false, "layout": "IPY_MODEL_de34d4610c354214927276f4515fb72d", "max_zoom": 1e+50, "min_zoom": 1e-50, "motion_blur": false, "motion_blur_opacity": 0.2, "panning_enabled": true, "pixel_ratio": "auto", "rendered_position": {"renderedPosition": {"x": 100, "y": 100}}, "selection_type": "single", "style_enabled": true, "texture_on_viewport": false, "tooltip_source": "tooltip", "touch_tap_threshold": 8, "user_panning_enabled": true, "user_zooming_enabled": true, "wheel_sensitivity": 1.0, "zoom": 2.0, "zooming_enabled": true}}, "dc1a528560b74551835ca8bdde1a7244": {"model_name": "GraphModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_adj": {"desktop": {}, "a": {}, "b": {}, "c": {}, "js": {}}, "_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "GraphModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": null, "edges": ["IPY_MODEL_456a40afd7d0491ca58bdb95c42d9474", "IPY_MODEL_144b1769f38e4bf096f7586bc0d89858", "IPY_MODEL_1ba0c2874f31477ebcb37667ccc78bc1", "IPY_MODEL_fc24720c8e9c45598bc0393d63f8ee51", "IPY_MODEL_868ffbc229514c09b0591234cc918993"], "nodes": ["IPY_MODEL_a7b6b41581f647eeb2d3d5d1c0748fce", "IPY_MODEL_21b816f595ee4de58e89bafe6408feef", "IPY_MODEL_81ee93fdb44a41d1922bbb86092b4607", "IPY_MODEL_b1bb06f184864746be235ed3e8764a82", "IPY_MODEL_03a4d440f9334311bb8058987064546d"]}}, "a7b6b41581f647eeb2d3d5d1c0748fce": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "desktop", "name": "Cytoscape", "href": "http://cytoscape.org"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "21b816f595ee4de58e89bafe6408feef": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "a", "name": "Grid", "href": "http://cytoscape.org"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "81ee93fdb44a41d1922bbb86092b4607": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "b", "name": "Cola", "href": "http://cytoscape.org"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "b1bb06f184864746be235ed3e8764a82": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "c", "name": "Popper", "href": "http://cytoscape.org"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "03a4d440f9334311bb8058987064546d": {"model_name": "NodeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "NodeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "NodeView", "classes": "", "data": {"id": "js", "name": "Cytoscape.js", "href": "http://js.cytoscape.org"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "456a40afd7d0491ca58bdb95c42d9474": {"model_name": "EdgeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "EdgeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "EdgeView", "classes": "", "data": {"source": "desktop", "target": "js"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "144b1769f38e4bf096f7586bc0d89858": {"model_name": "EdgeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "EdgeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "EdgeView", "classes": "", "data": {"source": "a", "target": "b"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "1ba0c2874f31477ebcb37667ccc78bc1": {"model_name": "EdgeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "EdgeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "EdgeView", "classes": "", "data": {"source": "a", "target": "c"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "fc24720c8e9c45598bc0393d63f8ee51": {"model_name": "EdgeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "EdgeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "EdgeView", "classes": "", "data": {"source": "b", "target": "c"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}, "868ffbc229514c09b0591234cc918993": {"model_name": "EdgeModel", "model_module": "jupyter-cytoscape", "model_module_version": "^1.0.4", "state": {"_model_module": "jupyter-cytoscape", "_model_module_version": "^1.0.4", "_model_name": "EdgeModel", "_view_count": null, "_view_module": "jupyter-cytoscape", "_view_module_version": "^1.0.4", "_view_name": "EdgeView", "classes": "", "data": {"source": "js", "target": "b"}, "grabbable": false, "grabbed": false, "group": "", "locked": false, "position": {}, "removed": false, "selectable": false, "selected": false}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {
@@ -670,15 +671,15 @@ Metadata: https://storage.googleapis.com/deetly/examples/56a89ec8c250617c5240b59
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="networkx.html" title="previous page">Labels</a>
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="networkx.html" title="previous page">NetworkX to Cytoscape example</a>
     <a class='right-next' id="next-link" href="labels.html" title="next page">Labels</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">

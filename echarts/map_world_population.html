@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -43,11 +43,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -55,6 +52,7 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Scatterplot subway stations" href="../pydeck/pydeck_scatterplot_subway_stations.html" />
@@ -89,7 +87,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Introduction
+   Deetly
   </a>
  </li>
 </ul>
@@ -99,6 +97,11 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/hello_world.html">
+   Hello World
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/altair_and_plotly.html">
    Basic example
@@ -370,7 +373,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
-     Labels
+     NetworkX to Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -441,21 +444,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -473,16 +476,16 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -506,11 +509,12 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -546,6 +550,10 @@
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.7.10/x64/lib/python3.7/site-packages/ipykernel_launcher.py:1: FutureWarning: Your version of xlrd is 1.2.0. In xlrd &gt;= 2.0, only the xls format is supported. As a result, the openpyxl engine will be used if it is installed and the engine argument is not specified. Install openpyxl instead.
+  &quot;&quot;&quot;Entry point for launching an IPython kernel.
+</pre></div>
+</div>
 <div class="output text_html"><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -658,13 +666,13 @@
     });
 </script>
 
-        <div id="ca6e5a6db1ac44719180431c1233ce82" style="width:900px; height:500px;"></div>
+        <div id="f441e8edb44f4a1ca1622d3a67b8895e" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'world'], function(echarts) {
-                var chart_ca6e5a6db1ac44719180431c1233ce82 = echarts.init(
-                    document.getElementById('ca6e5a6db1ac44719180431c1233ce82'), 'white', {renderer: 'canvas'});
-                var option_ca6e5a6db1ac44719180431c1233ce82 = {
+                var chart_f441e8edb44f4a1ca1622d3a67b8895e = echarts.init(
+                    document.getElementById('f441e8edb44f4a1ca1622d3a67b8895e'), 'white', {renderer: 'canvas'});
+                var option_f441e8edb44f4a1ca1622d3a67b8895e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -1685,7 +1693,7 @@
         "padding": 5
     }
 };
-                chart_ca6e5a6db1ac44719180431c1233ce82.setOption(option_ca6e5a6db1ac44719180431c1233ce82);
+                chart_f441e8edb44f4a1ca1622d3a67b8895e.setOption(option_f441e8edb44f4a1ca1622d3a67b8895e);
         });
     </script>
 </div></div>
@@ -1715,13 +1723,13 @@
     });
 </script>
 
-        <div id="1ab04391140141fcad01cb78fb8b7130" style="width:900px; height:500px;"></div>
+        <div id="b4ecd0d88a274a2299e567ae5b993098" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'world'], function(echarts) {
-                var chart_1ab04391140141fcad01cb78fb8b7130 = echarts.init(
-                    document.getElementById('1ab04391140141fcad01cb78fb8b7130'), 'white', {renderer: 'canvas'});
-                var option_1ab04391140141fcad01cb78fb8b7130 = {
+                var chart_b4ecd0d88a274a2299e567ae5b993098 = echarts.init(
+                    document.getElementById('b4ecd0d88a274a2299e567ae5b993098'), 'white', {renderer: 'canvas'});
+                var option_b4ecd0d88a274a2299e567ae5b993098 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2778,7 +2786,7 @@
         "borderWidth": 0
     }
 };
-                chart_1ab04391140141fcad01cb78fb8b7130.setOption(option_1ab04391140141fcad01cb78fb8b7130);
+                chart_b4ecd0d88a274a2299e567ae5b993098.setOption(option_b4ecd0d88a274a2299e567ae5b993098);
         });
     </script>
 </div></div>
@@ -2819,13 +2827,13 @@
     });
 </script>
 
-        <div id="c052d89cf5264bc39f91deef3740f785" style="width:900px; height:500px;"></div>
+        <div id="4f462735ea0544cdb0809cf6bbcf0761" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'world'], function(echarts) {
-                var chart_c052d89cf5264bc39f91deef3740f785 = echarts.init(
-                    document.getElementById('c052d89cf5264bc39f91deef3740f785'), 'white', {renderer: 'canvas'});
-                var option_c052d89cf5264bc39f91deef3740f785 = {
+                var chart_4f462735ea0544cdb0809cf6bbcf0761 = echarts.init(
+                    document.getElementById('4f462735ea0544cdb0809cf6bbcf0761'), 'white', {renderer: 'canvas'});
+                var option_4f462735ea0544cdb0809cf6bbcf0761 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -3888,7 +3896,7 @@
         "borderWidth": 0
     }
 };
-                chart_c052d89cf5264bc39f91deef3740f785.setOption(option_c052d89cf5264bc39f91deef3740f785);
+                chart_4f462735ea0544cdb0809cf6bbcf0761.setOption(option_4f462735ea0544cdb0809cf6bbcf0761);
         });
     </script>
 </div></div>
@@ -3935,15 +3943,15 @@
     });
 </script>
 
-    <div id="a0dba59dfae64f2ea757799ac0e48d39" style="width:900px; height:500px;"></div>
+    <div id="e7079b55ff454348b30b18ca51a058e6" style="width:900px; height:500px;"></div>
 
 
 <script>
     require(['echarts', 'echarts-gl', 'world'], function(echarts) {
-		var canvas_a0dba59dfae64f2ea757799ac0e48d39 = document.createElement('canvas');
-        var mapChart_a0dba59dfae64f2ea757799ac0e48d39 = echarts.init(
-	    canvas_a0dba59dfae64f2ea757799ac0e48d39, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
-        var mapOption_a0dba59dfae64f2ea757799ac0e48d39 = {
+		var canvas_e7079b55ff454348b30b18ca51a058e6 = document.createElement('canvas');
+        var mapChart_e7079b55ff454348b30b18ca51a058e6 = echarts.init(
+	    canvas_e7079b55ff454348b30b18ca51a058e6, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_e7079b55ff454348b30b18ca51a058e6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -5006,13 +5014,13 @@
         }
     ]
 };
-        mapChart_a0dba59dfae64f2ea757799ac0e48d39.setOption(mapOption_a0dba59dfae64f2ea757799ac0e48d39);
-    	var chart_a0dba59dfae64f2ea757799ac0e48d39 = echarts.init(
-            document.getElementById('a0dba59dfae64f2ea757799ac0e48d39'), 'white', {renderer: 'canvas'});
-	    var option_a0dba59dfae64f2ea757799ac0e48d39 = {
+        mapChart_e7079b55ff454348b30b18ca51a058e6.setOption(mapOption_e7079b55ff454348b30b18ca51a058e6);
+    	var chart_e7079b55ff454348b30b18ca51a058e6 = echarts.init(
+            document.getElementById('e7079b55ff454348b30b18ca51a058e6'), 'white', {renderer: 'canvas'});
+	    var option_e7079b55ff454348b30b18ca51a058e6 = {
            "globe": {
            "show": true,
-		   "baseTexture": mapChart_a0dba59dfae64f2ea757799ac0e48d39,
+		   "baseTexture": mapChart_e7079b55ff454348b30b18ca51a058e6,
            shading: 'lambert',
             light: {
                 ambient: {
@@ -5024,102 +5032,10 @@
              }
 
 		   }};
-        chart_a0dba59dfae64f2ea757799ac0e48d39.setOption(option_a0dba59dfae64f2ea757799ac0e48d39);
+        chart_e7079b55ff454348b30b18ca51a058e6.setOption(option_e7079b55ff454348b30b18ca51a058e6);
     });
 </script>
 </div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on MapGlobe in module pyecharts.charts.three_axis_charts.map_globe object:
-
-class MapGlobe(pyecharts.charts.chart.Chart3D, pyecharts.charts.basic_charts.map.MapMixin)
- |  MapGlobe(init_opts: Union[pyecharts.options.global_options.InitOpts, dict] = &lt;pyecharts.options.global_options.InitOpts object at 0x7fda3e3aefa0&gt;)
- |  
- |  Globe Map
- |  
- |  Method resolution order:
- |      MapGlobe
- |      pyecharts.charts.chart.Chart3D
- |      pyecharts.charts.chart.Chart
- |      pyecharts.charts.base.Base
- |      pyecharts.charts.mixins.ChartMixin
- |      pyecharts.charts.basic_charts.map.MapMixin
- |      builtins.object
- |  
- |  Methods defined here:
- |  
- |  __init__(self, init_opts: Union[pyecharts.options.global_options.InitOpts, dict] = &lt;pyecharts.options.global_options.InitOpts object at 0x7fda3e3aefa0&gt;)
- |      Initialize self.  See help(type(self)) for accurate signature.
- |  
- |  add_schema(self, maptype: str = &#39;china&#39;)
- |  
- |  render(self, path: str = &#39;render.html&#39;, template_name: str = &#39;simple_globe.html&#39;, env: Union[jinja2.environment.Environment, NoneType] = None, **kwargs) -&gt; str
- |  
- |  render_notebook(self)
- |  
- |  ----------------------------------------------------------------------
- |  Methods inherited from pyecharts.charts.chart.Chart:
- |  
- |  add_dataset(self, source: Union[Sequence, str, pyecharts.commons.utils.JsCode] = None, dimensions: Union[Sequence, NoneType] = None, source_header: Union[bool, NoneType] = None)
- |  
- |  set_colors(self, colors: Sequence[str])
- |  
- |  set_global_opts(self, title_opts: Union[pyecharts.options.global_options.TitleOpts, dict] = &lt;pyecharts.options.global_options.TitleOpts object at 0x7fda3e3e6190&gt;, legend_opts: Union[pyecharts.options.global_options.LegendOpts, dict] = &lt;pyecharts.options.global_options.LegendOpts object at 0x7fda3e3eea00&gt;, tooltip_opts: Union[pyecharts.options.global_options.TooltipOpts, dict, NoneType] = None, toolbox_opts: Union[pyecharts.options.global_options.ToolboxOpts, dict] = None, brush_opts: Union[pyecharts.options.global_options.BrushOpts, dict, NoneType] = None, xaxis_opts: Union[pyecharts.options.global_options.AxisOpts, dict, NoneType] = None, yaxis_opts: Union[pyecharts.options.global_options.AxisOpts, dict, NoneType] = None, visualmap_opts: Union[pyecharts.options.global_options.VisualMapOpts, dict, Sequence[Union[pyecharts.options.global_options.VisualMapOpts, dict]], NoneType] = None, datazoom_opts: Union[pyecharts.options.global_options.DataZoomOpts, dict, Sequence[Union[pyecharts.options.global_options.DataZoomOpts, dict]], NoneType] = None, graphic_opts: Union[pyecharts.options.charts_options.BaseGraphic, dict, Sequence[Union[pyecharts.options.charts_options.BaseGraphic, dict]], NoneType] = None, axispointer_opts: Union[pyecharts.options.global_options.AxisPointerOpts, dict, NoneType] = None)
- |  
- |  set_series_opts(self, label_opts: Union[pyecharts.options.series_options.LabelOpts, dict, NoneType] = None, linestyle_opts: Union[pyecharts.options.series_options.LineStyleOpts, dict, NoneType] = None, splitline_opts: Union[pyecharts.options.series_options.SplitLineOpts, dict, NoneType] = None, areastyle_opts: Union[pyecharts.options.series_options.AreaStyleOpts, dict, NoneType] = None, axisline_opts: Union[pyecharts.options.global_options.AxisLineOpts, dict, NoneType] = None, markpoint_opts: Union[pyecharts.options.series_options.MarkPointOpts, dict, NoneType] = None, markline_opts: Union[pyecharts.options.series_options.MarkLineOpts, dict, NoneType] = None, markarea_opts: Union[pyecharts.options.series_options.MarkAreaOpts, dict, NoneType] = None, effect_opts: Union[pyecharts.options.series_options.EffectOpts, dict, NoneType] = &lt;pyecharts.options.series_options.EffectOpts object at 0x7fda3e3e2780&gt;, tooltip_opts: Union[pyecharts.options.global_options.TooltipOpts, dict, NoneType] = None, itemstyle_opts: Union[pyecharts.options.series_options.ItemStyleOpts, dict, NoneType] = None, **kwargs)
- |  
- |  ----------------------------------------------------------------------
- |  Methods inherited from pyecharts.charts.base.Base:
- |  
- |  dump_options(self) -&gt; str
- |  
- |  dump_options_with_quotes(self) -&gt; str
- |  
- |  get_options(self) -&gt; dict
- |  
- |  render_embed(self, template_name: str = &#39;simple_chart.html&#39;, env: Union[jinja2.environment.Environment, NoneType] = None, **kwargs) -&gt; str
- |  
- |  ----------------------------------------------------------------------
- |  Methods inherited from pyecharts.charts.mixins.ChartMixin:
- |  
- |  add_js_funcs(self, *fns)
- |  
- |  load_javascript(self)
- |  
- |  ----------------------------------------------------------------------
- |  Data descriptors inherited from pyecharts.charts.mixins.ChartMixin:
- |  
- |  __dict__
- |      dictionary for instance variables (if defined)
- |  
- |  __weakref__
- |      list of weak references to the object (if defined)
- |  
- |  ----------------------------------------------------------------------
- |  Methods inherited from pyecharts.charts.basic_charts.map.MapMixin:
- |  
- |  add(self, series_name: str, data_pair: Sequence[Union[Sequence, pyecharts.options.charts_options.MapItem, dict]], maptype: str = &#39;china&#39;, *, is_selected: bool = True, is_roam: bool = True, center: Union[Sequence, NoneType] = None, aspect_scale: Union[int, float] = 0.75, bounding_coords: Union[Sequence[Union[int, float]], NoneType] = None, min_scale_limit: Union[int, float, NoneType] = None, max_scale_limit: Union[int, float, NoneType] = None, name_property: str = &#39;name&#39;, selected_mode: Union[bool, str] = False, zoom: Union[int, float, NoneType] = 1, name_map: Union[dict, NoneType] = None, symbol: Union[str, NoneType] = None, map_value_calculation: str = &#39;sum&#39;, is_map_symbol_show: bool = True, layout_center: Union[Sequence[str], NoneType] = None, layout_size: Union[str, int, float] = None, label_opts: Union[pyecharts.options.series_options.LabelOpts, dict, NoneType] = &lt;pyecharts.options.series_options.LabelOpts object at 0x7fda3e406870&gt;, tooltip_opts: Union[pyecharts.options.global_options.TooltipOpts, dict, NoneType] = None, itemstyle_opts: Union[pyecharts.options.series_options.ItemStyleOpts, dict, NoneType] = None, emphasis_label_opts: Union[pyecharts.options.series_options.LabelOpts, dict, NoneType] = None, emphasis_itemstyle_opts: Union[pyecharts.options.series_options.ItemStyleOpts, dict, NoneType] = None)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">dump_options</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;{\n    &quot;animation&quot;: true,\n    &quot;animationThreshold&quot;: 2000,\n    &quot;animationDuration&quot;: 1000,\n    &quot;animationEasing&quot;: &quot;cubicOut&quot;,\n    &quot;animationDelay&quot;: 0,\n    &quot;animationDurationUpdate&quot;: 300,\n    &quot;animationEasingUpdate&quot;: &quot;cubicOut&quot;,\n    &quot;animationDelayUpdate&quot;: 0,\n    &quot;color&quot;: [\n        &quot;#c23531&quot;,\n        &quot;#2f4554&quot;,\n        &quot;#61a0a8&quot;,\n        &quot;#d48265&quot;,\n        &quot;#749f83&quot;,\n        &quot;#ca8622&quot;,\n        &quot;#bda29a&quot;,\n        &quot;#6e7074&quot;,\n        &quot;#546570&quot;,\n        &quot;#c4ccd3&quot;,\n        &quot;#f05b72&quot;,\n        &quot;#ef5b9c&quot;,\n        &quot;#f47920&quot;,\n        &quot;#905a3d&quot;,\n        &quot;#fab27b&quot;,\n        &quot;#2a5caa&quot;,\n        &quot;#444693&quot;,\n        &quot;#726930&quot;,\n        &quot;#b2d235&quot;,\n        &quot;#6d8346&quot;,\n        &quot;#ac6767&quot;,\n        &quot;#1d953f&quot;,\n        &quot;#6950a1&quot;,\n        &quot;#918597&quot;\n    ],\n    &quot;series&quot;: [\n        {\n            &quot;type&quot;: &quot;map&quot;,\n            &quot;name&quot;: &quot;World Population&quot;,\n            &quot;label&quot;: {\n                &quot;show&quot;: false,\n                &quot;position&quot;: &quot;top&quot;,\n                &quot;margin&quot;: 8\n            },\n            &quot;mapType&quot;: &quot;world&quot;,\n            &quot;data&quot;: [\n                {\n                    &quot;name&quot;: &quot;Comoros&quot;,\n                    &quot;value&quot;: 869.595\n                },\n                {\n                    &quot;name&quot;: &quot;Djibouti&quot;,\n                    &quot;value&quot;: 988.002\n                },\n                {\n                    &quot;name&quot;: &quot;Eritrea&quot;,\n                    &quot;value&quot;: 3546.427\n                },\n                {\n                    &quot;name&quot;: &quot;Ethiopia&quot;,\n                    &quot;value&quot;: 114963.583\n                },\n                {\n                    &quot;name&quot;: &quot;Kenya&quot;,\n                    &quot;value&quot;: 53771.3\n                },\n                {\n                    &quot;name&quot;: &quot;Madagascar&quot;,\n                    &quot;value&quot;: 27691.019\n                },\n                {\n                    &quot;name&quot;: &quot;Malawi&quot;,\n                    &quot;value&quot;: 19129.955\n                },\n                {\n                    &quot;name&quot;: &quot;Mauritius&quot;,\n                    &quot;value&quot;: 1271.767\n                },\n                {\n                    &quot;name&quot;: &quot;Mayotte&quot;,\n                    &quot;value&quot;: 272.813\n                },\n                {\n                    &quot;name&quot;: &quot;Mozambique&quot;,\n                    &quot;value&quot;: 31255.435\n                },\n                {\n                    &quot;name&quot;: &quot;R\\u00e9union&quot;,\n                    &quot;value&quot;: 895.308\n                },\n                {\n                    &quot;name&quot;: &quot;Rwanda&quot;,\n                    &quot;value&quot;: 12952.209\n                },\n                {\n                    &quot;name&quot;: &quot;Seychelles&quot;,\n                    &quot;value&quot;: 98.34\n                },\n                {\n                    &quot;name&quot;: &quot;Somalia&quot;,\n                    &quot;value&quot;: 15893.219\n                },\n                {\n                    &quot;name&quot;: &quot;South Sudan&quot;,\n                    &quot;value&quot;: 11193.729\n                },\n                {\n                    &quot;name&quot;: &quot;Uganda&quot;,\n                    &quot;value&quot;: 45741\n                },\n                {\n                    &quot;name&quot;: &quot;United Republic of Tanzania&quot;,\n                    &quot;value&quot;: 59734.213\n                },\n                {\n                    &quot;name&quot;: &quot;Zambia&quot;,\n                    &quot;value&quot;: 18383.956\n                },\n                {\n                    &quot;name&quot;: &quot;Zimbabwe&quot;,\n                    &quot;value&quot;: 14862.927\n                },\n                {\n                    &quot;name&quot;: &quot;Angola&quot;,\n                    &quot;value&quot;: 32866.268\n                },\n                {\n                    &quot;name&quot;: &quot;Cameroon&quot;,\n                    &quot;value&quot;: 26545.864\n                },\n                {\n                    &quot;name&quot;: &quot;Central African Republic&quot;,\n                    &quot;value&quot;: 4829.764\n                },\n                {\n                    &quot;name&quot;: &quot;Chad&quot;,\n                    &quot;value&quot;: 16425.859\n                },\n                {\n                    &quot;name&quot;: &quot;Congo&quot;,\n                    &quot;value&quot;: 5518.092\n                },\n                {\n                    &quot;name&quot;: &quot;Democratic Republic of the Congo&quot;,\n                    &quot;value&quot;: 89561.404\n                },\n                {\n                    &quot;name&quot;: &quot;Equatorial Guinea&quot;,\n                    &quot;value&quot;: 1402.985\n                },\n                {\n                    &quot;name&quot;: &quot;Gabon&quot;,\n                    &quot;value&quot;: 2225.728\n                },\n                {\n                    &quot;name&quot;: &quot;Sao Tome and Principe&quot;,\n                    &quot;value&quot;: 219.161\n                },\n                {\n                    &quot;name&quot;: &quot;Botswana&quot;,\n                    &quot;value&quot;: 2351.625\n                },\n                {\n                    &quot;name&quot;: &quot;Eswatini&quot;,\n                    &quot;value&quot;: 1160.164\n                },\n                {\n                    &quot;name&quot;: &quot;Lesotho&quot;,\n                    &quot;value&quot;: 2142.252\n                },\n                {\n                    &quot;name&quot;: &quot;Namibia&quot;,\n                    &quot;value&quot;: 2540.916\n                },\n                {\n                    &quot;name&quot;: &quot;South Africa&quot;,\n                    &quot;value&quot;: 59308.69\n                },\n                {\n                    &quot;name&quot;: &quot;Benin&quot;,\n                    &quot;value&quot;: 12123.198\n                },\n                {\n                    &quot;name&quot;: &quot;Burkina Faso&quot;,\n                    &quot;value&quot;: 20903.278\n                },\n                {\n                    &quot;name&quot;: &quot;Cabo Verde&quot;,\n                    &quot;value&quot;: 555.988\n                },\n                {\n                    &quot;name&quot;: &quot;C\\u00f4te d\&#39;Ivoire&quot;,\n                    &quot;value&quot;: 26378.275\n                },\n                {\n                    &quot;name&quot;: &quot;Gambia&quot;,\n                    &quot;value&quot;: 2416.664\n                },\n                {\n                    &quot;name&quot;: &quot;Ghana&quot;,\n                    &quot;value&quot;: 31072.945\n                },\n                {\n                    &quot;name&quot;: &quot;Guinea&quot;,\n                    &quot;value&quot;: 13132.792\n                },\n                {\n                    &quot;name&quot;: &quot;Guinea-Bissau&quot;,\n                    &quot;value&quot;: 1967.998\n                },\n                {\n                    &quot;name&quot;: &quot;Liberia&quot;,\n                    &quot;value&quot;: 5057.677\n                },\n                {\n                    &quot;name&quot;: &quot;Mali&quot;,\n                    &quot;value&quot;: 20250.834\n                },\n                {\n                    &quot;name&quot;: &quot;Mauritania&quot;,\n                    &quot;value&quot;: 4649.66\n                },\n                {\n                    &quot;name&quot;: &quot;Niger&quot;,\n                    &quot;value&quot;: 24206.636\n                },\n                {\n                    &quot;name&quot;: &quot;Nigeria&quot;,\n                    &quot;value&quot;: 206139.587\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Helena&quot;,\n                    &quot;value&quot;: 6.071\n                },\n                {\n                    &quot;name&quot;: &quot;Senegal&quot;,\n                    &quot;value&quot;: 16743.93\n                },\n                {\n                    &quot;name&quot;: &quot;Sierra Leone&quot;,\n                    &quot;value&quot;: 7976.985\n                },\n                {\n                    &quot;name&quot;: &quot;Togo&quot;,\n                    &quot;value&quot;: 8278.737\n                },\n                {\n                    &quot;name&quot;: &quot;Algeria&quot;,\n                    &quot;value&quot;: 43851.043\n                },\n                {\n                    &quot;name&quot;: &quot;Egypt&quot;,\n                    &quot;value&quot;: 102334.403\n                },\n                {\n                    &quot;name&quot;: &quot;Libya&quot;,\n                    &quot;value&quot;: 6871.287\n                },\n                {\n                    &quot;name&quot;: &quot;Morocco&quot;,\n                    &quot;value&quot;: 36910.558\n                },\n                {\n                    &quot;name&quot;: &quot;Sudan&quot;,\n                    &quot;value&quot;: 43849.269\n                },\n                {\n                    &quot;name&quot;: &quot;Tunisia&quot;,\n                    &quot;value&quot;: 11818.618\n                },\n                {\n                    &quot;name&quot;: &quot;Western Sahara&quot;,\n                    &quot;value&quot;: 597.33\n                },\n                {\n                    &quot;name&quot;: &quot;Armenia&quot;,\n                    &quot;value&quot;: 2963.234\n                },\n                {\n                    &quot;name&quot;: &quot;Azerbaijan&quot;,\n                    &quot;value&quot;: 10139.175\n                },\n                {\n                    &quot;name&quot;: &quot;Bahrain&quot;,\n                    &quot;value&quot;: 1701.583\n                },\n                {\n                    &quot;name&quot;: &quot;Cyprus&quot;,\n                    &quot;value&quot;: 1207.361\n                },\n                {\n                    &quot;name&quot;: &quot;Georgia&quot;,\n                    &quot;value&quot;: 3989.175\n                },\n                {\n                    &quot;name&quot;: &quot;Iraq&quot;,\n                    &quot;value&quot;: 40222.503\n                },\n                {\n                    &quot;name&quot;: &quot;Israel&quot;,\n                    &quot;value&quot;: 8655.541\n                },\n                {\n                    &quot;name&quot;: &quot;Jordan&quot;,\n                    &quot;value&quot;: 10203.14\n                },\n                {\n                    &quot;name&quot;: &quot;Kuwait&quot;,\n                    &quot;value&quot;: 4270.563\n                },\n                {\n                    &quot;name&quot;: &quot;Lebanon&quot;,\n                    &quot;value&quot;: 6825.442\n                },\n                {\n                    &quot;name&quot;: &quot;Oman&quot;,\n                    &quot;value&quot;: 5106.622\n                },\n                {\n                    &quot;name&quot;: &quot;Qatar&quot;,\n                    &quot;value&quot;: 2881.06\n                },\n                {\n                    &quot;name&quot;: &quot;Saudi Arabia&quot;,\n                    &quot;value&quot;: 34813.867\n                },\n                {\n                    &quot;name&quot;: &quot;State of Palestine&quot;,\n                    &quot;value&quot;: 5101.416\n                },\n                {\n                    &quot;name&quot;: &quot;Syrian Arab Republic&quot;,\n                    &quot;value&quot;: 17500.657\n                },\n                {\n                    &quot;name&quot;: &quot;Turkey&quot;,\n                    &quot;value&quot;: 84339.067\n                },\n                {\n                    &quot;name&quot;: &quot;United Arab Emirates&quot;,\n                    &quot;value&quot;: 9890.4\n                },\n                {\n                    &quot;name&quot;: &quot;Yemen&quot;,\n                    &quot;value&quot;: 29825.968\n                },\n                {\n                    &quot;name&quot;: &quot;Kazakhstan&quot;,\n                    &quot;value&quot;: 18776.707\n                },\n                {\n                    &quot;name&quot;: &quot;Kyrgyzstan&quot;,\n                    &quot;value&quot;: 6524.191\n                },\n                {\n                    &quot;name&quot;: &quot;Tajikistan&quot;,\n                    &quot;value&quot;: 9537.642\n                },\n                {\n                    &quot;name&quot;: &quot;Turkmenistan&quot;,\n                    &quot;value&quot;: 6031.187\n                },\n                {\n                    &quot;name&quot;: &quot;Uzbekistan&quot;,\n                    &quot;value&quot;: 33469.199\n                },\n                {\n                    &quot;name&quot;: &quot;Afghanistan&quot;,\n                    &quot;value&quot;: 38928.341\n                },\n                {\n                    &quot;name&quot;: &quot;Bangladesh&quot;,\n                    &quot;value&quot;: 164689.383\n                },\n                {\n                    &quot;name&quot;: &quot;Bhutan&quot;,\n                    &quot;value&quot;: 771.612\n                },\n                {\n                    &quot;name&quot;: &quot;India&quot;,\n                    &quot;value&quot;: 1380004.385\n                },\n                {\n                    &quot;name&quot;: &quot;Iran (Islamic Republic of)&quot;,\n                    &quot;value&quot;: 83992.953\n                },\n                {\n                    &quot;name&quot;: &quot;Maldives&quot;,\n                    &quot;value&quot;: 540.542\n                },\n                {\n                    &quot;name&quot;: &quot;Nepal&quot;,\n                    &quot;value&quot;: 29136.808\n                },\n                {\n                    &quot;name&quot;: &quot;Pakistan&quot;,\n                    &quot;value&quot;: 220892.331\n                },\n                {\n                    &quot;name&quot;: &quot;Sri Lanka&quot;,\n                    &quot;value&quot;: 21413.25\n                },\n                {\n                    &quot;name&quot;: &quot;China&quot;,\n                    &quot;value&quot;: 1439323.774\n                },\n                {\n                    &quot;name&quot;: &quot;China, Hong Kong SAR&quot;,\n                    &quot;value&quot;: 7496.988\n                },\n                {\n                    &quot;name&quot;: &quot;China, Macao SAR&quot;,\n                    &quot;value&quot;: 649.342\n                },\n                {\n                    &quot;name&quot;: &quot;China, Taiwan Province of China&quot;,\n                    &quot;value&quot;: 23816.775\n                },\n                {\n                    &quot;name&quot;: &quot;Dem. People\&#39;s Republic of Korea&quot;,\n                    &quot;value&quot;: 25778.815\n                },\n                {\n                    &quot;name&quot;: &quot;Japan&quot;,\n                    &quot;value&quot;: 126476.458\n                },\n                {\n                    &quot;name&quot;: &quot;Mongolia&quot;,\n                    &quot;value&quot;: 3278.292\n                },\n                {\n                    &quot;name&quot;: &quot;Republic of Korea&quot;,\n                    &quot;value&quot;: 51269.183\n                },\n                {\n                    &quot;name&quot;: &quot;Brunei Darussalam&quot;,\n                    &quot;value&quot;: 437.483\n                },\n                {\n                    &quot;name&quot;: &quot;Cambodia&quot;,\n                    &quot;value&quot;: 16718.971\n                },\n                {\n                    &quot;name&quot;: &quot;Indonesia&quot;,\n                    &quot;value&quot;: 273523.621\n                },\n                {\n                    &quot;name&quot;: &quot;Lao People\&#39;s Democratic Republic&quot;,\n                    &quot;value&quot;: 7275.556\n                },\n                {\n                    &quot;name&quot;: &quot;Malaysia&quot;,\n                    &quot;value&quot;: 32365.998\n                },\n                {\n                    &quot;name&quot;: &quot;Myanmar&quot;,\n                    &quot;value&quot;: 54409.794\n                },\n                {\n                    &quot;name&quot;: &quot;Philippines&quot;,\n                    &quot;value&quot;: 109581.085\n                },\n                {\n                    &quot;name&quot;: &quot;Singapore&quot;,\n                    &quot;value&quot;: 5850.343\n                },\n                {\n                    &quot;name&quot;: &quot;Thailand&quot;,\n                    &quot;value&quot;: 69799.978\n                },\n                {\n                    &quot;name&quot;: &quot;Timor-Leste&quot;,\n                    &quot;value&quot;: 1318.442\n                },\n                {\n                    &quot;name&quot;: &quot;Viet Nam&quot;,\n                    &quot;value&quot;: 97338.583\n                },\n                {\n                    &quot;name&quot;: &quot;Anguilla&quot;,\n                    &quot;value&quot;: 15.002\n                },\n                {\n                    &quot;name&quot;: &quot;Antigua and Barbuda&quot;,\n                    &quot;value&quot;: 97.928\n                },\n                {\n                    &quot;name&quot;: &quot;Aruba&quot;,\n                    &quot;value&quot;: 106.766\n                },\n                {\n                    &quot;name&quot;: &quot;Bahamas&quot;,\n                    &quot;value&quot;: 393.248\n                },\n                {\n                    &quot;name&quot;: &quot;Barbados&quot;,\n                    &quot;value&quot;: 287.371\n                },\n                {\n                    &quot;name&quot;: &quot;Bonaire, Sint Eustatius and Saba&quot;,\n                    &quot;value&quot;: 26.221\n                },\n                {\n                    &quot;name&quot;: &quot;British Virgin Islands&quot;,\n                    &quot;value&quot;: 30.237\n                },\n                {\n                    &quot;name&quot;: &quot;Cayman Islands&quot;,\n                    &quot;value&quot;: 65.72\n                },\n                {\n                    &quot;name&quot;: &quot;Cuba&quot;,\n                    &quot;value&quot;: 11326.616\n                },\n                {\n                    &quot;name&quot;: &quot;Cura\\u00e7ao&quot;,\n                    &quot;value&quot;: 164.1\n                },\n                {\n                    &quot;name&quot;: &quot;Dominica&quot;,\n                    &quot;value&quot;: 71.991\n                },\n                {\n                    &quot;name&quot;: &quot;Dominican Republic&quot;,\n                    &quot;value&quot;: 10847.904\n                },\n                {\n                    &quot;name&quot;: &quot;Grenada&quot;,\n                    &quot;value&quot;: 112.519\n                },\n                {\n                    &quot;name&quot;: &quot;Guadeloupe&quot;,\n                    &quot;value&quot;: 400.127\n                },\n                {\n                    &quot;name&quot;: &quot;Haiti&quot;,\n                    &quot;value&quot;: 11402.533\n                },\n                {\n                    &quot;name&quot;: &quot;Jamaica&quot;,\n                    &quot;value&quot;: 2961.161\n                },\n                {\n                    &quot;name&quot;: &quot;Martinique&quot;,\n                    &quot;value&quot;: 375.265\n                },\n                {\n                    &quot;name&quot;: &quot;Montserrat&quot;,\n                    &quot;value&quot;: 4.999\n                },\n                {\n                    &quot;name&quot;: &quot;Puerto Rico&quot;,\n                    &quot;value&quot;: 2860.84\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Barth\\u00e9lemy&quot;,\n                    &quot;value&quot;: 9.885\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Kitts and Nevis&quot;,\n                    &quot;value&quot;: 53.192\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Lucia&quot;,\n                    &quot;value&quot;: 183.629\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Martin (French part)&quot;,\n                    &quot;value&quot;: 38.659\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Vincent and the Grenadines&quot;,\n                    &quot;value&quot;: 110.947\n                },\n                {\n                    &quot;name&quot;: &quot;Sint Maarten (Dutch part)&quot;,\n                    &quot;value&quot;: 42.882\n                },\n                {\n                    &quot;name&quot;: &quot;Trinidad and Tobago&quot;,\n                    &quot;value&quot;: 1399.491\n                },\n                {\n                    &quot;name&quot;: &quot;Turks and Caicos Islands&quot;,\n                    &quot;value&quot;: 38.718\n                },\n                {\n                    &quot;name&quot;: &quot;United States Virgin Islands&quot;,\n                    &quot;value&quot;: 104.423\n                },\n                {\n                    &quot;name&quot;: &quot;Belize&quot;,\n                    &quot;value&quot;: 397.621\n                },\n                {\n                    &quot;name&quot;: &quot;Costa Rica&quot;,\n                    &quot;value&quot;: 5094.114\n                },\n                {\n                    &quot;name&quot;: &quot;El Salvador&quot;,\n                    &quot;value&quot;: 6486.201\n                },\n                {\n                    &quot;name&quot;: &quot;Guatemala&quot;,\n                    &quot;value&quot;: 17915.567\n                },\n                {\n                    &quot;name&quot;: &quot;Honduras&quot;,\n                    &quot;value&quot;: 9904.608\n                },\n                {\n                    &quot;name&quot;: &quot;Mexico&quot;,\n                    &quot;value&quot;: 128932.753\n                },\n                {\n                    &quot;name&quot;: &quot;Nicaragua&quot;,\n                    &quot;value&quot;: 6624.554\n                },\n                {\n                    &quot;name&quot;: &quot;Panama&quot;,\n                    &quot;value&quot;: 4314.768\n                },\n                {\n                    &quot;name&quot;: &quot;Argentina&quot;,\n                    &quot;value&quot;: 45195.777\n                },\n                {\n                    &quot;name&quot;: &quot;Bolivia (Plurinational State of)&quot;,\n                    &quot;value&quot;: 11673.029\n                },\n                {\n                    &quot;name&quot;: &quot;Brazil&quot;,\n                    &quot;value&quot;: 212559.409\n                },\n                {\n                    &quot;name&quot;: &quot;Chile&quot;,\n                    &quot;value&quot;: 19116.209\n                },\n                {\n                    &quot;name&quot;: &quot;Colombia&quot;,\n                    &quot;value&quot;: 50882.884\n                },\n                {\n                    &quot;name&quot;: &quot;Ecuador&quot;,\n                    &quot;value&quot;: 17643.06\n                },\n                {\n                    &quot;name&quot;: &quot;Falkland Islands (Malvinas)&quot;,\n                    &quot;value&quot;: 3.483\n                },\n                {\n                    &quot;name&quot;: &quot;French Guiana&quot;,\n                    &quot;value&quot;: 298.682\n                },\n                {\n                    &quot;name&quot;: &quot;Guyana&quot;,\n                    &quot;value&quot;: 786.559\n                },\n                {\n                    &quot;name&quot;: &quot;Paraguay&quot;,\n                    &quot;value&quot;: 7132.53\n                },\n                {\n                    &quot;name&quot;: &quot;Peru&quot;,\n                    &quot;value&quot;: 32971.846\n                },\n                {\n                    &quot;name&quot;: &quot;Suriname&quot;,\n                    &quot;value&quot;: 586.634\n                },\n                {\n                    &quot;name&quot;: &quot;Uruguay&quot;,\n                    &quot;value&quot;: 3473.727\n                },\n                {\n                    &quot;name&quot;: &quot;Venezuela (Bolivarian Republic of)&quot;,\n                    &quot;value&quot;: 28435.943\n                },\n                {\n                    &quot;name&quot;: &quot;Australia&quot;,\n                    &quot;value&quot;: 25499.881\n                },\n                {\n                    &quot;name&quot;: &quot;New Zealand&quot;,\n                    &quot;value&quot;: 4822.233\n                },\n                {\n                    &quot;name&quot;: &quot;Fiji&quot;,\n                    &quot;value&quot;: 896.444\n                },\n                {\n                    &quot;name&quot;: &quot;New Caledonia&quot;,\n                    &quot;value&quot;: 285.491\n                },\n                {\n                    &quot;name&quot;: &quot;Papua New Guinea&quot;,\n                    &quot;value&quot;: 8947.027\n                },\n                {\n                    &quot;name&quot;: &quot;Solomon Islands&quot;,\n                    &quot;value&quot;: 686.878\n                },\n                {\n                    &quot;name&quot;: &quot;Vanuatu&quot;,\n                    &quot;value&quot;: 307.15\n                },\n                {\n                    &quot;name&quot;: &quot;Guam&quot;,\n                    &quot;value&quot;: 168.783\n                },\n                {\n                    &quot;name&quot;: &quot;Kiribati&quot;,\n                    &quot;value&quot;: 119.446\n                },\n                {\n                    &quot;name&quot;: &quot;Marshall Islands&quot;,\n                    &quot;value&quot;: 59.194\n                },\n                {\n                    &quot;name&quot;: &quot;Micronesia (Fed. States of)&quot;,\n                    &quot;value&quot;: 115.021\n                },\n                {\n                    &quot;name&quot;: &quot;Nauru&quot;,\n                    &quot;value&quot;: 10.834\n                },\n                {\n                    &quot;name&quot;: &quot;Northern Mariana Islands&quot;,\n                    &quot;value&quot;: 57.557\n                },\n                {\n                    &quot;name&quot;: &quot;Palau&quot;,\n                    &quot;value&quot;: 18.092\n                },\n                {\n                    &quot;name&quot;: &quot;American Samoa&quot;,\n                    &quot;value&quot;: 55.197\n                },\n                {\n                    &quot;name&quot;: &quot;Cook Islands&quot;,\n                    &quot;value&quot;: 17.564\n                },\n                {\n                    &quot;name&quot;: &quot;French Polynesia&quot;,\n                    &quot;value&quot;: 280.904\n                },\n                {\n                    &quot;name&quot;: &quot;Niue&quot;,\n                    &quot;value&quot;: 1.618\n                },\n                {\n                    &quot;name&quot;: &quot;Samoa&quot;,\n                    &quot;value&quot;: 198.41\n                },\n                {\n                    &quot;name&quot;: &quot;Tokelau&quot;,\n                    &quot;value&quot;: 1.35\n                },\n                {\n                    &quot;name&quot;: &quot;Tonga&quot;,\n                    &quot;value&quot;: 105.697\n                },\n                {\n                    &quot;name&quot;: &quot;Tuvalu&quot;,\n                    &quot;value&quot;: 11.792\n                },\n                {\n                    &quot;name&quot;: &quot;Wallis and Futuna Islands&quot;,\n                    &quot;value&quot;: 11.246\n                },\n                {\n                    &quot;name&quot;: &quot;Belarus&quot;,\n                    &quot;value&quot;: 9449.321\n                },\n                {\n                    &quot;name&quot;: &quot;Bulgaria&quot;,\n                    &quot;value&quot;: 6948.445\n                },\n                {\n                    &quot;name&quot;: &quot;Czechia&quot;,\n                    &quot;value&quot;: 10708.982\n                },\n                {\n                    &quot;name&quot;: &quot;Hungary&quot;,\n                    &quot;value&quot;: 9660.35\n                },\n                {\n                    &quot;name&quot;: &quot;Poland&quot;,\n                    &quot;value&quot;: 37846.605\n                },\n                {\n                    &quot;name&quot;: &quot;Republic of Moldova&quot;,\n                    &quot;value&quot;: 4033.963\n                },\n                {\n                    &quot;name&quot;: &quot;Romania&quot;,\n                    &quot;value&quot;: 19237.682\n                },\n                {\n                    &quot;name&quot;: &quot;Russian Federation&quot;,\n                    &quot;value&quot;: 145934.46\n                },\n                {\n                    &quot;name&quot;: &quot;Slovakia&quot;,\n                    &quot;value&quot;: 5459.643\n                },\n                {\n                    &quot;name&quot;: &quot;Ukraine&quot;,\n                    &quot;value&quot;: 43733.759\n                },\n                {\n                    &quot;name&quot;: &quot;Channel Islands&quot;,\n                    &quot;value&quot;: 173.859\n                },\n                {\n                    &quot;name&quot;: &quot;Denmark&quot;,\n                    &quot;value&quot;: 5792.203\n                },\n                {\n                    &quot;name&quot;: &quot;Estonia&quot;,\n                    &quot;value&quot;: 1326.539\n                },\n                {\n                    &quot;name&quot;: &quot;Faroe Islands&quot;,\n                    &quot;value&quot;: 48.865\n                },\n                {\n                    &quot;name&quot;: &quot;Finland&quot;,\n                    &quot;value&quot;: 5540.718\n                },\n                {\n                    &quot;name&quot;: &quot;Iceland&quot;,\n                    &quot;value&quot;: 341.25\n                },\n                {\n                    &quot;name&quot;: &quot;Ireland&quot;,\n                    &quot;value&quot;: 4937.796\n                },\n                {\n                    &quot;name&quot;: &quot;Isle of Man&quot;,\n                    &quot;value&quot;: 85.032\n                },\n                {\n                    &quot;name&quot;: &quot;Latvia&quot;,\n                    &quot;value&quot;: 1886.202\n                },\n                {\n                    &quot;name&quot;: &quot;Lithuania&quot;,\n                    &quot;value&quot;: 2722.291\n                },\n                {\n                    &quot;name&quot;: &quot;Norway&quot;,\n                    &quot;value&quot;: 5421.242\n                },\n                {\n                    &quot;name&quot;: &quot;Sweden&quot;,\n                    &quot;value&quot;: 10099.27\n                },\n                {\n                    &quot;name&quot;: &quot;United Kingdom&quot;,\n                    &quot;value&quot;: 67886.004\n                },\n                {\n                    &quot;name&quot;: &quot;Albania&quot;,\n                    &quot;value&quot;: 2877.8\n                },\n                {\n                    &quot;name&quot;: &quot;Andorra&quot;,\n                    &quot;value&quot;: 77.265\n                },\n                {\n                    &quot;name&quot;: &quot;Bosnia and Herzegovina&quot;,\n                    &quot;value&quot;: 3280.815\n                },\n                {\n                    &quot;name&quot;: &quot;Croatia&quot;,\n                    &quot;value&quot;: 4105.268\n                },\n                {\n                    &quot;name&quot;: &quot;Gibraltar&quot;,\n                    &quot;value&quot;: 33.691\n                },\n                {\n                    &quot;name&quot;: &quot;Greece&quot;,\n                    &quot;value&quot;: 10423.056\n                },\n                {\n                    &quot;name&quot;: &quot;Holy See&quot;,\n                    &quot;value&quot;: 0.809\n                },\n                {\n                    &quot;name&quot;: &quot;Italy&quot;,\n                    &quot;value&quot;: 60461.828\n                },\n                {\n                    &quot;name&quot;: &quot;Malta&quot;,\n                    &quot;value&quot;: 441.539\n                },\n                {\n                    &quot;name&quot;: &quot;Montenegro&quot;,\n                    &quot;value&quot;: 628.062\n                },\n                {\n                    &quot;name&quot;: &quot;North Macedonia&quot;,\n                    &quot;value&quot;: 2083.38\n                },\n                {\n                    &quot;name&quot;: &quot;Portugal&quot;,\n                    &quot;value&quot;: 10196.707\n                },\n                {\n                    &quot;name&quot;: &quot;San Marino&quot;,\n                    &quot;value&quot;: 33.938\n                },\n                {\n                    &quot;name&quot;: &quot;Serbia&quot;,\n                    &quot;value&quot;: 8737.37\n                },\n                {\n                    &quot;name&quot;: &quot;Slovenia&quot;,\n                    &quot;value&quot;: 2078.932\n                },\n                {\n                    &quot;name&quot;: &quot;Spain&quot;,\n                    &quot;value&quot;: 46754.783\n                },\n                {\n                    &quot;name&quot;: &quot;Austria&quot;,\n                    &quot;value&quot;: 9006.4\n                },\n                {\n                    &quot;name&quot;: &quot;Belgium&quot;,\n                    &quot;value&quot;: 11589.616\n                },\n                {\n                    &quot;name&quot;: &quot;France&quot;,\n                    &quot;value&quot;: 65273.512\n                },\n                {\n                    &quot;name&quot;: &quot;Germany&quot;,\n                    &quot;value&quot;: 83783.945\n                },\n                {\n                    &quot;name&quot;: &quot;Liechtenstein&quot;,\n                    &quot;value&quot;: 38.137\n                },\n                {\n                    &quot;name&quot;: &quot;Luxembourg&quot;,\n                    &quot;value&quot;: 625.976\n                },\n                {\n                    &quot;name&quot;: &quot;Monaco&quot;,\n                    &quot;value&quot;: 39.244\n                },\n                {\n                    &quot;name&quot;: &quot;Netherlands&quot;,\n                    &quot;value&quot;: 17134.873\n                },\n                {\n                    &quot;name&quot;: &quot;Switzerland&quot;,\n                    &quot;value&quot;: 8654.618\n                },\n                {\n                    &quot;name&quot;: &quot;Bermuda&quot;,\n                    &quot;value&quot;: 62.273\n                },\n                {\n                    &quot;name&quot;: &quot;Canada&quot;,\n                    &quot;value&quot;: 37742.157\n                },\n                {\n                    &quot;name&quot;: &quot;Greenland&quot;,\n                    &quot;value&quot;: 56.772\n                },\n                {\n                    &quot;name&quot;: &quot;Saint Pierre and Miquelon&quot;,\n                    &quot;value&quot;: 5.795\n                },\n                {\n                    &quot;name&quot;: &quot;United States of America&quot;,\n                    &quot;value&quot;: 331002.647\n                }\n            ],\n            &quot;roam&quot;: true,\n            &quot;aspectScale&quot;: 0.75,\n            &quot;nameProperty&quot;: &quot;name&quot;,\n            &quot;selectedMode&quot;: false,\n            &quot;zoom&quot;: 1,\n            &quot;nameMap&quot;: {\n                &quot;Dem. Rep. Congo&quot;: &quot;DR Congo&quot;,\n                &quot;Central African Rep.&quot;: &quot;Central African Republic&quot;,\n                &quot;S. Sudan&quot;: &quot;South Sudan&quot;,\n                &quot;Korea&quot;: &quot;South Korea&quot;\n            },\n            &quot;mapValueCalculation&quot;: &quot;sum&quot;,\n            &quot;showLegendSymbol&quot;: false,\n            &quot;emphasis&quot;: {}\n        }\n    ],\n    &quot;legend&quot;: [\n        {\n            &quot;data&quot;: [\n                &quot;World Population&quot;\n            ],\n            &quot;selected&quot;: {\n                &quot;World Population&quot;: true\n            },\n            &quot;show&quot;: true,\n            &quot;padding&quot;: 5,\n            &quot;itemGap&quot;: 10,\n            &quot;itemWidth&quot;: 25,\n            &quot;itemHeight&quot;: 14\n        }\n    ],\n    &quot;tooltip&quot;: {\n        &quot;show&quot;: true,\n        &quot;trigger&quot;: &quot;item&quot;,\n        &quot;triggerOn&quot;: &quot;mousemove|click&quot;,\n        &quot;axisPointer&quot;: {\n            &quot;type&quot;: &quot;line&quot;\n        },\n        &quot;showContent&quot;: true,\n        &quot;alwaysShowContent&quot;: false,\n        &quot;showDelay&quot;: 0,\n        &quot;hideDelay&quot;: 100,\n        &quot;textStyle&quot;: {\n            &quot;fontSize&quot;: 14\n        },\n        &quot;borderWidth&quot;: 0,\n        &quot;padding&quot;: 5\n    },\n    &quot;visualMap&quot;: {\n        &quot;show&quot;: true,\n        &quot;type&quot;: &quot;continuous&quot;,\n        &quot;min&quot;: 0.809,\n        &quot;max&quot;: 1439323.774,\n        &quot;text&quot;: [\n            &quot;max&quot;,\n            &quot;min&quot;\n        ],\n        &quot;inRange&quot;: {\n            &quot;color&quot;: [\n                &quot;lightskyblue&quot;,\n                &quot;yellow&quot;,\n                &quot;orangered&quot;\n            ]\n        },\n        &quot;calculable&quot;: true,\n        &quot;inverse&quot;: false,\n        &quot;splitNumber&quot;: 5,\n        &quot;orient&quot;: &quot;vertical&quot;,\n        &quot;showLabel&quot;: true,\n        &quot;itemWidth&quot;: 20,\n        &quot;itemHeight&quot;: 140,\n        &quot;borderWidth&quot;: 0\n    },\n    &quot;title&quot;: [\n        {\n            &quot;padding&quot;: 5,\n            &quot;itemGap&quot;: 10\n        }\n    ]\n}&#39;
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 
@@ -5145,15 +5061,15 @@ class MapGlobe(pyecharts.charts.chart.Chart3D, pyecharts.charts.basic_charts.map
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="map_norway.html" title="previous page">Geo Norway</a>
     <a class='right-next' id="next-link" href="../pydeck/pydeck_scatterplot_subway_stations.html" title="next page">Scatterplot subway stations</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">

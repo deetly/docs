@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -43,11 +43,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -55,6 +52,7 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="PDF view demo" href="../pdf/pdf_test.html" />
@@ -89,7 +87,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Introduction
+   Deetly
   </a>
  </li>
 </ul>
@@ -99,6 +97,11 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/hello_world.html">
+   Hello World
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/altair_and_plotly.html">
    Basic example
@@ -370,7 +373,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
-     Labels
+     NetworkX to Cytoscape example
     </a>
    </li>
    <li class="toctree-l2">
@@ -441,21 +444,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -473,16 +476,16 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -506,11 +509,11 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
@@ -522,13 +525,33 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-datapackage">
-   Create datapackage
+  <a class="reference internal nav-link" href="#create-story">
+   Create story
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-data-create-views">
-   Get data &amp; create views
+  <a class="reference internal nav-link" href="#headers">
+   Headers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#emphasis">
+   Emphasis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quotes">
+   Quotes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lists">
+   Lists
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   Code
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -555,6 +578,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -564,6 +588,9 @@
                 
   <div class="section" id="markdown-view">
 <h1>Markdown view<a class="headerlink" href="#markdown-view" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Examples from this <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown cheatsheet</a></p>
+</div></blockquote>
 <div class="section" id="setup">
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
@@ -574,33 +601,36 @@
 </div>
 </div>
 </div>
-<div class="section" id="create-datapackage">
-<h2>Create datapackage<a class="headerlink" href="#create-datapackage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-story">
+<h2>Create story<a class="headerlink" href="#create-story" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datapackage</span>
-<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Markdown view demo</span>
-<span class="s2">&quot;&quot;&quot;</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create datastory</span>
 <span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Markdown view demo&quot;</span><span class="p">,</span>
     <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Markdown view demo&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span><span class="p">,</span> 
-    <span class="s2">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;deetly&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;theme&quot;</span><span class="p">:</span><span class="s2">&quot;examples&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
     <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;markdown, example&quot;</span><span class="p">]</span>
 <span class="p">}</span>
 
-<span class="n">dp</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">863</span><span class="n">aa7f48478</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="p">}</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> 
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+
+<span class="ne">AttributeError</span>: module &#39;deetly&#39; has no attribute &#39;story&#39;
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="section" id="get-data-create-views">
-<h2>Get data &amp; create views<a class="headerlink" href="#get-data-create-views" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="headers">
+<h2>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -617,11 +647,34 @@
 <span class="s2">##### An H5 Header</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Headers&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Headers&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="emphasis">
+<h2>Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Emphasis, aka italics, with *asterisks* or _underscores_.</span>
+
+<span class="s2">Strong emphasis, aka bold, with **asterisks** or __underscores__.</span>
+
+<span class="s2">Combined emphasis with **asterisks and _underscores_**.</span>
+
+<span class="s2">Strikethrough uses two tildes. ~~Scratch this.~~</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Emphasis&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quotes">
+<h2>Quotes<a class="headerlink" href="#quotes" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -629,26 +682,43 @@
 <span class="s2">&gt; I miss my mind the most. - Mark Twain</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Blockquotes&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Blockquotes&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">- Item 1</span>
-<span class="s2">  - Sub-item 1</span>
-<span class="s2">  - Sub-item 2</span>
-<span class="s2">- Item 2</span>
-<span class="s2">  - Sub-item 1</span>
+<span class="s2">1. First ordered list item</span>
+<span class="s2">2. Another item</span>
+<span class="s2">⋅⋅* Unordered sub-list. </span>
+<span class="s2">1. Actual numbers don&#39;t matter, just that it&#39;s a number</span>
+<span class="s2">⋅⋅1. Ordered sub-list</span>
+<span class="s2">4. And another item.</span>
+
+<span class="s2">⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).</span>
+
+<span class="s2">⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅</span>
+<span class="s2">⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅</span>
+<span class="s2">⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</span>
+
+<span class="s2">* Unordered list can use asterisks</span>
+<span class="s2">- Or minuses</span>
+<span class="s2">+ Or pluses</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Lists&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Lists&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -671,9 +741,21 @@
 <span class="s2">name = &#39;Scott&#39;</span>
 <span class="s2">print &#39;Hi my name is &#39; + name</span>
 <span class="s2">```</span>
+
+
+<span class="s2">```javascript</span>
+<span class="s2">var s = &quot;JavaScript syntax highlighting&quot;;</span>
+<span class="s2">alert(s);</span>
+<span class="s2">```</span>
+
+<span class="s2"> </span>
+<span class="s2">```</span>
+<span class="s2">No language indicated, so no syntax highlighting. </span>
+<span class="s2">But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span>
+<span class="s2">```</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Codeblock&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Codeblock&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -684,17 +766,30 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">markdown</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Here is a link til [Google][GO].</span>
+<span class="s2">[I&#39;m an inline-style link](https://www.google.com)</span>
 
-<span class="s2">[GO]: https://google.com &quot;Google Link Title&quot;</span>
+<span class="s2">[I&#39;m an inline-style link with title](https://www.google.com &quot;Google&#39;s Homepage&quot;)</span>
 
+<span class="s2">[I&#39;m a reference-style link][Arbitrary case-insensitive reference text]</span>
 
-<span class="s2">Another link to google.</span>
+<span class="s2">[I&#39;m a relative reference to a repository file](../blob/master/LICENSE)</span>
 
-<span class="s2">[Google](https://google.com &quot;Google Link Title&quot;)</span>
+<span class="s2">[You can use numbers for reference-style link definitions][1]</span>
+
+<span class="s2">Or leave it empty and use the [link text itself].</span>
+
+<span class="s2">URLs and URLs in angle brackets will automatically get turned into links. </span>
+<span class="s2">http://www.example.com or &lt;http://www.example.com&gt; and sometimes </span>
+<span class="s2">example.com (but not on Github, for example).</span>
+
+<span class="s2">Some text to show that the reference links can follow later.</span>
+
+<span class="s2">[arbitrary case-insensitive reference text]: https://www.mozilla.org</span>
+<span class="s2">[1]: http://slashdot.org</span>
+<span class="s2">[link text itself]: http://www.reddit.com</span>
 <span class="s2">&quot;&quot;&quot;</span>        
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Links&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Links&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -721,7 +816,7 @@
 
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Tables&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Tables&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -747,7 +842,7 @@
 
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">dp</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Images&#39;</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">markdown</span><span class="p">,</span> <span class="s1">&#39;Images&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -757,14 +852,13 @@
 <h2>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dp</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/bb2d21ccc2e6f279dd0d919b459cc7e1 
-
-Metadata: https://storage.googleapis.com/deetly/examples/bb2d21ccc2e6f279dd0d919b459cc7e1/datapackage.json 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story Markdown view demo to the examples space...
+Published at: https://public.deetly.com/examples/9bbea7daa9e93510f064a20a24d457e8 
 </pre></div>
 </div>
 </div>
@@ -794,15 +888,15 @@ Metadata: https://storage.googleapis.com/deetly/examples/bb2d21ccc2e6f279dd0d919
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="../dashboard/multiplot_layout_with_plotly.html" title="previous page">Volcanos plotly example</a>
     <a class='right-next' id="next-link" href="../pdf/pdf_test.html" title="next page">PDF view demo</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">

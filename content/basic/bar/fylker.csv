@@ -1,0 +1,30 @@
+﻿Fylkenr;Fylkenavn;Tidligere
+01;Østfold;
+02;Akershus;
+03;Oslo;
+04;Hedmark;
+05;Oppland;
+06;Buskerud;
+07;Vestfold;
+08;Telemark;
+09;Aust-Agder;
+10;Vest-Agder;
+11;Rogaland;
+12;Hordaland;
+13;Bergen;
+14;Sogn og Fjordane;
+15;Møre og Romsdal;
+16;Sør-Trøndelag;
+17;Nord-Trøndelag;
+18;Nordland;
+19;Troms;
+20;Finnmark;
+21;Svalbard;
+22;Jan Mayen;
+30;Viken;01,02,06
+34;Innlandet;05,06
+38;Telemark og Vestfold;07,08
+42;Agder;09,10
+46;Vestland;12,14
+50;Trøndelag;16,16
+54;Troms og Finnmark;19,20

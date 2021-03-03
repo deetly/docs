@@ -1,0 +1,97 @@
+- file: intro
+  numbered: false
+
+- part: Get started
+  chapters: 
+    - file: intro/hello_world
+    - file: intro/altair_and_plotly
+
+- part: Charts
+  chapters:  
+  - file: echarts/barchart
+  - file: echarts/bar3D
+  - file: echarts/linechart
+  - file: echarts/boxplot
+  - file: echarts/matrix
+  - file: echarts/effect_scatter
+  - file: echarts/funnel
+  - file: echarts/gauge
+  - file: echarts/graph
+  - file: echarts/grid
+  - file: echarts/heatmap
+  - file: echarts/calendar
+  - file: echarts/sankey
+  - file: echarts/geo_forbidden_city
+  - file: echarts/map_flight
+  - file: echarts/map_norway
+  - file: echarts/map_world_population
+
+- part: Pydeck Maps
+  chapters:
+    - file: pydeck/pydeck_scatterplot_subway_stations
+    - file: pydeck/pydeck_heatmap_cattle
+    - file: pydeck/pydeck_kommuner
+    - file: pydeck/pydeck_road_accidents
+
+- part: Altair Maps
+  chapters: 
+    - file: altair/geojson/map_geojson_basic
+    - file: altair/topojson/map_topojson_us_airports
+
+- part: Plotly Maps
+  chapters: 
+    - file: plotly/geojson/map_from_geojson_us_unemployment
+    - file: plotly/geojson/map_geojson_choropleth
+
+- part: Plotly
+  chapters:  
+    - file: plotly/bars_population_pyramid
+    - file: plotly/timeseries_rangebreak
+    - file: plotly/express/plotly_express_samples
+
+
+- part: Bar charts
+  chapters:  
+  - file: altair/basic/bar_line_humdata
+  - file: basic/bar/barcharts
+  - file: basic/line/linecharts
+  - file: samples/ssb_employment
+
+
+- part: Dashboards
+  chapters: 
+  - file: dashboard/multiplot_layout_with_plotly
+
+- part: Markdown
+  chapters: 
+    - file: markdown/markdown-test 
+
+- part: PDF
+  chapters: 
+  - file: pdf/pdf_test 
+
+- part: Graphs
+  chapters:
+  - file: graphviz/about
+    sections: 
+      - file: graphviz/basic 
+  - file: cytoscape/about   
+    sections:   
+      - file: cytoscape/networkx
+      - file: cytoscape/text-on-nodes
+      - file: cytoscape/labels
+      - file: cytoscape/examples
+
+- part: Forcegraph
+  chapters:
+    - file: forcegraph/forcegraph-teams
+
+  
+- part: Process mining
+  chapters:  
+    - file: process-mining/process_mining_pm4py
+
+- part: Wordcloud
+  chapters:  
+    - file: wordcloud/vega_wordcloud
+

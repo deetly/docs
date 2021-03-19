@@ -46,6 +46,7 @@
 - part: Plotly
   chapters:  
     - file: plotly/bars_population_pyramid
+    - file: plotly/heatmaps
     - file: plotly/timeseries_rangebreak
     - file: plotly/express/plotly_express_samples
 

@@ -58,7 +58,7 @@ jsonpickle==2.0.0
 deprecation==2.1.0 
 graphviz==0.16 
 intervaltree==3.1.0 
-lxml==4.6.2 
+lxml==4.6.3 
 matplotlib==3.3.4 
 pandas==1.2.3 
 pydotplus==2.0.2 

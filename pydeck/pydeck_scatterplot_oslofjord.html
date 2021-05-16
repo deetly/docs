@@ -1,0 +1,867 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scatterplot Oslofjorden &#8212; deetly documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scatterplot subway stations" href="pydeck_scatterplot_subway_stations.html" />
+    <link rel="prev" title="Geo world population" href="../echarts/map_world_population.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">deetly documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Deetly
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/hello_world.html">
+   Hello World
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Charts
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/barchart.html">
+   Bar chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/bar3D.html">
+   Bar 3D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/linechart.html">
+   Line chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/boxplot.html">
+   Boxplot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/matrix.html">
+   Custom chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/effect_scatter.html">
+   Effect Scatter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/funnel.html">
+   Funnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/gauge.html">
+   Gauge
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/graph.html">
+   Graph
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/grid.html">
+   Grid chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/heatmap.html">
+   Heatmap
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/calendar.html">
+   Calendar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/sankey.html">
+   Sankey chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/geo_forbidden_city.html">
+   Register Url
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_flight.html">
+   Geoline sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_norway.html">
+   Geo Norway
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_world_population.html">
+   Geo world population
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pydeck Maps
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Scatterplot Oslofjorden
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_scatterplot_subway_stations.html">
+   Scatterplot subway stations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_heatmap_cattle.html">
+   Heatmap cattle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Altair Maps
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly Maps
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/heatmaps.html">
+   Plotly Heatmaps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../graphviz/basic.html">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/networkx.html">
+     NetworkX to Cytoscape example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/text-on-nodes.html">
+     Text on nodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/labels.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/pydeck/pydeck_scatterplot_oslofjord.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/docs/master?urlpath=tree/content/pydeck/pydeck_scatterplot_oslofjord.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/docs/blob/master/content/pydeck/pydeck_scatterplot_oslofjord.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="scatterplot-oslofjorden">
+<h1>Scatterplot Oslofjorden<a class="headerlink" href="#scatterplot-oslofjorden" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Christiania Roklub, 20201</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pydeck</span> <span class="k">as</span> <span class="nn">pdk</span>
+
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Roorientering Osloforden 2021&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;examples&quot;</span><span class="p">,</span> <span class="s2">&quot;pydeck&quot;</span><span class="p">,</span> <span class="s2">&quot;scatterplot&quot;</span><span class="p">,</span> <span class="s2">&quot;maps&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">URL</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/deetly/dataset/master/examples/roorientering2021.csv&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;[0, 146, 188, 255]&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;nummer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;post&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>post</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>color</th>
+      <th>nummer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1 Ingierstrand</td>
+      <td>59.818308</td>
+      <td>10.746904</td>
+      <td>[0, 146, 188, 255]</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2 Hvalstrand</td>
+      <td>59.842857</td>
+      <td>10.488384</td>
+      <td>[0, 146, 188, 255]</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3 Sjøstrand. Hurum</td>
+      <td>59.797881</td>
+      <td>10.495145</td>
+      <td>[0, 146, 188, 255]</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4 Fornebustranda</td>
+      <td>59.888117</td>
+      <td>10.583511</td>
+      <td>[0, 146, 188, 255]</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5 Torvøya. Utenfor Storøyodden</td>
+      <td>59.885863</td>
+      <td>10.584795</td>
+      <td>[0, 146, 188, 255]</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use pydeck&#39;s data_utils module to fit a viewport to the central 90% of the data</span>
+<span class="n">viewport</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">data_utils</span><span class="o">.</span><span class="n">compute_view</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">]],</span> <span class="n">view_proportion</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scatterplot</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Layer</span><span class="p">(</span>
+    <span class="s1">&#39;ScatterplotLayer&#39;</span><span class="p">,</span>
+    <span class="n">df</span><span class="p">,</span>
+    <span class="n">get_position</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
+    <span class="n">get_radius</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
+    <span class="n">get_fill_color</span><span class="o">=</span><span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">140</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Layer</span><span class="p">(</span>
+    <span class="s1">&#39;TextLayer&#39;</span><span class="p">,</span>
+    <span class="n">df</span><span class="p">,</span>
+    <span class="n">pickable</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">get_position</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
+    <span class="n">get_text</span><span class="o">=</span><span class="s1">&#39;nummer&#39;</span><span class="p">,</span>
+    <span class="n">get_color</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">],</span>
+    <span class="n">billboard</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">get_size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">get_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">get_text_anchor</span><span class="o">=</span><span class="s1">&#39;&quot;middle&quot;&#39;</span><span class="p">,</span>
+    <span class="n">get_alignment_baseline</span><span class="o">=</span><span class="s1">&#39;&quot;center&quot;&#39;</span>
+<span class="p">)</span>
+
+<span class="n">layers</span> <span class="o">=</span> <span class="p">[</span><span class="n">scatterplot</span><span class="p">,</span> <span class="n">text</span><span class="p">]</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span><span class="n">layers</span><span class="o">=</span><span class="n">layers</span><span class="p">,</span><span class="n">map_style</span><span class="o">=</span><span class="s2">&quot;light_no_labels&quot;</span><span class="p">,</span><span class="n">initial_view_state</span><span class="o">=</span><span class="n">viewport</span><span class="p">,</span><span class="n">api_keys</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;mapbox&quot;</span><span class="p">:</span> <span class="n">MAPBOX_TOKEN</span><span class="p">})</span>
+<span class="n">g</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;roorientering.html&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="100%"
+            height=500
+            frameborder="0"
+            srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;pydeck&lt;/title&gt;
+        &lt;script src=&quot;https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css&quot; /&gt;
+    &lt;script src=&#x27;https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.4.*/dist/index.js&#x27;&gt;&lt;/script&gt;
+    &lt;style&gt;
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-map-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#map {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#deckgl-overlay {
+  z-index: 2;
+  background: none;
+}
+
+#deck-map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;deck-container&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;script&gt;
+    const jsonInput = {&quot;initialViewState&quot;: {&quot;latitude&quot;: 59.85674185666667, &quot;longitude&quot;: 10.632278686666668, &quot;zoom&quot;: 10}, &quot;layers&quot;: [{&quot;@@type&quot;: &quot;ScatterplotLayer&quot;, &quot;data&quot;: [{&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8183082, &quot;longitude&quot;: 10.7469041, &quot;nummer&quot;: &quot;1&quot;, &quot;post&quot;: &quot;1 Ingierstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.842857, &quot;longitude&quot;: 10.4883838, &quot;nummer&quot;: &quot;2&quot;, &quot;post&quot;: &quot;2 Hvalstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7978812, &quot;longitude&quot;: 10.4951453, &quot;nummer&quot;: &quot;3&quot;, &quot;post&quot;: &quot;3 Sj\u00f8strand. Hurum&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.888117, &quot;longitude&quot;: 10.5835113, &quot;nummer&quot;: &quot;4&quot;, &quot;post&quot;: &quot;4 Fornebustranda&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8858635, &quot;longitude&quot;: 10.5847946, &quot;nummer&quot;: &quot;5&quot;, &quot;post&quot;: &quot;5 Torv\u00f8ya. Utenfor Stor\u00f8yodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9099005, &quot;longitude&quot;: 10.6546019, &quot;nummer&quot;: &quot;6&quot;, &quot;post&quot;: &quot;6 Killingen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8029927, &quot;longitude&quot;: 10.4887129, &quot;nummer&quot;: &quot;7&quot;, &quot;post&quot;: &quot;7 Fyrsteilene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8626402, &quot;longitude&quot;: 10.7149639, &quot;nummer&quot;: &quot;8&quot;, &quot;post&quot;: &quot;8 Husberg\u00f8ya&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8514029, &quot;longitude&quot;: 10.5313536, &quot;nummer&quot;: &quot;9&quot;, &quot;post&quot;: &quot;9 Lang\u00e5ra. Butikken&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7580842, &quot;longitude&quot;: 10.561621, &quot;nummer&quot;: &quot;10&quot;, &quot;post&quot;: &quot;10 S\u00f8ndre Lang\u00e5ra. Nord spissen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8919072, &quot;longitude&quot;: 10.5384235, &quot;nummer&quot;: &quot;11&quot;, &quot;post&quot;: &quot;11 Sj\u00f8holmen. Flytebrygge med skulptur&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8372322, &quot;longitude&quot;: 10.719023, &quot;nummer&quot;: &quot;12&quot;, &quot;post&quot;: &quot;12 Storeflua. Skvalpeskj\u00e6r syd avSkjerholmene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.786179, &quot;longitude&quot;: 10.733981, &quot;nummer&quot;: &quot;13&quot;, &quot;post&quot;: &quot;13 Svartskog brygge&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9033377, &quot;longitude&quot;: 10.7526353, &quot;nummer&quot;: &quot;14&quot;, &quot;post&quot;: &quot;14 S\u00f8renga ( indre kanal )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8948529, &quot;longitude&quot;: 10.7313554, &quot;nummer&quot;: &quot;15&quot;, &quot;post&quot;: &quot;15 Arbeidernes Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9175127, &quot;longitude&quot;: 10.6609633, &quot;nummer&quot;: &quot;16&quot;, &quot;post&quot;: &quot;16 Bestumkilen Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8860124, &quot;longitude&quot;: 10.5340435, &quot;nummer&quot;: &quot;17&quot;, &quot;post&quot;: &quot;17 B\u00e6rum Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9094875, &quot;longitude&quot;: 10.6998632, &quot;nummer&quot;: &quot;18&quot;, &quot;post&quot;: &quot;18 Christiania Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9071213, &quot;longitude&quot;: 10.6929413, &quot;nummer&quot;: &quot;19&quot;, &quot;post&quot;: &quot;19 Norske Studenters Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8659039, &quot;longitude&quot;: 10.7601763, &quot;nummer&quot;: &quot;2O&quot;, &quot;post&quot;: &quot;2O Ormsund Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9173567, &quot;longitude&quot;: 10.6738278, &quot;nummer&quot;: &quot;21&quot;, &quot;post&quot;: &quot;21 Oslo Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8843013, &quot;longitude&quot;: 10.5427055, &quot;nummer&quot;: &quot;22&quot;, &quot;post&quot;: &quot;22 Solodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8880713, &quot;longitude&quot;: 10.5650387, &quot;nummer&quot;: &quot;23&quot;, &quot;post&quot;: &quot;23 Veritas Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7169257, &quot;longitude&quot;: 10.7106393, &quot;nummer&quot;: &quot;24&quot;, &quot;post&quot;: &quot;24 Bunnefjorden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9105787, &quot;longitude&quot;: 10.7310193, &quot;nummer&quot;: &quot;25&quot;, &quot;post&quot;: &quot;25 R\u00e5dhusbrygga&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8888905, &quot;longitude&quot;: 10.5962671, &quot;nummer&quot;: &quot;26&quot;, &quot;post&quot;: &quot;26 Koksabukta&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8754247, &quot;longitude&quot;: 10.5182043, &quot;nummer&quot;: &quot;27&quot;, &quot;post&quot;: &quot;27 Halsbukta ( Nes\u00f8ya N\u00d8 )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7590858, &quot;longitude&quot;: 10.5036673, &quot;nummer&quot;: &quot;28&quot;, &quot;post&quot;: &quot;28 N\u00e6rsnesbukta (Syd for Slemmestad )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8110545, &quot;longitude&quot;: 10.6911281, &quot;nummer&quot;: &quot;29&quot;, &quot;post&quot;: &quot;29 Kirkevika ( Nesoddlandet \u00d8st )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8329723, &quot;longitude&quot;: 10.762465, &quot;nummer&quot;: &quot;30&quot;, &quot;post&quot;: &quot;30 Hvervenbukta&quot;}], &quot;getFillColor&quot;: [180, 0, 200, 140], &quot;getPosition&quot;: &quot;@@=[longitude, latitude]&quot;, &quot;getRadius&quot;: 400, &quot;id&quot;: &quot;c2d6a848-e3d5-453a-972b-2fab4983f5a2&quot;}, {&quot;@@type&quot;: &quot;TextLayer&quot;, &quot;billboard&quot;: false, &quot;data&quot;: [{&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8183082, &quot;longitude&quot;: 10.7469041, &quot;nummer&quot;: &quot;1&quot;, &quot;post&quot;: &quot;1 Ingierstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.842857, &quot;longitude&quot;: 10.4883838, &quot;nummer&quot;: &quot;2&quot;, &quot;post&quot;: &quot;2 Hvalstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7978812, &quot;longitude&quot;: 10.4951453, &quot;nummer&quot;: &quot;3&quot;, &quot;post&quot;: &quot;3 Sj\u00f8strand. Hurum&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.888117, &quot;longitude&quot;: 10.5835113, &quot;nummer&quot;: &quot;4&quot;, &quot;post&quot;: &quot;4 Fornebustranda&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8858635, &quot;longitude&quot;: 10.5847946, &quot;nummer&quot;: &quot;5&quot;, &quot;post&quot;: &quot;5 Torv\u00f8ya. Utenfor Stor\u00f8yodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9099005, &quot;longitude&quot;: 10.6546019, &quot;nummer&quot;: &quot;6&quot;, &quot;post&quot;: &quot;6 Killingen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8029927, &quot;longitude&quot;: 10.4887129, &quot;nummer&quot;: &quot;7&quot;, &quot;post&quot;: &quot;7 Fyrsteilene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8626402, &quot;longitude&quot;: 10.7149639, &quot;nummer&quot;: &quot;8&quot;, &quot;post&quot;: &quot;8 Husberg\u00f8ya&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8514029, &quot;longitude&quot;: 10.5313536, &quot;nummer&quot;: &quot;9&quot;, &quot;post&quot;: &quot;9 Lang\u00e5ra. Butikken&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7580842, &quot;longitude&quot;: 10.561621, &quot;nummer&quot;: &quot;10&quot;, &quot;post&quot;: &quot;10 S\u00f8ndre Lang\u00e5ra. Nord spissen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8919072, &quot;longitude&quot;: 10.5384235, &quot;nummer&quot;: &quot;11&quot;, &quot;post&quot;: &quot;11 Sj\u00f8holmen. Flytebrygge med skulptur&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8372322, &quot;longitude&quot;: 10.719023, &quot;nummer&quot;: &quot;12&quot;, &quot;post&quot;: &quot;12 Storeflua. Skvalpeskj\u00e6r syd avSkjerholmene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.786179, &quot;longitude&quot;: 10.733981, &quot;nummer&quot;: &quot;13&quot;, &quot;post&quot;: &quot;13 Svartskog brygge&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9033377, &quot;longitude&quot;: 10.7526353, &quot;nummer&quot;: &quot;14&quot;, &quot;post&quot;: &quot;14 S\u00f8renga ( indre kanal )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8948529, &quot;longitude&quot;: 10.7313554, &quot;nummer&quot;: &quot;15&quot;, &quot;post&quot;: &quot;15 Arbeidernes Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9175127, &quot;longitude&quot;: 10.6609633, &quot;nummer&quot;: &quot;16&quot;, &quot;post&quot;: &quot;16 Bestumkilen Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8860124, &quot;longitude&quot;: 10.5340435, &quot;nummer&quot;: &quot;17&quot;, &quot;post&quot;: &quot;17 B\u00e6rum Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9094875, &quot;longitude&quot;: 10.6998632, &quot;nummer&quot;: &quot;18&quot;, &quot;post&quot;: &quot;18 Christiania Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9071213, &quot;longitude&quot;: 10.6929413, &quot;nummer&quot;: &quot;19&quot;, &quot;post&quot;: &quot;19 Norske Studenters Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8659039, &quot;longitude&quot;: 10.7601763, &quot;nummer&quot;: &quot;2O&quot;, &quot;post&quot;: &quot;2O Ormsund Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9173567, &quot;longitude&quot;: 10.6738278, &quot;nummer&quot;: &quot;21&quot;, &quot;post&quot;: &quot;21 Oslo Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8843013, &quot;longitude&quot;: 10.5427055, &quot;nummer&quot;: &quot;22&quot;, &quot;post&quot;: &quot;22 Solodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8880713, &quot;longitude&quot;: 10.5650387, &quot;nummer&quot;: &quot;23&quot;, &quot;post&quot;: &quot;23 Veritas Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7169257, &quot;longitude&quot;: 10.7106393, &quot;nummer&quot;: &quot;24&quot;, &quot;post&quot;: &quot;24 Bunnefjorden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9105787, &quot;longitude&quot;: 10.7310193, &quot;nummer&quot;: &quot;25&quot;, &quot;post&quot;: &quot;25 R\u00e5dhusbrygga&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8888905, &quot;longitude&quot;: 10.5962671, &quot;nummer&quot;: &quot;26&quot;, &quot;post&quot;: &quot;26 Koksabukta&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8754247, &quot;longitude&quot;: 10.5182043, &quot;nummer&quot;: &quot;27&quot;, &quot;post&quot;: &quot;27 Halsbukta ( Nes\u00f8ya N\u00d8 )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7590858, &quot;longitude&quot;: 10.5036673, &quot;nummer&quot;: &quot;28&quot;, &quot;post&quot;: &quot;28 N\u00e6rsnesbukta (Syd for Slemmestad )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8110545, &quot;longitude&quot;: 10.6911281, &quot;nummer&quot;: &quot;29&quot;, &quot;post&quot;: &quot;29 Kirkevika ( Nesoddlandet \u00d8st )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8329723, &quot;longitude&quot;: 10.762465, &quot;nummer&quot;: &quot;30&quot;, &quot;post&quot;: &quot;30 Hvervenbukta&quot;}], &quot;getAlignmentBaseline&quot;: &quot;center&quot;, &quot;getAngle&quot;: 0, &quot;getColor&quot;: [0, 0, 0, 255], &quot;getPosition&quot;: &quot;@@=[longitude, latitude]&quot;, &quot;getSize&quot;: 16, &quot;getText&quot;: &quot;@@=nummer&quot;, &quot;getTextAnchor&quot;: &quot;middle&quot;, &quot;id&quot;: &quot;0c06c395-a1d2-48ff-b96b-8e46c3278f97&quot;, &quot;pickable&quot;: true}], &quot;mapProvider&quot;: &quot;carto&quot;, &quot;mapStyle&quot;: &quot;https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json&quot;, &quot;views&quot;: [{&quot;@@type&quot;: &quot;MapView&quot;, &quot;controller&quot;: true}]};
+    const tooltip = true;
+    const customLibraries = null;
+
+    const deckInstance = createDeck({
+            mapboxApiKey: &#x27;pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw&#x27;,
+                  container: document.getElementById(&#x27;deck-container&#x27;),
+      jsonInput,
+      tooltip,
+      customLibraries
+    });
+
+  &lt;/script&gt;
+&lt;/html&gt;"
+        ></iframe>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">pydeck</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s2">&quot;poster&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story Roorientering Osloforden 2021 to the examples space...
+Published at: https://public.deetly.com/examples/ac319b749a0e17211370e518c372eb8a 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"aa5d6d8268d64c368cf15dba087d8a89": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7cfb39bc600345cda89b68837f25f219": {"model_name": "JupyterTransportModel", "model_module": "@deck.gl/jupyter-widget", "model_module_version": "~8.4.*", "state": {"_dom_classes": [], "_model_module": "@deck.gl/jupyter-widget", "_model_module_version": "~8.4.*", "_model_name": "JupyterTransportModel", "_view_count": null, "_view_module": "@deck.gl/jupyter-widget", "_view_module_version": "~8.4.*", "_view_name": "JupyterTransportView", "carto_key": null, "custom_libraries": [], "data_buffer": null, "google_maps_key": null, "height": 800, "json_input": "", "layout": "IPY_MODEL_aa5d6d8268d64c368cf15dba087d8a89", "mapbox_key": "pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw", "tooltip": true, "width": "100%"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pydeck"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../echarts/map_world_population.html" title="previous page">Geo world population</a>
+    <a class='right-next' id="next-link" href="pydeck_scatterplot_subway_stations.html" title="next page">Scatterplot subway stations</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright .<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

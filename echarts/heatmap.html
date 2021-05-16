@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heatmap &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -59,14 +56,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Calendar" href="calendar.html" />
     <link rel="prev" title="Grid chart" href="grid.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -75,30 +72,30 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  
-  <h1 class="site-logo" id="site-title">deetly documentation</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">deetly documentation</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Deetly
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Get started
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/hello_world.html">
    Hello World
@@ -110,12 +107,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Charts
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="barchart.html">
    Bar chart
@@ -202,12 +199,17 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Pydeck Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_scatterplot_oslofjord.html">
+   Scatterplot Oslofjorden
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_scatterplot_subway_stations.html">
    Scatterplot subway stations
@@ -229,12 +231,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Altair Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
    Map from geoJSON (SSB and NAV data)
@@ -246,12 +248,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
    Map from topoJSON. US Unemployment
@@ -263,12 +265,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/bars_population_pyramid.html">
    Plotly population pyramid
@@ -290,12 +292,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Bar charts
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
    Bar and line charts. Covid-19 Humdata
@@ -317,67 +319,75 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Dashboards
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
    Volcanos plotly example
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Markdown
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../markdown/markdown-test.html">
    Markdown view
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   PDF
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../pdf/pdf_test.html">
    PDF view demo
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Graphs
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../graphviz/about.html">
    Graphviz
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../graphviz/basic.html">
      Graphviz example
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../cytoscape/about.html">
    Cytoscape
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      NetworkX to Cytoscape example
@@ -399,40 +409,38 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Forcegraph
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
    Graph data from json
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Process mining
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
    Process mining with pm4py
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Wordcloud
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
    Wordcloud with Vega
@@ -440,6 +448,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -485,12 +494,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -586,13 +595,13 @@
     });
 </script>
 
-        <div id="1a503f2b80a64945acb7dcaeb9f474c3" style="width:900px; height:500px;"></div>
+        <div id="827c3912d48044448c4ad8a6cceb8b28" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_1a503f2b80a64945acb7dcaeb9f474c3 = echarts.init(
-                    document.getElementById('1a503f2b80a64945acb7dcaeb9f474c3'), 'white', {renderer: 'canvas'});
-                var option_1a503f2b80a64945acb7dcaeb9f474c3 = {
+                var chart_827c3912d48044448c4ad8a6cceb8b28 = echarts.init(
+                    document.getElementById('827c3912d48044448c4ad8a6cceb8b28'), 'white', {renderer: 'canvas'});
+                var option_827c3912d48044448c4ad8a6cceb8b28 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -635,632 +644,632 @@
                 [
                     0,
                     0,
-                    42
+                    13
                 ],
                 [
                     0,
                     1,
-                    15
+                    20
                 ],
                 [
                     0,
                     2,
-                    23
+                    10
                 ],
                 [
                     0,
                     3,
-                    15
+                    43
                 ],
                 [
                     0,
                     4,
-                    26
+                    16
                 ],
                 [
                     0,
                     5,
-                    8
+                    23
                 ],
                 [
                     0,
                     6,
-                    9
+                    22
                 ],
                 [
                     1,
+                    0,
+                    22
+                ],
+                [
+                    1,
+                    1,
+                    18
+                ],
+                [
+                    1,
+                    2,
+                    10
+                ],
+                [
+                    1,
+                    3,
+                    2
+                ],
+                [
+                    1,
+                    4,
+                    48
+                ],
+                [
+                    1,
+                    5,
+                    50
+                ],
+                [
+                    1,
+                    6,
+                    43
+                ],
+                [
+                    2,
+                    0,
+                    42
+                ],
+                [
+                    2,
+                    1,
+                    36
+                ],
+                [
+                    2,
+                    2,
+                    50
+                ],
+                [
+                    2,
+                    3,
+                    29
+                ],
+                [
+                    2,
+                    4,
+                    16
+                ],
+                [
+                    2,
+                    5,
+                    25
+                ],
+                [
+                    2,
+                    6,
+                    23
+                ],
+                [
+                    3,
                     0,
                     44
                 ],
                 [
-                    1,
-                    1,
-                    5
-                ],
-                [
-                    1,
-                    2,
-                    39
-                ],
-                [
-                    1,
-                    3,
-                    34
-                ],
-                [
-                    1,
-                    4,
-                    22
-                ],
-                [
-                    1,
-                    5,
-                    48
-                ],
-                [
-                    1,
-                    6,
-                    21
-                ],
-                [
-                    2,
-                    0,
-                    5
-                ],
-                [
-                    2,
-                    1,
-                    33
-                ],
-                [
-                    2,
-                    2,
-                    42
-                ],
-                [
-                    2,
-                    3,
-                    19
-                ],
-                [
-                    2,
-                    4,
-                    35
-                ],
-                [
-                    2,
-                    5,
-                    7
-                ],
-                [
-                    2,
-                    6,
-                    41
-                ],
-                [
-                    3,
-                    0,
-                    25
-                ],
-                [
                     3,
                     1,
-                    31
+                    1
                 ],
                 [
                     3,
                     2,
-                    4
-                ],
-                [
-                    3,
-                    3,
-                    21
-                ],
-                [
-                    3,
-                    4,
-                    5
-                ],
-                [
-                    3,
-                    5,
                     11
                 ],
                 [
                     3,
+                    3,
+                    2
+                ],
+                [
+                    3,
+                    4,
+                    3
+                ],
+                [
+                    3,
+                    5,
+                    15
+                ],
+                [
+                    3,
                     6,
-                    10
+                    22
                 ],
                 [
                     4,
                     0,
-                    49
-                ],
-                [
-                    4,
-                    1,
-                    10
-                ],
-                [
-                    4,
-                    2,
-                    36
-                ],
-                [
-                    4,
-                    3,
-                    31
-                ],
-                [
-                    4,
-                    4,
-                    4
-                ],
-                [
-                    4,
-                    5,
-                    7
-                ],
-                [
-                    4,
-                    6,
-                    28
-                ],
-                [
-                    5,
-                    0,
-                    13
-                ],
-                [
-                    5,
-                    1,
-                    20
-                ],
-                [
-                    5,
-                    2,
-                    45
-                ],
-                [
-                    5,
-                    3,
                     27
                 ],
                 [
-                    5,
+                    4,
+                    1,
+                    46
+                ],
+                [
+                    4,
+                    2,
+                    26
+                ],
+                [
+                    4,
+                    3,
+                    25
+                ],
+                [
+                    4,
                     4,
                     36
                 ],
                 [
-                    5,
-                    5,
-                    23
-                ],
-                [
-                    5,
-                    6,
-                    50
-                ],
-                [
-                    6,
-                    0,
-                    41
-                ],
-                [
-                    6,
-                    1,
-                    34
-                ],
-                [
-                    6,
-                    2,
-                    47
-                ],
-                [
-                    6,
-                    3,
-                    6
-                ],
-                [
-                    6,
                     4,
-                    15
-                ],
-                [
-                    6,
                     5,
-                    8
-                ],
-                [
-                    6,
-                    6,
                     14
                 ],
                 [
-                    7,
-                    0,
-                    45
-                ],
-                [
-                    7,
-                    1,
-                    25
-                ],
-                [
-                    7,
-                    2,
-                    15
-                ],
-                [
-                    7,
-                    3,
-                    5
-                ],
-                [
-                    7,
                     4,
-                    33
-                ],
-                [
-                    7,
-                    5,
-                    37
-                ],
-                [
-                    7,
                     6,
-                    42
+                    39
                 ],
                 [
-                    8,
+                    5,
                     0,
-                    23
-                ],
-                [
-                    8,
-                    1,
                     9
                 ],
                 [
-                    8,
-                    2,
-                    7
-                ],
-                [
-                    8,
-                    3,
-                    50
-                ],
-                [
-                    8,
-                    4,
-                    43
-                ],
-                [
-                    8,
                     5,
-                    24
-                ],
-                [
-                    8,
-                    6,
-                    1
-                ],
-                [
-                    9,
-                    0,
-                    24
-                ],
-                [
-                    9,
                     1,
-                    43
+                    49
                 ],
                 [
-                    9,
+                    5,
                     2,
-                    25
+                    5
                 ],
                 [
-                    9,
+                    5,
                     3,
-                    38
+                    26
                 ],
                 [
-                    9,
+                    5,
                     4,
                     26
                 ],
                 [
-                    9,
                     5,
-                    18
+                    5,
+                    33
                 ],
                 [
-                    9,
+                    5,
                     6,
-                    18
+                    27
                 ],
                 [
-                    10,
+                    6,
                     0,
-                    43
-                ],
-                [
-                    10,
-                    1,
-                    16
-                ],
-                [
-                    10,
-                    2,
-                    45
-                ],
-                [
-                    10,
-                    3,
-                    19
-                ],
-                [
-                    10,
-                    4,
-                    11
-                ],
-                [
-                    10,
-                    5,
-                    43
-                ],
-                [
-                    10,
-                    6,
                     31
                 ],
                 [
-                    11,
-                    0,
-                    32
-                ],
-                [
-                    11,
-                    1,
-                    43
-                ],
-                [
-                    11,
-                    2,
-                    32
-                ],
-                [
-                    11,
-                    3,
-                    5
-                ],
-                [
-                    11,
-                    4,
-                    7
-                ],
-                [
-                    11,
-                    5,
-                    1
-                ],
-                [
-                    11,
                     6,
-                    0
-                ],
-                [
-                    12,
-                    0,
-                    23
-                ],
-                [
-                    12,
-                    1,
-                    13
-                ],
-                [
-                    12,
-                    2,
-                    4
-                ],
-                [
-                    12,
-                    3,
-                    5
-                ],
-                [
-                    12,
-                    4,
-                    33
-                ],
-                [
-                    12,
-                    5,
-                    0
-                ],
-                [
-                    12,
-                    6,
-                    2
-                ],
-                [
-                    13,
-                    0,
-                    33
-                ],
-                [
-                    13,
                     1,
                     34
                 ],
                 [
-                    13,
+                    6,
                     2,
-                    49
+                    1
                 ],
                 [
-                    13,
+                    6,
                     3,
-                    14
+                    10
                 ],
                 [
-                    13,
+                    6,
                     4,
-                    28
+                    17
                 ],
                 [
-                    13,
+                    6,
                     5,
-                    19
+                    25
                 ],
                 [
-                    13,
+                    6,
                     6,
                     10
                 ],
                 [
-                    14,
+                    7,
+                    0,
+                    40
+                ],
+                [
+                    7,
+                    1,
+                    3
+                ],
+                [
+                    7,
+                    2,
+                    13
+                ],
+                [
+                    7,
+                    3,
+                    12
+                ],
+                [
+                    7,
+                    4,
+                    5
+                ],
+                [
+                    7,
+                    5,
+                    15
+                ],
+                [
+                    7,
+                    6,
+                    18
+                ],
+                [
+                    8,
                     0,
                     30
                 ],
                 [
-                    14,
+                    8,
                     1,
-                    31
+                    27
                 ],
                 [
-                    14,
+                    8,
+                    2,
+                    35
+                ],
+                [
+                    8,
+                    3,
+                    7
+                ],
+                [
+                    8,
+                    4,
+                    26
+                ],
+                [
+                    8,
+                    5,
+                    0
+                ],
+                [
+                    8,
+                    6,
+                    12
+                ],
+                [
+                    9,
+                    0,
+                    28
+                ],
+                [
+                    9,
+                    1,
+                    11
+                ],
+                [
+                    9,
+                    2,
+                    8
+                ],
+                [
+                    9,
+                    3,
+                    3
+                ],
+                [
+                    9,
+                    4,
+                    2
+                ],
+                [
+                    9,
+                    5,
+                    46
+                ],
+                [
+                    9,
+                    6,
+                    42
+                ],
+                [
+                    10,
+                    0,
+                    48
+                ],
+                [
+                    10,
+                    1,
+                    48
+                ],
+                [
+                    10,
+                    2,
+                    8
+                ],
+                [
+                    10,
+                    3,
+                    32
+                ],
+                [
+                    10,
+                    4,
+                    20
+                ],
+                [
+                    10,
+                    5,
+                    37
+                ],
+                [
+                    10,
+                    6,
+                    48
+                ],
+                [
+                    11,
+                    0,
+                    45
+                ],
+                [
+                    11,
+                    1,
+                    48
+                ],
+                [
+                    11,
+                    2,
+                    32
+                ],
+                [
+                    11,
+                    3,
+                    8
+                ],
+                [
+                    11,
+                    4,
+                    26
+                ],
+                [
+                    11,
+                    5,
+                    35
+                ],
+                [
+                    11,
+                    6,
+                    20
+                ],
+                [
+                    12,
+                    0,
+                    4
+                ],
+                [
+                    12,
+                    1,
+                    12
+                ],
+                [
+                    12,
+                    2,
+                    44
+                ],
+                [
+                    12,
+                    3,
+                    4
+                ],
+                [
+                    12,
+                    4,
+                    32
+                ],
+                [
+                    12,
+                    5,
+                    5
+                ],
+                [
+                    12,
+                    6,
+                    34
+                ],
+                [
+                    13,
+                    0,
+                    25
+                ],
+                [
+                    13,
+                    1,
+                    41
+                ],
+                [
+                    13,
                     2,
                     2
                 ],
                 [
-                    14,
+                    13,
                     3,
-                    35
+                    39
                 ],
                 [
-                    14,
+                    13,
                     4,
-                    21
+                    11
                 ],
                 [
-                    14,
+                    13,
                     5,
-                    20
+                    19
                 ],
                 [
-                    14,
+                    13,
                     6,
                     8
                 ],
                 [
+                    14,
+                    0,
+                    41
+                ],
+                [
+                    14,
+                    1,
+                    48
+                ],
+                [
+                    14,
+                    2,
+                    10
+                ],
+                [
+                    14,
+                    3,
+                    0
+                ],
+                [
+                    14,
+                    4,
+                    4
+                ],
+                [
+                    14,
+                    5,
+                    49
+                ],
+                [
+                    14,
+                    6,
+                    46
+                ],
+                [
                     15,
                     0,
-                    22
+                    46
                 ],
                 [
                     15,
                     1,
-                    34
+                    41
                 ],
                 [
                     15,
                     2,
-                    23
+                    6
                 ],
                 [
                     15,
                     3,
-                    13
+                    16
                 ],
                 [
                     15,
                     4,
-                    21
+                    24
                 ],
                 [
                     15,
                     5,
-                    35
+                    5
                 ],
                 [
                     15,
                     6,
-                    13
-                ],
-                [
-                    16,
-                    0,
-                    20
-                ],
-                [
-                    16,
-                    1,
                     5
                 ],
                 [
                     16,
+                    0,
+                    2
+                ],
+                [
+                    16,
+                    1,
+                    39
+                ],
+                [
+                    16,
                     2,
-                    8
+                    47
                 ],
                 [
                     16,
                     3,
-                    48
+                    42
                 ],
                 [
                     16,
                     4,
-                    43
+                    5
                 ],
                 [
                     16,
                     5,
-                    33
+                    28
                 ],
                 [
                     16,
                     6,
-                    8
+                    34
                 ],
                 [
                     17,
                     0,
-                    33
+                    31
                 ],
                 [
                     17,
                     1,
-                    18
+                    35
                 ],
                 [
                     17,
                     2,
-                    0
+                    12
                 ],
                 [
                     17,
                     3,
-                    9
+                    14
                 ],
                 [
                     17,
                     4,
-                    48
+                    49
                 ],
                 [
                     17,
                     5,
-                    43
+                    9
                 ],
                 [
                     17,
                     6,
-                    2
+                    3
                 ],
                 [
                     18,
@@ -1270,77 +1279,77 @@
                 [
                     18,
                     1,
-                    43
+                    33
                 ],
                 [
                     18,
                     2,
-                    10
+                    34
                 ],
                 [
                     18,
                     3,
-                    43
+                    12
                 ],
                 [
                     18,
                     4,
-                    3
+                    13
                 ],
                 [
                     18,
                     5,
-                    36
+                    42
                 ],
                 [
                     18,
                     6,
+                    37
+                ],
+                [
+                    19,
+                    0,
                     49
                 ],
                 [
                     19,
-                    0,
-                    17
-                ],
-                [
-                    19,
                     1,
-                    12
+                    8
                 ],
                 [
                     19,
                     2,
-                    36
+                    4
                 ],
                 [
                     19,
                     3,
-                    13
+                    17
                 ],
                 [
                     19,
                     4,
-                    41
+                    28
                 ],
                 [
                     19,
                     5,
-                    43
+                    42
                 ],
                 [
                     19,
                     6,
-                    3
+                    32
                 ],
                 [
                     20,
                     0,
-                    28
+                    24
                 ],
                 [
                     20,
                     1,
-                    44
+                    11
                 ],
                 [
                     20,
@@ -1350,127 +1359,127 @@
                 [
                     20,
                     3,
-                    5
+                    3
                 ],
                 [
                     20,
                     4,
-                    18
+                    11
                 ],
                 [
                     20,
                     5,
-                    14
+                    44
                 ],
                 [
                     20,
                     6,
-                    7
+                    26
                 ],
                 [
                     21,
                     0,
-                    19
+                    11
                 ],
                 [
                     21,
                     1,
-                    42
+                    37
                 ],
                 [
                     21,
                     2,
+                    9
+                ],
+                [
+                    21,
+                    3,
+                    16
+                ],
+                [
+                    21,
+                    4,
+                    21
+                ],
+                [
+                    21,
+                    5,
+                    39
+                ],
+                [
+                    21,
+                    6,
+                    30
+                ],
+                [
+                    22,
+                    0,
                     34
                 ],
                 [
-                    21,
-                    3,
+                    22,
+                    1,
                     47
                 ],
                 [
-                    21,
-                    4,
-                    35
-                ],
-                [
-                    21,
-                    5,
-                    44
-                ],
-                [
-                    21,
-                    6,
-                    36
-                ],
-                [
-                    22,
-                    0,
-                    14
-                ],
-                [
-                    22,
-                    1,
-                    25
-                ],
-                [
                     22,
                     2,
-                    45
+                    47
                 ],
                 [
                     22,
                     3,
+                    27
+                ],
+                [
+                    22,
+                    4,
+                    21
+                ],
+                [
+                    22,
+                    5,
+                    31
+                ],
+                [
+                    22,
+                    6,
                     1
                 ],
                 [
-                    22,
-                    4,
-                    44
-                ],
-                [
-                    22,
-                    5,
-                    33
-                ],
-                [
-                    22,
-                    6,
-                    19
-                ],
-                [
                     23,
                     0,
-                    15
+                    35
                 ],
                 [
                     23,
                     1,
-                    45
+                    4
                 ],
                 [
                     23,
                     2,
-                    28
+                    20
                 ],
                 [
                     23,
                     3,
-                    33
-                ],
-                [
-                    23,
-                    4,
-                    5
-                ],
-                [
-                    23,
-                    5,
                     36
                 ],
                 [
                     23,
+                    4,
+                    30
+                ],
+                [
+                    23,
+                    5,
+                    31
+                ],
+                [
+                    23,
                     6,
-                    10
+                    35
                 ]
             ],
             "label": {
@@ -1621,7 +1630,7 @@
         "borderWidth": 0
     }
 };
-                chart_1a503f2b80a64945acb7dcaeb9f474c3.setOption(option_1a503f2b80a64945acb7dcaeb9f474c3);
+                chart_827c3912d48044448c4ad8a6cceb8b28.setOption(option_827c3912d48044448c4ad8a6cceb8b28);
         });
     </script>
 </div></div>
@@ -1693,11 +1702,9 @@ Published at: https://public.deetly.com/examples/ddc80d35483cb9c74951745e484d34d
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

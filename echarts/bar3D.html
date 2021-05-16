@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bar 3D &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -59,14 +56,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Line chart" href="linechart.html" />
     <link rel="prev" title="Bar chart" href="barchart.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -75,30 +72,30 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  
-  <h1 class="site-logo" id="site-title">deetly documentation</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">deetly documentation</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Deetly
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Get started
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/hello_world.html">
    Hello World
@@ -110,12 +107,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Charts
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="barchart.html">
    Bar chart
@@ -202,12 +199,17 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Pydeck Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_scatterplot_oslofjord.html">
+   Scatterplot Oslofjorden
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_scatterplot_subway_stations.html">
    Scatterplot subway stations
@@ -229,12 +231,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Altair Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
    Map from geoJSON (SSB and NAV data)
@@ -246,12 +248,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
    Map from topoJSON. US Unemployment
@@ -263,12 +265,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/bars_population_pyramid.html">
    Plotly population pyramid
@@ -290,12 +292,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Bar charts
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
    Bar and line charts. Covid-19 Humdata
@@ -317,67 +319,75 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Dashboards
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
    Volcanos plotly example
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Markdown
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../markdown/markdown-test.html">
    Markdown view
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   PDF
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../pdf/pdf_test.html">
    PDF view demo
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Graphs
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../graphviz/about.html">
    Graphviz
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../graphviz/basic.html">
      Graphviz example
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../cytoscape/about.html">
    Cytoscape
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      NetworkX to Cytoscape example
@@ -399,40 +409,38 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Forcegraph
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
    Graph data from json
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Process mining
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
    Process mining with pm4py
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Wordcloud
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
    Wordcloud with Vega
@@ -440,6 +448,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -485,12 +494,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -590,13 +599,13 @@
     });
 </script>
 
-        <div id="937050cab90a40b6b634c856097f8d3f" style="width:900px; height:500px;"></div>
+        <div id="14f389d1d1434943a20af317a7b263d8" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'echarts-gl'], function(echarts) {
-                var chart_937050cab90a40b6b634c856097f8d3f = echarts.init(
-                    document.getElementById('937050cab90a40b6b634c856097f8d3f'), 'white', {renderer: 'canvas'});
-                var option_937050cab90a40b6b634c856097f8d3f = {
+                var chart_14f389d1d1434943a20af317a7b263d8 = echarts.init(
+                    document.getElementById('14f389d1d1434943a20af317a7b263d8'), 'white', {renderer: 'canvas'});
+                var option_14f389d1d1434943a20af317a7b263d8 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -638,112 +647,112 @@
                 [
                     0,
                     0,
-                    3
+                    9
                 ],
                 [
                     1,
                     0,
-                    12
+                    6
                 ],
                 [
                     2,
                     0,
-                    9
+                    12
                 ],
                 [
                     3,
-                    0,
-                    9
-                ],
-                [
-                    4,
-                    0,
-                    3
-                ],
-                [
-                    5,
-                    0,
-                    11
-                ],
-                [
-                    6,
-                    0,
-                    2
-                ],
-                [
-                    7,
-                    0,
-                    2
-                ],
-                [
-                    8,
-                    0,
-                    3
-                ],
-                [
-                    9,
-                    0,
-                    10
-                ],
-                [
-                    10,
-                    0,
-                    7
-                ],
-                [
-                    11,
-                    0,
-                    6
-                ],
-                [
-                    12,
-                    0,
-                    0
-                ],
-                [
-                    13,
-                    0,
-                    0
-                ],
-                [
-                    14,
-                    0,
-                    2
-                ],
-                [
-                    15,
-                    0,
-                    4
-                ],
-                [
-                    16,
-                    0,
-                    9
-                ],
-                [
-                    17,
-                    0,
-                    0
-                ],
-                [
-                    18,
-                    0,
-                    0
-                ],
-                [
-                    19,
                     0,
                     8
                 ],
                 [
+                    4,
+                    0,
+                    10
+                ],
+                [
+                    5,
+                    0,
+                    6
+                ],
+                [
+                    6,
+                    0,
+                    9
+                ],
+                [
+                    7,
+                    0,
+                    10
+                ],
+                [
+                    8,
+                    0,
+                    10
+                ],
+                [
+                    9,
+                    0,
+                    6
+                ],
+                [
+                    10,
+                    0,
+                    7
+                ],
+                [
+                    11,
+                    0,
+                    1
+                ],
+                [
+                    12,
+                    0,
+                    6
+                ],
+                [
+                    13,
+                    0,
+                    1
+                ],
+                [
+                    14,
+                    0,
+                    4
+                ],
+                [
+                    15,
+                    0,
+                    5
+                ],
+                [
+                    16,
+                    0,
+                    6
+                ],
+                [
+                    17,
+                    0,
+                    3
+                ],
+                [
+                    18,
+                    0,
+                    5
+                ],
+                [
+                    19,
+                    0,
+                    12
+                ],
+                [
                     20,
                     0,
-                    11
+                    7
                 ],
                 [
                     21,
                     0,
-                    12
+                    6
                 ],
                 [
                     22,
@@ -758,197 +767,197 @@
                 [
                     0,
                     1,
-                    11
+                    1
                 ],
                 [
                     1,
-                    1,
-                    12
-                ],
-                [
-                    2,
-                    1,
-                    2
-                ],
-                [
-                    3,
                     1,
                     5
                 ],
                 [
+                    2,
+                    1,
+                    11
+                ],
+                [
+                    3,
+                    1,
+                    0
+                ],
+                [
                     4,
                     1,
-                    7
+                    12
                 ],
                 [
                     5,
                     1,
+                    6
+                ],
+                [
+                    6,
+                    1,
+                    11
+                ],
+                [
+                    7,
+                    1,
+                    10
+                ],
+                [
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    9,
+                    1,
+                    12
+                ],
+                [
+                    10,
+                    1,
+                    2
+                ],
+                [
+                    11,
+                    1,
+                    2
+                ],
+                [
+                    12,
+                    1,
+                    4
+                ],
+                [
+                    13,
+                    1,
+                    3
+                ],
+                [
+                    14,
+                    1,
+                    2
+                ],
+                [
+                    15,
+                    1,
+                    1
+                ],
+                [
+                    16,
+                    1,
+                    4
+                ],
+                [
+                    17,
+                    1,
+                    11
+                ],
+                [
+                    18,
+                    1,
+                    10
+                ],
+                [
+                    19,
+                    1,
+                    9
+                ],
+                [
+                    20,
+                    1,
+                    3
+                ],
+                [
+                    21,
+                    1,
+                    6
+                ],
+                [
+                    22,
+                    1,
+                    5
+                ],
+                [
+                    23,
+                    1,
+                    10
+                ],
+                [
+                    0,
+                    2,
+                    6
+                ],
+                [
+                    1,
+                    2,
+                    1
+                ],
+                [
+                    2,
+                    2,
+                    1
+                ],
+                [
+                    3,
+                    2,
+                    1
+                ],
+                [
+                    4,
+                    2,
+                    1
+                ],
+                [
+                    5,
+                    2,
+                    6
+                ],
+                [
+                    6,
+                    2,
+                    11
+                ],
+                [
+                    7,
+                    2,
+                    7
+                ],
+                [
+                    8,
+                    2,
+                    3
+                ],
+                [
+                    9,
+                    2,
+                    2
+                ],
+                [
+                    10,
+                    2,
                     8
                 ],
                 [
-                    6,
-                    1,
-                    9
-                ],
-                [
-                    7,
-                    1,
-                    11
-                ],
-                [
-                    8,
-                    1,
-                    10
-                ],
-                [
-                    9,
-                    1,
-                    1
-                ],
-                [
-                    10,
-                    1,
-                    3
-                ],
-                [
                     11,
-                    1,
-                    3
-                ],
-                [
-                    12,
-                    1,
+                    2,
                     7
                 ],
                 [
-                    13,
-                    1,
-                    12
-                ],
-                [
-                    14,
-                    1,
-                    10
-                ],
-                [
-                    15,
-                    1,
-                    0
-                ],
-                [
-                    16,
-                    1,
-                    12
-                ],
-                [
-                    17,
-                    1,
-                    4
-                ],
-                [
-                    18,
-                    1,
-                    6
-                ],
-                [
-                    19,
-                    1,
-                    6
-                ],
-                [
-                    20,
-                    1,
-                    11
-                ],
-                [
-                    21,
-                    1,
-                    1
-                ],
-                [
-                    22,
-                    1,
-                    5
-                ],
-                [
-                    23,
-                    1,
-                    2
-                ],
-                [
-                    0,
-                    2,
-                    10
-                ],
-                [
-                    1,
-                    2,
-                    5
-                ],
-                [
-                    2,
-                    2,
-                    6
-                ],
-                [
-                    3,
-                    2,
-                    3
-                ],
-                [
-                    4,
-                    2,
-                    6
-                ],
-                [
-                    5,
-                    2,
-                    11
-                ],
-                [
-                    6,
-                    2,
-                    11
-                ],
-                [
-                    7,
-                    2,
-                    3
-                ],
-                [
-                    8,
-                    2,
-                    10
-                ],
-                [
-                    9,
-                    2,
-                    2
-                ],
-                [
-                    10,
-                    2,
-                    4
-                ],
-                [
-                    11,
-                    2,
-                    12
-                ],
-                [
                     12,
                     2,
-                    4
+                    3
                 ],
                 [
                     13,
                     2,
-                    0
+                    6
                 ],
                 [
                     14,
                     2,
-                    0
+                    3
                 ],
                 [
                     15,
@@ -958,182 +967,182 @@
                 [
                     16,
                     2,
-                    10
+                    6
                 ],
                 [
                     17,
                     2,
-                    5
+                    6
                 ],
                 [
                     18,
                     2,
-                    7
+                    12
                 ],
                 [
                     19,
                     2,
-                    10
+                    5
                 ],
                 [
                     20,
                     2,
-                    11
+                    2
                 ],
                 [
                     21,
                     2,
-                    0
+                    5
                 ],
                 [
                     22,
                     2,
-                    2
+                    4
                 ],
                 [
                     23,
                     2,
-                    11
+                    6
                 ],
                 [
                     0,
                     3,
-                    1
+                    7
                 ],
                 [
                     1,
                     3,
-                    7
+                    6
                 ],
                 [
                     2,
                     3,
-                    12
+                    1
                 ],
                 [
                     3,
                     3,
-                    11
+                    3
                 ],
                 [
                     4,
                     3,
-                    10
+                    3
                 ],
                 [
                     5,
                     3,
-                    11
+                    5
                 ],
                 [
                     6,
                     3,
-                    0
+                    2
                 ],
                 [
                     7,
+                    3,
+                    5
+                ],
+                [
+                    8,
+                    3,
+                    1
+                ],
+                [
+                    9,
+                    3,
+                    7
+                ],
+                [
+                    10,
+                    3,
+                    3
+                ],
+                [
+                    11,
+                    3,
+                    11
+                ],
+                [
+                    12,
+                    3,
+                    12
+                ],
+                [
+                    13,
+                    3,
+                    8
+                ],
+                [
+                    14,
+                    3,
+                    7
+                ],
+                [
+                    15,
+                    3,
+                    10
+                ],
+                [
+                    16,
+                    3,
+                    6
+                ],
+                [
+                    17,
+                    3,
+                    5
+                ],
+                [
+                    18,
+                    3,
+                    7
+                ],
+                [
+                    19,
+                    3,
+                    10
+                ],
+                [
+                    20,
+                    3,
+                    5
+                ],
+                [
+                    21,
+                    3,
+                    1
+                ],
+                [
+                    22,
+                    3,
+                    10
+                ],
+                [
+                    23,
                     3,
                     9
                 ],
                 [
-                    8,
-                    3,
-                    0
-                ],
-                [
-                    9,
-                    3,
-                    10
-                ],
-                [
-                    10,
-                    3,
-                    7
-                ],
-                [
-                    11,
-                    3,
-                    0
-                ],
-                [
-                    12,
-                    3,
-                    12
-                ],
-                [
-                    13,
-                    3,
-                    12
-                ],
-                [
-                    14,
-                    3,
-                    3
-                ],
-                [
-                    15,
-                    3,
-                    10
-                ],
-                [
-                    16,
-                    3,
-                    10
-                ],
-                [
-                    17,
-                    3,
-                    3
-                ],
-                [
-                    18,
-                    3,
-                    5
-                ],
-                [
-                    19,
-                    3,
-                    2
-                ],
-                [
-                    20,
-                    3,
-                    12
-                ],
-                [
-                    21,
-                    3,
-                    0
-                ],
-                [
-                    22,
-                    3,
-                    2
-                ],
-                [
-                    23,
-                    3,
-                    3
-                ],
-                [
                     0,
                     4,
-                    1
+                    0
                 ],
                 [
                     1,
                     4,
-                    4
+                    2
                 ],
                 [
                     2,
                     4,
-                    0
+                    4
                 ],
                 [
                     3,
                     4,
-                    3
+                    4
                 ],
                 [
                     4,
@@ -1143,62 +1152,62 @@
                 [
                     5,
                     4,
-                    5
+                    11
                 ],
                 [
                     6,
                     4,
-                    0
+                    11
                 ],
                 [
                     7,
                     4,
-                    7
+                    10
                 ],
                 [
                     8,
                     4,
-                    0
+                    4
                 ],
                 [
                     9,
                     4,
-                    7
+                    3
                 ],
                 [
                     10,
                     4,
-                    12
+                    3
                 ],
                 [
                     11,
+                    4,
+                    7
+                ],
+                [
+                    12,
+                    4,
+                    3
+                ],
+                [
+                    13,
+                    4,
+                    1
+                ],
+                [
+                    14,
+                    4,
+                    7
+                ],
+                [
+                    15,
                     4,
                     8
                 ],
                 [
-                    12,
-                    4,
-                    3
-                ],
-                [
-                    13,
-                    4,
-                    9
-                ],
-                [
-                    14,
-                    4,
-                    3
-                ],
-                [
-                    15,
-                    4,
-                    10
-                ],
-                [
                     16,
                     4,
-                    4
+                    2
                 ],
                 [
                     17,
@@ -1208,7 +1217,7 @@
                 [
                     18,
                     4,
-                    6
+                    4
                 ],
                 [
                     19,
@@ -1218,142 +1227,142 @@
                 [
                     20,
                     4,
-                    0
+                    12
                 ],
                 [
                     21,
                     4,
-                    3
+                    1
                 ],
                 [
                     22,
                     4,
-                    0
+                    2
                 ],
                 [
                     23,
                     4,
-                    2
+                    7
                 ],
                 [
                     0,
                     5,
-                    7
+                    10
                 ],
                 [
                     1,
                     5,
-                    2
+                    11
                 ],
                 [
                     2,
                     5,
-                    8
+                    6
                 ],
                 [
                     3,
                     5,
-                    6
+                    11
                 ],
                 [
                     4,
-                    5,
-                    7
-                ],
-                [
-                    5,
-                    5,
-                    6
-                ],
-                [
-                    6,
-                    5,
-                    6
-                ],
-                [
-                    7,
-                    5,
-                    9
-                ],
-                [
-                    8,
-                    5,
-                    10
-                ],
-                [
-                    9,
-                    5,
-                    12
-                ],
-                [
-                    10,
-                    5,
-                    7
-                ],
-                [
-                    11,
-                    5,
-                    4
-                ],
-                [
-                    12,
-                    5,
-                    12
-                ],
-                [
-                    13,
-                    5,
-                    9
-                ],
-                [
-                    14,
-                    5,
-                    12
-                ],
-                [
-                    15,
-                    5,
-                    1
-                ],
-                [
-                    16,
-                    5,
-                    6
-                ],
-                [
-                    17,
-                    5,
-                    10
-                ],
-                [
-                    18,
-                    5,
-                    12
-                ],
-                [
-                    19,
-                    5,
-                    7
-                ],
-                [
-                    20,
-                    5,
-                    5
-                ],
-                [
-                    21,
-                    5,
-                    9
-                ],
-                [
-                    22,
                     5,
                     8
                 ],
                 [
+                    5,
+                    5,
+                    7
+                ],
+                [
+                    6,
+                    5,
+                    6
+                ],
+                [
+                    7,
+                    5,
+                    12
+                ],
+                [
+                    8,
+                    5,
+                    7
+                ],
+                [
+                    9,
+                    5,
+                    9
+                ],
+                [
+                    10,
+                    5,
+                    6
+                ],
+                [
+                    11,
+                    5,
+                    10
+                ],
+                [
+                    12,
+                    5,
+                    2
+                ],
+                [
+                    13,
+                    5,
+                    10
+                ],
+                [
+                    14,
+                    5,
+                    6
+                ],
+                [
+                    15,
+                    5,
+                    8
+                ],
+                [
+                    16,
+                    5,
+                    10
+                ],
+                [
+                    17,
+                    5,
+                    4
+                ],
+                [
+                    18,
+                    5,
+                    10
+                ],
+                [
+                    19,
+                    5,
+                    2
+                ],
+                [
+                    20,
+                    5,
+                    6
+                ],
+                [
+                    21,
+                    5,
+                    10
+                ],
+                [
+                    22,
+                    5,
+                    4
+                ],
+                [
                     23,
                     5,
-                    3
+                    10
                 ]
             ],
             "label": {
@@ -1487,7 +1496,7 @@
         }
     ]
 };
-                chart_937050cab90a40b6b634c856097f8d3f.setOption(option_937050cab90a40b6b634c856097f8d3f);
+                chart_14f389d1d1434943a20af317a7b263d8.setOption(option_14f389d1d1434943a20af317a7b263d8);
         });
     </script>
 </div></div>
@@ -1538,13 +1547,13 @@
     });
 </script>
 
-        <div id="bd478506875648018eb9137690007376" style="width:900px; height:500px;"></div>
+        <div id="dcbf0de92ec146cfac56daad9b543206" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'echarts-gl'], function(echarts) {
-                var chart_bd478506875648018eb9137690007376 = echarts.init(
-                    document.getElementById('bd478506875648018eb9137690007376'), 'white', {renderer: 'canvas'});
-                var option_bd478506875648018eb9137690007376 = {
+                var chart_dcbf0de92ec146cfac56daad9b543206 = echarts.init(
+                    document.getElementById('dcbf0de92ec146cfac56daad9b543206'), 'white', {renderer: 'canvas'});
+                var option_dcbf0de92ec146cfac56daad9b543206 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -1587,112 +1596,112 @@
                 [
                     0,
                     0,
-                    1
+                    8
                 ],
                 [
                     1,
                     0,
-                    8
+                    11
                 ],
                 [
                     2,
                     0,
-                    6
+                    10
                 ],
                 [
                     3,
                     0,
-                    12
+                    1
                 ],
                 [
                     4,
                     0,
-                    2
+                    12
                 ],
                 [
                     5,
                     0,
-                    4
+                    11
                 ],
                 [
                     6,
                     0,
-                    1
+                    6
                 ],
                 [
                     7,
                     0,
-                    1
+                    12
                 ],
                 [
                     8,
                     0,
-                    0
+                    4
                 ],
                 [
                     9,
                     0,
-                    10
+                    8
                 ],
                 [
                     10,
                     0,
-                    10
+                    12
                 ],
                 [
                     11,
                     0,
-                    3
+                    8
                 ],
                 [
                     12,
                     0,
-                    3
+                    5
                 ],
                 [
                     13,
                     0,
-                    8
+                    4
                 ],
                 [
                     14,
                     0,
-                    12
+                    2
                 ],
                 [
                     15,
                     0,
-                    4
+                    12
                 ],
                 [
                     16,
                     0,
-                    0
+                    10
                 ],
                 [
                     17,
                     0,
-                    11
+                    1
                 ],
                 [
                     18,
                     0,
-                    0
+                    2
                 ],
                 [
                     19,
                     0,
-                    4
+                    0
                 ],
                 [
                     20,
                     0,
-                    1
+                    3
                 ],
                 [
                     21,
                     0,
-                    2
+                    11
                 ],
                 [
                     22,
@@ -1702,42 +1711,42 @@
                 [
                     23,
                     0,
-                    12
+                    3
                 ],
                 [
                     0,
                     1,
-                    9
+                    6
                 ],
                 [
                     1,
                     1,
-                    3
+                    12
                 ],
                 [
                     2,
                     1,
-                    5
+                    0
                 ],
                 [
                     3,
                     1,
-                    7
+                    0
                 ],
                 [
                     4,
                     1,
-                    7
+                    4
                 ],
                 [
                     5,
                     1,
-                    7
+                    6
                 ],
                 [
                     6,
                     1,
-                    2
+                    4
                 ],
                 [
                     7,
@@ -1752,392 +1761,392 @@
                 [
                     9,
                     1,
-                    10
+                    2
                 ],
                 [
                     10,
-                    1,
-                    8
-                ],
-                [
-                    11,
-                    1,
-                    0
-                ],
-                [
-                    12,
-                    1,
-                    5
-                ],
-                [
-                    13,
-                    1,
-                    3
-                ],
-                [
-                    14,
-                    1,
-                    11
-                ],
-                [
-                    15,
-                    1,
-                    12
-                ],
-                [
-                    16,
-                    1,
-                    9
-                ],
-                [
-                    17,
-                    1,
-                    4
-                ],
-                [
-                    18,
-                    1,
-                    7
-                ],
-                [
-                    19,
-                    1,
-                    5
-                ],
-                [
-                    20,
-                    1,
-                    8
-                ],
-                [
-                    21,
                     1,
                     2
                 ],
                 [
-                    22,
+                    11,
                     1,
-                    4
-                ],
-                [
-                    23,
-                    1,
-                    9
-                ],
-                [
-                    0,
-                    2,
-                    7
-                ],
-                [
-                    1,
-                    2,
-                    10
-                ],
-                [
-                    2,
-                    2,
-                    8
-                ],
-                [
-                    3,
-                    2,
-                    8
-                ],
-                [
-                    4,
-                    2,
-                    11
-                ],
-                [
-                    5,
-                    2,
-                    9
-                ],
-                [
-                    6,
-                    2,
-                    4
-                ],
-                [
-                    7,
-                    2,
-                    4
-                ],
-                [
-                    8,
-                    2,
-                    6
-                ],
-                [
-                    9,
-                    2,
-                    1
-                ],
-                [
-                    10,
-                    2,
                     0
                 ],
                 [
-                    11,
-                    2,
-                    12
-                ],
-                [
                     12,
-                    2,
-                    5
+                    1,
+                    10
                 ],
                 [
                     13,
-                    2,
-                    4
+                    1,
+                    1
                 ],
                 [
                     14,
-                    2,
-                    6
+                    1,
+                    3
                 ],
                 [
                     15,
-                    2,
-                    5
+                    1,
+                    9
                 ],
                 [
                     16,
-                    2,
-                    11
+                    1,
+                    5
                 ],
                 [
                     17,
-                    2,
-                    8
+                    1,
+                    6
                 ],
                 [
                     18,
-                    2,
+                    1,
                     12
                 ],
                 [
                     19,
+                    1,
+                    9
+                ],
+                [
+                    20,
+                    1,
+                    8
+                ],
+                [
+                    21,
+                    1,
+                    8
+                ],
+                [
+                    22,
+                    1,
+                    7
+                ],
+                [
+                    23,
+                    1,
+                    4
+                ],
+                [
+                    0,
+                    2,
+                    10
+                ],
+                [
+                    1,
+                    2,
+                    8
+                ],
+                [
+                    2,
+                    2,
+                    3
+                ],
+                [
+                    3,
+                    2,
+                    4
+                ],
+                [
+                    4,
                     2,
                     6
                 ],
                 [
-                    20,
+                    5,
+                    2,
+                    8
+                ],
+                [
+                    6,
+                    2,
+                    6
+                ],
+                [
+                    7,
+                    2,
+                    6
+                ],
+                [
+                    8,
+                    2,
+                    11
+                ],
+                [
+                    9,
+                    2,
+                    8
+                ],
+                [
+                    10,
                     2,
                     7
                 ],
                 [
-                    21,
+                    11,
+                    2,
+                    7
+                ],
+                [
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    13,
+                    2,
+                    10
+                ],
+                [
+                    14,
                     2,
                     2
                 ],
                 [
-                    22,
-                    2,
-                    4
-                ],
-                [
-                    23,
-                    2,
-                    4
-                ],
-                [
-                    0,
-                    3,
-                    11
-                ],
-                [
-                    1,
-                    3,
-                    1
-                ],
-                [
-                    2,
-                    3,
-                    5
-                ],
-                [
-                    3,
-                    3,
-                    9
-                ],
-                [
-                    4,
-                    3,
-                    9
-                ],
-                [
-                    5,
-                    3,
-                    1
-                ],
-                [
-                    6,
-                    3,
-                    4
-                ],
-                [
-                    7,
-                    3,
-                    11
-                ],
-                [
-                    8,
-                    3,
-                    0
-                ],
-                [
-                    9,
-                    3,
-                    1
-                ],
-                [
-                    10,
-                    3,
-                    5
-                ],
-                [
-                    11,
-                    3,
-                    6
-                ],
-                [
-                    12,
-                    3,
-                    9
-                ],
-                [
-                    13,
-                    3,
-                    8
-                ],
-                [
-                    14,
-                    3,
-                    0
-                ],
-                [
                     15,
-                    3,
+                    2,
                     3
                 ],
                 [
                     16,
+                    2,
+                    11
+                ],
+                [
+                    17,
+                    2,
+                    12
+                ],
+                [
+                    18,
+                    2,
+                    1
+                ],
+                [
+                    19,
+                    2,
+                    12
+                ],
+                [
+                    20,
+                    2,
+                    3
+                ],
+                [
+                    21,
+                    2,
+                    4
+                ],
+                [
+                    22,
+                    2,
+                    11
+                ],
+                [
+                    23,
+                    2,
+                    6
+                ],
+                [
+                    0,
+                    3,
+                    7
+                ],
+                [
+                    1,
+                    3,
+                    7
+                ],
+                [
+                    2,
                     3,
                     5
                 ],
                 [
-                    17,
+                    3,
+                    3,
+                    1
+                ],
+                [
+                    4,
                     3,
                     2
                 ],
                 [
-                    18,
-                    3,
-                    5
-                ],
-                [
-                    19,
-                    3,
-                    7
-                ],
-                [
-                    20,
-                    3,
-                    4
-                ],
-                [
-                    21,
-                    3,
-                    12
-                ],
-                [
-                    22,
-                    3,
-                    9
-                ],
-                [
-                    23,
-                    3,
-                    3
-                ],
-                [
-                    0,
-                    4,
-                    0
-                ],
-                [
-                    1,
-                    4,
-                    12
-                ],
-                [
-                    2,
-                    4,
-                    8
-                ],
-                [
-                    3,
-                    4,
-                    7
-                ],
-                [
-                    4,
-                    4,
-                    10
-                ],
-                [
                     5,
-                    4,
-                    5
+                    3,
+                    2
                 ],
                 [
                     6,
-                    4,
-                    9
-                ],
-                [
-                    7,
-                    4,
-                    10
-                ],
-                [
-                    8,
-                    4,
-                    9
-                ],
-                [
-                    9,
-                    4,
+                    3,
                     0
                 ],
                 [
+                    7,
+                    3,
+                    11
+                ],
+                [
+                    8,
+                    3,
+                    10
+                ],
+                [
+                    9,
+                    3,
+                    6
+                ],
+                [
                     10,
-                    4,
+                    3,
                     1
                 ],
                 [
                     11,
-                    4,
-                    8
+                    3,
+                    3
                 ],
                 [
                     12,
+                    3,
+                    4
+                ],
+                [
+                    13,
+                    3,
+                    11
+                ],
+                [
+                    14,
+                    3,
+                    9
+                ],
+                [
+                    15,
+                    3,
+                    4
+                ],
+                [
+                    16,
+                    3,
+                    4
+                ],
+                [
+                    17,
+                    3,
+                    11
+                ],
+                [
+                    18,
+                    3,
+                    9
+                ],
+                [
+                    19,
+                    3,
+                    1
+                ],
+                [
+                    20,
+                    3,
+                    5
+                ],
+                [
+                    21,
+                    3,
+                    6
+                ],
+                [
+                    22,
+                    3,
+                    6
+                ],
+                [
+                    23,
+                    3,
+                    10
+                ],
+                [
+                    0,
+                    4,
+                    1
+                ],
+                [
+                    1,
+                    4,
+                    9
+                ],
+                [
+                    2,
+                    4,
+                    9
+                ],
+                [
+                    3,
+                    4,
+                    12
+                ],
+                [
+                    4,
+                    4,
+                    4
+                ],
+                [
+                    5,
+                    4,
+                    6
+                ],
+                [
+                    6,
+                    4,
+                    7
+                ],
+                [
+                    7,
+                    4,
+                    4
+                ],
+                [
+                    8,
+                    4,
+                    11
+                ],
+                [
+                    9,
                     4,
                     5
                 ],
                 [
+                    10,
+                    4,
+                    4
+                ],
+                [
+                    11,
+                    4,
+                    4
+                ],
+                [
+                    12,
+                    4,
+                    4
+                ],
+                [
                     13,
                     4,
-                    9
+                    2
                 ],
                 [
                     14,
                     4,
-                    9
+                    4
                 ],
                 [
                     15,
@@ -2152,112 +2161,112 @@
                 [
                     17,
                     4,
-                    5
+                    1
                 ],
                 [
                     18,
                     4,
-                    3
+                    4
                 ],
                 [
                     19,
                     4,
-                    7
+                    10
                 ],
                 [
                     20,
                     4,
-                    6
+                    3
                 ],
                 [
                     21,
                     4,
-                    5
+                    10
                 ],
                 [
                     22,
                     4,
-                    11
+                    5
                 ],
                 [
                     23,
                     4,
-                    11
+                    6
                 ],
                 [
                     0,
                     5,
-                    5
+                    10
                 ],
                 [
                     1,
                     5,
-                    3
+                    6
                 ],
                 [
                     2,
                     5,
-                    5
+                    7
                 ],
                 [
                     3,
                     5,
-                    9
+                    5
                 ],
                 [
                     4,
                     5,
-                    7
-                ],
-                [
-                    5,
-                    5,
-                    5
-                ],
-                [
-                    6,
-                    5,
-                    11
-                ],
-                [
-                    7,
-                    5,
-                    9
-                ],
-                [
-                    8,
-                    5,
-                    4
-                ],
-                [
-                    9,
-                    5,
                     10
                 ],
                 [
-                    10,
+                    5,
                     5,
                     8
                 ],
                 [
-                    11,
+                    6,
                     5,
-                    6
+                    0
                 ],
                 [
-                    12,
+                    7,
                     5,
-                    5
+                    0
                 ],
                 [
-                    13,
+                    8,
                     5,
                     12
                 ],
                 [
+                    9,
+                    5,
+                    0
+                ],
+                [
+                    10,
+                    5,
+                    9
+                ],
+                [
+                    11,
+                    5,
+                    9
+                ],
+                [
+                    12,
+                    5,
+                    10
+                ],
+                [
+                    13,
+                    5,
+                    0
+                ],
+                [
                     14,
                     5,
-                    1
+                    9
                 ],
                 [
                     15,
@@ -2267,42 +2276,42 @@
                 [
                     16,
                     5,
-                    7
+                    4
                 ],
                 [
                     17,
                     5,
-                    12
+                    10
                 ],
                 [
                     18,
-                    5,
-                    11
-                ],
-                [
-                    19,
-                    5,
-                    9
-                ],
-                [
-                    20,
-                    5,
-                    0
-                ],
-                [
-                    21,
-                    5,
-                    4
-                ],
-                [
-                    22,
                     5,
                     2
                 ],
                 [
+                    19,
+                    5,
+                    12
+                ],
+                [
+                    20,
+                    5,
+                    9
+                ],
+                [
+                    21,
+                    5,
+                    5
+                ],
+                [
+                    22,
+                    5,
+                    12
+                ],
+                [
                     23,
                     5,
-                    1
+                    2
                 ]
             ],
             "label": {
@@ -2325,22 +2334,22 @@
                 [
                     0,
                     0,
-                    13
+                    15
                 ],
                 [
                     1,
                     0,
-                    17
+                    16
                 ],
                 [
                     2,
                     0,
-                    19
+                    15
                 ],
                 [
                     3,
                     0,
-                    17
+                    20
                 ],
                 [
                     4,
@@ -2350,77 +2359,77 @@
                 [
                     5,
                     0,
-                    13
+                    16
                 ],
                 [
                     6,
                     0,
-                    14
+                    19
                 ],
                 [
                     7,
                     0,
-                    20
+                    15
                 ],
                 [
                     8,
                     0,
-                    15
+                    19
                 ],
                 [
                     9,
                     0,
-                    16
+                    13
                 ],
                 [
                     10,
                     0,
-                    16
+                    18
                 ],
                 [
                     11,
                     0,
-                    18
+                    19
                 ],
                 [
                     12,
                     0,
-                    14
+                    17
                 ],
                 [
                     13,
                     0,
-                    15
+                    20
                 ],
                 [
                     14,
                     0,
-                    19
+                    17
                 ],
                 [
                     15,
                     0,
-                    19
+                    18
                 ],
                 [
                     16,
                     0,
-                    16
+                    20
                 ],
                 [
                     17,
                     0,
-                    14
+                    17
                 ],
                 [
                     18,
                     0,
-                    13
+                    17
                 ],
                 [
                     19,
                     0,
-                    15
+                    14
                 ],
                 [
                     20,
@@ -2435,67 +2444,67 @@
                 [
                     22,
                     0,
-                    16
+                    15
                 ],
                 [
                     23,
                     0,
-                    18
+                    19
                 ],
                 [
                     0,
                     1,
-                    14
+                    15
                 ],
                 [
                     1,
                     1,
-                    16
+                    14
                 ],
                 [
                     2,
                     1,
-                    17
+                    13
                 ],
                 [
                     3,
                     1,
-                    20
+                    14
                 ],
                 [
                     4,
                     1,
-                    19
+                    18
                 ],
                 [
                     5,
                     1,
-                    18
+                    16
                 ],
                 [
                     6,
                     1,
-                    14
+                    15
                 ],
                 [
                     7,
                     1,
-                    20
+                    19
                 ],
                 [
                     8,
                     1,
-                    17
+                    20
                 ],
                 [
                     9,
                     1,
-                    14
+                    15
                 ],
                 [
                     10,
                     1,
-                    17
+                    16
                 ],
                 [
                     11,
@@ -2505,82 +2514,82 @@
                 [
                     12,
                     1,
-                    13
+                    16
                 ],
                 [
                     13,
                     1,
-                    17
+                    16
                 ],
                 [
                     14,
                     1,
-                    19
+                    16
                 ],
                 [
                     15,
                     1,
-                    16
+                    20
                 ],
                 [
                     16,
                     1,
-                    20
+                    15
                 ],
                 [
                     17,
                     1,
-                    15
+                    14
                 ],
                 [
                     18,
                     1,
-                    15
+                    13
                 ],
                 [
                     19,
                     1,
-                    19
+                    16
                 ],
                 [
                     20,
                     1,
-                    15
+                    14
                 ],
                 [
                     21,
                     1,
-                    19
+                    13
                 ],
                 [
                     22,
                     1,
-                    16
+                    15
                 ],
                 [
                     23,
                     1,
-                    13
+                    14
                 ],
                 [
                     0,
                     2,
-                    18
+                    16
                 ],
                 [
                     1,
                     2,
-                    13
+                    19
                 ],
                 [
                     2,
                     2,
-                    17
+                    16
                 ],
                 [
                     3,
                     2,
-                    19
+                    14
                 ],
                 [
                     4,
@@ -2590,82 +2599,82 @@
                 [
                     5,
                     2,
-                    16
+                    17
                 ],
                 [
                     6,
                     2,
-                    19
+                    13
                 ],
                 [
                     7,
                     2,
-                    14
+                    13
                 ],
                 [
                     8,
                     2,
-                    16
+                    18
                 ],
                 [
                     9,
                     2,
-                    16
+                    20
                 ],
                 [
                     10,
                     2,
-                    20
+                    15
                 ],
                 [
                     11,
                     2,
-                    18
+                    17
                 ],
                 [
                     12,
                     2,
-                    14
+                    13
                 ],
                 [
                     13,
                     2,
-                    17
+                    13
                 ],
                 [
                     14,
                     2,
-                    18
+                    13
                 ],
                 [
                     15,
                     2,
-                    15
+                    13
                 ],
                 [
                     16,
                     2,
-                    13
+                    19
                 ],
                 [
                     17,
                     2,
-                    17
+                    15
                 ],
                 [
                     18,
                     2,
-                    16
+                    15
                 ],
                 [
                     19,
                     2,
-                    15
+                    14
                 ],
                 [
                     20,
                     2,
-                    18
+                    17
                 ],
                 [
                     21,
@@ -2675,42 +2684,42 @@
                 [
                     22,
                     2,
-                    15
+                    17
                 ],
                 [
                     23,
                     2,
-                    17
+                    16
                 ],
                 [
                     0,
                     3,
-                    14
+                    16
                 ],
                 [
                     1,
                     3,
-                    19
+                    16
                 ],
                 [
                     2,
                     3,
-                    18
+                    15
                 ],
                 [
                     3,
                     3,
-                    20
+                    18
                 ],
                 [
                     4,
                     3,
-                    16
+                    20
                 ],
                 [
                     5,
                     3,
-                    17
+                    19
                 ],
                 [
                     6,
@@ -2720,52 +2729,52 @@
                 [
                     7,
                     3,
-                    14
+                    20
                 ],
                 [
                     8,
                     3,
-                    19
+                    15
                 ],
                 [
                     9,
                     3,
-                    16
+                    19
                 ],
                 [
                     10,
                     3,
-                    13
+                    14
                 ],
                 [
                     11,
                     3,
-                    18
+                    15
                 ],
                 [
                     12,
                     3,
-                    15
+                    16
                 ],
                 [
                     13,
                     3,
-                    15
+                    18
                 ],
                 [
                     14,
                     3,
-                    13
+                    16
                 ],
                 [
                     15,
                     3,
-                    18
+                    15
                 ],
                 [
                     16,
                     3,
-                    15
+                    13
                 ],
                 [
                     17,
@@ -2775,7 +2784,7 @@
                 [
                     18,
                     3,
-                    16
+                    15
                 ],
                 [
                     19,
@@ -2785,7 +2794,7 @@
                 [
                     20,
                     3,
-                    14
+                    20
                 ],
                 [
                     21,
@@ -2795,27 +2804,27 @@
                 [
                     22,
                     3,
-                    13
+                    14
                 ],
                 [
                     23,
                     3,
-                    20
+                    17
                 ],
                 [
                     0,
                     4,
-                    15
+                    18
                 ],
                 [
                     1,
                     4,
-                    20
+                    13
                 ],
                 [
                     2,
                     4,
-                    14
+                    13
                 ],
                 [
                     3,
@@ -2825,72 +2834,72 @@
                 [
                     4,
                     4,
-                    16
+                    18
                 ],
                 [
                     5,
                     4,
-                    19
+                    16
                 ],
                 [
                     6,
                     4,
-                    20
+                    15
                 ],
                 [
                     7,
                     4,
-                    14
+                    19
                 ],
                 [
                     8,
                     4,
-                    20
+                    14
                 ],
                 [
                     9,
                     4,
-                    18
+                    13
                 ],
                 [
                     10,
                     4,
-                    15
+                    14
                 ],
                 [
                     11,
                     4,
-                    14
+                    20
                 ],
                 [
                     12,
                     4,
-                    18
+                    16
                 ],
                 [
                     13,
                     4,
-                    16
+                    20
                 ],
                 [
                     14,
                     4,
-                    17
+                    19
                 ],
                 [
                     15,
                     4,
-                    18
+                    16
                 ],
                 [
                     16,
                     4,
-                    20
+                    19
                 ],
                 [
                     17,
                     4,
-                    15
+                    18
                 ],
                 [
                     18,
@@ -2900,37 +2909,37 @@
                 [
                     19,
                     4,
-                    13
+                    20
                 ],
                 [
                     20,
                     4,
-                    20
+                    19
                 ],
                 [
                     21,
                     4,
-                    14
+                    15
                 ],
                 [
                     22,
                     4,
-                    14
+                    15
                 ],
                 [
                     23,
                     4,
-                    18
+                    16
                 ],
                 [
                     0,
                     5,
-                    13
+                    17
                 ],
                 [
                     1,
                     5,
-                    17
+                    13
                 ],
                 [
                     2,
@@ -2940,32 +2949,32 @@
                 [
                     3,
                     5,
-                    18
+                    13
                 ],
                 [
                     4,
                     5,
-                    15
+                    13
                 ],
                 [
                     5,
                     5,
-                    17
+                    16
                 ],
                 [
                     6,
                     5,
-                    14
+                    17
                 ],
                 [
                     7,
                     5,
-                    15
+                    16
                 ],
                 [
                     8,
                     5,
-                    13
+                    15
                 ],
                 [
                     9,
@@ -2975,12 +2984,12 @@
                 [
                     10,
                     5,
-                    17
+                    15
                 ],
                 [
                     11,
                     5,
-                    14
+                    13
                 ],
                 [
                     12,
@@ -2990,7 +2999,7 @@
                 [
                     13,
                     5,
-                    19
+                    15
                 ],
                 [
                     14,
@@ -3000,32 +3009,32 @@
                 [
                     15,
                     5,
-                    13
+                    16
                 ],
                 [
                     16,
                     5,
-                    17
+                    13
                 ],
                 [
                     17,
                     5,
-                    16
+                    14
                 ],
                 [
                     18,
                     5,
-                    19
+                    13
                 ],
                 [
                     19,
                     5,
-                    14
+                    19
                 ],
                 [
                     20,
                     5,
-                    18
+                    13
                 ],
                 [
                     21,
@@ -3035,12 +3044,12 @@
                 [
                     22,
                     5,
-                    15
+                    17
                 ],
                 [
                     23,
                     5,
-                    14
+                    16
                 ]
             ],
             "label": {
@@ -3182,7 +3191,7 @@
         }
     ]
 };
-                chart_bd478506875648018eb9137690007376.setOption(option_bd478506875648018eb9137690007376);
+                chart_dcbf0de92ec146cfac56daad9b543206.setOption(option_dcbf0de92ec146cfac56daad9b543206);
         });
     </script>
 </div></div>
@@ -3249,11 +3258,9 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

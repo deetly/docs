@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar &#8212; deetly documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -59,14 +56,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Sankey chart" href="sankey.html" />
     <link rel="prev" title="Heatmap" href="heatmap.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -75,30 +72,30 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  
-  <h1 class="site-logo" id="site-title">deetly documentation</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">deetly documentation</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Deetly
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Get started
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/hello_world.html">
    Hello World
@@ -110,12 +107,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Charts
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="barchart.html">
    Bar chart
@@ -202,12 +199,17 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Pydeck Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_scatterplot_oslofjord.html">
+   Scatterplot Oslofjorden
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_scatterplot_subway_stations.html">
    Scatterplot subway stations
@@ -229,12 +231,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Altair Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
    Map from geoJSON (SSB and NAV data)
@@ -246,12 +248,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly Maps
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
    Map from topoJSON. US Unemployment
@@ -263,12 +265,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Plotly
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../plotly/bars_population_pyramid.html">
    Plotly population pyramid
@@ -290,12 +292,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Bar charts
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
    Bar and line charts. Covid-19 Humdata
@@ -317,67 +319,75 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Dashboards
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
    Volcanos plotly example
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Markdown
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../markdown/markdown-test.html">
    Markdown view
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   PDF
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../pdf/pdf_test.html">
    PDF view demo
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Graphs
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../graphviz/about.html">
    Graphviz
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../graphviz/basic.html">
      Graphviz example
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../cytoscape/about.html">
    Cytoscape
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../cytoscape/networkx.html">
      NetworkX to Cytoscape example
@@ -399,40 +409,38 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Forcegraph
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
    Graph data from json
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Process mining
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
    Process mining with pm4py
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Wordcloud
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
    Wordcloud with Vega
@@ -440,6 +448,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 </div>
@@ -485,12 +494,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -598,13 +607,13 @@
     });
 </script>
 
-        <div id="4b9add609baf4482bac8b47856ba9857" style="width:900px; height:500px;"></div>
+        <div id="7dabd509df0f4ce4922ccbcaf75757b2" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_4b9add609baf4482bac8b47856ba9857 = echarts.init(
-                    document.getElementById('4b9add609baf4482bac8b47856ba9857'), 'white', {renderer: 'canvas'});
-                var option_4b9add609baf4482bac8b47856ba9857 = {
+                var chart_7dabd509df0f4ce4922ccbcaf75757b2 = echarts.init(
+                    document.getElementById('7dabd509df0f4ce4922ccbcaf75757b2'), 'white', {renderer: 'canvas'});
+                var option_7dabd509df0f4ce4922ccbcaf75757b2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -646,1463 +655,1463 @@
             "data": [
                 [
                     "2019-01-01",
-                    24893
+                    3807
                 ],
                 [
                     "2019-01-02",
-                    1786
+                    8428
                 ],
                 [
                     "2019-01-03",
-                    14346
+                    22023
                 ],
                 [
                     "2019-01-04",
-                    1949
+                    11011
                 ],
                 [
                     "2019-01-05",
-                    4288
+                    14430
                 ],
                 [
                     "2019-01-06",
-                    11965
+                    8869
                 ],
                 [
                     "2019-01-07",
-                    22978
+                    12390
                 ],
                 [
                     "2019-01-08",
-                    8793
+                    23710
                 ],
                 [
                     "2019-01-09",
-                    22732
+                    5882
                 ],
                 [
                     "2019-01-10",
-                    16646
+                    15554
                 ],
                 [
                     "2019-01-11",
-                    20604
+                    20845
                 ],
                 [
                     "2019-01-12",
-                    13943
+                    20305
                 ],
                 [
                     "2019-01-13",
-                    3363
+                    20656
                 ],
                 [
                     "2019-01-14",
-                    7852
+                    18418
                 ],
                 [
                     "2019-01-15",
-                    3162
+                    8914
                 ],
                 [
                     "2019-01-16",
-                    12534
+                    12120
                 ],
                 [
                     "2019-01-17",
-                    21303
+                    21900
                 ],
                 [
                     "2019-01-18",
-                    1517
+                    14187
                 ],
                 [
                     "2019-01-19",
-                    24248
+                    21898
                 ],
                 [
                     "2019-01-20",
-                    2096
+                    12321
                 ],
                 [
                     "2019-01-21",
-                    5442
+                    1949
                 ],
                 [
                     "2019-01-22",
-                    23351
+                    1808
                 ],
                 [
                     "2019-01-23",
-                    18008
+                    3660
                 ],
                 [
                     "2019-01-24",
-                    9918
+                    22177
                 ],
                 [
                     "2019-01-25",
-                    1056
+                    23993
                 ],
                 [
                     "2019-01-26",
-                    12768
+                    23630
                 ],
                 [
                     "2019-01-27",
-                    7474
+                    7798
                 ],
                 [
                     "2019-01-28",
-                    11302
+                    22541
                 ],
                 [
                     "2019-01-29",
-                    19634
+                    2786
                 ],
                 [
                     "2019-01-30",
-                    2392
+                    3394
                 ],
                 [
                     "2019-01-31",
-                    2608
+                    5503
                 ],
                 [
                     "2019-02-01",
-                    11043
+                    18042
                 ],
                 [
                     "2019-02-02",
-                    17300
+                    21552
                 ],
                 [
                     "2019-02-03",
-                    10082
+                    3746
                 ],
                 [
                     "2019-02-04",
-                    15676
+                    3826
                 ],
                 [
                     "2019-02-05",
-                    3731
+                    8079
                 ],
                 [
                     "2019-02-06",
-                    16287
+                    7617
                 ],
                 [
                     "2019-02-07",
-                    24526
+                    5534
                 ],
                 [
                     "2019-02-08",
-                    14552
+                    14168
                 ],
                 [
                     "2019-02-09",
-                    8853
+                    9797
                 ],
                 [
                     "2019-02-10",
-                    20771
+                    24788
                 ],
                 [
                     "2019-02-11",
-                    21330
+                    1063
                 ],
                 [
                     "2019-02-12",
-                    17996
+                    14820
                 ],
                 [
                     "2019-02-13",
-                    10968
+                    16310
                 ],
                 [
                     "2019-02-14",
-                    13111
+                    14182
                 ],
                 [
                     "2019-02-15",
-                    5227
+                    4805
                 ],
                 [
                     "2019-02-16",
-                    24569
+                    8067
                 ],
                 [
                     "2019-02-17",
-                    20784
+                    11430
                 ],
                 [
                     "2019-02-18",
-                    5099
+                    16934
                 ],
                 [
                     "2019-02-19",
-                    6649
+                    18271
                 ],
                 [
                     "2019-02-20",
-                    20749
+                    12146
                 ],
                 [
                     "2019-02-21",
-                    15797
+                    13657
                 ],
                 [
                     "2019-02-22",
-                    20828
+                    11826
                 ],
                 [
                     "2019-02-23",
-                    6183
+                    13187
                 ],
                 [
                     "2019-02-24",
-                    20759
+                    16619
                 ],
                 [
                     "2019-02-25",
-                    14117
+                    3287
                 ],
                 [
                     "2019-02-26",
-                    23851
+                    17919
                 ],
                 [
                     "2019-02-27",
-                    9666
+                    1672
                 ],
                 [
                     "2019-02-28",
-                    22362
+                    8723
                 ],
                 [
                     "2019-03-01",
-                    9035
+                    4787
                 ],
                 [
                     "2019-03-02",
-                    21994
+                    12401
                 ],
                 [
                     "2019-03-03",
-                    10441
+                    2402
                 ],
                 [
                     "2019-03-04",
-                    10678
+                    3595
                 ],
                 [
                     "2019-03-05",
-                    23985
+                    16160
                 ],
                 [
                     "2019-03-06",
-                    8903
+                    4588
                 ],
                 [
                     "2019-03-07",
-                    5898
+                    11137
                 ],
                 [
                     "2019-03-08",
-                    16355
+                    14254
                 ],
                 [
                     "2019-03-09",
-                    23086
+                    4229
                 ],
                 [
                     "2019-03-10",
-                    11526
+                    12696
                 ],
                 [
                     "2019-03-11",
-                    3640
+                    12531
                 ],
                 [
                     "2019-03-12",
-                    3115
+                    8720
                 ],
                 [
                     "2019-03-13",
-                    20310
+                    9569
                 ],
                 [
                     "2019-03-14",
-                    5390
+                    14130
                 ],
                 [
                     "2019-03-15",
-                    24271
+                    18588
                 ],
                 [
                     "2019-03-16",
-                    5389
+                    22491
                 ],
                 [
                     "2019-03-17",
-                    12606
+                    20480
                 ],
                 [
                     "2019-03-18",
-                    21341
+                    21416
                 ],
                 [
                     "2019-03-19",
-                    17470
+                    2009
                 ],
                 [
                     "2019-03-20",
-                    22279
+                    22014
                 ],
                 [
                     "2019-03-21",
-                    11695
+                    17616
                 ],
                 [
                     "2019-03-22",
-                    17110
+                    12199
                 ],
                 [
                     "2019-03-23",
-                    5218
+                    24696
                 ],
                 [
                     "2019-03-24",
-                    6135
+                    14533
                 ],
                 [
                     "2019-03-25",
-                    3513
+                    6909
                 ],
                 [
                     "2019-03-26",
-                    12404
+                    21524
                 ],
                 [
                     "2019-03-27",
-                    2530
+                    6111
                 ],
                 [
                     "2019-03-28",
-                    9746
+                    24302
                 ],
                 [
                     "2019-03-29",
-                    13406
+                    1389
                 ],
                 [
                     "2019-03-30",
-                    23916
+                    12003
                 ],
                 [
                     "2019-03-31",
-                    9913
+                    10661
                 ],
                 [
                     "2019-04-01",
-                    7378
+                    16806
                 ],
                 [
                     "2019-04-02",
-                    12534
+                    16858
                 ],
                 [
                     "2019-04-03",
-                    22544
+                    4257
                 ],
                 [
                     "2019-04-04",
-                    13939
+                    1349
                 ],
                 [
                     "2019-04-05",
-                    9487
+                    12114
                 ],
                 [
                     "2019-04-06",
-                    24480
+                    4244
                 ],
                 [
                     "2019-04-07",
-                    2745
+                    20106
                 ],
                 [
                     "2019-04-08",
-                    4672
+                    21975
                 ],
                 [
                     "2019-04-09",
-                    3907
+                    5803
                 ],
                 [
                     "2019-04-10",
-                    6687
+                    5220
                 ],
                 [
                     "2019-04-11",
-                    15220
+                    16886
                 ],
                 [
                     "2019-04-12",
-                    1933
+                    18918
                 ],
                 [
                     "2019-04-13",
-                    7630
+                    15336
                 ],
                 [
                     "2019-04-14",
-                    8635
+                    12939
                 ],
                 [
                     "2019-04-15",
-                    3557
+                    2010
                 ],
                 [
                     "2019-04-16",
-                    5636
+                    7605
                 ],
                 [
                     "2019-04-17",
-                    7817
+                    13271
                 ],
                 [
                     "2019-04-18",
-                    6152
+                    18583
                 ],
                 [
                     "2019-04-19",
-                    12460
+                    20704
                 ],
                 [
                     "2019-04-20",
-                    7910
+                    19874
                 ],
                 [
                     "2019-04-21",
-                    8898
+                    12480
                 ],
                 [
                     "2019-04-22",
-                    17515
+                    23585
                 ],
                 [
                     "2019-04-23",
-                    5714
+                    10480
                 ],
                 [
                     "2019-04-24",
-                    24579
+                    18806
                 ],
                 [
                     "2019-04-25",
-                    7582
+                    20748
                 ],
                 [
                     "2019-04-26",
-                    8255
+                    15688
                 ],
                 [
                     "2019-04-27",
-                    18209
+                    24193
                 ],
                 [
                     "2019-04-28",
-                    15993
+                    7993
                 ],
                 [
                     "2019-04-29",
-                    1488
+                    6609
                 ],
                 [
                     "2019-04-30",
-                    8129
+                    4526
                 ],
                 [
                     "2019-05-01",
-                    12329
+                    17126
                 ],
                 [
                     "2019-05-02",
-                    18292
+                    5466
                 ],
                 [
                     "2019-05-03",
-                    10617
+                    17693
                 ],
                 [
                     "2019-05-04",
-                    18558
+                    10703
                 ],
                 [
                     "2019-05-05",
-                    1989
+                    19923
                 ],
                 [
                     "2019-05-06",
-                    11512
+                    5920
                 ],
                 [
                     "2019-05-07",
-                    6663
+                    5877
                 ],
                 [
                     "2019-05-08",
-                    3026
+                    9100
                 ],
                 [
                     "2019-05-09",
-                    24591
+                    1580
                 ],
                 [
                     "2019-05-10",
-                    8151
+                    23934
                 ],
                 [
                     "2019-05-11",
-                    17474
-                ],
-                [
-                    "2019-05-12",
-                    19195
-                ],
-                [
-                    "2019-05-13",
-                    11471
-                ],
-                [
-                    "2019-05-14",
-                    16303
-                ],
-                [
-                    "2019-05-15",
-                    9988
-                ],
-                [
-                    "2019-05-16",
-                    21759
-                ],
-                [
-                    "2019-05-17",
-                    12325
-                ],
-                [
-                    "2019-05-18",
-                    4436
-                ],
-                [
-                    "2019-05-19",
-                    9777
-                ],
-                [
-                    "2019-05-20",
-                    18202
-                ],
-                [
-                    "2019-05-21",
-                    5631
-                ],
-                [
-                    "2019-05-22",
-                    11824
-                ],
-                [
-                    "2019-05-23",
-                    7244
-                ],
-                [
-                    "2019-05-24",
-                    17137
-                ],
-                [
-                    "2019-05-25",
-                    19329
-                ],
-                [
-                    "2019-05-26",
-                    10964
-                ],
-                [
-                    "2019-05-27",
-                    18514
-                ],
-                [
-                    "2019-05-28",
-                    20490
-                ],
-                [
-                    "2019-05-29",
-                    4068
-                ],
-                [
-                    "2019-05-30",
-                    16460
-                ],
-                [
-                    "2019-05-31",
-                    6927
-                ],
-                [
-                    "2019-06-01",
-                    18185
-                ],
-                [
-                    "2019-06-02",
-                    14167
-                ],
-                [
-                    "2019-06-03",
-                    24611
-                ],
-                [
-                    "2019-06-04",
-                    21472
-                ],
-                [
-                    "2019-06-05",
-                    23079
-                ],
-                [
-                    "2019-06-06",
-                    21149
-                ],
-                [
-                    "2019-06-07",
-                    24544
-                ],
-                [
-                    "2019-06-08",
-                    9810
-                ],
-                [
-                    "2019-06-09",
-                    4951
-                ],
-                [
-                    "2019-06-10",
-                    20590
-                ],
-                [
-                    "2019-06-11",
-                    16639
-                ],
-                [
-                    "2019-06-12",
-                    10964
-                ],
-                [
-                    "2019-06-13",
-                    17343
-                ],
-                [
-                    "2019-06-14",
-                    23721
-                ],
-                [
-                    "2019-06-15",
-                    19114
-                ],
-                [
-                    "2019-06-16",
-                    23331
-                ],
-                [
-                    "2019-06-17",
-                    23956
-                ],
-                [
-                    "2019-06-18",
-                    15927
-                ],
-                [
-                    "2019-06-19",
-                    16123
-                ],
-                [
-                    "2019-06-20",
-                    18532
-                ],
-                [
-                    "2019-06-21",
-                    5945
-                ],
-                [
-                    "2019-06-22",
-                    2271
-                ],
-                [
-                    "2019-06-23",
-                    20934
-                ],
-                [
-                    "2019-06-24",
-                    13129
-                ],
-                [
-                    "2019-06-25",
-                    7203
-                ],
-                [
-                    "2019-06-26",
-                    9361
-                ],
-                [
-                    "2019-06-27",
-                    17868
-                ],
-                [
-                    "2019-06-28",
-                    4565
-                ],
-                [
-                    "2019-06-29",
-                    16965
-                ],
-                [
-                    "2019-06-30",
-                    19506
-                ],
-                [
-                    "2019-07-01",
-                    1973
-                ],
-                [
-                    "2019-07-02",
-                    1180
-                ],
-                [
-                    "2019-07-03",
-                    2707
-                ],
-                [
-                    "2019-07-04",
-                    19105
-                ],
-                [
-                    "2019-07-05",
-                    16199
-                ],
-                [
-                    "2019-07-06",
-                    24706
-                ],
-                [
-                    "2019-07-07",
-                    5075
-                ],
-                [
-                    "2019-07-08",
-                    14757
-                ],
-                [
-                    "2019-07-09",
-                    23550
-                ],
-                [
-                    "2019-07-10",
-                    20646
-                ],
-                [
-                    "2019-07-11",
-                    1142
-                ],
-                [
-                    "2019-07-12",
-                    17039
-                ],
-                [
-                    "2019-07-13",
-                    1851
-                ],
-                [
-                    "2019-07-14",
-                    11316
-                ],
-                [
-                    "2019-07-15",
-                    12094
-                ],
-                [
-                    "2019-07-16",
-                    23350
-                ],
-                [
-                    "2019-07-17",
-                    23516
-                ],
-                [
-                    "2019-07-18",
-                    3692
-                ],
-                [
-                    "2019-07-19",
-                    17998
-                ],
-                [
-                    "2019-07-20",
-                    18592
-                ],
-                [
-                    "2019-07-21",
-                    8132
-                ],
-                [
-                    "2019-07-22",
-                    4760
-                ],
-                [
-                    "2019-07-23",
-                    5176
-                ],
-                [
-                    "2019-07-24",
-                    18721
-                ],
-                [
-                    "2019-07-25",
-                    1171
-                ],
-                [
-                    "2019-07-26",
-                    24952
-                ],
-                [
-                    "2019-07-27",
-                    1383
-                ],
-                [
-                    "2019-07-28",
-                    13939
-                ],
-                [
-                    "2019-07-29",
-                    11945
-                ],
-                [
-                    "2019-07-30",
-                    13854
-                ],
-                [
-                    "2019-07-31",
-                    8855
-                ],
-                [
-                    "2019-08-01",
-                    22780
-                ],
-                [
-                    "2019-08-02",
-                    7952
-                ],
-                [
-                    "2019-08-03",
-                    24830
-                ],
-                [
-                    "2019-08-04",
-                    21324
-                ],
-                [
-                    "2019-08-05",
-                    3968
-                ],
-                [
-                    "2019-08-06",
-                    20803
-                ],
-                [
-                    "2019-08-07",
-                    9103
-                ],
-                [
-                    "2019-08-08",
-                    13587
-                ],
-                [
-                    "2019-08-09",
-                    6516
-                ],
-                [
-                    "2019-08-10",
-                    16996
-                ],
-                [
-                    "2019-08-11",
-                    5862
-                ],
-                [
-                    "2019-08-12",
-                    19076
-                ],
-                [
-                    "2019-08-13",
-                    22551
-                ],
-                [
-                    "2019-08-14",
-                    6346
-                ],
-                [
-                    "2019-08-15",
-                    15748
-                ],
-                [
-                    "2019-08-16",
-                    6153
-                ],
-                [
-                    "2019-08-17",
-                    14377
-                ],
-                [
-                    "2019-08-18",
-                    9394
-                ],
-                [
-                    "2019-08-19",
-                    2176
-                ],
-                [
-                    "2019-08-20",
-                    15407
-                ],
-                [
-                    "2019-08-21",
-                    1208
-                ],
-                [
-                    "2019-08-22",
-                    3921
-                ],
-                [
-                    "2019-08-23",
-                    9411
-                ],
-                [
-                    "2019-08-24",
-                    11864
-                ],
-                [
-                    "2019-08-25",
-                    1402
-                ],
-                [
-                    "2019-08-26",
-                    23722
-                ],
-                [
-                    "2019-08-27",
-                    19632
-                ],
-                [
-                    "2019-08-28",
-                    2993
-                ],
-                [
-                    "2019-08-29",
-                    1496
-                ],
-                [
-                    "2019-08-30",
-                    5454
-                ],
-                [
-                    "2019-08-31",
-                    20403
-                ],
-                [
-                    "2019-09-01",
-                    22468
-                ],
-                [
-                    "2019-09-02",
-                    22816
-                ],
-                [
-                    "2019-09-03",
-                    16923
-                ],
-                [
-                    "2019-09-04",
-                    17785
-                ],
-                [
-                    "2019-09-05",
-                    16393
-                ],
-                [
-                    "2019-09-06",
-                    17414
-                ],
-                [
-                    "2019-09-07",
-                    18589
-                ],
-                [
-                    "2019-09-08",
-                    10445
-                ],
-                [
-                    "2019-09-09",
-                    18401
-                ],
-                [
-                    "2019-09-10",
-                    19485
-                ],
-                [
-                    "2019-09-11",
-                    15482
-                ],
-                [
-                    "2019-09-12",
-                    3268
-                ],
-                [
-                    "2019-09-13",
-                    21176
-                ],
-                [
-                    "2019-09-14",
-                    21669
-                ],
-                [
-                    "2019-09-15",
-                    6657
-                ],
-                [
-                    "2019-09-16",
-                    1338
-                ],
-                [
-                    "2019-09-17",
-                    12300
-                ],
-                [
-                    "2019-09-18",
-                    14739
-                ],
-                [
-                    "2019-09-19",
-                    1592
-                ],
-                [
-                    "2019-09-20",
-                    12381
-                ],
-                [
-                    "2019-09-21",
-                    24401
-                ],
-                [
-                    "2019-09-22",
-                    14528
-                ],
-                [
-                    "2019-09-23",
-                    18840
-                ],
-                [
-                    "2019-09-24",
-                    8906
-                ],
-                [
-                    "2019-09-25",
-                    7963
-                ],
-                [
-                    "2019-09-26",
-                    16339
-                ],
-                [
-                    "2019-09-27",
-                    4455
-                ],
-                [
-                    "2019-09-28",
-                    11912
-                ],
-                [
-                    "2019-09-29",
-                    15952
-                ],
-                [
-                    "2019-09-30",
-                    23945
-                ],
-                [
-                    "2019-10-01",
-                    21544
-                ],
-                [
-                    "2019-10-02",
-                    4054
-                ],
-                [
-                    "2019-10-03",
-                    13436
-                ],
-                [
-                    "2019-10-04",
-                    16533
-                ],
-                [
-                    "2019-10-05",
-                    8909
-                ],
-                [
-                    "2019-10-06",
-                    3371
-                ],
-                [
-                    "2019-10-07",
-                    23357
-                ],
-                [
-                    "2019-10-08",
-                    10221
-                ],
-                [
-                    "2019-10-09",
-                    14176
-                ],
-                [
-                    "2019-10-10",
-                    15389
-                ],
-                [
-                    "2019-10-11",
-                    2356
-                ],
-                [
-                    "2019-10-12",
-                    22404
-                ],
-                [
-                    "2019-10-13",
-                    2950
-                ],
-                [
-                    "2019-10-14",
-                    19826
-                ],
-                [
-                    "2019-10-15",
-                    18523
-                ],
-                [
-                    "2019-10-16",
-                    16203
-                ],
-                [
-                    "2019-10-17",
-                    12464
-                ],
-                [
-                    "2019-10-18",
-                    3973
-                ],
-                [
-                    "2019-10-19",
-                    7945
-                ],
-                [
-                    "2019-10-20",
-                    11309
-                ],
-                [
-                    "2019-10-21",
-                    7005
-                ],
-                [
-                    "2019-10-22",
-                    10438
-                ],
-                [
-                    "2019-10-23",
-                    3179
-                ],
-                [
-                    "2019-10-24",
-                    7588
-                ],
-                [
-                    "2019-10-25",
-                    12016
-                ],
-                [
-                    "2019-10-26",
-                    7443
-                ],
-                [
-                    "2019-10-27",
-                    22041
-                ],
-                [
-                    "2019-10-28",
-                    17205
-                ],
-                [
-                    "2019-10-29",
-                    7129
-                ],
-                [
-                    "2019-10-30",
-                    4320
-                ],
-                [
-                    "2019-10-31",
-                    24942
-                ],
-                [
-                    "2019-11-01",
-                    3484
-                ],
-                [
-                    "2019-11-02",
-                    10227
-                ],
-                [
-                    "2019-11-03",
-                    14927
-                ],
-                [
-                    "2019-11-04",
-                    20482
-                ],
-                [
-                    "2019-11-05",
-                    3642
-                ],
-                [
-                    "2019-11-06",
-                    3051
-                ],
-                [
-                    "2019-11-07",
-                    9559
-                ],
-                [
-                    "2019-11-08",
-                    18199
-                ],
-                [
-                    "2019-11-09",
-                    12671
-                ],
-                [
-                    "2019-11-10",
-                    13321
-                ],
-                [
-                    "2019-11-11",
-                    9130
-                ],
-                [
-                    "2019-11-12",
-                    20964
-                ],
-                [
-                    "2019-11-13",
                     22827
                 ],
                 [
-                    "2019-11-14",
-                    17557
+                    "2019-05-12",
+                    10628
                 ],
                 [
-                    "2019-11-15",
-                    1729
+                    "2019-05-13",
+                    4239
                 ],
                 [
-                    "2019-11-16",
-                    10742
+                    "2019-05-14",
+                    10944
                 ],
                 [
-                    "2019-11-17",
-                    6275
+                    "2019-05-15",
+                    8624
                 ],
                 [
-                    "2019-11-18",
-                    19090
+                    "2019-05-16",
+                    13108
                 ],
                 [
-                    "2019-11-19",
-                    15155
+                    "2019-05-17",
+                    20263
                 ],
                 [
-                    "2019-11-20",
-                    13799
+                    "2019-05-18",
+                    9095
                 ],
                 [
-                    "2019-11-21",
-                    24555
+                    "2019-05-19",
+                    18868
                 ],
                 [
-                    "2019-11-22",
-                    8936
+                    "2019-05-20",
+                    14732
                 ],
                 [
-                    "2019-11-23",
-                    1415
+                    "2019-05-21",
+                    20392
                 ],
                 [
-                    "2019-11-24",
-                    16604
+                    "2019-05-22",
+                    12050
                 ],
                 [
-                    "2019-11-25",
-                    7230
+                    "2019-05-23",
+                    1620
                 ],
                 [
-                    "2019-11-26",
-                    16700
+                    "2019-05-24",
+                    2059
                 ],
                 [
-                    "2019-11-27",
-                    24017
+                    "2019-05-25",
+                    5557
                 ],
                 [
-                    "2019-11-28",
-                    10936
+                    "2019-05-26",
+                    18862
                 ],
                 [
-                    "2019-11-29",
-                    12443
+                    "2019-05-27",
+                    12075
                 ],
                 [
-                    "2019-11-30",
-                    11416
+                    "2019-05-28",
+                    15853
                 ],
                 [
-                    "2019-12-01",
-                    19645
+                    "2019-05-29",
+                    18445
                 ],
                 [
-                    "2019-12-02",
-                    9519
+                    "2019-05-30",
+                    7809
                 ],
                 [
-                    "2019-12-03",
-                    15314
+                    "2019-05-31",
+                    4565
                 ],
                 [
-                    "2019-12-04",
-                    2906
+                    "2019-06-01",
+                    4923
                 ],
                 [
-                    "2019-12-05",
-                    6514
+                    "2019-06-02",
+                    9986
                 ],
                 [
-                    "2019-12-06",
-                    15542
+                    "2019-06-03",
+                    5338
                 ],
                 [
-                    "2019-12-07",
-                    1409
+                    "2019-06-04",
+                    14129
                 ],
                 [
-                    "2019-12-08",
-                    1950
+                    "2019-06-05",
+                    4316
                 ],
                 [
-                    "2019-12-09",
-                    5576
+                    "2019-06-06",
+                    23142
                 ],
                 [
-                    "2019-12-10",
-                    24837
+                    "2019-06-07",
+                    19627
                 ],
                 [
-                    "2019-12-11",
-                    23911
+                    "2019-06-08",
+                    23673
                 ],
                 [
-                    "2019-12-12",
-                    17631
+                    "2019-06-09",
+                    24863
                 ],
                 [
-                    "2019-12-13",
-                    22129
+                    "2019-06-10",
+                    14447
                 ],
                 [
-                    "2019-12-14",
-                    11440
+                    "2019-06-11",
+                    20153
                 ],
                 [
-                    "2019-12-15",
-                    10311
+                    "2019-06-12",
+                    2311
                 ],
                 [
-                    "2019-12-16",
-                    20297
+                    "2019-06-13",
+                    18356
                 ],
                 [
-                    "2019-12-17",
-                    2721
+                    "2019-06-14",
+                    4325
                 ],
                 [
-                    "2019-12-18",
-                    5638
+                    "2019-06-15",
+                    22227
                 ],
                 [
-                    "2019-12-19",
-                    9847
+                    "2019-06-16",
+                    5424
                 ],
                 [
-                    "2019-12-20",
+                    "2019-06-17",
+                    21791
+                ],
+                [
+                    "2019-06-18",
+                    3933
+                ],
+                [
+                    "2019-06-19",
+                    12132
+                ],
+                [
+                    "2019-06-20",
+                    23926
+                ],
+                [
+                    "2019-06-21",
+                    5933
+                ],
+                [
+                    "2019-06-22",
+                    16524
+                ],
+                [
+                    "2019-06-23",
+                    10410
+                ],
+                [
+                    "2019-06-24",
+                    7140
+                ],
+                [
+                    "2019-06-25",
+                    9879
+                ],
+                [
+                    "2019-06-26",
+                    13998
+                ],
+                [
+                    "2019-06-27",
+                    4000
+                ],
+                [
+                    "2019-06-28",
+                    16259
+                ],
+                [
+                    "2019-06-29",
+                    9882
+                ],
+                [
+                    "2019-06-30",
+                    13795
+                ],
+                [
+                    "2019-07-01",
+                    7841
+                ],
+                [
+                    "2019-07-02",
+                    9871
+                ],
+                [
+                    "2019-07-03",
+                    23563
+                ],
+                [
+                    "2019-07-04",
+                    7791
+                ],
+                [
+                    "2019-07-05",
+                    13128
+                ],
+                [
+                    "2019-07-06",
+                    3950
+                ],
+                [
+                    "2019-07-07",
+                    14964
+                ],
+                [
+                    "2019-07-08",
+                    15940
+                ],
+                [
+                    "2019-07-09",
+                    11895
+                ],
+                [
+                    "2019-07-10",
+                    10830
+                ],
+                [
+                    "2019-07-11",
+                    7005
+                ],
+                [
+                    "2019-07-12",
+                    16634
+                ],
+                [
+                    "2019-07-13",
+                    19675
+                ],
+                [
+                    "2019-07-14",
+                    21395
+                ],
+                [
+                    "2019-07-15",
+                    21664
+                ],
+                [
+                    "2019-07-16",
+                    21181
+                ],
+                [
+                    "2019-07-17",
+                    18790
+                ],
+                [
+                    "2019-07-18",
+                    2575
+                ],
+                [
+                    "2019-07-19",
+                    14149
+                ],
+                [
+                    "2019-07-20",
+                    9866
+                ],
+                [
+                    "2019-07-21",
+                    14286
+                ],
+                [
+                    "2019-07-22",
+                    6522
+                ],
+                [
+                    "2019-07-23",
+                    12403
+                ],
+                [
+                    "2019-07-24",
+                    10455
+                ],
+                [
+                    "2019-07-25",
+                    14239
+                ],
+                [
+                    "2019-07-26",
+                    7744
+                ],
+                [
+                    "2019-07-27",
+                    13274
+                ],
+                [
+                    "2019-07-28",
+                    13452
+                ],
+                [
+                    "2019-07-29",
+                    13969
+                ],
+                [
+                    "2019-07-30",
+                    1099
+                ],
+                [
+                    "2019-07-31",
+                    24972
+                ],
+                [
+                    "2019-08-01",
+                    12086
+                ],
+                [
+                    "2019-08-02",
+                    22358
+                ],
+                [
+                    "2019-08-03",
+                    11773
+                ],
+                [
+                    "2019-08-04",
+                    8108
+                ],
+                [
+                    "2019-08-05",
+                    7486
+                ],
+                [
+                    "2019-08-06",
+                    4623
+                ],
+                [
+                    "2019-08-07",
+                    18650
+                ],
+                [
+                    "2019-08-08",
+                    14978
+                ],
+                [
+                    "2019-08-09",
+                    20070
+                ],
+                [
+                    "2019-08-10",
+                    12315
+                ],
+                [
+                    "2019-08-11",
+                    22584
+                ],
+                [
+                    "2019-08-12",
+                    15775
+                ],
+                [
+                    "2019-08-13",
+                    11778
+                ],
+                [
+                    "2019-08-14",
+                    19299
+                ],
+                [
+                    "2019-08-15",
+                    13412
+                ],
+                [
+                    "2019-08-16",
+                    22390
+                ],
+                [
+                    "2019-08-17",
+                    11107
+                ],
+                [
+                    "2019-08-18",
+                    22257
+                ],
+                [
+                    "2019-08-19",
+                    23872
+                ],
+                [
+                    "2019-08-20",
+                    22809
+                ],
+                [
+                    "2019-08-21",
+                    13292
+                ],
+                [
+                    "2019-08-22",
+                    14004
+                ],
+                [
+                    "2019-08-23",
+                    22016
+                ],
+                [
+                    "2019-08-24",
+                    1819
+                ],
+                [
+                    "2019-08-25",
+                    19299
+                ],
+                [
+                    "2019-08-26",
+                    2551
+                ],
+                [
+                    "2019-08-27",
+                    23277
+                ],
+                [
+                    "2019-08-28",
+                    20683
+                ],
+                [
+                    "2019-08-29",
+                    6363
+                ],
+                [
+                    "2019-08-30",
+                    17074
+                ],
+                [
+                    "2019-08-31",
+                    17863
+                ],
+                [
+                    "2019-09-01",
+                    17627
+                ],
+                [
+                    "2019-09-02",
+                    12113
+                ],
+                [
+                    "2019-09-03",
+                    14120
+                ],
+                [
+                    "2019-09-04",
+                    17256
+                ],
+                [
+                    "2019-09-05",
+                    6385
+                ],
+                [
+                    "2019-09-06",
                     1908
                 ],
                 [
+                    "2019-09-07",
+                    7685
+                ],
+                [
+                    "2019-09-08",
+                    11955
+                ],
+                [
+                    "2019-09-09",
+                    12817
+                ],
+                [
+                    "2019-09-10",
+                    13662
+                ],
+                [
+                    "2019-09-11",
+                    14191
+                ],
+                [
+                    "2019-09-12",
+                    1151
+                ],
+                [
+                    "2019-09-13",
+                    8454
+                ],
+                [
+                    "2019-09-14",
+                    18562
+                ],
+                [
+                    "2019-09-15",
+                    5358
+                ],
+                [
+                    "2019-09-16",
+                    6289
+                ],
+                [
+                    "2019-09-17",
+                    21885
+                ],
+                [
+                    "2019-09-18",
+                    1176
+                ],
+                [
+                    "2019-09-19",
+                    14875
+                ],
+                [
+                    "2019-09-20",
+                    11084
+                ],
+                [
+                    "2019-09-21",
+                    5783
+                ],
+                [
+                    "2019-09-22",
+                    18204
+                ],
+                [
+                    "2019-09-23",
+                    18635
+                ],
+                [
+                    "2019-09-24",
+                    19169
+                ],
+                [
+                    "2019-09-25",
+                    15401
+                ],
+                [
+                    "2019-09-26",
+                    17302
+                ],
+                [
+                    "2019-09-27",
+                    16062
+                ],
+                [
+                    "2019-09-28",
+                    6392
+                ],
+                [
+                    "2019-09-29",
+                    15801
+                ],
+                [
+                    "2019-09-30",
+                    13311
+                ],
+                [
+                    "2019-10-01",
+                    21068
+                ],
+                [
+                    "2019-10-02",
+                    22511
+                ],
+                [
+                    "2019-10-03",
+                    18212
+                ],
+                [
+                    "2019-10-04",
+                    17988
+                ],
+                [
+                    "2019-10-05",
+                    18178
+                ],
+                [
+                    "2019-10-06",
+                    22157
+                ],
+                [
+                    "2019-10-07",
+                    22728
+                ],
+                [
+                    "2019-10-08",
+                    24543
+                ],
+                [
+                    "2019-10-09",
+                    23921
+                ],
+                [
+                    "2019-10-10",
+                    16084
+                ],
+                [
+                    "2019-10-11",
+                    14395
+                ],
+                [
+                    "2019-10-12",
+                    23867
+                ],
+                [
+                    "2019-10-13",
+                    22136
+                ],
+                [
+                    "2019-10-14",
+                    14160
+                ],
+                [
+                    "2019-10-15",
+                    8721
+                ],
+                [
+                    "2019-10-16",
+                    14300
+                ],
+                [
+                    "2019-10-17",
+                    12138
+                ],
+                [
+                    "2019-10-18",
+                    13222
+                ],
+                [
+                    "2019-10-19",
+                    20428
+                ],
+                [
+                    "2019-10-20",
+                    4618
+                ],
+                [
+                    "2019-10-21",
+                    14749
+                ],
+                [
+                    "2019-10-22",
+                    15714
+                ],
+                [
+                    "2019-10-23",
+                    2465
+                ],
+                [
+                    "2019-10-24",
+                    10333
+                ],
+                [
+                    "2019-10-25",
+                    16090
+                ],
+                [
+                    "2019-10-26",
+                    20076
+                ],
+                [
+                    "2019-10-27",
+                    10977
+                ],
+                [
+                    "2019-10-28",
+                    12533
+                ],
+                [
+                    "2019-10-29",
+                    24784
+                ],
+                [
+                    "2019-10-30",
+                    13834
+                ],
+                [
+                    "2019-10-31",
+                    24104
+                ],
+                [
+                    "2019-11-01",
+                    15605
+                ],
+                [
+                    "2019-11-02",
+                    19465
+                ],
+                [
+                    "2019-11-03",
+                    5522
+                ],
+                [
+                    "2019-11-04",
+                    16947
+                ],
+                [
+                    "2019-11-05",
+                    3773
+                ],
+                [
+                    "2019-11-06",
+                    13104
+                ],
+                [
+                    "2019-11-07",
+                    4977
+                ],
+                [
+                    "2019-11-08",
+                    22721
+                ],
+                [
+                    "2019-11-09",
+                    8868
+                ],
+                [
+                    "2019-11-10",
+                    6108
+                ],
+                [
+                    "2019-11-11",
+                    6560
+                ],
+                [
+                    "2019-11-12",
+                    24783
+                ],
+                [
+                    "2019-11-13",
+                    11943
+                ],
+                [
+                    "2019-11-14",
+                    16691
+                ],
+                [
+                    "2019-11-15",
+                    19170
+                ],
+                [
+                    "2019-11-16",
+                    22883
+                ],
+                [
+                    "2019-11-17",
+                    16858
+                ],
+                [
+                    "2019-11-18",
+                    1626
+                ],
+                [
+                    "2019-11-19",
+                    7902
+                ],
+                [
+                    "2019-11-20",
+                    21094
+                ],
+                [
+                    "2019-11-21",
+                    3326
+                ],
+                [
+                    "2019-11-22",
+                    12771
+                ],
+                [
+                    "2019-11-23",
+                    5220
+                ],
+                [
+                    "2019-11-24",
+                    19840
+                ],
+                [
+                    "2019-11-25",
+                    2533
+                ],
+                [
+                    "2019-11-26",
+                    22032
+                ],
+                [
+                    "2019-11-27",
+                    7462
+                ],
+                [
+                    "2019-11-28",
+                    24046
+                ],
+                [
+                    "2019-11-29",
+                    8018
+                ],
+                [
+                    "2019-11-30",
+                    7567
+                ],
+                [
+                    "2019-12-01",
+                    15315
+                ],
+                [
+                    "2019-12-02",
+                    2689
+                ],
+                [
+                    "2019-12-03",
+                    7581
+                ],
+                [
+                    "2019-12-04",
+                    2924
+                ],
+                [
+                    "2019-12-05",
+                    23213
+                ],
+                [
+                    "2019-12-06",
+                    8623
+                ],
+                [
+                    "2019-12-07",
+                    7272
+                ],
+                [
+                    "2019-12-08",
+                    15249
+                ],
+                [
+                    "2019-12-09",
+                    8076
+                ],
+                [
+                    "2019-12-10",
+                    5106
+                ],
+                [
+                    "2019-12-11",
+                    17912
+                ],
+                [
+                    "2019-12-12",
+                    7964
+                ],
+                [
+                    "2019-12-13",
+                    24111
+                ],
+                [
+                    "2019-12-14",
+                    9466
+                ],
+                [
+                    "2019-12-15",
+                    10670
+                ],
+                [
+                    "2019-12-16",
+                    4180
+                ],
+                [
+                    "2019-12-17",
+                    7174
+                ],
+                [
+                    "2019-12-18",
+                    6021
+                ],
+                [
+                    "2019-12-19",
+                    13332
+                ],
+                [
+                    "2019-12-20",
+                    2618
+                ],
+                [
                     "2019-12-21",
-                    22706
+                    6150
                 ],
                 [
                     "2019-12-22",
-                    12454
+                    10686
                 ],
                 [
                     "2019-12-23",
-                    2013
+                    21914
                 ],
                 [
                     "2019-12-24",
-                    21121
+                    9568
                 ],
                 [
                     "2019-12-25",
-                    4297
+                    12321
                 ],
                 [
                     "2019-12-26",
-                    3273
+                    17147
                 ],
                 [
                     "2019-12-27",
-                    16081
+                    24969
                 ],
                 [
                     "2019-12-28",
-                    8493
+                    6791
                 ],
                 [
                     "2019-12-29",
-                    2981
+                    22883
                 ],
                 [
                     "2019-12-30",
-                    14365
+                    11804
                 ],
                 [
                     "2019-12-31",
-                    6449
+                    11972
                 ]
             ],
             "label": {
@@ -2180,7 +2189,7 @@
         "borderWidth": 0
     }
 };
-                chart_4b9add609baf4482bac8b47856ba9857.setOption(option_4b9add609baf4482bac8b47856ba9857);
+                chart_7dabd509df0f4ce4922ccbcaf75757b2.setOption(option_7dabd509df0f4ce4922ccbcaf75757b2);
         });
     </script>
 </div></div>
@@ -2252,11 +2261,9 @@ Published at: https://public.deetly.com/examples/3f4df2d7b013b99225bdac49cee89c1
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>

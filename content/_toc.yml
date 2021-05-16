@@ -28,6 +28,7 @@
 
 - part: Pydeck Maps
   chapters:
+    - file: pydeck/pydeck_scatterplot_oslofjord
     - file: pydeck/pydeck_scatterplot_subway_stations
     - file: pydeck/pydeck_heatmap_cattle
     - file: pydeck/pydeck_kommuner

@@ -9,7 +9,7 @@ ipycytoscape==1.2.0
 keplergl==0.2.2
 plotly==4.14.3
 pm4py==2.2.0
-pydeck==0.6.1
+pydeck==0.6.2
 pyjstat==2.2.0
 vega==3.4.0
 vega-datasets==0.8.0

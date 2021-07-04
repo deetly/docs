@@ -54,7 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Scatterplot Oslofjorden" href="../pydeck/pydeck_scatterplot_oslofjord.html" />
+    <link rel="next" title="Filtered bar chart" href="barchart_filtered.html" />
     <link rel="prev" title="Geo Norway" href="map_norway.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -198,6 +198,11 @@
    Geo world population
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -223,6 +228,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner_inntekt.html">
+   Pydeck inntekt kommuner
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,6 +316,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../basic/bar/barcharts.html">
    Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
   </a>
  </li>
  <li class="toctree-l1">
@@ -444,6 +459,28 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
    Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
   </a>
  </li>
 </ul>
@@ -673,1046 +710,19 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-<script>
-    require.config({
-        paths: {
-            'echarts':'https://assets.pyecharts.org/assets/echarts.min', 'world':'https://assets.pyecharts.org/assets/maps/world'
-        }
-    });
-</script>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="n">fa06ae1b1864</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Map</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pyecharts.options</span> <span class="k">as</span> <span class="nn">opts</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">Map</span><span class="p">()</span><span class="o">.</span><span class="n">add</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">maptype</span><span class="o">=</span><span class="s1">&#39;world&#39;</span><span class="p">,</span>
 
-        <div id="3e7f479a5f764c9db4b3f56f2d813cc8" style="width:900px; height:500px;"></div>
-
-<script>
-        require(['echarts', 'world'], function(echarts) {
-                var chart_3e7f479a5f764c9db4b3f56f2d813cc8 = echarts.init(
-                    document.getElementById('3e7f479a5f764c9db4b3f56f2d813cc8'), 'white', {renderer: 'canvas'});
-                var option_3e7f479a5f764c9db4b3f56f2d813cc8 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "map",
-            "name": "World Population",
-            "label": {
-                "show": false,
-                "position": "top",
-                "margin": 8
-            },
-            "mapType": "world",
-            "data": [
-                {
-                    "name": "Comoros",
-                    "value": 869.595
-                },
-                {
-                    "name": "Djibouti",
-                    "value": 988.002
-                },
-                {
-                    "name": "Eritrea",
-                    "value": 3546.427
-                },
-                {
-                    "name": "Ethiopia",
-                    "value": 114963.583
-                },
-                {
-                    "name": "Kenya",
-                    "value": 53771.3
-                },
-                {
-                    "name": "Madagascar",
-                    "value": 27691.019
-                },
-                {
-                    "name": "Malawi",
-                    "value": 19129.955
-                },
-                {
-                    "name": "Mauritius",
-                    "value": 1271.767
-                },
-                {
-                    "name": "Mayotte",
-                    "value": 272.813
-                },
-                {
-                    "name": "Mozambique",
-                    "value": 31255.435
-                },
-                {
-                    "name": "R\u00e9union",
-                    "value": 895.308
-                },
-                {
-                    "name": "Rwanda",
-                    "value": 12952.209
-                },
-                {
-                    "name": "Seychelles",
-                    "value": 98.34
-                },
-                {
-                    "name": "Somalia",
-                    "value": 15893.219
-                },
-                {
-                    "name": "South Sudan",
-                    "value": 11193.729
-                },
-                {
-                    "name": "Uganda",
-                    "value": 45741
-                },
-                {
-                    "name": "United Republic of Tanzania",
-                    "value": 59734.213
-                },
-                {
-                    "name": "Zambia",
-                    "value": 18383.956
-                },
-                {
-                    "name": "Zimbabwe",
-                    "value": 14862.927
-                },
-                {
-                    "name": "Angola",
-                    "value": 32866.268
-                },
-                {
-                    "name": "Cameroon",
-                    "value": 26545.864
-                },
-                {
-                    "name": "Central African Republic",
-                    "value": 4829.764
-                },
-                {
-                    "name": "Chad",
-                    "value": 16425.859
-                },
-                {
-                    "name": "Congo",
-                    "value": 5518.092
-                },
-                {
-                    "name": "Democratic Republic of the Congo",
-                    "value": 89561.404
-                },
-                {
-                    "name": "Equatorial Guinea",
-                    "value": 1402.985
-                },
-                {
-                    "name": "Gabon",
-                    "value": 2225.728
-                },
-                {
-                    "name": "Sao Tome and Principe",
-                    "value": 219.161
-                },
-                {
-                    "name": "Botswana",
-                    "value": 2351.625
-                },
-                {
-                    "name": "Eswatini",
-                    "value": 1160.164
-                },
-                {
-                    "name": "Lesotho",
-                    "value": 2142.252
-                },
-                {
-                    "name": "Namibia",
-                    "value": 2540.916
-                },
-                {
-                    "name": "South Africa",
-                    "value": 59308.69
-                },
-                {
-                    "name": "Benin",
-                    "value": 12123.198
-                },
-                {
-                    "name": "Burkina Faso",
-                    "value": 20903.278
-                },
-                {
-                    "name": "Cabo Verde",
-                    "value": 555.988
-                },
-                {
-                    "name": "C\u00f4te d'Ivoire",
-                    "value": 26378.275
-                },
-                {
-                    "name": "Gambia",
-                    "value": 2416.664
-                },
-                {
-                    "name": "Ghana",
-                    "value": 31072.945
-                },
-                {
-                    "name": "Guinea",
-                    "value": 13132.792
-                },
-                {
-                    "name": "Guinea-Bissau",
-                    "value": 1967.998
-                },
-                {
-                    "name": "Liberia",
-                    "value": 5057.677
-                },
-                {
-                    "name": "Mali",
-                    "value": 20250.834
-                },
-                {
-                    "name": "Mauritania",
-                    "value": 4649.66
-                },
-                {
-                    "name": "Niger",
-                    "value": 24206.636
-                },
-                {
-                    "name": "Nigeria",
-                    "value": 206139.587
-                },
-                {
-                    "name": "Saint Helena",
-                    "value": 6.071
-                },
-                {
-                    "name": "Senegal",
-                    "value": 16743.93
-                },
-                {
-                    "name": "Sierra Leone",
-                    "value": 7976.985
-                },
-                {
-                    "name": "Togo",
-                    "value": 8278.737
-                },
-                {
-                    "name": "Algeria",
-                    "value": 43851.043
-                },
-                {
-                    "name": "Egypt",
-                    "value": 102334.403
-                },
-                {
-                    "name": "Libya",
-                    "value": 6871.287
-                },
-                {
-                    "name": "Morocco",
-                    "value": 36910.558
-                },
-                {
-                    "name": "Sudan",
-                    "value": 43849.269
-                },
-                {
-                    "name": "Tunisia",
-                    "value": 11818.618
-                },
-                {
-                    "name": "Western Sahara",
-                    "value": 597.33
-                },
-                {
-                    "name": "Armenia",
-                    "value": 2963.234
-                },
-                {
-                    "name": "Azerbaijan",
-                    "value": 10139.175
-                },
-                {
-                    "name": "Bahrain",
-                    "value": 1701.583
-                },
-                {
-                    "name": "Cyprus",
-                    "value": 1207.361
-                },
-                {
-                    "name": "Georgia",
-                    "value": 3989.175
-                },
-                {
-                    "name": "Iraq",
-                    "value": 40222.503
-                },
-                {
-                    "name": "Israel",
-                    "value": 8655.541
-                },
-                {
-                    "name": "Jordan",
-                    "value": 10203.14
-                },
-                {
-                    "name": "Kuwait",
-                    "value": 4270.563
-                },
-                {
-                    "name": "Lebanon",
-                    "value": 6825.442
-                },
-                {
-                    "name": "Oman",
-                    "value": 5106.622
-                },
-                {
-                    "name": "Qatar",
-                    "value": 2881.06
-                },
-                {
-                    "name": "Saudi Arabia",
-                    "value": 34813.867
-                },
-                {
-                    "name": "State of Palestine",
-                    "value": 5101.416
-                },
-                {
-                    "name": "Syrian Arab Republic",
-                    "value": 17500.657
-                },
-                {
-                    "name": "Turkey",
-                    "value": 84339.067
-                },
-                {
-                    "name": "United Arab Emirates",
-                    "value": 9890.4
-                },
-                {
-                    "name": "Yemen",
-                    "value": 29825.968
-                },
-                {
-                    "name": "Kazakhstan",
-                    "value": 18776.707
-                },
-                {
-                    "name": "Kyrgyzstan",
-                    "value": 6524.191
-                },
-                {
-                    "name": "Tajikistan",
-                    "value": 9537.642
-                },
-                {
-                    "name": "Turkmenistan",
-                    "value": 6031.187
-                },
-                {
-                    "name": "Uzbekistan",
-                    "value": 33469.199
-                },
-                {
-                    "name": "Afghanistan",
-                    "value": 38928.341
-                },
-                {
-                    "name": "Bangladesh",
-                    "value": 164689.383
-                },
-                {
-                    "name": "Bhutan",
-                    "value": 771.612
-                },
-                {
-                    "name": "India",
-                    "value": 1380004.385
-                },
-                {
-                    "name": "Iran (Islamic Republic of)",
-                    "value": 83992.953
-                },
-                {
-                    "name": "Maldives",
-                    "value": 540.542
-                },
-                {
-                    "name": "Nepal",
-                    "value": 29136.808
-                },
-                {
-                    "name": "Pakistan",
-                    "value": 220892.331
-                },
-                {
-                    "name": "Sri Lanka",
-                    "value": 21413.25
-                },
-                {
-                    "name": "China",
-                    "value": 1439323.774
-                },
-                {
-                    "name": "China, Hong Kong SAR",
-                    "value": 7496.988
-                },
-                {
-                    "name": "China, Macao SAR",
-                    "value": 649.342
-                },
-                {
-                    "name": "China, Taiwan Province of China",
-                    "value": 23816.775
-                },
-                {
-                    "name": "Dem. People's Republic of Korea",
-                    "value": 25778.815
-                },
-                {
-                    "name": "Japan",
-                    "value": 126476.458
-                },
-                {
-                    "name": "Mongolia",
-                    "value": 3278.292
-                },
-                {
-                    "name": "Republic of Korea",
-                    "value": 51269.183
-                },
-                {
-                    "name": "Brunei Darussalam",
-                    "value": 437.483
-                },
-                {
-                    "name": "Cambodia",
-                    "value": 16718.971
-                },
-                {
-                    "name": "Indonesia",
-                    "value": 273523.621
-                },
-                {
-                    "name": "Lao People's Democratic Republic",
-                    "value": 7275.556
-                },
-                {
-                    "name": "Malaysia",
-                    "value": 32365.998
-                },
-                {
-                    "name": "Myanmar",
-                    "value": 54409.794
-                },
-                {
-                    "name": "Philippines",
-                    "value": 109581.085
-                },
-                {
-                    "name": "Singapore",
-                    "value": 5850.343
-                },
-                {
-                    "name": "Thailand",
-                    "value": 69799.978
-                },
-                {
-                    "name": "Timor-Leste",
-                    "value": 1318.442
-                },
-                {
-                    "name": "Viet Nam",
-                    "value": 97338.583
-                },
-                {
-                    "name": "Anguilla",
-                    "value": 15.002
-                },
-                {
-                    "name": "Antigua and Barbuda",
-                    "value": 97.928
-                },
-                {
-                    "name": "Aruba",
-                    "value": 106.766
-                },
-                {
-                    "name": "Bahamas",
-                    "value": 393.248
-                },
-                {
-                    "name": "Barbados",
-                    "value": 287.371
-                },
-                {
-                    "name": "Bonaire, Sint Eustatius and Saba",
-                    "value": 26.221
-                },
-                {
-                    "name": "British Virgin Islands",
-                    "value": 30.237
-                },
-                {
-                    "name": "Cayman Islands",
-                    "value": 65.72
-                },
-                {
-                    "name": "Cuba",
-                    "value": 11326.616
-                },
-                {
-                    "name": "Cura\u00e7ao",
-                    "value": 164.1
-                },
-                {
-                    "name": "Dominica",
-                    "value": 71.991
-                },
-                {
-                    "name": "Dominican Republic",
-                    "value": 10847.904
-                },
-                {
-                    "name": "Grenada",
-                    "value": 112.519
-                },
-                {
-                    "name": "Guadeloupe",
-                    "value": 400.127
-                },
-                {
-                    "name": "Haiti",
-                    "value": 11402.533
-                },
-                {
-                    "name": "Jamaica",
-                    "value": 2961.161
-                },
-                {
-                    "name": "Martinique",
-                    "value": 375.265
-                },
-                {
-                    "name": "Montserrat",
-                    "value": 4.999
-                },
-                {
-                    "name": "Puerto Rico",
-                    "value": 2860.84
-                },
-                {
-                    "name": "Saint Barth\u00e9lemy",
-                    "value": 9.885
-                },
-                {
-                    "name": "Saint Kitts and Nevis",
-                    "value": 53.192
-                },
-                {
-                    "name": "Saint Lucia",
-                    "value": 183.629
-                },
-                {
-                    "name": "Saint Martin (French part)",
-                    "value": 38.659
-                },
-                {
-                    "name": "Saint Vincent and the Grenadines",
-                    "value": 110.947
-                },
-                {
-                    "name": "Sint Maarten (Dutch part)",
-                    "value": 42.882
-                },
-                {
-                    "name": "Trinidad and Tobago",
-                    "value": 1399.491
-                },
-                {
-                    "name": "Turks and Caicos Islands",
-                    "value": 38.718
-                },
-                {
-                    "name": "United States Virgin Islands",
-                    "value": 104.423
-                },
-                {
-                    "name": "Belize",
-                    "value": 397.621
-                },
-                {
-                    "name": "Costa Rica",
-                    "value": 5094.114
-                },
-                {
-                    "name": "El Salvador",
-                    "value": 6486.201
-                },
-                {
-                    "name": "Guatemala",
-                    "value": 17915.567
-                },
-                {
-                    "name": "Honduras",
-                    "value": 9904.608
-                },
-                {
-                    "name": "Mexico",
-                    "value": 128932.753
-                },
-                {
-                    "name": "Nicaragua",
-                    "value": 6624.554
-                },
-                {
-                    "name": "Panama",
-                    "value": 4314.768
-                },
-                {
-                    "name": "Argentina",
-                    "value": 45195.777
-                },
-                {
-                    "name": "Bolivia (Plurinational State of)",
-                    "value": 11673.029
-                },
-                {
-                    "name": "Brazil",
-                    "value": 212559.409
-                },
-                {
-                    "name": "Chile",
-                    "value": 19116.209
-                },
-                {
-                    "name": "Colombia",
-                    "value": 50882.884
-                },
-                {
-                    "name": "Ecuador",
-                    "value": 17643.06
-                },
-                {
-                    "name": "Falkland Islands (Malvinas)",
-                    "value": 3.483
-                },
-                {
-                    "name": "French Guiana",
-                    "value": 298.682
-                },
-                {
-                    "name": "Guyana",
-                    "value": 786.559
-                },
-                {
-                    "name": "Paraguay",
-                    "value": 7132.53
-                },
-                {
-                    "name": "Peru",
-                    "value": 32971.846
-                },
-                {
-                    "name": "Suriname",
-                    "value": 586.634
-                },
-                {
-                    "name": "Uruguay",
-                    "value": 3473.727
-                },
-                {
-                    "name": "Venezuela (Bolivarian Republic of)",
-                    "value": 28435.943
-                },
-                {
-                    "name": "Australia",
-                    "value": 25499.881
-                },
-                {
-                    "name": "New Zealand",
-                    "value": 4822.233
-                },
-                {
-                    "name": "Fiji",
-                    "value": 896.444
-                },
-                {
-                    "name": "New Caledonia",
-                    "value": 285.491
-                },
-                {
-                    "name": "Papua New Guinea",
-                    "value": 8947.027
-                },
-                {
-                    "name": "Solomon Islands",
-                    "value": 686.878
-                },
-                {
-                    "name": "Vanuatu",
-                    "value": 307.15
-                },
-                {
-                    "name": "Guam",
-                    "value": 168.783
-                },
-                {
-                    "name": "Kiribati",
-                    "value": 119.446
-                },
-                {
-                    "name": "Marshall Islands",
-                    "value": 59.194
-                },
-                {
-                    "name": "Micronesia (Fed. States of)",
-                    "value": 115.021
-                },
-                {
-                    "name": "Nauru",
-                    "value": 10.834
-                },
-                {
-                    "name": "Northern Mariana Islands",
-                    "value": 57.557
-                },
-                {
-                    "name": "Palau",
-                    "value": 18.092
-                },
-                {
-                    "name": "American Samoa",
-                    "value": 55.197
-                },
-                {
-                    "name": "Cook Islands",
-                    "value": 17.564
-                },
-                {
-                    "name": "French Polynesia",
-                    "value": 280.904
-                },
-                {
-                    "name": "Niue",
-                    "value": 1.618
-                },
-                {
-                    "name": "Samoa",
-                    "value": 198.41
-                },
-                {
-                    "name": "Tokelau",
-                    "value": 1.35
-                },
-                {
-                    "name": "Tonga",
-                    "value": 105.697
-                },
-                {
-                    "name": "Tuvalu",
-                    "value": 11.792
-                },
-                {
-                    "name": "Wallis and Futuna Islands",
-                    "value": 11.246
-                },
-                {
-                    "name": "Belarus",
-                    "value": 9449.321
-                },
-                {
-                    "name": "Bulgaria",
-                    "value": 6948.445
-                },
-                {
-                    "name": "Czechia",
-                    "value": 10708.982
-                },
-                {
-                    "name": "Hungary",
-                    "value": 9660.35
-                },
-                {
-                    "name": "Poland",
-                    "value": 37846.605
-                },
-                {
-                    "name": "Republic of Moldova",
-                    "value": 4033.963
-                },
-                {
-                    "name": "Romania",
-                    "value": 19237.682
-                },
-                {
-                    "name": "Russian Federation",
-                    "value": 145934.46
-                },
-                {
-                    "name": "Slovakia",
-                    "value": 5459.643
-                },
-                {
-                    "name": "Ukraine",
-                    "value": 43733.759
-                },
-                {
-                    "name": "Channel Islands",
-                    "value": 173.859
-                },
-                {
-                    "name": "Denmark",
-                    "value": 5792.203
-                },
-                {
-                    "name": "Estonia",
-                    "value": 1326.539
-                },
-                {
-                    "name": "Faroe Islands",
-                    "value": 48.865
-                },
-                {
-                    "name": "Finland",
-                    "value": 5540.718
-                },
-                {
-                    "name": "Iceland",
-                    "value": 341.25
-                },
-                {
-                    "name": "Ireland",
-                    "value": 4937.796
-                },
-                {
-                    "name": "Isle of Man",
-                    "value": 85.032
-                },
-                {
-                    "name": "Latvia",
-                    "value": 1886.202
-                },
-                {
-                    "name": "Lithuania",
-                    "value": 2722.291
-                },
-                {
-                    "name": "Norway",
-                    "value": 5421.242
-                },
-                {
-                    "name": "Sweden",
-                    "value": 10099.27
-                },
-                {
-                    "name": "United Kingdom",
-                    "value": 67886.004
-                },
-                {
-                    "name": "Albania",
-                    "value": 2877.8
-                },
-                {
-                    "name": "Andorra",
-                    "value": 77.265
-                },
-                {
-                    "name": "Bosnia and Herzegovina",
-                    "value": 3280.815
-                },
-                {
-                    "name": "Croatia",
-                    "value": 4105.268
-                },
-                {
-                    "name": "Gibraltar",
-                    "value": 33.691
-                },
-                {
-                    "name": "Greece",
-                    "value": 10423.056
-                },
-                {
-                    "name": "Holy See",
-                    "value": 0.809
-                },
-                {
-                    "name": "Italy",
-                    "value": 60461.828
-                },
-                {
-                    "name": "Malta",
-                    "value": 441.539
-                },
-                {
-                    "name": "Montenegro",
-                    "value": 628.062
-                },
-                {
-                    "name": "North Macedonia",
-                    "value": 2083.38
-                },
-                {
-                    "name": "Portugal",
-                    "value": 10196.707
-                },
-                {
-                    "name": "San Marino",
-                    "value": 33.938
-                },
-                {
-                    "name": "Serbia",
-                    "value": 8737.37
-                },
-                {
-                    "name": "Slovenia",
-                    "value": 2078.932
-                },
-                {
-                    "name": "Spain",
-                    "value": 46754.783
-                },
-                {
-                    "name": "Austria",
-                    "value": 9006.4
-                },
-                {
-                    "name": "Belgium",
-                    "value": 11589.616
-                },
-                {
-                    "name": "France",
-                    "value": 65273.512
-                },
-                {
-                    "name": "Germany",
-                    "value": 83783.945
-                },
-                {
-                    "name": "Liechtenstein",
-                    "value": 38.137
-                },
-                {
-                    "name": "Luxembourg",
-                    "value": 625.976
-                },
-                {
-                    "name": "Monaco",
-                    "value": 39.244
-                },
-                {
-                    "name": "Netherlands",
-                    "value": 17134.873
-                },
-                {
-                    "name": "Switzerland",
-                    "value": 8654.618
-                },
-                {
-                    "name": "Bermuda",
-                    "value": 62.273
-                },
-                {
-                    "name": "Canada",
-                    "value": 37742.157
-                },
-                {
-                    "name": "Greenland",
-                    "value": 56.772
-                },
-                {
-                    "name": "Saint Pierre and Miquelon",
-                    "value": 5.795
-                },
-                {
-                    "name": "United States of America",
-                    "value": 331002.647
-                }
-            ],
-            "roam": true,
-            "aspectScale": 0.75,
-            "nameProperty": "name",
-            "selectedMode": false,
-            "zoom": 1,
-            "mapValueCalculation": "sum",
-            "showLegendSymbol": false,
-            "emphasis": {}
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "World Population"
-            ],
-            "selected": {
-                "World Population": true
-            }
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    }
-};
-                chart_3e7f479a5f764c9db4b3f56f2d813cc8.setOption(option_3e7f479a5f764c9db4b3f56f2d813cc8);
-        });
-    </script>
-</div></div>
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pyecharts&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1739,13 +749,13 @@
     });
 </script>
 
-        <div id="86e90e2da5404893957ce1930a0c7342" style="width:900px; height:500px;"></div>
+        <div id="ea70981e8ce44574801d5a139e456923" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'world'], function(echarts) {
-                var chart_86e90e2da5404893957ce1930a0c7342 = echarts.init(
-                    document.getElementById('86e90e2da5404893957ce1930a0c7342'), 'white', {renderer: 'canvas'});
-                var option_86e90e2da5404893957ce1930a0c7342 = {
+                var chart_ea70981e8ce44574801d5a139e456923 = echarts.init(
+                    document.getElementById('ea70981e8ce44574801d5a139e456923'), 'white', {renderer: 'canvas'});
+                var option_ea70981e8ce44574801d5a139e456923 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2802,7 +1812,7 @@
         "borderWidth": 0
     }
 };
-                chart_86e90e2da5404893957ce1930a0c7342.setOption(option_86e90e2da5404893957ce1930a0c7342);
+                chart_ea70981e8ce44574801d5a139e456923.setOption(option_ea70981e8ce44574801d5a139e456923);
         });
     </script>
 </div></div>
@@ -2843,13 +1853,13 @@
     });
 </script>
 
-        <div id="15ec23bc1e3c4c7490e9767cd71abb49" style="width:900px; height:500px;"></div>
+        <div id="42345d3d7e904e5d90630970e5d7737e" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts', 'world'], function(echarts) {
-                var chart_15ec23bc1e3c4c7490e9767cd71abb49 = echarts.init(
-                    document.getElementById('15ec23bc1e3c4c7490e9767cd71abb49'), 'white', {renderer: 'canvas'});
-                var option_15ec23bc1e3c4c7490e9767cd71abb49 = {
+                var chart_42345d3d7e904e5d90630970e5d7737e = echarts.init(
+                    document.getElementById('42345d3d7e904e5d90630970e5d7737e'), 'white', {renderer: 'canvas'});
+                var option_42345d3d7e904e5d90630970e5d7737e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -3912,7 +2922,7 @@
         "borderWidth": 0
     }
 };
-                chart_15ec23bc1e3c4c7490e9767cd71abb49.setOption(option_15ec23bc1e3c4c7490e9767cd71abb49);
+                chart_42345d3d7e904e5d90630970e5d7737e.setOption(option_42345d3d7e904e5d90630970e5d7737e);
         });
     </script>
 </div></div>
@@ -3959,15 +2969,15 @@
     });
 </script>
 
-    <div id="9463493932d048a68fc9a72735f19771" style="width:900px; height:500px;"></div>
+    <div id="ca50a8f05ef54649bda5ec10835923aa" style="width:900px; height:500px;"></div>
 
 
 <script>
     require(['echarts', 'echarts-gl', 'world'], function(echarts) {
-		var canvas_9463493932d048a68fc9a72735f19771 = document.createElement('canvas');
-        var mapChart_9463493932d048a68fc9a72735f19771 = echarts.init(
-	    canvas_9463493932d048a68fc9a72735f19771, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
-        var mapOption_9463493932d048a68fc9a72735f19771 = {
+		var canvas_ca50a8f05ef54649bda5ec10835923aa = document.createElement('canvas');
+        var mapChart_ca50a8f05ef54649bda5ec10835923aa = echarts.init(
+	    canvas_ca50a8f05ef54649bda5ec10835923aa, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_ca50a8f05ef54649bda5ec10835923aa = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -5030,13 +4040,13 @@
         }
     ]
 };
-        mapChart_9463493932d048a68fc9a72735f19771.setOption(mapOption_9463493932d048a68fc9a72735f19771);
-    	var chart_9463493932d048a68fc9a72735f19771 = echarts.init(
-            document.getElementById('9463493932d048a68fc9a72735f19771'), 'white', {renderer: 'canvas'});
-	    var option_9463493932d048a68fc9a72735f19771 = {
+        mapChart_ca50a8f05ef54649bda5ec10835923aa.setOption(mapOption_ca50a8f05ef54649bda5ec10835923aa);
+    	var chart_ca50a8f05ef54649bda5ec10835923aa = echarts.init(
+            document.getElementById('ca50a8f05ef54649bda5ec10835923aa'), 'white', {renderer: 'canvas'});
+	    var option_ca50a8f05ef54649bda5ec10835923aa = {
            "globe": {
            "show": true,
-		   "baseTexture": mapChart_9463493932d048a68fc9a72735f19771,
+		   "baseTexture": mapChart_ca50a8f05ef54649bda5ec10835923aa,
            shading: 'lambert',
             light: {
                 ambient: {
@@ -5048,7 +4058,7 @@
              }
 
 		   }};
-        chart_9463493932d048a68fc9a72735f19771.setOption(option_9463493932d048a68fc9a72735f19771);
+        chart_ca50a8f05ef54649bda5ec10835923aa.setOption(option_ca50a8f05ef54649bda5ec10835923aa);
     });
 </script>
 </div></div>
@@ -5081,7 +4091,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="map_norway.html" title="previous page">Geo Norway</a>
-    <a class='right-next' id="next-link" href="../pydeck/pydeck_scatterplot_oslofjord.html" title="next page">Scatterplot Oslofjorden</a>
+    <a class='right-next' id="next-link" href="barchart_filtered.html" title="next page">Filtered bar chart</a>
 
         </div>
         

@@ -198,6 +198,11 @@
    Geo world population
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -223,6 +228,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner_inntekt.html">
+   Pydeck inntekt kommuner
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,6 +316,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../basic/bar/barcharts.html">
    Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
   </a>
  </li>
  <li class="toctree-l1">
@@ -447,6 +462,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -554,6 +591,18 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">94</span><span class="n">bb63c6df12</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">random</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">EffectScatter</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pyecharts&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -589,13 +638,13 @@
     });
 </script>
 
-        <div id="946da353b0f945c799119d6313239bb2" style="width:900px; height:500px;"></div>
+        <div id="94c97e9c6fda4e6f8bc6a60cecb80ce6" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_946da353b0f945c799119d6313239bb2 = echarts.init(
-                    document.getElementById('946da353b0f945c799119d6313239bb2'), 'white', {renderer: 'canvas'});
-                var option_946da353b0f945c799119d6313239bb2 = {
+                var chart_94c97e9c6fda4e6f8bc6a60cecb80ce6 = echarts.init(
+                    document.getElementById('94c97e9c6fda4e6f8bc6a60cecb80ce6'), 'white', {renderer: 'canvas'});
+                var option_94c97e9c6fda4e6f8bc6a60cecb80ce6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -757,7 +806,7 @@
         }
     ]
 };
-                chart_946da353b0f945c799119d6313239bb2.setOption(option_946da353b0f945c799119d6313239bb2);
+                chart_94c97e9c6fda4e6f8bc6a60cecb80ce6.setOption(option_94c97e9c6fda4e6f8bc6a60cecb80ce6);
         });
     </script>
 </div></div>
@@ -776,8 +825,9 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story EChart Effect Scatter examples to the examples space...
-Published at: https://public.deetly.com/examples/a21c97e866ed46f20eb8531b9b7ac48c 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>View: https://public.deetly.com/examples/0a630ab458b4eb71a33057fe8089071e 
+
+Metadata: https://storage.googleapis.com/deetly/examples/0a630ab458b4eb71a33057fe8089071e/datastory.json 
 </pre></div>
 </div>
 </div>

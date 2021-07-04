@@ -198,6 +198,11 @@
    Geo world population
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -223,6 +228,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner_inntekt.html">
+   Pydeck inntekt kommuner
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,6 +316,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../basic/bar/barcharts.html">
    Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
   </a>
  </li>
  <li class="toctree-l1">
@@ -447,6 +462,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -556,6 +593,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">52801</span><span class="n">a73e480</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">tempfile</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">shutil</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">pm4py</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pm4py&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -584,7 +635,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "922be689ce4243a39f2dbd6c77098210"}
+{"model_id": "ac30a74def1e48b1bbd5581b3d3aeb24", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <div class="cell docutils container">
@@ -604,10 +655,43 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning: # is not a known color.
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">InvocationException</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="mi">1910</span><span class="n">b53edf96</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">pm4py.visualization.heuristics_net</span> <span class="kn">import</span> <span class="n">visualizer</span> <span class="k">as</span> <span class="n">hn_visualizer</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">gviz</span> <span class="o">=</span> <span class="n">hn_visualizer</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">heu_net</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">hn_visualizer</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">gviz</span><span class="p">)</span>
+
+<span class="nn">~/Projects/deetly/docs/.venv/lib/python3.7/site-packages/pm4py/visualization/heuristics_net/visualizer.py</span> in <span class="ni">apply</span><span class="nt">(heu_net, parameters, variant)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="n">Representation</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Heuristics</span> <span class="n">Net</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">52</span><span class="s2">     return exec_utils.get_variant(variant).apply(heu_net, parameters=parameters)</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span><span class="s2"> </span>
+
+<span class="nn">~/Projects/deetly/docs/.venv/lib/python3.7/site-packages/pm4py/visualization/heuristics_net/variants/pydotplus.py</span> in <span class="ni">apply</span><span class="nt">(heu_net, parameters)</span>
+<span class="g g-Whitespace">    </span><span class="mi">265</span><span class="s2">     file_name = tempfile.NamedTemporaryFile(suffix=&#39;.&#39; + image_format)</span>
+<span class="g g-Whitespace">    </span><span class="mi">266</span><span class="s2">     file_name.close()</span>
+<span class="ne">--&gt; </span><span class="mi">267</span><span class="s2">     graph.write(file_name.name, format=image_format)</span>
+<span class="g g-Whitespace">    </span><span class="mi">268</span><span class="s2">     return file_name</span>
+
+<span class="nn">~/Projects/deetly/docs/.venv/lib/python3.7/site-packages/pydotplus/graphviz.py</span> in <span class="ni">write</span><span class="nt">(self, path, prog, format)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1916</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1917</span><span class="s2">             else:</span>
+<span class="ne">-&gt; </span><span class="mi">1918</span><span class="s2">                 fobj.write(self.create(prog, format))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1919</span><span class="s2">         finally:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1920</span><span class="s2">             if close:</span>
+
+<span class="nn">~/Projects/deetly/docs/.venv/lib/python3.7/site-packages/pydotplus/graphviz.py</span> in <span class="ni">create</span><span class="nt">(self, prog, format)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1958</span><span class="s2">             if self.progs is None:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1959</span><span class="s2">                 raise InvocationException(</span>
+<span class="ne">-&gt; </span><span class="mi">1960</span><span class="s2">                     &#39;GraphViz</span><span class="se">\&#39;</span><span class="s2">s executables not found&#39;)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1961</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1962</span><span class="s2">         if prog not in self.progs:</span>
+
+<span class="ne">InvocationException</span>: GraphViz&#39;s executables not found
 </pre></div>
 </div>
-<img alt="../_images/process_mining_pm4py_5_1.png" src="../_images/process_mining_pm4py_5_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -660,12 +744,6 @@ Published at: https://public.deetly.com/examples/a3422626300b122c6480ba8383b3085
 </div>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"e44d3ff0890043cc865bdd62efdecb06": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ed5e391471de479683f6c68e0f573877": {"model_name": "ProgressStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "1a0bd12dede14171a3379c5c6eefecd6": {"model_name": "FloatProgressModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_e44d3ff0890043cc865bdd62efdecb06", "max": 1434.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_ed5e391471de479683f6c68e0f573877", "value": 1434.0}}, "d3d4683e80d04679ae3871e33ae916c5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c3d195c0cb8d44ceba530541768d0346": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "69cc5917344241f1b422449c5e68483e": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_d3d4683e80d04679ae3871e33ae916c5", "placeholder": "\u200b", "style": "IPY_MODEL_c3d195c0cb8d44ceba530541768d0346", "value": "parsing log, completed traces :: 100%"}}, "b8cdd1166ed7425d8c8e122ffd286984": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8a75ffdaafb34980b2733315fda28b82": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ea49a4f3fd9a4fea925ad552c371a5a8": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_b8cdd1166ed7425d8c8e122ffd286984", "placeholder": "\u200b", "style": "IPY_MODEL_8a75ffdaafb34980b2733315fda28b82", "value": " 1434/1434 [00:00&lt;00:00, 2590.66it/s]"}}, "59e004b463ff4ebabc71b389ac8de09c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "922be689ce4243a39f2dbd6c77098210": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_69cc5917344241f1b422449c5e68483e", "IPY_MODEL_1a0bd12dede14171a3379c5c6eefecd6", "IPY_MODEL_ea49a4f3fd9a4fea925ad552c371a5a8"], "layout": "IPY_MODEL_59e004b463ff4ebabc71b389ac8de09c"}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {

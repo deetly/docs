@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pydeck inntekt kommuner &#8212; deetly documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Pydeck example road accidents" href="pydeck_road_accidents.html" />
+    <link rel="prev" title="Pydeck example kommuner" href="pydeck_kommuner.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">deetly documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Deetly
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Get started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/hello_world.html">
+   Hello World
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/altair_and_plotly.html">
+   Basic example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Charts
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/barchart.html">
+   Bar chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/bar3D.html">
+   Bar 3D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/linechart.html">
+   Line chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/boxplot.html">
+   Boxplot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/matrix.html">
+   Custom chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/effect_scatter.html">
+   Effect Scatter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/funnel.html">
+   Funnel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/gauge.html">
+   Gauge
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/graph.html">
+   Graph
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/grid.html">
+   Grid chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/heatmap.html">
+   Heatmap
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/calendar.html">
+   Calendar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/sankey.html">
+   Sankey chart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/geo_forbidden_city.html">
+   Register Url
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_flight.html">
+   Geoline sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_norway.html">
+   Geo Norway
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/map_world_population.html">
+   Geo world population
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pydeck Maps
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_scatterplot_oslofjord.html">
+   Scatterplot Oslofjorden
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_scatterplot_subway_stations.html">
+   Scatterplot subway stations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_heatmap_cattle.html">
+   Heatmap cattle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_kommuner.html">
+   Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pydeck inntekt kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_road_accidents.html">
+   Pydeck example road accidents
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Altair Maps
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/geojson/map_geojson_basic.html">
+   Map from geoJSON (SSB and NAV data)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/topojson/map_topojson_us_airports.html">
+   Map from topoJSON (US airports)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly Maps
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_from_geojson_us_unemployment.html">
+   Map from topoJSON. US Unemployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/geojson/map_geojson_choropleth.html">
+   GeoJSON to Choropleth
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Plotly
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/bars_population_pyramid.html">
+   Plotly population pyramid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/heatmaps.html">
+   Plotly Heatmaps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/timeseries_rangebreak.html">
+   Timeseries with rangebreak
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plotly/express/plotly_express_samples.html">
+   Plotly express examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bar charts
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../altair/basic/bar_line_humdata.html">
+   Bar and line charts. Covid-19 Humdata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/bar/barcharts.html">
+   Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../basic/line/linecharts.html">
+   Line charts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Dashboards
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dashboard/multiplot_layout_with_plotly.html">
+   Volcanos plotly example
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Markdown
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown/markdown-test.html">
+   Markdown view
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  PDF
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pdf/pdf_test.html">
+   PDF view demo
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Graphs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../graphviz/about.html">
+   Graphviz
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../graphviz/basic.html">
+     Graphviz example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../cytoscape/about.html">
+   Cytoscape
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/networkx.html">
+     NetworkX to Cytoscape example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/text-on-nodes.html">
+     Text on nodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/labels.html">
+     Labels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cytoscape/examples.html">
+     Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Forcegraph
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../forcegraph/forcegraph-teams.html">
+   Graph data from json
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Process mining
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../process-mining/process_mining_pm4py.html">
+   Process mining with pm4py
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Wordcloud
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wordcloud/vega_wordcloud.html">
+   Wordcloud with Vega
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/pydeck/pydeck_kommuner_inntekt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deetly/docs/master?urlpath=tree/content/pydeck/pydeck_kommuner_inntekt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/deetly/docs/blob/master/content/pydeck/pydeck_kommuner_inntekt.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish">
+   Publish
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="pydeck-inntekt-kommuner">
+<h1>Pydeck inntekt kommuner<a class="headerlink" href="#pydeck-inntekt-kommuner" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://data.ssb.no/api/v0/dataset/56957.csv?lang=no">https://data.ssb.no/api/v0/dataset/56957.csv?lang=no</a></p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">deetly</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gp</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pydeck</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">c2b058ddfd7e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">pydeck</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pydeck&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAPBOX_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPBOX_TOKEN&#39;</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MAP_URL</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/datasett/maps/master/norway/data/counties_2018_s_geojson.json&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">package</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Norwegian Counties Income Above 750k&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;examples&quot;</span><span class="p">,</span> <span class="s2">&quot;pydeck&quot;</span><span class="p">,</span> <span class="s2">&quot;counties&quot;</span><span class="p">,</span> <span class="s2">&quot;maps&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">deetly</span><span class="o">.</span><span class="n">story</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://data.ssb.no/api/v0/dataset/56957.csv?lang=no&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin1&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;kommunenummer&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;07182: Husholdninger, etter region, statistikkvariabel og år&#39;</span><span class="p">:</span> <span class="s1">&#39;prosent&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>region</th>
+      <th>statistikkvariabel</th>
+      <th>år</th>
+      <th>prosent</th>
+      <th>kommunenummer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0101 Halden (-2019)</td>
+      <td>Antall husholdninger</td>
+      <td>2006</td>
+      <td>12575</td>
+      <td>0101</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;statistikkvariabel&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Antall husholdninger&#39;,
+       &#39;Inntekt etter skatt under 150 000 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 150 000 - 249 999 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 250 000 - 349 999 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 350 000 - 449 999 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 450 000 - 549 999 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 550 000 - 749 999 kr, prosent&#39;,
+       &#39;Inntekt etter skatt 750 000 kr og over, prosent&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;0101 Halden (-2019)&#39;, &#39;0104 Moss (-2019)&#39;,
+       &#39;0105 Sarpsborg (1992-2019)&#39;, &#39;0106 Fredrikstad (1994-2019)&#39;,
+       &#39;0111 Hvaler (-2019)&#39;, &#39;0118 Aremark (-2019)&#39;,
+       &#39;0119 Marker (1964-2019)&#39;, &#39;0121 Rømskog (-2019)&#39;,
+       &#39;0122 Trøgstad (-2019)&#39;, &#39;0123 Spydeberg (-2019)&#39;,
+       &#39;0124 Askim (-2019)&#39;, &#39;0125 Eidsberg (-2019)&#39;,
+       &#39;0127 Skiptvet (-2019)&#39;, &#39;0128 Rakkestad (-2019)&#39;,
+       &#39;0135 Råde (-2019)&#39;, &#39;0136 Rygge (-2019)&#39;,
+       &#39;0137 Våler (Østfold) (-2019)&#39;, &#39;0138 Hobøl (-2019)&#39;,
+       &#39;0211 Vestby (-2019)&#39;, &#39;0213 Ski (1931-2019)&#39;, &#39;0214 Ås (-2019)&#39;,
+       &#39;0215 Frogn (-2019)&#39;, &#39;0216 Nesodden (-2019)&#39;,
+       &#39;0217 Oppegård (1915-2019)&#39;, &#39;0219 Bærum (-2019)&#39;,
+       &#39;0220 Asker (-2019)&#39;, &#39;0221 Aurskog-Høland (1966-2019)&#39;,
+       &#39;0226 Sørum (-2019)&#39;, &#39;0227 Fet (-2019)&#39;,
+       &#39;0228 Rælingen (1929-2019)&#39;, &#39;0229 Enebakk (-2019)&#39;,
+       &#39;0230 Lørenskog (1908-2019)&#39;, &#39;0231 Skedsmo (-2019)&#39;,
+       &#39;0233 Nittedal (-2019)&#39;, &#39;0234 Gjerdrum (-2019)&#39;,
+       &#39;0235 Ullensaker (-2019)&#39;, &#39;0236 Nes (Akershus) (-2019)&#39;,
+       &#39;0237 Eidsvoll (-2019)&#39;, &#39;0238 Nannestad (-2019)&#39;,
+       &#39;0239 Hurdal (-2019)&#39;, &#39;0602 Drammen (-2019)&#39;,
+       &#39;0604 Kongsberg (-2019)&#39;, &#39;0605 Ringerike (1977-2019)&#39;,
+       &#39;0612 Hole (1977-2019)&#39;, &#39;0615 Flå (-2019)&#39;,
+       &#39;0616 Nes (Buskerud) (-2019)&#39;, &#39;0617 Gol (-2019)&#39;,
+       &#39;0618 Hemsedal (-2019)&#39;, &#39;0619 Ål (-2019)&#39;, &#39;0620 Hol (-2019)&#39;,
+       &#39;0621 Sigdal (-2019)&#39;, &#39;0622 Krødsherad (-2019)&#39;,
+       &#39;0623 Modum (-2019)&#39;, &#39;0624 Øvre Eiker (-2019)&#39;,
+       &#39;0625 Nedre Eiker (-2019)&#39;, &#39;0626 Lier (-2019)&#39;,
+       &#39;0627 Røyken (-2019)&#39;, &#39;0628 Hurum (-2019)&#39;,
+       &#39;0631 Flesberg (-2019)&#39;, &#39;0632 Rollag (-2019)&#39;,
+       &#39;0633 Nore og Uvdal (1962-2019)&#39;, &#39;0301 Oslo kommune&#39;,
+       &#39;0402 Kongsvinger (-2019)&#39;, &#39;0403 Hamar (1992-2019)&#39;,
+       &#39;0412 Ringsaker (-2019)&#39;, &#39;0415 Løten (-2019)&#39;,
+       &#39;0417 Stange (-2019)&#39;, &#39;0418 Nord-Odal (-2019)&#39;,
+       &#39;0419 Sør-Odal (-2019)&#39;, &#39;0420 Eidskog (-2019)&#39;,
+       &#39;0423 Grue (-2019)&#39;, &#39;0425 Åsnes (-2019)&#39;,
+       &#39;0426 Våler (Hedmark) (-2019)&#39;, &#39;0427 Elverum (-2019)&#39;,
+       &#39;0428 Trysil (-2019)&#39;, &#39;0429 Åmot (-2019)&#39;,
+       &#39;0430 Stor-Elvdal (-2019)&#39;, &#39;0432 Rendalen (1965-2019)&#39;,
+       &#39;0434 Engerdal (1911-2019)&#39;, &#39;0436 Tolga (-2019)&#39;,
+       &#39;0437 Tynset (-2019)&#39;, &#39;0438 Alvdal (-2019)&#39;,
+       &#39;0439 Folldal (1914-2019)&#39;, &#39;0441 Os (Hedmark) (1976-2019)&#39;,
+       &#39;0501 Lillehammer (-2019)&#39;, &#39;0502 Gjøvik (-2019)&#39;,
+       &#39;0511 Dovre (-2019)&#39;, &#39;0512 Lesja (-2019)&#39;, &#39;0513 Skjåk (-2019)&#39;,
+       &#39;0514 Lom (-2019)&#39;, &#39;0515 Vågå (-2019)&#39;,
+       &#39;0516 Nord-Fron (1977-2019)&#39;, &#39;0517 Sel (1908-2019)&#39;,
+       &#39;0519 Sør-Fron (-2019)&#39;, &#39;0520 Ringebu (-2019)&#39;,
+       &#39;0521 Øyer (-2019)&#39;, &#39;0522 Gausdal (1962-2019)&#39;,
+       &#39;0528 Østre Toten (-2019)&#39;, &#39;0529 Vestre Toten (-2019)&#39;,
+       &#39;0532 Jevnaker (-2019)&#39;, &#39;0533 Lunner (-2019)&#39;,
+       &#39;0534 Gran (-2019)&#39;, &#39;0536 Søndre Land (-2019)&#39;,
+       &#39;0538 Nordre Land (-2019)&#39;, &#39;0540 Sør-Aurdal (-2019)&#39;,
+       &#39;0541 Etnedal (-2019)&#39;, &#39;0542 Nord-Aurdal (-2019)&#39;,
+       &#39;0543 Vestre Slidre (-2019)&#39;, &#39;0544 Øystre Slidre (-2019)&#39;,
+       &#39;0545 Vang (-2019)&#39;, &#39;0701 Horten (2002-2019)&#39;,
+       &#39;0702 Holmestrand (-2017)&#39;, &#39;0704 Tønsberg (1988-2019)&#39;,
+       &#39;0706 Sandefjord (-2016)&#39;, &#39;0709 Larvik (1988-2017)&#39;,
+       &#39;0711 Svelvik (1964-2019)&#39;, &#39;0713 Sande (Vestfold) (-2019)&#39;,
+       &#39;0714 Hof (-2017)&#39;, &#39;0716 Re (2002-2019)&#39;, &#39;0719 Andebu (-2016)&#39;,
+       &#39;0720 Stokke (-2016)&#39;, &#39;0722 Nøtterøy (-2017)&#39;,
+       &#39;0723 Tjøme (-2017)&#39;, &#39;0728 Lardal (-2017)&#39;,
+       &#39;0805 Porsgrunn (-2019)&#39;, &#39;0806 Skien (-2019)&#39;,
+       &#39;0807 Notodden (1913-2019)&#39;, &#39;0811 Siljan (-2019)&#39;,
+       &#39;0814 Bamble (-2019)&#39;, &#39;0815 Kragerø (1960-2019)&#39;,
+       &#39;0817 Drangedal (-2019)&#39;, &#39;0819 Nome (1964-2019)&#39;,
+       &#39;0821 Bø (Telemark) (-2019)&#39;, &#39;0822 Sauherad (-2019)&#39;,
+       &#39;0826 Tinn (-2019)&#39;, &#39;0827 Hjartdal (-2019)&#39;,
+       &#39;0828 Seljord (-2019)&#39;, &#39;0829 Kviteseid (-2019)&#39;,
+       &#39;0830 Nissedal (-2019)&#39;, &#39;0831 Fyresdal (-2019)&#39;,
+       &#39;0833 Tokke (1964-2019)&#39;, &#39;0834 Vinje (-2019)&#39;,
+       &#39;0901 Risør (-2019)&#39;, &#39;0904 Grimstad (-2019)&#39;,
+       &#39;0906 Arendal (1992-2019)&#39;, &#39;0911 Gjerstad (-2019)&#39;,
+       &#39;0912 Vegårshei (-2019)&#39;, &#39;0914 Tvedestrand (-2019)&#39;,
+       &#39;0919 Froland (-2019)&#39;, &#39;0926 Lillesand (1962-2019)&#39;,
+       &#39;0928 Birkenes (-2019)&#39;, &#39;0929 Åmli (-2019)&#39;,
+       &#39;0935 Iveland (-2019)&#39;, &#39;0937 Evje og Hornnes (1960-2019)&#39;,
+       &#39;0938 Bygland (-2019)&#39;, &#39;0940 Valle (-2019)&#39;, &#39;0941 Bykle (-2019)&#39;,
+       &#39;1001 Kristiansand (-2019)&#39;, &#39;1002 Mandal (-2019)&#39;,
+       &#39;1003 Farsund (-2019)&#39;, &#39;1004 Flekkefjord (-2019)&#39;,
+       &#39;1014 Vennesla (-2019)&#39;, &#39;1017 Songdalen (1964-2019)&#39;,
+       &#39;1018 Søgne (-2019)&#39;, &#39;1021 Marnardal (1964-2019)&#39;,
+       &#39;1026 Åseral (-2019)&#39;, &#39;1027 Audnedal (1964-2019)&#39;,
+       &#39;1029 Lindesnes (1964-2019)&#39;, &#39;1032 Lyngdal (-2019)&#39;,
+       &#39;1034 Hægebostad (-2019)&#39;, &#39;1037 Kvinesdal (-2019)&#39;,
+       &#39;1046 Sirdal (1960-2019)&#39;, &#39;1101 Eigersund&#39;,
+       &#39;1102 Sandnes (-2019)&#39;, &#39;1103 Stavanger&#39;, &#39;1106 Haugesund&#39;,
+       &#39;1111 Sokndal&#39;, &#39;1112 Lund&#39;, &#39;1114 Bjerkreim&#39;, &#39;1119 Hå&#39;,
+       &#39;1120 Klepp&#39;, &#39;1121 Time&#39;, &#39;1122 Gjesdal&#39;, &#39;1124 Sola&#39;,
+       &#39;1127 Randaberg&#39;, &#39;1129 Forsand (-2019)&#39;, &#39;1130 Strand&#39;,
+       &#39;1133 Hjelmeland&#39;, &#39;1134 Suldal&#39;, &#39;1135 Sauda&#39;,
+       &#39;1141 Finnøy (-2019)&#39;, &#39;1142 Rennesøy (-2019)&#39;, &#39;1144 Kvitsøy&#39;,
+       &#39;1145 Bokn&#39;, &#39;1146 Tysvær&#39;, &#39;1149 Karmøy&#39;, &#39;1151 Utsira&#39;,
+       &#39;1154 Vindafjord (1965-2005)&#39;, &#39;1159 Ølen (2002-2005)&#39;,
+       &#39;1160 Vindafjord&#39;, &#39;1201 Bergen (1972-2019)&#39;, &#39;1211 Etne (-2019)&#39;,
+       &#39;1216 Sveio (-2019)&#39;, &#39;1219 Bømlo (1916-2019)&#39;,
+       &#39;1221 Stord (-2019)&#39;, &#39;1222 Fitjar (-2019)&#39;, &#39;1223 Tysnes (-2019)&#39;,
+       &#39;1224 Kvinnherad (-2019)&#39;, &#39;1227 Jondal (-2019)&#39;,
+       &#39;1228 Odda (1913-2019)&#39;, &#39;1231 Ullensvang (1977-2019)&#39;,
+       &#39;1232 Eidfjord (-2019)&#39;, &#39;1233 Ulvik (-2019)&#39;,
+       &#39;1234 Granvin (-2019)&#39;, &#39;1235 Voss (-2019)&#39;, &#39;1238 Kvam (-2019)&#39;,
+       &#39;1241 Fusa (-2019)&#39;, &#39;1242 Samnanger (1907-2019)&#39;,
+       &#39;1243 Os (Hordaland) (-2019)&#39;, &#39;1244 Austevoll (-2019)&#39;,
+       &#39;1245 Sund (-2019)&#39;, &#39;1246 Fjell (-2019)&#39;, &#39;1247 Askøy (-2019)&#39;,
+       &#39;1251 Vaksdal (1964-2019)&#39;, &#39;1252 Modalen (1910-2019)&#39;,
+       &#39;1253 Osterøy (1964-2019)&#39;, &#39;1256 Meland (1924-2019)&#39;,
+       &#39;1259 Øygarden (1964-2019)&#39;, &#39;1260 Radøy (1964-2019)&#39;,
+       &#39;1263 Lindås (-2019)&#39;, &#39;1264 Austrheim (1910-2019)&#39;,
+       &#39;1265 Fedje (1948-2019)&#39;, &#39;1266 Masfjorden (-2019)&#39;,
+       &#39;1401 Flora (1964-2019)&#39;, &#39;1411 Gulen (-2019)&#39;,
+       &#39;1412 Solund (-2019)&#39;, &#39;1413 Hyllestad (-2019)&#39;,
+       &#39;1416 Høyanger (1964-2019)&#39;, &#39;1417 Vik (-2019)&#39;,
+       &#39;1418 Balestrand (-2019)&#39;, &#39;1419 Leikanger (-2019)&#39;,
+       &#39;1420 Sogndal (-2019)&#39;, &#39;1421 Aurland (-2019)&#39;,
+       &#39;1422 Lærdal (-2019)&#39;, &#39;1424 Årdal (-2019)&#39;, &#39;1426 Luster (-2019)&#39;,
+       &#39;1428 Askvoll (-2019)&#39;, &#39;1429 Fjaler (-2019)&#39;,
+       &#39;1430 Gaular (-2019)&#39;, &#39;1431 Jølster (-2019)&#39;,
+       &#39;1432 Førde (-2019)&#39;, &#39;1433 Naustdal (-2019)&#39;,
+       &#39;1438 Bremanger (-2019)&#39;, &#39;1439 Vågsøy (1964-2019)&#39;,
+       &#39;1441 Selje (-2019)&#39;, &#39;1443 Eid (-2019)&#39;, &#39;1444 Hornindal (-2019)&#39;,
+       &#39;1445 Gloppen (-2019)&#39;, &#39;1449 Stryn (1977-2019)&#39;,
+       &#39;1502 Molde (-2019)&#39;, &#39;1503 Kristiansund  (-2007)&#39;,
+       &#39;1504 Ålesund (1977-2019)&#39;, &#39;1505 Kristiansund&#39;, &#39;1511 Vanylven&#39;,
+       &#39;1514 Sande (Møre og Romsdal)&#39;, &#39;1515 Herøy (Møre og Romsdal)&#39;,
+       &#39;1516 Ulstein&#39;, &#39;1517 Hareid&#39;, &#39;1519 Volda (-2019)&#39;, &#39;1520 Ørsta&#39;,
+       &#39;1523 Ørskog (1977-2019)&#39;, &#39;1524 Norddal (-2019)&#39;, &#39;1525 Stranda&#39;,
+       &#39;1526 Stordal (-2019)&#39;, &#39;1528 Sykkylven&#39;, &#39;1529 Skodje (-2019)&#39;,
+       &#39;1531 Sula&#39;, &#39;1532 Giske&#39;, &#39;1534 Haram (-2019)&#39;, &#39;1535 Vestnes&#39;,
+       &#39;1539 Rauma&#39;, &#39;1543 Nesset (-2019)&#39;, &#39;1545 Midsund (1965-2019)&#39;,
+       &#39;1546 Sandøy (-2019)&#39;, &#39;1547 Aukra&#39;, &#39;1548 Fræna (-2019)&#39;,
+       &#39;1551 Eide (-2019)&#39;, &#39;1554 Averøy&#39;, &#39;1556 Frei (-2007)&#39;,
+       &#39;1557 Gjemnes&#39;, &#39;1560 Tingvoll&#39;, &#39;1563 Sunndal&#39;, &#39;1566 Surnadal&#39;,
+       &#39;1567 Rindal (-2018)&#39;, &#39;1569 Aure (-2005)&#39;, &#39;1571 Halsa (-2019)&#39;,
+       &#39;1572 Tustna (-2005)&#39;, &#39;1573 Smøla&#39;, &#39;1576 Aure&#39;,
+       &#39;1601 Trondheim (-2017)&#39;, &#39;1612 Hemne (-2017)&#39;,
+       &#39;1613 Snillfjord (1924-2017)&#39;, &#39;1617 Hitra (-2017)&#39;,
+       &#39;1620 Frøya (1964-2017)&#39;, &#39;1621 Ørland (-2017)&#39;,
+       &#39;1622 Agdenes (-2017)&#39;, &#39;1624 Rissa (-2017)&#39;, &#39;1627 Bjugn (-2017)&#39;,
+       &#39;1630 Åfjord (-2017)&#39;, &#39;1632 Roan (-2017)&#39;, &#39;1633 Osen (-2017)&#39;,
+       &#39;1634 Oppdal (-2017)&#39;, &#39;1635 Rennebu (-2017)&#39;,
+       &#39;1636 Meldal (-2017)&#39;, &#39;1638 Orkdal (-2017)&#39;, &#39;1640 Røros (-2017)&#39;,
+       &#39;1644 Holtålen (1972-2017)&#39;, &#39;1648 Midtre Gauldal (1964-2017)&#39;,
+       &#39;1653 Melhus (-2017)&#39;, &#39;1657 Skaun (-2017)&#39;, &#39;1662 Klæbu (-2017)&#39;,
+       &#39;1663 Malvik (-2017)&#39;, &#39;1664 Selbu (-2017)&#39;, &#39;1665 Tydal (-2017)&#39;,
+       &#39;1702 Steinkjer (-2017)&#39;, &#39;1703 Namsos (-2017)&#39;,
+       &#39;1711 Meråker (-2017)&#39;, &#39;1714 Stjørdal (-2017)&#39;,
+       &#39;1717 Frosta (-2017)&#39;, &#39;1718 Leksvik (-2017)&#39;,
+       &#39;1719 Levanger (1962-2017)&#39;, &#39;1721 Verdal (-2017)&#39;,
+       &#39;1723 Mosvik  (-2011)&#39;, &#39;1724 Verran (-2017)&#39;,
+       &#39;1725 Namdalseid (-2017)&#39;, &#39;1729 Inderøy (-2011)&#39;,
+       &#39;1736 Snåase - Snåsa (-2017)&#39;, &#39;1738 Lierne (1964-2017)&#39;,
+       &#39;1739 Raarvihke - Røyrvik (1923-2017)&#39;,
+       &#39;1740 Namsskogan (1923-2017)&#39;, &#39;1742 Grong (-2017)&#39;,
+       &#39;1743 Høylandet (-2017)&#39;, &#39;1744 Overhalla (-2017)&#39;,
+       &#39;1748 Fosnes (-2017)&#39;, &#39;1749 Flatanger (-2017)&#39;,
+       &#39;1750 Vikna (-2017)&#39;, &#39;1751 Nærøy (-2017)&#39;, &#39;1755 Leka (-2017)&#39;,
+       &#39;1756 Inderøy (2012-2017)&#39;, &#39;1804 Bodø&#39;, &#39;1805 Narvik (-2019)&#39;,
+       &#39;1811 Bindal&#39;, &#39;1812 Sømna&#39;, &#39;1813 Brønnøy&#39;, &#39;1815 Vega&#39;,
+       &#39;1816 Vevelstad&#39;, &#39;1818 Herøy (Nordland)&#39;, &#39;1820 Alstahaug&#39;,
+       &#39;1822 Leirfjord&#39;, &#39;1824 Vefsn&#39;, &#39;1825 Grane&#39;, &#39;1826 Hattfjelldal&#39;,
+       &#39;1827 Dønna&#39;, &#39;1828 Nesna&#39;, &#39;1832 Hemnes&#39;, &#39;1833 Rana&#39;,
+       &#39;1834 Lurøy&#39;, &#39;1835 Træna&#39;, &#39;1836 Rødøy&#39;, &#39;1837 Meløy&#39;,
+       &#39;1838 Gildeskål&#39;, &#39;1839 Beiarn&#39;, &#39;1840 Saltdal&#39;,
+       &#39;1841 Fauske - Fuossko&#39;, &#39;1842 Skjerstad (-2004)&#39;, &#39;1845 Sørfold&#39;,
+       &#39;1848 Steigen&#39;, &#39;1849 Hamarøy - Hábmer (-2019)&#39;,
+       &#39;1850 Divtasvuodna - Tysfjord (-2019)&#39;, &#39;1851 Lødingen&#39;,
+       &#39;1852 Tjeldsund (1909-2019)&#39;, &#39;1853 Evenes&#39;,
+       &#39;1854 Ballangen (1925-2019)&#39;, &#39;1856 Røst&#39;, &#39;1857 Værøy&#39;,
+       &#39;1859 Flakstad&#39;, &#39;1860 Vestvågøy&#39;, &#39;1865 Vågan&#39;, &#39;1866 Hadsel&#39;,
+       &#39;1867 Bø (Nordland)&#39;, &#39;1868 Øksnes&#39;, &#39;1870 Sortland - Suortá&#39;,
+       &#39;1871 Andøy&#39;, &#39;1874 Moskenes&#39;, &#39;1901 Harstad (-2012)&#39;,
+       &#39;1902 Tromsø (-2019)&#39;, &#39;1911 Kvæfjord (-2019)&#39;,
+       &#39;1913 Skånland (1926-2019)&#39;, &#39;1915 Bjarkøy (-2012)&#39;,
+       &#39;1917 Ibestad (-2019)&#39;, &#39;1919 Gratangen (1926-2019)&#39;,
+       &#39;1920 Loabák - Lavangen (1907-2019)&#39;, &#39;1922 Bardu (-2019)&#39;,
+       &#39;1923 Salangen (1977-2019)&#39;, &#39;1924 Målselv (-2019)&#39;,
+       &#39;1925 Sørreisa (-2019)&#39;, &#39;1926 Dyrøy (-2019)&#39;,
+       &#39;1927 Tranøy (-2019)&#39;, &#39;1928 Torsken (-2019)&#39;, &#39;1929 Berg (-2019)&#39;,
+       &#39;1931 Lenvik (-2019)&#39;, &#39;1933 Balsfjord (-2019)&#39;,
+       &#39;1936 Karlsøy (-2019)&#39;, &#39;1938 Lyngen (-2019)&#39;,
+       &#39;1939 Storfjord - Omasvuotna - Omasvuono (1931-2019)&#39;,
+       &#39;1940 Gáivuotna - Kåfjord - Kaivuono (1931-2019)&#39;,
+       &#39;1941 Skjervøy (-2019)&#39;, &#39;1942 Nordreisa - Ráisa - Raisi (-2019)&#39;,
+       &#39;1943 Kvænangen (-2019)&#39;, &#39;2002 Vardø (-2019)&#39;,
+       &#39;2003 Vadsø (-2019)&#39;, &#39;2004 Hammerfest (1992-2019)&#39;,
+       &#39;2011 Guovdageaidnu - Kautokeino (-2019)&#39;, &#39;2012 Alta (-2019)&#39;,
+       &#39;2014 Loppa (-2019)&#39;, &#39;2015 Hasvik (-2019)&#39;,
+       &#39;2017 Kvalsund (-2019)&#39;, &#39;2018 Måsøy (-2019)&#39;,
+       &#39;2019 Nordkapp (-2019)&#39;,
+       &#39;2020 Porsanger - Porsángu - Porsanki (1964-2019)&#39;,
+       &#39;2021 Kárásjohka - Karasjok (-2019)&#39;, &#39;2022 Lebesby (-2019)&#39;,
+       &#39;2023 Gamvik (1914-2019)&#39;, &#39;2024 Berlevåg (1914-2019)&#39;,
+       &#39;2025 Deatnu - Tana (-2019)&#39;, &#39;2027 Unjárga - Nesseby (-2019)&#39;,
+       &#39;2028 Båtsfjord (1955-2019)&#39;, &#39;2030 Sør-Varanger (-2019)&#39;],
+      dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_high</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;statistikkvariabel&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Inntekt etter skatt 750 000 kr og over, prosent&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;år&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2019</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_high</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>region</th>
+      <th>statistikkvariabel</th>
+      <th>år</th>
+      <th>prosent</th>
+      <th>kommunenummer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>111</th>
+      <td>0101 Halden (-2019)</td>
+      <td>Inntekt etter skatt 750 000 kr og over, prosent</td>
+      <td>2019</td>
+      <td>25</td>
+      <td>0101</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_geo</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">MAP_URL</span><span class="p">)</span>
+<span class="n">df_high_geo</span> <span class="o">=</span> <span class="n">df_geo</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_high</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;kommunenummer&#39;</span><span class="p">)</span>
+<span class="n">df_high_geo</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>kommunenummer</th>
+      <th>oppdateringsdato</th>
+      <th>navn</th>
+      <th>area_kommune</th>
+      <th>fylke_nummer_2018</th>
+      <th>fylke_nummer_2019</th>
+      <th>fylke_navn_2019</th>
+      <th>fylke_nummer_2020</th>
+      <th>fylke_navn_2020</th>
+      <th>geometry</th>
+      <th>region</th>
+      <th>statistikkvariabel</th>
+      <th>år</th>
+      <th>prosent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0101</td>
+      <td>2018-12-10T00:00:00</td>
+      <td>Halden</td>
+      <td>0.100015</td>
+      <td>01</td>
+      <td>01</td>
+      <td>ØSTFOLD</td>
+      <td>30</td>
+      <td>VIKEN</td>
+      <td>POLYGON ((11.55794 59.25961, 11.71052 59.03368...</td>
+      <td>0101 Halden (-2019)</td>
+      <td>Inntekt etter skatt 750 000 kr og over, prosent</td>
+      <td>2019</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Map centered on Trondheim, Norway</span>
+<span class="n">view_state_norway</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">ViewState</span><span class="p">(</span>
+    <span class="n">longitude</span> <span class="o">=</span> <span class="mi">17</span><span class="p">,</span>
+    <span class="n">latitude</span><span class="o">=</span> <span class="mi">64</span><span class="p">,</span>
+    <span class="n">zoom</span><span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="n">minZoom</span><span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="n">maxZoom</span><span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="n">pitch</span><span class="o">=</span> <span class="mi">45</span><span class="p">,</span>
+    <span class="n">bearing</span><span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_geo</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">MAP_URL</span><span class="p">)</span>
+
+<span class="n">layer</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">Layer</span><span class="p">(</span>
+    <span class="s1">&#39;GeoJsonLayer&#39;</span><span class="p">,</span>
+    <span class="n">df_high_geo</span><span class="p">,</span>
+    <span class="n">stroked</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">filled</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">extruded</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">wireframe</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">elevationScale</span> <span class="o">=</span> <span class="mi">8000</span><span class="p">,</span>
+    <span class="n">elevation_range</span><span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
+    <span class="n">get_elevation</span> <span class="o">=</span> <span class="s1">&#39;prosent&#39;</span><span class="p">,</span>
+    <span class="n">width_min_pixels</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">get_fill_color</span><span class="o">=</span><span class="s1">&#39;[255, 255, 2.5*prosent]&#39;</span><span class="p">,</span>
+    <span class="n">getLineColor</span> <span class="o">=</span> <span class="s1">&#39;[255, 255, 2.5*prosent]&#39;</span><span class="p">,</span>
+    <span class="n">pickable</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+
+<span class="n">tooltip</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;html&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;b&gt;Kommune: &lt;/b&gt;</span><span class="si">{navn}</span><span class="s1">&lt;/br&gt;</span><span class="se">\</span>
+<span class="s1">                Fylke: </span><span class="si">{fylke_navn_2020}</span><span class="s1">&lt;/br&gt;</span><span class="se">\</span>
+<span class="s1">                Andel: </span><span class="si">{prosent}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;backgroundColor&#39;</span><span class="p">:</span><span class="s1">&#39;#efefef&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;zIndex&#39;</span><span class="p">:</span> <span class="mi">999</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="c1"># Render</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">pydeck</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span>
+                  <span class="n">initial_view_state</span><span class="o">=</span><span class="n">view_state_norway</span><span class="p">,</span>
+                  <span class="c1">#api_keys={&quot;mapbox&quot;:MAPBOX_TOKEN},</span>
+                  <span class="n">tooltip</span><span class="o">=</span><span class="n">tooltip</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0d1cc02c8cbf48dbab8305533b77dc43", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add figure to data package</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">pydeck</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s2">&quot;Andel med inntekt over 750k&quot;</span><span class="p">,</span><span class="n">showMap</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">tooltip</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="publish">
+<h2>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># publish datastory</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">publish</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story Norwegian Counties Income Above 750k to the examples space...
+Published at: https://public.deetly.com/examples/ddb4128518ee150f3172271d3488521b 
+
+Metadata: https://storage.googleapis.com/deetly/examples/ddb4128518ee150f3172271d3488521b/datapackage.json 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pydeck"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="pydeck_kommuner.html" title="previous page">Pydeck example kommuner</a>
+    <a class='right-next' id="next-link" href="pydeck_road_accidents.html" title="next page">Pydeck example road accidents</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright .<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -198,6 +198,11 @@
    Geo world population
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -223,6 +228,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../pydeck/pydeck_kommuner.html">
    Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pydeck/pydeck_kommuner_inntekt.html">
+   Pydeck inntekt kommuner
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,6 +316,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../basic/bar/barcharts.html">
    Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
   </a>
  </li>
  <li class="toctree-l1">
@@ -447,6 +462,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -554,6 +591,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">4</span><span class="n">f6d81550aab</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Sankey</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">pyecharts.globals</span> <span class="kn">import</span> <span class="n">ChartType</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pyecharts&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -599,13 +650,13 @@
     });
 </script>
 
-        <div id="8a898d303d434b738d738d024224bc5e" style="width:900px; height:500px;"></div>
+        <div id="d131e723bb654880b8e576f36d976124" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_8a898d303d434b738d738d024224bc5e = echarts.init(
-                    document.getElementById('8a898d303d434b738d738d024224bc5e'), 'white', {renderer: 'canvas'});
-                var option_8a898d303d434b738d738d024224bc5e = {
+                var chart_d131e723bb654880b8e576f36d976124 = echarts.init(
+                    document.getElementById('d131e723bb654880b8e576f36d976124'), 'white', {renderer: 'canvas'});
+                var option_d131e723bb654880b8e576f36d976124 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -721,7 +772,7 @@
         "padding": 5
     }
 };
-                chart_8a898d303d434b738d738d024224bc5e.setOption(option_8a898d303d434b738d738d024224bc5e);
+                chart_d131e723bb654880b8e576f36d976124.setOption(option_d131e723bb654880b8e576f36d976124);
         });
     </script>
 </div></div>
@@ -784,13 +835,13 @@
     });
 </script>
 
-        <div id="d07f5c56e5d1494caee4400bb8e94b54" style="width:900px; height:500px;"></div>
+        <div id="e8e30792a7fe4dc28ef68bb102832c6c" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_d07f5c56e5d1494caee4400bb8e94b54 = echarts.init(
-                    document.getElementById('d07f5c56e5d1494caee4400bb8e94b54'), 'white', {renderer: 'canvas'});
-                var option_d07f5c56e5d1494caee4400bb8e94b54 = {
+                var chart_e8e30792a7fe4dc28ef68bb102832c6c = echarts.init(
+                    document.getElementById('e8e30792a7fe4dc28ef68bb102832c6c'), 'white', {renderer: 'canvas'});
+                var option_e8e30792a7fe4dc28ef68bb102832c6c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -951,7 +1002,7 @@
         "padding": 5
     }
 };
-                chart_d07f5c56e5d1494caee4400bb8e94b54.setOption(option_d07f5c56e5d1494caee4400bb8e94b54);
+                chart_e8e30792a7fe4dc28ef68bb102832c6c.setOption(option_e8e30792a7fe4dc28ef68bb102832c6c);
         });
     </script>
 </div></div>

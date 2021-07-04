@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Scatterplot subway stations" href="pydeck_scatterplot_subway_stations.html" />
-    <link rel="prev" title="Geo world population" href="../echarts/map_world_population.html" />
+    <link rel="prev" title="Filtered bar chart" href="../echarts/barchart_filtered.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -198,6 +198,11 @@
    Geo world population
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../echarts/barchart_filtered.html">
+   Filtered bar chart
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -223,6 +228,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pydeck_kommuner.html">
    Pydeck example kommuner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pydeck_kommuner_inntekt.html">
+   Pydeck inntekt kommuner
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,6 +316,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../basic/bar/barcharts.html">
    Barcharts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../barlist/basic.html">
+   Barlists
   </a>
  </li>
  <li class="toctree-l1">
@@ -447,6 +462,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/mattilsynet_vannkvalitet.html">
+   Mattilsynet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/innovasjon_norge_virkemidler.html">
+   Innovasjon Norge Virkemidler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../samples/ssb_employment.html">
+   Plotly express from Jsonstat
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -541,16 +578,29 @@
   <div class="section" id="scatterplot-oslofjorden">
 <h1>Scatterplot Oslofjorden<a class="headerlink" href="#scatterplot-oslofjorden" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><p>Christiania Roklub, 20201</p>
+<div><p>Christiania Roklub, 2021</p>
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">deetly</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">pydeck</span> <span class="k">as</span> <span class="nn">pdk</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="n">d955cc6eec1</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">deetly</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">pydeck</span> <span class="k">as</span> <span class="nn">pdk</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
 
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pydeck&#39;
 </pre></div>
 </div>
 </div>
@@ -598,7 +648,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -637,46 +687,13 @@
       <td>[0, 146, 188, 255]</td>
       <td>1</td>
     </tr>
-    <tr>
-      <th>1</th>
-      <td>2 Hvalstrand</td>
-      <td>59.842857</td>
-      <td>10.488384</td>
-      <td>[0, 146, 188, 255]</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3 Sjøstrand. Hurum</td>
-      <td>59.797881</td>
-      <td>10.495145</td>
-      <td>[0, 146, 188, 255]</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4 Fornebustranda</td>
-      <td>59.888117</td>
-      <td>10.583511</td>
-      <td>[0, 146, 188, 255]</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5 Torvøya. Utenfor Storøyodden</td>
-      <td>59.885863</td>
-      <td>10.584795</td>
-      <td>[0, 146, 188, 255]</td>
-      <td>5</td>
-    </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use pydeck&#39;s data_utils module to fit a viewport to the central 90% of the data</span>
-<span class="n">viewport</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">data_utils</span><span class="o">.</span><span class="n">compute_view</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">]],</span> <span class="n">view_proportion</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">viewport</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">data_utils</span><span class="o">.</span><span class="n">compute_view</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">]],</span> <span class="n">view_proportion</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -688,7 +705,8 @@
     <span class="n">df</span><span class="p">,</span>
     <span class="n">get_position</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
     <span class="n">get_radius</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
-    <span class="n">get_fill_color</span><span class="o">=</span><span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">140</span><span class="p">]</span>
+    <span class="n">get_fill_color</span><span class="o">=</span><span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">140</span><span class="p">],</span>
+    <span class="n">pickable</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Layer</span><span class="p">(</span>
@@ -705,90 +723,46 @@
     <span class="n">get_alignment_baseline</span><span class="o">=</span><span class="s1">&#39;&quot;center&quot;&#39;</span>
 <span class="p">)</span>
 
+<span class="n">tooltip</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;html&#39;</span><span class="p">:</span> <span class="s1">&#39;Post: </span><span class="si">{post}</span><span class="s1">&lt;/br&gt;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;backgroundColor&#39;</span><span class="p">:</span><span class="s1">&#39;#efefef&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;zIndex&#39;</span><span class="p">:</span> <span class="mi">999</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
 <span class="n">layers</span> <span class="o">=</span> <span class="p">[</span><span class="n">scatterplot</span><span class="p">,</span> <span class="n">text</span><span class="p">]</span>
 
-<span class="n">g</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span><span class="n">layers</span><span class="o">=</span><span class="n">layers</span><span class="p">,</span><span class="n">map_style</span><span class="o">=</span><span class="s2">&quot;light_no_labels&quot;</span><span class="p">,</span><span class="n">initial_view_state</span><span class="o">=</span><span class="n">viewport</span><span class="p">,</span><span class="n">api_keys</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;mapbox&quot;</span><span class="p">:</span> <span class="n">MAPBOX_TOKEN</span><span class="p">})</span>
-<span class="n">g</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">&#39;fig.html&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">pdk</span><span class="o">.</span><span class="n">Deck</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+               <span class="n">layers</span><span class="o">=</span><span class="n">layers</span><span class="p">,</span>
+               <span class="n">map_style</span><span class="o">=</span><span class="s2">&quot;light_no_labels&quot;</span><span class="p">,</span>
+               <span class="n">tooltip</span><span class="o">=</span><span class="n">tooltip</span><span class="p">,</span>
+               <span class="n">initial_view_state</span><span class="o">=</span><span class="n">viewport</span><span class="p">,</span>
+               <span class="n">api_keys</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;mapbox&quot;</span><span class="p">:</span> <span class="n">MAPBOX_TOKEN</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-        <iframe
-            width="100%"
-            height=500
-            frameborder="0"
-            srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    &lt;title&gt;pydeck&lt;/title&gt;
-        &lt;script src=&quot;https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js&quot;&gt;&lt;/script&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot; /&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css&quot; /&gt;
-    &lt;script src=&#x27;https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.4.*/dist/index.js&#x27;&gt;&lt;/script&gt;
-    &lt;style&gt;
-    body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#deck-map-container {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-}
-
-#map {
-  pointer-events: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-}
-
-#deckgl-overlay {
-  z-index: 2;
-  background: none;
-}
-
-#deck-map-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-#deck-container {
-  width: 100vw;
-  height: 100vh;
-}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&quot;deck-container&quot;&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-  &lt;script&gt;
-    const jsonInput = {&quot;initialViewState&quot;: {&quot;latitude&quot;: 59.85720738333334, &quot;longitude&quot;: 10.635719166666668, &quot;zoom&quot;: 10}, &quot;layers&quot;: [{&quot;@@type&quot;: &quot;ScatterplotLayer&quot;, &quot;data&quot;: [{&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8183082, &quot;longitude&quot;: 10.7469041, &quot;nummer&quot;: &quot;1&quot;, &quot;post&quot;: &quot;1 Ingierstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.842857, &quot;longitude&quot;: 10.4883838, &quot;nummer&quot;: &quot;2&quot;, &quot;post&quot;: &quot;2 Hvalstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7978812, &quot;longitude&quot;: 10.4951453, &quot;nummer&quot;: &quot;3&quot;, &quot;post&quot;: &quot;3 Sj\u00f8strand. Hurum&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.888117, &quot;longitude&quot;: 10.5835113, &quot;nummer&quot;: &quot;4&quot;, &quot;post&quot;: &quot;4 Fornebustranda&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8858635, &quot;longitude&quot;: 10.5847946, &quot;nummer&quot;: &quot;5&quot;, &quot;post&quot;: &quot;5 Torv\u00f8ya. Utenfor Stor\u00f8yodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9099005, &quot;longitude&quot;: 10.6546019, &quot;nummer&quot;: &quot;6&quot;, &quot;post&quot;: &quot;6 Killingen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8169585, &quot;longitude&quot;: 10.5919273, &quot;nummer&quot;: &quot;7&quot;, &quot;post&quot;: &quot;7 Fyrsteilene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8626402, &quot;longitude&quot;: 10.7149639, &quot;nummer&quot;: &quot;8&quot;, &quot;post&quot;: &quot;8 Husberg\u00f8ya&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8514029, &quot;longitude&quot;: 10.5313536, &quot;nummer&quot;: &quot;9&quot;, &quot;post&quot;: &quot;9 Lang\u00e5ra. Butikken&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7580842, &quot;longitude&quot;: 10.561621, &quot;nummer&quot;: &quot;10&quot;, &quot;post&quot;: &quot;10 S\u00f8ndre Lang\u00e5ra. Nord spissen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8919072, &quot;longitude&quot;: 10.5384235, &quot;nummer&quot;: &quot;11&quot;, &quot;post&quot;: &quot;11 Sj\u00f8holmen. Flytebrygge med skulptur&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8372322, &quot;longitude&quot;: 10.719023, &quot;nummer&quot;: &quot;12&quot;, &quot;post&quot;: &quot;12 Storeflua. Skvalpeskj\u00e6r syd avSkjerholmene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.786179, &quot;longitude&quot;: 10.733981, &quot;nummer&quot;: &quot;13&quot;, &quot;post&quot;: &quot;13 Svartskog brygge&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9033377, &quot;longitude&quot;: 10.7526353, &quot;nummer&quot;: &quot;14&quot;, &quot;post&quot;: &quot;14 S\u00f8renga ( indre kanal )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8948529, &quot;longitude&quot;: 10.7313554, &quot;nummer&quot;: &quot;15&quot;, &quot;post&quot;: &quot;15 Arbeidernes Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9175127, &quot;longitude&quot;: 10.6609633, &quot;nummer&quot;: &quot;16&quot;, &quot;post&quot;: &quot;16 Bestumkilen Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8860124, &quot;longitude&quot;: 10.5340435, &quot;nummer&quot;: &quot;17&quot;, &quot;post&quot;: &quot;17 B\u00e6rum Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9094875, &quot;longitude&quot;: 10.6998632, &quot;nummer&quot;: &quot;18&quot;, &quot;post&quot;: &quot;18 Christiania Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9071213, &quot;longitude&quot;: 10.6929413, &quot;nummer&quot;: &quot;19&quot;, &quot;post&quot;: &quot;19 Norske Studenters Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8659039, &quot;longitude&quot;: 10.7601763, &quot;nummer&quot;: &quot;2O&quot;, &quot;post&quot;: &quot;2O Ormsund Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9173567, &quot;longitude&quot;: 10.6738278, &quot;nummer&quot;: &quot;21&quot;, &quot;post&quot;: &quot;21 Oslo Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8843013, &quot;longitude&quot;: 10.5427055, &quot;nummer&quot;: &quot;22&quot;, &quot;post&quot;: &quot;22 Solodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8880713, &quot;longitude&quot;: 10.5650387, &quot;nummer&quot;: &quot;23&quot;, &quot;post&quot;: &quot;23 Veritas Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7169257, &quot;longitude&quot;: 10.7106393, &quot;nummer&quot;: &quot;24&quot;, &quot;post&quot;: &quot;24 Bunnefjorden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9105787, &quot;longitude&quot;: 10.7310193, &quot;nummer&quot;: &quot;25&quot;, &quot;post&quot;: &quot;25 R\u00e5dhusbrygga&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8888905, &quot;longitude&quot;: 10.5962671, &quot;nummer&quot;: &quot;26&quot;, &quot;post&quot;: &quot;26 Koksabukta&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8754247, &quot;longitude&quot;: 10.5182043, &quot;nummer&quot;: &quot;27&quot;, &quot;post&quot;: &quot;27 Halsbukta ( Nes\u00f8ya N\u00d8 )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7590858, &quot;longitude&quot;: 10.5036673, &quot;nummer&quot;: &quot;28&quot;, &quot;post&quot;: &quot;28 N\u00e6rsnesbukta (Syd for Slemmestad )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8110545, &quot;longitude&quot;: 10.6911281, &quot;nummer&quot;: &quot;29&quot;, &quot;post&quot;: &quot;29 Kirkevika ( Nesoddlandet \u00d8st )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8329723, &quot;longitude&quot;: 10.762465, &quot;nummer&quot;: &quot;30&quot;, &quot;post&quot;: &quot;30 Hvervenbukta&quot;}], &quot;getFillColor&quot;: [180, 0, 200, 140], &quot;getPosition&quot;: &quot;@@=[longitude, latitude]&quot;, &quot;getRadius&quot;: 400, &quot;id&quot;: &quot;733581c0-6165-4ebf-82d0-4f6a806ed84b&quot;}, {&quot;@@type&quot;: &quot;TextLayer&quot;, &quot;billboard&quot;: false, &quot;data&quot;: [{&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8183082, &quot;longitude&quot;: 10.7469041, &quot;nummer&quot;: &quot;1&quot;, &quot;post&quot;: &quot;1 Ingierstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.842857, &quot;longitude&quot;: 10.4883838, &quot;nummer&quot;: &quot;2&quot;, &quot;post&quot;: &quot;2 Hvalstrand&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7978812, &quot;longitude&quot;: 10.4951453, &quot;nummer&quot;: &quot;3&quot;, &quot;post&quot;: &quot;3 Sj\u00f8strand. Hurum&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.888117, &quot;longitude&quot;: 10.5835113, &quot;nummer&quot;: &quot;4&quot;, &quot;post&quot;: &quot;4 Fornebustranda&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8858635, &quot;longitude&quot;: 10.5847946, &quot;nummer&quot;: &quot;5&quot;, &quot;post&quot;: &quot;5 Torv\u00f8ya. Utenfor Stor\u00f8yodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9099005, &quot;longitude&quot;: 10.6546019, &quot;nummer&quot;: &quot;6&quot;, &quot;post&quot;: &quot;6 Killingen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8169585, &quot;longitude&quot;: 10.5919273, &quot;nummer&quot;: &quot;7&quot;, &quot;post&quot;: &quot;7 Fyrsteilene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8626402, &quot;longitude&quot;: 10.7149639, &quot;nummer&quot;: &quot;8&quot;, &quot;post&quot;: &quot;8 Husberg\u00f8ya&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8514029, &quot;longitude&quot;: 10.5313536, &quot;nummer&quot;: &quot;9&quot;, &quot;post&quot;: &quot;9 Lang\u00e5ra. Butikken&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7580842, &quot;longitude&quot;: 10.561621, &quot;nummer&quot;: &quot;10&quot;, &quot;post&quot;: &quot;10 S\u00f8ndre Lang\u00e5ra. Nord spissen&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8919072, &quot;longitude&quot;: 10.5384235, &quot;nummer&quot;: &quot;11&quot;, &quot;post&quot;: &quot;11 Sj\u00f8holmen. Flytebrygge med skulptur&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8372322, &quot;longitude&quot;: 10.719023, &quot;nummer&quot;: &quot;12&quot;, &quot;post&quot;: &quot;12 Storeflua. Skvalpeskj\u00e6r syd avSkjerholmene&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.786179, &quot;longitude&quot;: 10.733981, &quot;nummer&quot;: &quot;13&quot;, &quot;post&quot;: &quot;13 Svartskog brygge&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9033377, &quot;longitude&quot;: 10.7526353, &quot;nummer&quot;: &quot;14&quot;, &quot;post&quot;: &quot;14 S\u00f8renga ( indre kanal )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8948529, &quot;longitude&quot;: 10.7313554, &quot;nummer&quot;: &quot;15&quot;, &quot;post&quot;: &quot;15 Arbeidernes Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9175127, &quot;longitude&quot;: 10.6609633, &quot;nummer&quot;: &quot;16&quot;, &quot;post&quot;: &quot;16 Bestumkilen Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8860124, &quot;longitude&quot;: 10.5340435, &quot;nummer&quot;: &quot;17&quot;, &quot;post&quot;: &quot;17 B\u00e6rum Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9094875, &quot;longitude&quot;: 10.6998632, &quot;nummer&quot;: &quot;18&quot;, &quot;post&quot;: &quot;18 Christiania Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9071213, &quot;longitude&quot;: 10.6929413, &quot;nummer&quot;: &quot;19&quot;, &quot;post&quot;: &quot;19 Norske Studenters Roklub&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8659039, &quot;longitude&quot;: 10.7601763, &quot;nummer&quot;: &quot;2O&quot;, &quot;post&quot;: &quot;2O Ormsund Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9173567, &quot;longitude&quot;: 10.6738278, &quot;nummer&quot;: &quot;21&quot;, &quot;post&quot;: &quot;21 Oslo Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8843013, &quot;longitude&quot;: 10.5427055, &quot;nummer&quot;: &quot;22&quot;, &quot;post&quot;: &quot;22 Solodden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8880713, &quot;longitude&quot;: 10.5650387, &quot;nummer&quot;: &quot;23&quot;, &quot;post&quot;: &quot;23 Veritas Roklubb&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7169257, &quot;longitude&quot;: 10.7106393, &quot;nummer&quot;: &quot;24&quot;, &quot;post&quot;: &quot;24 Bunnefjorden&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.9105787, &quot;longitude&quot;: 10.7310193, &quot;nummer&quot;: &quot;25&quot;, &quot;post&quot;: &quot;25 R\u00e5dhusbrygga&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8888905, &quot;longitude&quot;: 10.5962671, &quot;nummer&quot;: &quot;26&quot;, &quot;post&quot;: &quot;26 Koksabukta&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8754247, &quot;longitude&quot;: 10.5182043, &quot;nummer&quot;: &quot;27&quot;, &quot;post&quot;: &quot;27 Halsbukta ( Nes\u00f8ya N\u00d8 )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.7590858, &quot;longitude&quot;: 10.5036673, &quot;nummer&quot;: &quot;28&quot;, &quot;post&quot;: &quot;28 N\u00e6rsnesbukta (Syd for Slemmestad )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8110545, &quot;longitude&quot;: 10.6911281, &quot;nummer&quot;: &quot;29&quot;, &quot;post&quot;: &quot;29 Kirkevika ( Nesoddlandet \u00d8st )&quot;}, {&quot;color&quot;: &quot;[0, 146, 188, 255]&quot;, &quot;latitude&quot;: 59.8329723, &quot;longitude&quot;: 10.762465, &quot;nummer&quot;: &quot;30&quot;, &quot;post&quot;: &quot;30 Hvervenbukta&quot;}], &quot;getAlignmentBaseline&quot;: &quot;center&quot;, &quot;getAngle&quot;: 0, &quot;getColor&quot;: [0, 0, 0, 255], &quot;getPosition&quot;: &quot;@@=[longitude, latitude]&quot;, &quot;getSize&quot;: 16, &quot;getText&quot;: &quot;@@=nummer&quot;, &quot;getTextAnchor&quot;: &quot;middle&quot;, &quot;id&quot;: &quot;ff06cb89-9365-443b-baf0-476952f8b2d0&quot;, &quot;pickable&quot;: true}], &quot;mapProvider&quot;: &quot;carto&quot;, &quot;mapStyle&quot;: &quot;https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json&quot;, &quot;views&quot;: [{&quot;@@type&quot;: &quot;MapView&quot;, &quot;controller&quot;: true}]};
-    const tooltip = true;
-    const customLibraries = null;
-
-    const deckInstance = createDeck({
-            mapboxApiKey: &#x27;pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw&#x27;,
-                  container: document.getElementById(&#x27;deck-container&#x27;),
-      jsonInput,
-      tooltip,
-      customLibraries
-    });
-
-  &lt;/script&gt;
-&lt;/html&gt;"
-        ></iframe>
-</div></div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6b33a635b69d46bfa09e6b0989a39932", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">pydeck</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s2">&quot;poster&quot;</span><span class="p">,</span> <span class="n">showMap</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">pydeck</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s2">&quot;poster&quot;</span><span class="p">,</span> <span class="n">showMap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">tooltip</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">9</span><span class="n">b3f382ab3e9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">ds</span><span class="o">.</span><span class="n">pydeck</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s2">&quot;poster&quot;</span><span class="p">,</span> <span class="n">showMap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">tooltip</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;json&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -802,17 +776,13 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Publishing story Roorientering Osloforden 2021 to the examples space...
 Published at: https://public.deetly.com/examples/ac319b749a0e17211370e518c372eb8a 
+
+Metadata: https://storage.googleapis.com/deetly/examples/ac319b749a0e17211370e518c372eb8a/datapackage.json 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"29378e255e404d65bb180679b6d895ac": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "25d9300943744ce68f37280c2eb01adc": {"model_name": "JupyterTransportModel", "model_module": "@deck.gl/jupyter-widget", "model_module_version": "~8.4.*", "state": {"_dom_classes": [], "_model_module": "@deck.gl/jupyter-widget", "_model_module_version": "~8.4.*", "_model_name": "JupyterTransportModel", "_view_count": null, "_view_module": "@deck.gl/jupyter-widget", "_view_module_version": "~8.4.*", "_view_name": "JupyterTransportView", "carto_key": null, "custom_libraries": [], "data_buffer": null, "google_maps_key": null, "height": 800, "json_input": "", "layout": "IPY_MODEL_29378e255e404d65bb180679b6d895ac", "mapbox_key": "pk.eyJ1IjoiaWRlbGFiIiwiYSI6ImNqdjNxdms0dTBid2U0NHAya2VncHY2ZDgifQ.zqS-tnv728syM-D2RZcSFw", "tooltip": true, "width": "100%"}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {
@@ -839,7 +809,7 @@ Published at: https://public.deetly.com/examples/ac319b749a0e17211370e518c372eb8
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../echarts/map_world_population.html" title="previous page">Geo world population</a>
+    <a class='left-prev' id="prev-link" href="../echarts/barchart_filtered.html" title="previous page">Filtered bar chart</a>
     <a class='right-next' id="next-link" href="pydeck_scatterplot_subway_stations.html" title="next page">Scatterplot subway stations</a>
 
         </div>

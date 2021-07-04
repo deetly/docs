@@ -25,6 +25,7 @@
   - file: echarts/map_flight
   - file: echarts/map_norway
   - file: echarts/map_world_population
+  - file: echarts/barchart_filtered
 
 - part: Pydeck Maps
   chapters:
@@ -32,6 +33,7 @@
     - file: pydeck/pydeck_scatterplot_subway_stations
     - file: pydeck/pydeck_heatmap_cattle
     - file: pydeck/pydeck_kommuner
+    - file: pydeck/pydeck_kommuner_inntekt
     - file: pydeck/pydeck_road_accidents
 
 - part: Altair Maps
@@ -56,6 +58,8 @@
   chapters:  
   - file: altair/basic/bar_line_humdata
   - file: basic/bar/barcharts
+  - file: barlist/bar/filtered_barcharts
+  - file: barlist/basic
   - file: basic/line/linecharts
   - file: samples/ssb_employment
 
@@ -96,4 +100,10 @@
 - part: Wordcloud
   chapters:  
     - file: wordcloud/vega_wordcloud
+
+- part: Samples
+  chapters:  
+    - file: samples/mattilsynet_vannkvalitet
+    - file: samples/innovasjon_norge_virkemidler
+    - file: samples/ssb_employment
 

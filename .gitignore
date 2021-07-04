@@ -13,6 +13,7 @@ __pycache__
 
 content/_build
 venv
+.venv
 
 .DS_Store
 
